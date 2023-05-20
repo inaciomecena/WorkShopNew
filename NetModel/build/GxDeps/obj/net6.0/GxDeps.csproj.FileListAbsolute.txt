@@ -1,0 +1,12 @@
+C:\Models\WorkShopNew\NetModel\web\bin\GxDeps.deps.json
+C:\Models\WorkShopNew\NetModel\web\bin\GxDeps.dll
+C:\Models\WorkShopNew\NetModel\web\bin\GxDeps.pdb
+C:\Models\WorkShopNew\NetModel\build\GxDeps\obj\net6.0\GxDeps.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\GxDeps\obj\net6.0\GxDeps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\GxDeps\obj\net6.0\GxDeps.AssemblyInfoInputs.cache
+C:\Models\WorkShopNew\NetModel\build\GxDeps\obj\net6.0\GxDeps.AssemblyInfo.cs
+C:\Models\WorkShopNew\NetModel\build\GxDeps\obj\net6.0\GxDeps.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\GxDeps\obj\net6.0\GxDeps.dll
+C:\Models\WorkShopNew\NetModel\build\GxDeps\obj\net6.0\refint\GxDeps.dll
+C:\Models\WorkShopNew\NetModel\build\GxDeps\obj\net6.0\GxDeps.pdb
+C:\Models\WorkShopNew\NetModel\build\GxDeps\obj\net6.0\ref\GxDeps.dll

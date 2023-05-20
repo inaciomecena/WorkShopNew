@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\productspercountry.dll
+C:\Models\WorkShopNew\NetModel\web\bin\productspercountry.pdb
+C:\Models\WorkShopNew\NetModel\build\productspercountry\obj\Release\net6.0\productspercountry.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\productspercountry\obj\Release\net6.0\productspercountry.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\productspercountry\obj\Release\net6.0\productspercountry.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\productspercountry\obj\Release\net6.0\productspercountry.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\productspercountry\obj\Release\net6.0\productspercountry.dll
+C:\Models\WorkShopNew\NetModel\build\productspercountry\obj\Release\net6.0\refint\productspercountry.dll
+C:\Models\WorkShopNew\NetModel\build\productspercountry\obj\Release\net6.0\productspercountry.pdb
+C:\Models\WorkShopNew\NetModel\build\productspercountry\obj\Release\net6.0\ref\productspercountry.dll

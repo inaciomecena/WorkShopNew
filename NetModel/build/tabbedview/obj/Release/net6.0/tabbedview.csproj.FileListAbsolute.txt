@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\tabbedview.dll
+C:\Models\WorkShopNew\NetModel\web\bin\tabbedview.pdb
+C:\Models\WorkShopNew\NetModel\build\tabbedview\obj\Release\net6.0\tabbedview.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\tabbedview\obj\Release\net6.0\tabbedview.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\tabbedview\obj\Release\net6.0\tabbedview.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\tabbedview\obj\Release\net6.0\tabbedview.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\tabbedview\obj\Release\net6.0\tabbedview.dll
+C:\Models\WorkShopNew\NetModel\build\tabbedview\obj\Release\net6.0\refint\tabbedview.dll
+C:\Models\WorkShopNew\NetModel\build\tabbedview\obj\Release\net6.0\tabbedview.pdb
+C:\Models\WorkShopNew\NetModel\build\tabbedview\obj\Release\net6.0\ref\tabbedview.dll

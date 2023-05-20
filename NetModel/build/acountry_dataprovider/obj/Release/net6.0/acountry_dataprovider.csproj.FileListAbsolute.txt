@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\acountry_dataprovider.dll
+C:\Models\WorkShopNew\NetModel\web\bin\acountry_dataprovider.pdb
+C:\Models\WorkShopNew\NetModel\build\acountry_dataprovider\obj\Release\net6.0\acountry_dataprovider.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\acountry_dataprovider\obj\Release\net6.0\acountry_dataprovider.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\acountry_dataprovider\obj\Release\net6.0\acountry_dataprovider.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\acountry_dataprovider\obj\Release\net6.0\acountry_dataprovider.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\acountry_dataprovider\obj\Release\net6.0\acountry_dataprovider.dll
+C:\Models\WorkShopNew\NetModel\build\acountry_dataprovider\obj\Release\net6.0\refint\acountry_dataprovider.dll
+C:\Models\WorkShopNew\NetModel\build\acountry_dataprovider\obj\Release\net6.0\acountry_dataprovider.pdb
+C:\Models\WorkShopNew\NetModel\build\acountry_dataprovider\obj\Release\net6.0\ref\acountry_dataprovider.dll

@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\countrycustomerwc.dll
+C:\Models\WorkShopNew\NetModel\web\bin\countrycustomerwc.pdb
+C:\Models\WorkShopNew\NetModel\build\countrycustomerwc\obj\Release\net6.0\countrycustomerwc.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\countrycustomerwc\obj\Release\net6.0\countrycustomerwc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\countrycustomerwc\obj\Release\net6.0\countrycustomerwc.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\countrycustomerwc\obj\Release\net6.0\countrycustomerwc.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\countrycustomerwc\obj\Release\net6.0\countrycustomerwc.dll
+C:\Models\WorkShopNew\NetModel\build\countrycustomerwc\obj\Release\net6.0\refint\countrycustomerwc.dll
+C:\Models\WorkShopNew\NetModel\build\countrycustomerwc\obj\Release\net6.0\countrycustomerwc.pdb
+C:\Models\WorkShopNew\NetModel\build\countrycustomerwc\obj\Release\net6.0\ref\countrycustomerwc.dll

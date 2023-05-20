@@ -1,0 +1,11 @@
+ 
+subtype_view_i(2,502,3,1,[ [ 14 ],[ 14,39,17 ],[ [ 14,[ 8 ] ],[ 39,[ 9 ] ] ],[ [ 14,8 ] ] ]).
+ 
+subtype_views_enabled_i(2,yes,'17_0_9-159364').
+ 
+ 
+ 
+ 
+subtype_view_last_no_i(2,502).
+ 
+subtype_view_ts_i(2,'2023-05-19 01:55:52').

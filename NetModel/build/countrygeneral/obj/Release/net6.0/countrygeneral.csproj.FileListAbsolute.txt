@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\countrygeneral.dll
+C:\Models\WorkShopNew\NetModel\web\bin\countrygeneral.pdb
+C:\Models\WorkShopNew\NetModel\build\countrygeneral\obj\Release\net6.0\countrygeneral.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\countrygeneral\obj\Release\net6.0\countrygeneral.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\countrygeneral\obj\Release\net6.0\countrygeneral.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\countrygeneral\obj\Release\net6.0\countrygeneral.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\countrygeneral\obj\Release\net6.0\countrygeneral.dll
+C:\Models\WorkShopNew\NetModel\build\countrygeneral\obj\Release\net6.0\refint\countrygeneral.dll
+C:\Models\WorkShopNew\NetModel\build\countrygeneral\obj\Release\net6.0\countrygeneral.pdb
+C:\Models\WorkShopNew\NetModel\build\countrygeneral\obj\Release\net6.0\ref\countrygeneral.dll

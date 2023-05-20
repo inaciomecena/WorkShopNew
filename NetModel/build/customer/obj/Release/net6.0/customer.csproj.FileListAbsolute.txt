@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\customer.dll
+C:\Models\WorkShopNew\NetModel\web\bin\customer.pdb
+C:\Models\WorkShopNew\NetModel\build\customer\obj\Release\net6.0\customer.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\customer\obj\Release\net6.0\customer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\customer\obj\Release\net6.0\customer.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\customer\obj\Release\net6.0\customer.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\customer\obj\Release\net6.0\customer.dll
+C:\Models\WorkShopNew\NetModel\build\customer\obj\Release\net6.0\refint\customer.dll
+C:\Models\WorkShopNew\NetModel\build\customer\obj\Release\net6.0\customer.pdb
+C:\Models\WorkShopNew\NetModel\build\customer\obj\Release\net6.0\ref\customer.dll

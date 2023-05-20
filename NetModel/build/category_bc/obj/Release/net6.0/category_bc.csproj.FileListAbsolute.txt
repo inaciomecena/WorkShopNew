@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\category_bc.dll
+C:\Models\WorkShopNew\NetModel\web\bin\category_bc.pdb
+C:\Models\WorkShopNew\NetModel\build\category_bc\obj\Release\net6.0\category_bc.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\category_bc\obj\Release\net6.0\category_bc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\category_bc\obj\Release\net6.0\category_bc.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\category_bc\obj\Release\net6.0\category_bc.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\category_bc\obj\Release\net6.0\category_bc.dll
+C:\Models\WorkShopNew\NetModel\build\category_bc\obj\Release\net6.0\refint\category_bc.dll
+C:\Models\WorkShopNew\NetModel\build\category_bc\obj\Release\net6.0\category_bc.pdb
+C:\Models\WorkShopNew\NetModel\build\category_bc\obj\Release\net6.0\ref\category_bc.dll

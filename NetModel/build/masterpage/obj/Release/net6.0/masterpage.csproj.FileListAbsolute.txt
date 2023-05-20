@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\masterpage.dll
+C:\Models\WorkShopNew\NetModel\web\bin\masterpage.pdb
+C:\Models\WorkShopNew\NetModel\build\masterpage\obj\Release\net6.0\masterpage.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\masterpage\obj\Release\net6.0\masterpage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\masterpage\obj\Release\net6.0\masterpage.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\masterpage\obj\Release\net6.0\masterpage.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\masterpage\obj\Release\net6.0\masterpage.dll
+C:\Models\WorkShopNew\NetModel\build\masterpage\obj\Release\net6.0\refint\masterpage.dll
+C:\Models\WorkShopNew\NetModel\build\masterpage\obj\Release\net6.0\masterpage.pdb
+C:\Models\WorkShopNew\NetModel\build\masterpage\obj\Release\net6.0\ref\masterpage.dll

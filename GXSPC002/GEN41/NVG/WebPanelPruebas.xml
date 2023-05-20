@@ -1,0 +1,40 @@
+
+<ObjectSpec>
+<SpecVersion>17_0_9-159740</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>37</ObjId>
+<ObjName>WebPanelPruebas</ObjName>
+<ObjDesc>Web Panel Pruebas</ObjDesc>
+<ObjPgmName>WebPanelPruebas</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>genreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Start</EventName></Event>
+<Event>
+<EventName>'btnconf'</EventName>
+<CALL>
+<ProgramName>
+<Token>'pguardarusuario'</Token></ProgramName>
+<Expression>
+<Variable>
+<VarId>Vblob</VarId>
+<VarName>&amp;vBlob</VarName></Variable>
+<Token>,</Token>
+<Sp></Sp>
+<Variable>
+<VarId>Ban</VarId>
+<VarName>&amp;ban</VarName></Variable></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>Load</EventName></Event>
+<Suggests></Suggests></ObjectSpec>

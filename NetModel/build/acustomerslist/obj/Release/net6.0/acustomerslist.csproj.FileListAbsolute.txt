@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\acustomerslist.dll
+C:\Models\WorkShopNew\NetModel\web\bin\acustomerslist.pdb
+C:\Models\WorkShopNew\NetModel\build\acustomerslist\obj\Release\net6.0\acustomerslist.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\acustomerslist\obj\Release\net6.0\acustomerslist.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\acustomerslist\obj\Release\net6.0\acustomerslist.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\acustomerslist\obj\Release\net6.0\acustomerslist.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\acustomerslist\obj\Release\net6.0\acustomerslist.dll
+C:\Models\WorkShopNew\NetModel\build\acustomerslist\obj\Release\net6.0\refint\acustomerslist.dll
+C:\Models\WorkShopNew\NetModel\build\acustomerslist\obj\Release\net6.0\acustomerslist.pdb
+C:\Models\WorkShopNew\NetModel\build\acustomerslist\obj\Release\net6.0\ref\acustomerslist.dll

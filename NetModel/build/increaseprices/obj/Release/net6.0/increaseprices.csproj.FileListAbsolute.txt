@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\increaseprices.dll
+C:\Models\WorkShopNew\NetModel\web\bin\increaseprices.pdb
+C:\Models\WorkShopNew\NetModel\build\increaseprices\obj\Release\net6.0\increaseprices.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\increaseprices\obj\Release\net6.0\increaseprices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\increaseprices\obj\Release\net6.0\increaseprices.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\increaseprices\obj\Release\net6.0\increaseprices.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\increaseprices\obj\Release\net6.0\increaseprices.dll
+C:\Models\WorkShopNew\NetModel\build\increaseprices\obj\Release\net6.0\refint\increaseprices.dll
+C:\Models\WorkShopNew\NetModel\build\increaseprices\obj\Release\net6.0\increaseprices.pdb
+C:\Models\WorkShopNew\NetModel\build\increaseprices\obj\Release\net6.0\ref\increaseprices.dll

@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\viewseller.dll
+C:\Models\WorkShopNew\NetModel\web\bin\viewseller.pdb
+C:\Models\WorkShopNew\NetModel\build\viewseller\obj\Release\net6.0\viewseller.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\viewseller\obj\Release\net6.0\viewseller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\viewseller\obj\Release\net6.0\viewseller.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\viewseller\obj\Release\net6.0\viewseller.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\viewseller\obj\Release\net6.0\viewseller.dll
+C:\Models\WorkShopNew\NetModel\build\viewseller\obj\Release\net6.0\refint\viewseller.dll
+C:\Models\WorkShopNew\NetModel\build\viewseller\obj\Release\net6.0\viewseller.pdb
+C:\Models\WorkShopNew\NetModel\build\viewseller\obj\Release\net6.0\ref\viewseller.dll

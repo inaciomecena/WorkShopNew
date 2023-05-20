@@ -1,0 +1,138 @@
+ 
+ 
+ 
+pgm_main_i(proc,16,'CATEGORIESANDPRODUCTSPROC',[ 41,'ACATEGORIESANDPRODUCTSPROC','Categories And Products Proc','','','','HTTP' ]).
+pgm_main_i(proc,17,'PRODUCTSPERCATEGORY',[ 41,'APRODUCTSPERCATEGORY','Products Per Category','','','','HTTP' ]).
+pgm_main_i(proc,18,'CUSTOMERSLIST',[ 41,'ACUSTOMERSLIST','Customers List','','','','HTTP' ]).
+pgm_main_i(web,8,'HOME',[ 41,'HOME','Home','','','','' ]).
+pgm_main_i(proc,15,'SHOPPINGCARTDETAIL',[ 41,'ASHOPPINGCARTDETAIL','Shopping Cart Detail','','','','HTTP' ]).
+pgm_main_i(mnproc,1,'CATEGORY_DATAPROVIDER',[ 41,'ACATEGORY_DATAPROVIDER','Category_Data Provider','','','','INTERNAL' ]).
+pgm_main_i(mnproc,2,'COUNTRY_DATAPROVIDER',[ 41,'ACOUNTRY_DATAPROVIDER','Country_Data Provider','','','','INTERNAL' ]).
+pgm_main_i(web,20,'STARTUP',[ 41,'STARTUP','Start Up','','','','' ]).
+ 
+pgm_prop_i(trn,5,'PRODUCT',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,25,'SHOPPINGCARTPRODUCTWC','WEB_COMP','Yes').
+pgm_prop_i(web,25,'SHOPPINGCARTPRODUCTWC','URLAccess','No').
+pgm_prop_i(web,10,'TABBEDVIEW','WEB_COMP','Yes').
+pgm_prop_i(web,10,'TABBEDVIEW','URLAccess','No').
+pgm_prop_i(web,5,'RWDRECENTLINKS','WEB_COMP','Yes').
+pgm_prop_i(web,5,'RWDRECENTLINKS','URLAccess','No').
+pgm_prop_i(web,2,'RECENTLINKS','WEB_COMP','Yes').
+pgm_prop_i(web,2,'RECENTLINKS','URLAccess','No').
+pgm_prop_i(proc,16,'ACATEGORIESANDPRODUCTSPROC','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,16,'CATEGORIESANDPRODUCTSPROC','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,17,'APRODUCTSPERCATEGORY','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,17,'PRODUCTSPERCATEGORY','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,18,'ACUSTOMERSLIST','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,18,'CUSTOMERSLIST','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,13,'MENUGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,13,'MENUGENERAL','URLAccess','No').
+pgm_prop_i(web,1,'APPMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,3,'PROMPTMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,6,'RWDPROMPTMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,27,'SELLERGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,27,'SELLERGENERAL','URLAccess','No').
+pgm_prop_i(proc,15,'ASHOPPINGCARTDETAIL','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,15,'SHOPPINGCARTDETAIL','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,28,'SELLERPRODUCTWC','WEB_COMP','Yes').
+pgm_prop_i(web,28,'SELLERPRODUCTWC','URLAccess','No').
+pgm_prop_i(web,24,'SHOPPINGCARTGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,24,'SHOPPINGCARTGENERAL','URLAccess','No').
+pgm_prop_i(trn,6,'SHOPPINGCART',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,42,'COUNTRYCUSTOMERWC','WEB_COMP','Yes').
+pgm_prop_i(web,42,'COUNTRYCUSTOMERWC','URLAccess','No').
+pgm_prop_i(web,47,'CATEGORYPRODUCTWC','WEB_COMP','Yes').
+pgm_prop_i(web,47,'CATEGORYPRODUCTWC','URLAccess','No').
+pgm_prop_i(web,41,'COUNTRYSELLERWC','WEB_COMP','Yes').
+pgm_prop_i(web,41,'COUNTRYSELLERWC','URLAccess','No').
+pgm_prop_i(web,43,'COUNTRYPRODUCTWC','WEB_COMP','Yes').
+pgm_prop_i(web,43,'COUNTRYPRODUCTWC','URLAccess','No').
+pgm_prop_i(web,46,'CATEGORYGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,46,'CATEGORYGENERAL','URLAccess','No').
+pgm_prop_i(web,40,'COUNTRYGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,40,'COUNTRYGENERAL','URLAccess','No').
+pgm_prop_i(trn,2,'CATEGORY',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,4,'RWDMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(mnproc,1,'ACATEGORY_DATAPROVIDER','OutputSDT',o(0,'Category')).
+pgm_prop_i(mnproc,1,'CATEGORY_DATAPROVIDER','OutputSDT',o(0,'Category')).
+pgm_prop_i(mnproc,2,'ACOUNTRY_DATAPROVIDER','OutputSDT',o(0,'Country')).
+pgm_prop_i(mnproc,2,'COUNTRY_DATAPROVIDER','OutputSDT',o(0,'Country')).
+pgm_prop_i(web,7,'MASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(trn,3,'COUNTRY',idISBUSINESSCOMPONENT,'-1').
+ 
+model_wrkinfo_i([ '.NET Environment','NetModel' ]).
+ 
+model_info_i([ 'Design','NetModel',1 ]).
+ 
+datastore_i(1,'DS_LAST_CHANGE','').
+datastore_i(1,'LOCK_RETRY','10').
+datastore_i(1,'WAIT_RECORD','0').
+datastore_i(1,'ISOLATION_LEVEL','CR').
+datastore_i(1,'SQLSERVER_VERSION','10').
+datastore_i(1,'COMMENT_ON','No').
+datastore_i(1,'DFT_TMP_TBLSPACE','').
+datastore_i(1,'DFT_IDX_TBLSPACE','').
+datastore_i(1,'DFT_TBL_TBLSPACE','').
+datastore_i(1,'DCL_REF_INT_DB','Yes').
+datastore_i(1,'PRIMARY_KEY_TYPE','PK').
+datastore_i(1,'CS_SCHEMA','').
+datastore_i(1,'SORT_ATTRIBUTES','Yes').
+datastore_i(1,'JRN400','QSQJRN').
+datastore_i(1,'CREATE_SAVF','Yes').
+datastore_i(1,'PGMLIB','').
+datastore_i(1,'DTALIB','').
+datastore_i(1,'RecycleRWMin','30').
+datastore_i(1,'RecycleRWType','1').
+datastore_i(1,'RecycleRW','-1').
+datastore_i(1,'POOL_STARTUP','No').
+datastore_i(1,'POOLSIZE_RW','10').
+datastore_i(1,'UnlimitedRWPool','-1').
+datastore_i(1,'PoolRWEnabled','-1').
+datastore_i(1,'CS_RPCPGML','').
+datastore_i(1,'JDBC_DATASOURCE','').
+datastore_i(1,'USE_JDBC_DATASOURCE','0').
+datastore_i(1,'DS_DBMS_ADDINFO','').
+datastore_i(1,'USER_PASSWORD','').
+datastore_i(1,'USER_ID','').
+datastore_i(1,'TRUSTED_CONNECTION','Yes').
+datastore_i(1,'CS_CONNECT','First').
+datastore_i(1,'DBMS_PORT','').
+datastore_i(1,'CS_SERVER','LENOVO\SQLEXPRESS01').
+datastore_i(1,'CS_DBNAME',lojaGXInacio).
+datastore_i(1,'CS_FLEDSNAME','').
+datastore_i(1,'CS_DRVNAME','sql server').
+datastore_i(1,'CS_DSNAME','').
+datastore_i(1,'DB_URL','').
+datastore_i(1,'JDBC_CUSTOM_URL','0').
+datastore_i(1,'JDBC_CUSTOM_DRIVER','').
+datastore_i(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver').
+datastore_i(1,'CONNECT_METHOD','OPSYS').
+datastore_i(1,'ACCESS_TECHNO','ADONET').
+datastore_i(1,'MAIN_DS','-1').
+datastore_i(1,'REORG_GEN','8').
+datastore_i(1,'HelpKeyword','20').
+datastore_i(1,'DBMS',12).
+datastore_i(1,'NAME','Default').
+ 
+subview_i(2,502,3).
+ 
+subtype_group_i(2,1,[ 'CountryProduct',[ [ 14,8 ],[ 39,9 ] ] ]).
+ 
+culture_id_i(por).
+ 
+lng_i(1,[ 'Portuguese','Portuguese',por ]).
+ 
+lng_prop_i(1,'IsRightToLeft','0',d).
+lng_prop_i(1,'ISOLangCode','PT',v).
+lng_prop_i(1,'ISOCountryCode','BR',v).
+lng_prop_i(1,'Codepage','1252',v).
+lng_prop_i(1,'LanguageLocalization','',d).
+lng_prop_i(1,'LangDateFormat','POR',v).
+lng_prop_i(1,'LangTimeFormat','24',v).
+lng_prop_i(1,'LangDecimalPoint',',',v).
+lng_prop_i(1,'FullyQualifiedName','Portuguese',d).
+ 
+ver_stamp('20230519.015552').
+ 
+ver_stamp(date(2023,5,18),time(21,58,4,67)).
+ 

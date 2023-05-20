@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\wwmenu.dll
+C:\Models\WorkShopNew\NetModel\web\bin\wwmenu.pdb
+C:\Models\WorkShopNew\NetModel\build\wwmenu\obj\Release\net6.0\wwmenu.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\wwmenu\obj\Release\net6.0\wwmenu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\wwmenu\obj\Release\net6.0\wwmenu.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\wwmenu\obj\Release\net6.0\wwmenu.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\wwmenu\obj\Release\net6.0\wwmenu.dll
+C:\Models\WorkShopNew\NetModel\build\wwmenu\obj\Release\net6.0\refint\wwmenu.dll
+C:\Models\WorkShopNew\NetModel\build\wwmenu\obj\Release\net6.0\wwmenu.pdb
+C:\Models\WorkShopNew\NetModel\build\wwmenu\obj\Release\net6.0\ref\wwmenu.dll

@@ -1,0 +1,387 @@
+spec_i([ web,7,'Master Page','MasterPage',0,por,'17_0_9-159740' ]).
+ 
+struct_i(2,1,[ 'Vruta','Vscript','Vscript11','Vscript2' ],[]).
+struct_i(3,1,[],[]).
+ 
+level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
+level_i(3,[ 1,[ [ 1,many ] ],[],[],[ [ [ 1 ],[ 5,2,4,3 ] ] ],[ [ [ 1 ],[] ] ],[ 3 ],'',[],[] ]).
+ 
+tw_i(2,[]).
+tw_i(3,[]).
+ 
+lwi_i(2,[ [] ]).
+lwi_i(3,[ [ c([ t(5,2),t(=,10),t('''A''',3) ],[ 5 ]) ] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [] ]).
+ta_i(3,[ [ [ 1,5 ],[ 1,2 ],[ 1,4 ],[ 1,3 ] ] ]).
+ 
+las_i(2,[ [] ]).
+las_i(3,[ [ 5,2,4,3 ] ]).
+ 
+lac_i(2,[ [] ]).
+lac_i(3,[ [] ]).
+ 
+ 
+lits_i('Script1',5,10).
+lits_i('Script2',5,10).
+ 
+cls_i([ 5,10 ],[ 5,16 ]).
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','LENOVO\SQLEXPRESS01')).
+rule_i(0,datastore(1,'CS_DBNAME',lojaGXInacio)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','MasterPage')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Unsecure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('WebApplication',idDefault)).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('AUTO_REFRESH','VARS_CHANGE')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('WEB_COMP','Master')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','Master Page')).
+rule_i(0,prop('ObjName','MasterPage')).
+rule_i(0,maingen(41)).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,3,t,1,[],[ [],'',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,5).
+v_i(t,o,2,2).
+v_i(t,o,2,4).
+v_i(t,o,2,3).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i(1,[ 'MenuXid',int,4,0,'ZZZ9',0,'Menu Xid','',0 ]).
+attri_i(5,[ 'MenXEst',char,1,0,'',0,'Estado','',0 ]).
+attri_i(2,[ 'MenuXDesc',svchar,40,0,'',0,'Menu XDesc','',0 ]).
+attri_i(4,[ 'MenXUrl',svchar,1000,0,'',0,'Url','',0 ]).
+attri_i(3,[ 'MenuXPosi',int,4,0,'ZZZ9',0,'Position','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',11 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',10 ]).
+attri_i('Vscript11',[ vScript11,vchar,2097152,0,'',0,'v Script11','',9 ]).
+attri_i('Vscript2',[ vScript2,vchar,2097152,0,'',0,'v Script2','',8 ]).
+attri_i('Vscript',[ vScript,vchar,2097152,0,'',0,'v Script','',7 ]).
+attri_i('Httprequest',[ 'HttpRequest',o(httprequest),4,0,'',0,'Http Request','',6 ]).
+attri_i('Vruta',[ vRuta,svchar,400,0,'',0,'v Ruta','',5 ]).
+ 
+table_i(1,[ 'Menu',[ 1,2,3,4,5 ],'Menu','Menu' ]).
+ 
+index_i(1,[ '',a,[ 3 ],'' ]).
+index_i(1,[ 'IMENU',u,[ 1 ],'IMenu' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(32,[ 'GeneXus\Url' ]).
+ 
+ 
+break_i(3,nvg,1,[ 3 ],[ [ 3,4,2 ],[ 5 ],[] ]).
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,1).
+b_group_i(2,3,nvg,3,81,81).
+b_group_i(3,1,lit,0,82,82).
+b_group_i(2,4,lit,0,92,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
+b_line_i(2,2,2,cmd,1,[ t('',107,2,0),t('Vruta',23,1,0),t(=,10,1,0),t([ t('Httprequest',23,1,0),t('Baseurl',3,1,0) ],29,1,0) ]).
+b_line_i(5,2,2,cmd,1,[ t('',107,5,0),t([ t('Form',3,1,0),t('Headerrawhtml',3,1,0) ],29,1,0),t(=,10,1,0),t('''<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''MyMaster/bower_components/font-awesome/css/font-awesome.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''MyMaster/bower_components/Ionicons/css/ionicons.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''MyMaster/dist/css/AdminLTE.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''MyMaster/dist/css/skins/_all-skins.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''MyMaster/bower_components/morris.js/morris.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''MyMaster/bower_components/jvectormap/jquery-jvectormap.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''MyMaster/bower_components/bootstrap-daterangepicker/daterangepicker.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''MyMaster/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<script>window.onload = function(){document.body.className = "form-horizontal Form form-horizontal-fx hold-transition skin-blue sidebar-mini";}</script>''',3,1,0) ]).
+b_line_i(17,2,2,cmd,1,[ t('',107,17,0),t([ t([ t('Form',3,17,6),t('Jscriptsrc',3,17,11) ],29,17,6),t('add(',1,17,22) ],31,17,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/bower_components/jquery/dist/jquery.min.js''',3,17,34),t(')',4,1,87) ]).
+b_line_i(18,2,2,cmd,1,[ t('',107,18,0),t([ t([ t('Form',3,18,6),t('Jscriptsrc',3,18,11) ],29,18,6),t('add(',1,18,22) ],31,18,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/bower_components/jquery-ui/jquery-ui.min.js''',3,18,34),t(')',4,1,88) ]).
+b_line_i(19,2,2,cmd,1,[ t('',107,19,0),t([ t([ t('Form',3,19,6),t('Jscriptsrc',3,19,11) ],29,19,6),t('add(',1,19,22) ],31,19,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/bower_components/raphael/raphael.min.js''',3,19,34),t(')',4,1,84) ]).
+b_line_i(20,2,2,cmd,1,[ t('',107,20,0),t([ t([ t('Form',3,20,6),t('Jscriptsrc',3,20,11) ],29,20,6),t('add(',1,20,22) ],31,20,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js''',3,20,34),t(')',4,1,107) ]).
+b_line_i(21,2,2,cmd,1,[ t('',107,21,0),t([ t([ t('Form',3,21,6),t('Jscriptsrc',3,21,11) ],29,21,6),t('add(',1,21,22) ],31,21,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js''',3,21,34),t(')',4,1,94) ]).
+b_line_i(22,2,2,cmd,1,[ t('',107,22,0),t([ t([ t('Form',3,22,6),t('Jscriptsrc',3,22,11) ],29,22,6),t('add(',1,22,22) ],31,22,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/plugins/jvectormap/jquery-jvectormap-world-mill-en.js''',3,22,34),t(')',4,1,98) ]).
+b_line_i(23,2,2,cmd,1,[ t('',107,23,0),t([ t([ t('Form',3,23,6),t('Jscriptsrc',3,23,11) ],29,23,6),t('add(',1,23,22) ],31,23,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/bower_components/jquery-knob/dist/jquery.knob.min.js''',3,23,34),t(')',4,1,97) ]).
+b_line_i(24,2,2,cmd,1,[ t('',107,24,0),t([ t([ t('Form',3,24,6),t('Jscriptsrc',3,24,11) ],29,24,6),t('add(',1,24,22) ],31,24,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/bower_components/moment/min/moment.min.js''',3,24,34),t(')',4,1,86) ]).
+b_line_i(25,2,2,cmd,1,[ t('',107,25,0),t([ t([ t('Form',3,25,6),t('Jscriptsrc',3,25,11) ],29,25,6),t('add(',1,25,22) ],31,25,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/bower_components/bootstrap-daterangepicker/daterangepicker.js''',3,25,34),t(')',4,1,106) ]).
+b_line_i(26,2,2,cmd,1,[ t('',107,26,0),t([ t([ t('Form',3,26,6),t('Jscriptsrc',3,26,11) ],29,26,6),t('add(',1,26,22) ],31,26,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js''',3,26,34),t(')',4,1,118) ]).
+b_line_i(27,2,2,cmd,1,[ t('',107,27,0),t([ t([ t('Form',3,27,6),t('Jscriptsrc',3,27,11) ],29,27,6),t('add(',1,27,22) ],31,27,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/bower_components/jquery-slimscroll/jquery.slimscroll.min.js''',3,27,34),t(')',4,1,104) ]).
+b_line_i(28,2,2,cmd,1,[ t('',107,28,0),t([ t([ t('Form',3,28,6),t('Jscriptsrc',3,28,11) ],29,28,6),t('add(',1,28,22) ],31,28,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/bower_components/fastclick/lib/fastclick.js''',3,28,34),t(')',4,1,88) ]).
+b_line_i(29,2,2,cmd,1,[ t('',107,29,0),t([ t([ t('Form',3,29,6),t('Jscriptsrc',3,29,11) ],29,29,6),t('add(',1,29,22) ],31,29,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/dist/js/adminlte.min.js''',3,29,34),t(')',4,1,68) ]).
+b_line_i(30,2,2,cmd,1,[ t('',107,30,0),t([ t([ t('Form',3,30,6),t('Jscriptsrc',3,30,11) ],29,30,6),t('add(',1,30,22) ],31,30,22),t('Vruta',23,1,27),t(+,5,1,33),t('''MyMaster/dist/js/demo.js''',3,30,34),t(')',4,1,60) ]).
+b_line_i(33,2,2,cmd,1,[ t('',107,33,0),t('Vscript',23,1,0),t(=,10,1,0),t('''<div class="wrapper">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<header class="main-header">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<a href="index2.html" class="logo">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<span class="logo-mini"><b>A</b>LT</span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<span class="logo-lg"><b>Painel</b>Shop</span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<nav class="navbar navbar-static-top">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t(''' <span class="sr-only"></span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<div class="navbar-custom-menu">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<ul class="nav navbar-nav">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<li class="dropdown notifications-menu">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<a href="#" class="dropdown-toggle" data-toggle="dropdown">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<i class="fa fa-bell-o"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<span class="label label-warning">5</span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<ul class="dropdown-menu">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<li class="header">Tienes 5 Notificações</li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<ul class="menu">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<a href="#">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<i class="fa fa-users text-aqua"></i> 5 new members joined today''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</ul>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<li class="footer"><a href="#">Ver Tudo</a></li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</ul>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</ul>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</nav>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</header>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<aside class="main-sidebar" style="max-height: 100%;">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<section class="sidebar">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<div class="user-panel">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<div class="pull-left image">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<img src="MyMaster/dist/img/avatar5.png" class="img-circle" alt="User Image">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<div class="pull-left info">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<p>Inácio Mecena</p>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<a href="#"><i class="fa fa-circle text-success"></i> Online</a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''</div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<ul class="sidebar-menu" data-widget="tree">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<li class="header">SOFTWARE</li>''',3,1,0) ]).
+b_line_i(81,3,1,cmd,82,[ t('',121,81,0),t('ORDER',39,81,20),t(3,2,81,26) ]).
+b_line_i(83,3,1,cmd,82,[ t('',107,83,0),t('Vscript11',23,82,0),t(=,10,82,0),t('Vscript11',23,82,0),t(+,5,82,0),t('''<li class="active treeview">''',3,82,0),t(+,5,82,0),t('newline(',1,82,0),t(')',4,82,0),t(+,5,82,0),t('''<a href="''',3,82,0),t(+,5,82,0),t('Vruta',23,82,0),t(+,5,82,0),t('trim(',1,82,0),t(4,2,82,0),t(')',4,82,0),t(+,5,82,0),t('''">''',3,82,0),t(+,5,82,0),t('newline(',1,82,0),t(')',4,82,0),t(+,5,82,0),t('''<i class="fa fa-dashboard"></i> <span>''',3,82,0),t(+,5,82,0),t('trim(',1,82,0),t(2,2,82,0),t(')',4,82,0),t(+,5,82,0),t('''</span>''',3,82,0),t(+,5,82,0),t('newline(',1,82,0),t(')',4,82,0),t(+,5,82,0),t('''<span class="pull-right-container">''',3,82,0),t(+,5,82,0),t('newline(',1,82,0),t(')',4,82,0),t(+,5,82,0),t('''<i class="fa fa-angle-left pull-right"></i>''',3,82,0),t(+,5,82,0),t('newline(',1,82,0),t(')',4,82,0),t(+,5,82,0),t('''</span>''',3,82,0),t(+,5,82,0),t('newline(',1,82,0),t(')',4,82,0),t(+,5,82,0),t('''</a>''',3,82,0),t(+,5,82,0),t('newline(',1,82,0),t(')',4,82,0),t(+,5,82,0),t('''</li>''',3,82,0) ]).
+b_line_i(91,3,1,cmd,82,[ t('',128,91,0) ]).
+b_line_i(92,2,4,cmd,12,[ t('',107,92,0),t('Vscript',23,12,0),t(=,10,12,0),t('Vscript',23,12,0),t(+,5,12,0),t('Vscript11',23,12,0),t(+,5,12,0),t('''</ul>''',3,12,0),t(+,5,12,0),t('newline(',1,12,0),t(')',4,12,0),t(+,5,12,0),t('''</section>''',3,12,0),t(+,5,12,0),t('newline(',1,12,0),t(')',4,12,0),t(+,5,12,0),t('''</aside>''',3,12,0),t(+,5,12,0),t('newline(',1,12,0),t(')',4,12,0),t(+,5,12,0),t('''<div class="content-wrapper" >''',3,12,0),t(+,5,12,0),t('newline(',1,12,0),t(')',4,12,0),t(+,5,12,0),t('''<section class="content-header">''',3,12,0),t(+,5,12,0),t('newline(',1,12,0),t(')',4,12,0),t(+,5,12,0),t('''<ol class="breadcrumb" style="position:static;">''',3,12,0),t(+,5,12,0),t('newline(',1,12,0),t(')',4,12,0),t(+,5,12,0),t('''<li><a href="#"><i class="fa fa-dashboard"></i> Position</a></li>''',3,12,0),t(+,5,12,0),t('newline(',1,12,0),t(')',4,12,0),t(+,5,12,0),t('''<li class="active">''',3,12,0),t(+,5,12,0),t([ t('Form',3,12,0),t('Caption',3,12,0) ],29,12,0),t(+,5,12,0),t('''</li>''',3,12,0),t(+,5,12,0),t('newline(',1,12,0),t(')',4,12,0),t(+,5,12,0),t('''</ol>''',3,12,0),t(+,5,12,0),t('newline(',1,12,0),t(')',4,12,0),t(+,5,12,0),t('''</section>''',3,12,0),t(+,5,12,0),t('newline(',1,12,0),t(')',4,12,0),t(+,5,12,0),t('''<section class="content" >''',3,12,0) ]).
+b_line_i(104,2,4,cmd,12,[ t('',107,104,0),t('Vscript2',23,12,0),t(=,10,12,0),t('''  </section></div></div>''',3,12,0) ]).
+b_line_i(105,2,4,cmd,12,[ t('',107,105,0),t([ t('Txtscrip1',3,12,0),t('Caption',3,12,0) ],29,12,0),t(=,10,12,0),t('Vscript',23,12,0) ]).
+b_line_i(106,2,4,cmd,12,[ t('',107,106,0),t([ t('Txtscript2',3,12,0),t('Caption',3,12,0) ],29,12,0),t(=,10,12,0),t('Vscript2',23,12,0) ]).
+b_line_i(108,2,4,cmd,12,[ t('',147,108,0) ]).
+b_line_i(1000,2,4,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,4,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,4,cmd,0,[ t('',147,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,t('Script1',3)).
+html_i(3,comp(conthold)).
+html_i(4,t('Script2',3)).
+ 
+ 
+html_tags_i(1,'Class','Form').
+ 
+html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(2,'Caption','Script1',d,[ str ]).
+html_comp_i(2,'Id','Txtscrip1',v,[ str ]).
+html_comp_i(2,'Class','TextBlock',d,[ str ]).
+html_comp_i(2,'Event','',d,[ str ]).
+html_comp_i(2,'Returnonclick',0,d,[ bool ]).
+html_comp_i(2,'Gxformat',2,v,[ num ]).
+html_comp_i(2,'Title','',d,[ str ]).
+html_comp_i(2,'Fill',-1,d,[ bool ]).
+html_comp_i(2,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(2,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(2,'Font',font('Microsoft Sans Serif',22,[]),d,[ font ]).
+html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(3,'Controlname','Contholder1',v,[ str ]).
+html_comp_i(4,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(4,'Caption','Script2',d,[ str ]).
+html_comp_i(4,'Id','Txtscript2',v,[ str ]).
+html_comp_i(4,'Class','TextBlock',d,[ str ]).
+html_comp_i(4,'Event','',d,[ str ]).
+html_comp_i(4,'Returnonclick',0,d,[ bool ]).
+html_comp_i(4,'Gxformat',2,v,[ num ]).
+html_comp_i(4,'Title','',d,[ str ]).
+html_comp_i(4,'Fill',-1,d,[ bool ]).
+html_comp_i(4,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(4,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(4,'Font',font('Microsoft Sans Serif',22,[]),d,[ font ]).
+ 
+ 
+ 
+ 
+ 
+ 
+warn_gen_i(msg([],spc0038,[ 'There is no index for order ',[ att(2,3) ],'; poor performance may be noticed',[ ' in group starting at line ','81','' ],'.' ])).
+ 
+ 
+ 
+lit_i(2,1,t('Script1',3),[ ctlname('Txtscrip1') ]).
+lit_i(3,1,comp(conthold),[ ctlname('Contholder1'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(4,1,t('Script2',3),[ ctlname('Txtscript2') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+att_prop_i(2,3,'ExternalName','MenuXPosi',d).
+att_prop_i(2,3,'ExternalNamespace','WorkShopNew',d).
+att_prop_i(2,3,'EmptyAsNull','Yes',d).
+att_prop_i(2,3,idBasedOn,'',d).
+att_prop_i(2,3,'AUTONUMBER','0',d).
+att_prop_i(2,3,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,3,'AttRegEx','',d).
+att_prop_i(2,3,'AttValidationFailedMsg','',d).
+att_prop_i(2,3,'DownloadOffline','0',d).
+att_prop_i(2,3,'VarServiceExtName','',d).
+att_prop_i(2,3,'FullName','MenuXPosi',v).
+att_prop_i(2,4,'ExternalName','MenXUrl',d).
+att_prop_i(2,4,'ExternalNamespace','WorkShopNew',d).
+att_prop_i(2,4,'EmptyAsNull','Yes',d).
+att_prop_i(2,4,idBasedOn,32,v).
+att_prop_i(2,4,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,4,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,4,'AttRegEx','^((?:[a-zA-Z]+:(//)?)?((?:(?:[a-zA-Z]([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*)(?:\.(?:([a-zA-Z0-9$\-_@&+!*"''(),]|%[0-9a-fA-F]{2})*))*)|(?:(\d{1,3}\.){3}\d{1,3}))(?::\d+)?(?:/([a-zA-Z0-9$\-_@.&+!*"''(),=;: ]|%[0-9a-fA-F]{2})+)*/?(?:[#?](?:[a-zA-Z0-9$\-_@.&+!*"''(),=;: /]|%[0-9a-fA-F]{2})*)?)?\s*$',d).
+att_prop_i(2,4,'AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+att_prop_i(2,4,'DownloadOffline','0',d).
+att_prop_i(2,4,'VarServiceExtName','',d).
+att_prop_i(2,4,'FullName','MenXUrl',v).
+att_prop_i(2,2,'ExternalName','MenuXDesc',d).
+att_prop_i(2,2,'ExternalNamespace','WorkShopNew',d).
+att_prop_i(2,2,'EmptyAsNull','Yes',d).
+att_prop_i(2,2,idBasedOn,'',d).
+att_prop_i(2,2,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,2,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,2,'AttRegEx','',d).
+att_prop_i(2,2,'AttValidationFailedMsg','',d).
+att_prop_i(2,2,'DownloadOffline','0',d).
+att_prop_i(2,2,'VarServiceExtName','',d).
+att_prop_i(2,2,'FullName','MenuXDesc',v).
+att_prop_i(2,5,'ExternalName','MenXEst',d).
+att_prop_i(2,5,'ExternalNamespace','WorkShopNew',d).
+att_prop_i(2,5,'EmptyAsNull','Yes',d).
+att_prop_i(2,5,idBasedOn,'',d).
+att_prop_i(2,5,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,5,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,5,'AttRegEx','',d).
+att_prop_i(2,5,'AttValidationFailedMsg','',d).
+att_prop_i(2,5,'DownloadOffline','0',d).
+att_prop_i(2,5,'VarServiceExtName','',d).
+att_prop_i(2,5,'FullName','MenXEst',v).
+att_prop_i(2,1,'ExternalName','MenuXid',d).
+att_prop_i(2,1,'ExternalNamespace','WorkShopNew',d).
+att_prop_i(2,1,'EmptyAsNull','Yes',d).
+att_prop_i(2,1,idBasedOn,'',d).
+att_prop_i(2,1,'AUTONUMBER','-1',v).
+att_prop_i(2,1,'AUTONUMBER_START','1',d).
+att_prop_i(2,1,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,1,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,1,'AttRegEx','',d).
+att_prop_i(2,1,'AttValidationFailedMsg','',d).
+att_prop_i(2,1,'DownloadOffline','0',d).
+att_prop_i(2,1,'VarServiceExtName','',d).
+att_prop_i(2,1,'FullName','MenuXid',v).
+ 
+ 
+tbl_att_prop_i(2,1,1,'AllowNulls',n).
+tbl_att_prop_i(2,1,1,'AUTONUMBER',y).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,'Start',1,108,[ [ [ t('Httprequest',23),t('Baseurl',3) ],3,5,'Vscript11',4,2,[ t('Form',3),t('Caption',3) ] ],[ [ t('Form',3),t('Headerrawhtml',3) ],'Vscript11',[ t('Txtscrip1',3),t('Caption',3) ],[ t('Txtscript2',3),t('Caption',3) ] ] ]).
+ 
+ 
+pgm_callprotocol_i(web,7,'MASTERPAGE','INTERNAL','Unsecure').
+ 
+ 
+ 
+ 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

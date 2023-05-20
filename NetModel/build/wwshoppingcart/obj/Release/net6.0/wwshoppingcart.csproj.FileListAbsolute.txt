@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\wwshoppingcart.dll
+C:\Models\WorkShopNew\NetModel\web\bin\wwshoppingcart.pdb
+C:\Models\WorkShopNew\NetModel\build\wwshoppingcart\obj\Release\net6.0\wwshoppingcart.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\wwshoppingcart\obj\Release\net6.0\wwshoppingcart.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\wwshoppingcart\obj\Release\net6.0\wwshoppingcart.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\wwshoppingcart\obj\Release\net6.0\wwshoppingcart.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\wwshoppingcart\obj\Release\net6.0\wwshoppingcart.dll
+C:\Models\WorkShopNew\NetModel\build\wwshoppingcart\obj\Release\net6.0\refint\wwshoppingcart.dll
+C:\Models\WorkShopNew\NetModel\build\wwshoppingcart\obj\Release\net6.0\wwshoppingcart.pdb
+C:\Models\WorkShopNew\NetModel\build\wwshoppingcart\obj\Release\net6.0\ref\wwshoppingcart.dll

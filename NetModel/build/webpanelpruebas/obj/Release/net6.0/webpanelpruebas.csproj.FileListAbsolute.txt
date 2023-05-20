@@ -1,0 +1,3 @@
+C:\Models\WorkShopNew\NetModel\build\webpanelpruebas\obj\Release\net6.0\webpanelpruebas.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\webpanelpruebas\obj\Release\net6.0\webpanelpruebas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\webpanelpruebas\obj\Release\net6.0\webpanelpruebas.csproj.CoreCompileInputs.cache

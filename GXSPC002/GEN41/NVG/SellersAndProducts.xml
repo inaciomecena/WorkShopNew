@@ -1,0 +1,158 @@
+
+<ObjectSpec>
+<SpecVersion>17_0_9-159740</SpecVersion>
+<Object>
+<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
+<ObjCls>13</ObjCls>
+<ObjId>22</ObjId>
+<ObjName>SellersAndProducts</ObjName>
+<ObjDesc>Sellers And Products</ObjDesc>
+<ObjPgmName>SellersAndProducts</ObjPgmName>
+<ObjClsName>Web Panel</ObjClsName></Object>
+<Result>nogenreq</Result>
+<Warnings></Warnings>
+<Errors></Errors>
+<Generator>
+<GenId>41</GenId>
+<GenName>Default (.NET)</GenName></Generator>
+<FormClass>HTML</FormClass>
+<Parameters></Parameters>
+<StandAloneRules></StandAloneRules>
+<Event>
+<EventName>Grid2.Load</EventName>
+<LoadMethod>Auto</LoadMethod>
+<ImplicitForEach>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>0</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>4</TableId>
+<TableName>Seller</TableName>
+<Description>Seller</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SellerId</AttriName>
+<Description>Seller Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>ISELLER</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Token>FirstRecord</Token></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Token>NotEndOfTable</Token></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>4</TableId>
+<TableName>Seller</TableName>
+<Description>Seller</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SellerId</AttriName>
+<Description>Seller Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>4</TableId>
+<TableName>count( ProductId )  navigation</TableName>
+<Description>Seller</Description>
+<RecordsToRead>one</RecordsToRead>
+<JoinType>Outer</JoinType>
+<Tables>
+<Table>
+<TableId>6</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SellerId</AttriName>
+<Description>Seller Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Event>
+<EventName>Grid1.Load</EventName>
+<ImplicitForEach>
+<SubordinateTo>Grid2</SubordinateTo>
+<LevelType>For Each</LevelType>
+<LevelBeginRow>999</LevelBeginRow>
+<BaseTable>
+<Table>
+<TableId>6</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description></Table></BaseTable>
+<Order>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SellerId</AttriName>
+<Description>Seller Id</Description></Attribute></Order>
+<Condition></Condition>
+<IndexName>IPRODUCT2</IndexName>
+<LevelOptions></LevelOptions>
+<OptimizedWhere>
+<StartFrom>
+<Condition>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SellerId</AttriName>
+<Description>Seller Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>@SellerId</AttriName>
+<Description>Seller Id</Description></Attribute></Condition></StartFrom>
+<LoopWhile>
+<Condition>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>SellerId</AttriName>
+<Description>Seller Id</Description></Attribute>
+<Sp></Sp>
+<Token>=</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>10</AttriId>
+<AttriName>@SellerId</AttriName>
+<Description>Seller Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<NonOptimizedWhere></NonOptimizedWhere>
+<JoinLocation>1</JoinLocation>
+<NavigationTree>
+<Table>
+<TableId>6</TableId>
+<TableName>Product</TableName>
+<Description>Product</Description>
+<RecordsToRead>many</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute></KeyAttributes>
+<Tables>
+<Table>
+<TableId>2</TableId>
+<TableName>Category</TableName>
+<Description>Category</Description>
+<RecordsToRead>one</RecordsToRead>
+<KeyAttributes>
+<Attribute>
+<AttriId>6</AttriId>
+<AttriName>CategoryId</AttriName>
+<Description>Category Id</Description></Attribute></KeyAttributes>
+<Tables></Tables></Table></Tables></Table></NavigationTree>
+<TablesToUpdate></TablesToUpdate>
+<Formulas>
+<VerticalFormulas></VerticalFormulas>
+<AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Suggests></Suggests></ObjectSpec>

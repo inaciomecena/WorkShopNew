@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\notauthorized.dll
+C:\Models\WorkShopNew\NetModel\web\bin\notauthorized.pdb
+C:\Models\WorkShopNew\NetModel\build\notauthorized\obj\Release\net6.0\notauthorized.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\notauthorized\obj\Release\net6.0\notauthorized.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\notauthorized\obj\Release\net6.0\notauthorized.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\notauthorized\obj\Release\net6.0\notauthorized.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\notauthorized\obj\Release\net6.0\notauthorized.dll
+C:\Models\WorkShopNew\NetModel\build\notauthorized\obj\Release\net6.0\refint\notauthorized.dll
+C:\Models\WorkShopNew\NetModel\build\notauthorized\obj\Release\net6.0\notauthorized.pdb
+C:\Models\WorkShopNew\NetModel\build\notauthorized\obj\Release\net6.0\ref\notauthorized.dll

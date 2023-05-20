@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\wwseller.dll
+C:\Models\WorkShopNew\NetModel\web\bin\wwseller.pdb
+C:\Models\WorkShopNew\NetModel\build\wwseller\obj\Release\net6.0\wwseller.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\wwseller\obj\Release\net6.0\wwseller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\wwseller\obj\Release\net6.0\wwseller.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\wwseller\obj\Release\net6.0\wwseller.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\wwseller\obj\Release\net6.0\wwseller.dll
+C:\Models\WorkShopNew\NetModel\build\wwseller\obj\Release\net6.0\refint\wwseller.dll
+C:\Models\WorkShopNew\NetModel\build\wwseller\obj\Release\net6.0\wwseller.pdb
+C:\Models\WorkShopNew\NetModel\build\wwseller\obj\Release\net6.0\ref\wwseller.dll

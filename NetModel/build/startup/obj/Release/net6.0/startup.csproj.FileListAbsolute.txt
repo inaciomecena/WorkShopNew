@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\startup.dll
+C:\Models\WorkShopNew\NetModel\web\bin\startup.pdb
+C:\Models\WorkShopNew\NetModel\build\startup\obj\Release\net6.0\startup.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\startup\obj\Release\net6.0\startup.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\startup\obj\Release\net6.0\startup.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\startup\obj\Release\net6.0\startup.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\startup\obj\Release\net6.0\startup.dll
+C:\Models\WorkShopNew\NetModel\build\startup\obj\Release\net6.0\refint\startup.dll
+C:\Models\WorkShopNew\NetModel\build\startup\obj\Release\net6.0\startup.pdb
+C:\Models\WorkShopNew\NetModel\build\startup\obj\Release\net6.0\ref\startup.dll

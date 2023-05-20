@@ -1,0 +1,99 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+	
+	
+	<PropertyGroup>
+		<AssemblyName>developermenu</AssemblyName>
+		<TargetFramework>$(TargetFramework)</TargetFramework>
+		<OutputType>Library</OutputType>
+		<GenerateDependencyFile>false</GenerateDependencyFile>
+		<PostgresqlSupport>false</PostgresqlSupport>
+		<OfficeSupport>false</OfficeSupport>
+		<MailSupport>false</MailSupport>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include=".\..\acategory_dataprovider\acategory_dataprovider.csproj" />
+		<ProjectReference Include=".\..\acountry_dataprovider\acountry_dataprovider.csproj" />
+		<ProjectReference Include=".\..\ashoppingcartdetail\ashoppingcartdetail.csproj" />
+		<ProjectReference Include=".\..\ashoppingcartdetail\ashoppingcartdetail.csproj" />
+		<ProjectReference Include=".\..\acategoriesandproductsproc\acategoriesandproductsproc.csproj" />
+		<ProjectReference Include=".\..\acategoriesandproductsproc\acategoriesandproductsproc.csproj" />
+		<ProjectReference Include=".\..\aproductspercategory\aproductspercategory.csproj" />
+		<ProjectReference Include=".\..\aproductspercategory\aproductspercategory.csproj" />
+		<ProjectReference Include=".\..\acustomerslist\acustomerslist.csproj" />
+		<ProjectReference Include=".\..\acustomerslist\acustomerslist.csproj" />
+		<ProjectReference Include=".\..\appmasterpage\appmasterpage.csproj" />
+		<ProjectReference Include=".\..\recentlinks\recentlinks.csproj" />
+		<ProjectReference Include=".\..\promptmasterpage\promptmasterpage.csproj" />
+		<ProjectReference Include=".\..\rwdmasterpage\rwdmasterpage.csproj" />
+		<ProjectReference Include=".\..\rwdrecentlinks\rwdrecentlinks.csproj" />
+		<ProjectReference Include=".\..\rwdpromptmasterpage\rwdpromptmasterpage.csproj" />
+		<ProjectReference Include=".\..\masterpage\masterpage.csproj" />
+		<ProjectReference Include=".\..\home\home.csproj" />
+		<ProjectReference Include=".\..\home\home.csproj" />
+		<ProjectReference Include=".\..\notauthorized\notauthorized.csproj" />
+		<ProjectReference Include=".\..\tabbedview\tabbedview.csproj" />
+		<ProjectReference Include=".\..\viewmenu\viewmenu.csproj" />
+		<ProjectReference Include=".\..\wwmenu\wwmenu.csproj" />
+		<ProjectReference Include=".\..\menugeneral\menugeneral.csproj" />
+		<ProjectReference Include=".\..\wwseller\wwseller.csproj" />
+		<ProjectReference Include=".\..\viewshoppingcart\viewshoppingcart.csproj" />
+		<ProjectReference Include=".\..\wwshoppingcart\wwshoppingcart.csproj" />
+		<ProjectReference Include=".\..\increaseprices\increaseprices.csproj" />
+		<ProjectReference Include=".\..\countriesandcustomers\countriesandcustomers.csproj" />
+		<ProjectReference Include=".\..\categoriesandproducts\categoriesandproducts.csproj" />
+		<ProjectReference Include=".\..\startup\startup.csproj" />
+		<ProjectReference Include=".\..\startup\startup.csproj" />
+		<ProjectReference Include=".\..\customersandshoppingcarts\customersandshoppingcarts.csproj" />
+		<ProjectReference Include=".\..\sellersandproducts\sellersandproducts.csproj" />
+		<ProjectReference Include=".\..\productspercountry\productspercountry.csproj" />
+		<ProjectReference Include=".\..\shoppingcartgeneral\shoppingcartgeneral.csproj" />
+		<ProjectReference Include=".\..\shoppingcartproductwc\shoppingcartproductwc.csproj" />
+		<ProjectReference Include=".\..\viewseller\viewseller.csproj" />
+		<ProjectReference Include=".\..\sellergeneral\sellergeneral.csproj" />
+		<ProjectReference Include=".\..\sellerproductwc\sellerproductwc.csproj" />
+		<ProjectReference Include=".\..\gx0020\gx0020.csproj" />
+		<ProjectReference Include=".\..\gx0030\gx0030.csproj" />
+		<ProjectReference Include=".\..\gx0040\gx0040.csproj" />
+		<ProjectReference Include=".\..\gx0060\gx0060.csproj" />
+		<ProjectReference Include=".\..\gx0050\gx0050.csproj" />
+		<ProjectReference Include=".\..\gx00a1\gx00a1.csproj" />
+		<ProjectReference Include=".\..\gx0070\gx0070.csproj" />
+		<ProjectReference Include=".\..\gx0081\gx0081.csproj" />
+		<ProjectReference Include=".\..\viewcountry\viewcountry.csproj" />
+		<ProjectReference Include=".\..\wwcountry\wwcountry.csproj" />
+		<ProjectReference Include=".\..\countrygeneral\countrygeneral.csproj" />
+		<ProjectReference Include=".\..\countrysellerwc\countrysellerwc.csproj" />
+		<ProjectReference Include=".\..\countrycustomerwc\countrycustomerwc.csproj" />
+		<ProjectReference Include=".\..\countryproductwc\countryproductwc.csproj" />
+		<ProjectReference Include=".\..\viewcategory\viewcategory.csproj" />
+		<ProjectReference Include=".\..\wwcategory\wwcategory.csproj" />
+		<ProjectReference Include=".\..\categorygeneral\categorygeneral.csproj" />
+		<ProjectReference Include=".\..\categoryproductwc\categoryproductwc.csproj" />
+		<ProjectReference Include=".\..\menu\menu.csproj" />
+		<ProjectReference Include=".\..\category\category.csproj" />
+		<ProjectReference Include=".\..\country\country.csproj" />
+		<ProjectReference Include=".\..\seller\seller.csproj" />
+		<ProjectReference Include=".\..\product\product.csproj" />
+		<ProjectReference Include=".\..\shoppingcart\shoppingcart.csproj" />
+		<ProjectReference Include=".\..\customer\customer.csproj" />
+		<ProjectReference Include=".\..\promotion\promotion.csproj" />
+		<ProjectReference Include=".\..\GeneXus.Programs.Common\GeneXus.Programs.Common.csproj" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="GeneXus.dll" > 
+			<HintPath>$(WebBinDirectory)\GeneXus.dll</HintPath>
+		</Reference>
+
+	</ItemGroup>
+	<ItemGroup>
+
+	</ItemGroup>
+	<ItemGroup Condition="'$(PostgresqlSupport)'=='true'">
+		<PackageReference Include="Npgsql" Version="3.2.7" PrivateAssets="All"/>
+	</ItemGroup>
+
+	<Import Project="..\DotNetCoreBaseProject.targets"/>	
+</Project>

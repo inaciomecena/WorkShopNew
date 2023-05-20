@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\GeneXus.Programs.Common.dll
+C:\Models\WorkShopNew\NetModel\web\bin\GeneXus.Programs.Common.pdb
+C:\Models\WorkShopNew\NetModel\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.dll
+C:\Models\WorkShopNew\NetModel\build\GeneXus.Programs.Common\obj\Release\net6.0\refint\GeneXus.Programs.Common.dll
+C:\Models\WorkShopNew\NetModel\build\GeneXus.Programs.Common\obj\Release\net6.0\GeneXus.Programs.Common.pdb
+C:\Models\WorkShopNew\NetModel\build\GeneXus.Programs.Common\obj\Release\net6.0\ref\GeneXus.Programs.Common.dll
