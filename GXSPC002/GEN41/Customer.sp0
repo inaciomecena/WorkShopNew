@@ -1580,7 +1580,7 @@ pgm_parm_i(proc,13,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ '
  
 pgm_callprotocol_i(trn,7,'CUSTOMER','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,30,'GX0030','INTERNAL','Unsecure').
-pgm_callprotocol_i(web,49,'WWCUSTOMER','INTERNAL','').
+pgm_callprotocol_i(web,49,'WWCUSTOMER','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,9,'NOTAUTHORIZED','INTERNAL','Unsecure').
 pgm_callprotocol_i(proc,13,'ISAUTHORIZED','INTERNAL','Unsecure').
  

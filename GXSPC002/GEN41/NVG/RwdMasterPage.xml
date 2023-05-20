@@ -15,6 +15,39 @@
 <MsgCode>spc0024</MsgCode>
 <Location>
 <Type>Events</Type>
+<Line>60</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>Product</Token>
+<Token>.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>66</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>Customer</Token>
+<Token>.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Events</Type>
+<Line>102</Line></Location>
+<Message>
+<Token>Not enough parameters </Token>
+<Token>calling</Token>
+<Sp></Sp>
+<Token>Promotion</Token>
+<Token>.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0024</MsgCode>
+<Location>
+<Type>Events</Type>
 <Line>114</Line></Location>
 <Message>
 <Token>Not enough parameters </Token>

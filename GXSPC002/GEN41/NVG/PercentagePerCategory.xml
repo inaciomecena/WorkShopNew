@@ -9,7 +9,7 @@
 <ObjDesc>Percentage Per Category</ObjDesc>
 <ObjPgmName>PercentagePerCategory</ObjPgmName>
 <ObjClsName>Procedure</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <OutputDevices>

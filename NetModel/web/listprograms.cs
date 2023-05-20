@@ -99,9 +99,39 @@ namespace GeneXus.Programs {
             this.cleanup();
             if (true) return;
          }
+         AV11name = "WWCustomer";
+         AV12description = "Customers";
+         AV13link = formatLink("wwcustomer.aspx") ;
+         /* Execute user subroutine: 'ADDPROGRAM' */
+         S111 ();
+         if ( returnInSub )
+         {
+            this.cleanup();
+            if (true) return;
+         }
          AV11name = "WWMenu";
          AV12description = "Menus";
          AV13link = formatLink("wwmenu.aspx") ;
+         /* Execute user subroutine: 'ADDPROGRAM' */
+         S111 ();
+         if ( returnInSub )
+         {
+            this.cleanup();
+            if (true) return;
+         }
+         AV11name = "WWProduct";
+         AV12description = "Products";
+         AV13link = formatLink("wwproduct.aspx") ;
+         /* Execute user subroutine: 'ADDPROGRAM' */
+         S111 ();
+         if ( returnInSub )
+         {
+            this.cleanup();
+            if (true) return;
+         }
+         AV11name = "WWPromotion";
+         AV12description = "Promotions";
+         AV13link = formatLink("wwpromotion.aspx") ;
          /* Execute user subroutine: 'ADDPROGRAM' */
          S111 ();
          if ( returnInSub )

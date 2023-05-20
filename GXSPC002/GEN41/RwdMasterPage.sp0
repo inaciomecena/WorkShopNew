@@ -799,6 +799,9 @@ html_comp_i(52,'Controlname','Contentholder',v,[ str ]).
  
  
  
+warn_gen_i(msg(events(60,[]),spc0024,[ 'Not enough parameters ',calling,' ','Product','.' ])).
+warn_gen_i(msg(events(66,[]),spc0024,[ 'Not enough parameters ',calling,' ','Customer','.' ])).
+warn_gen_i(msg(events(102,[]),spc0024,[ 'Not enough parameters ',calling,' ','Promotion','.' ])).
 warn_gen_i(msg(events(114,[]),spc0024,[ 'Not enough parameters ',calling,' ','Country','.' ])).
 warn_gen_i(msg(events(120,[]),spc0024,[ 'Not enough parameters ',calling,' ','Category','.' ])).
  
@@ -902,14 +905,14 @@ pgm_parm_i(web,21,'CUSTOMERSANDSHOPPINGCARTS',[],[]).
 pgm_parm_i(trn,2,'CATEGORY',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'CategoryId',in,[] ] ]).
 pgm_parm_i(trn,3,'COUNTRY',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'CountryId',in,[] ] ]).
 pgm_parm_i(web,20,'STARTUP',[],[]).
-pgm_parm_i(trn,8,'PROMOTION',[],[]).
+pgm_parm_i(trn,8,'PROMOTION',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'PromotionId',in,[] ] ]).
 pgm_parm_i(web,19,'CATEGORIESANDPRODUCTS',[],[]).
 pgm_parm_i(web,18,'COUNTRIESANDCUSTOMERS',[],[]).
 pgm_parm_i(web,17,'INCREASEPRICES',[],[]).
 pgm_parm_i(web,16,'WWSHOPPINGCART',[],[]).
 pgm_parm_i(web,14,'WWSELLER',[],[]).
-pgm_parm_i(trn,7,'CUSTOMER',[],[]).
-pgm_parm_i(trn,5,'PRODUCT',[],[]).
+pgm_parm_i(trn,7,'CUSTOMER',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'CustomerId',in,[] ] ]).
+pgm_parm_i(trn,5,'PRODUCT',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'ProductId',in,[] ] ]).
  
 pgm_callprotocol_i(web,4,'RWDMASTERPAGE','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,23,'PRODUCTSPERCOUNTRY','INTERNAL','Unsecure').

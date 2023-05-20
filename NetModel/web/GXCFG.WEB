@@ -56,7 +56,7 @@
       <add  key="wcf:serviceHostingEnvironment:useClassicReadEntityBodyMode" value="true"/>
       <add  key="HTTP_PROTOCOL" value="Unsecure"/>
       <add  key="SAMESITE_COOKIE" value="Lax"/>
-      <add  key="CACHE_INVALIDATION_TOKEN" value="20235192305914"/>
+      <add  key="CACHE_INVALIDATION_TOKEN" value="20235192349271"/>
    </appSettings>
    <languages >
       <Portuguese  code="por" time_fmt="24" decimal_point="," thousand_sep="." date_fmt="DMY" culture="pt-BR"/>

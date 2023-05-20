@@ -16,7 +16,17 @@
 <GenId>41</GenId>
 <GenName>Default (.NET)</GenName></Generator>
 <FormClass>HTML</FormClass>
-<Parameters></Parameters>
+<Parameters>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Mode</VarId>
+<VarName>&amp;Mode</VarName></Variable></Parameter>
+<Parameter>
+<IO>in</IO>
+<Variable>
+<VarId>Promotionid</VarId>
+<VarName>&amp;PromotionId</VarName></Variable></Parameter></Parameters>
 <Levels>
 <Level>
 <LevelType>Trn</LevelType>
@@ -236,24 +246,5 @@
 <AttriId>12</AttriId>
 <AttriName>ProductId</AttriName>
 <Description>Product Id</Description></Attribute></OutputParameters>
-<PromptType>System</PromptType></Prompt>
-<Prompt>
-<Table>
-<TableId>7</TableId>
-<TableName>Promotion</TableName>
-<Description>Promotion</Description></Table>
-<Object>
-<ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
-<ObjCls>13</ObjCls>
-<ObjId>35</ObjId>
-<ObjName>Gx0070</ObjName>
-<ObjPgmName>Gx0070</ObjPgmName>
-<ObjClsName>Web Panel</ObjClsName></Object>
-<InputParameters></InputParameters>
-<OutputParameters>
-<Attribute>
-<AttriId>15</AttriId>
-<AttriName>PromotionId</AttriName>
-<Description>Promotion Id</Description></Attribute></OutputParameters>
 <PromptType>System</PromptType></Prompt></Prompts>
 <Suggests></Suggests></ObjectSpec>

@@ -128,7 +128,7 @@ attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ])
  
  
  
-function_i(1,'Isauthorized',yes,udp,o(1,'IsAuthorized'),[],31,'Isauthorized',[ [ t('Name',23) ] ]).
+function_i(1,'Isauthorized',yes,udp,o(1,'IsAuthorized'),[],46,'Isauthorized',[ [ t('Name',23) ] ]).
  
  
  
@@ -157,8 +157,8 @@ dom_info_i(32,[ 'GeneXus\Url' ]).
  
 break_i(1,rpt,0,[],[ [],[],[] ]).
  
-b_group_i(1,1,lit,0,1,29).
-b_group_i(1,2,lit,0,30,0).
+b_group_i(1,1,lit,0,1,44).
+b_group_i(1,2,lit,0,45,0).
  
 b_line_i(0,1,1,cmd,0,[]).
 b_line_i(1,1,1,cmd,0,[]).
@@ -174,32 +174,47 @@ b_line_i(10,1,1,cmd,0,[ t('',107,10,0),t('Description',23,0,0),t(=,10,0,0),t('"C
 b_line_i(11,1,1,cmd,0,[ t('',107,11,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWCountry'),28,0,0),t(')',4,0,0) ]).
 b_line_i(12,1,1,cmd,0,[ t('',145,12,0),t('''ADDPROGRAM''',3,12,4) ]).
 b_line_i(13,1,1,cmd,0,[]).
-b_line_i(14,1,1,cmd,0,[ t('',107,14,0),t('Name',23,0,0),t(=,10,0,0),t('"WWMenu"',3,0,0) ]).
-b_line_i(15,1,1,cmd,0,[ t('',107,15,0),t('Description',23,0,0),t(=,10,0,0),t('"Menus"',3,0,0) ]).
-b_line_i(16,1,1,cmd,0,[ t('',107,16,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWMenu'),28,0,0),t(')',4,0,0) ]).
+b_line_i(14,1,1,cmd,0,[ t('',107,14,0),t('Name',23,0,0),t(=,10,0,0),t('"WWCustomer"',3,0,0) ]).
+b_line_i(15,1,1,cmd,0,[ t('',107,15,0),t('Description',23,0,0),t(=,10,0,0),t('"Customers"',3,0,0) ]).
+b_line_i(16,1,1,cmd,0,[ t('',107,16,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWCustomer'),28,0,0),t(')',4,0,0) ]).
 b_line_i(17,1,1,cmd,0,[ t('',145,17,0),t('''ADDPROGRAM''',3,17,4) ]).
 b_line_i(18,1,1,cmd,0,[]).
-b_line_i(19,1,1,cmd,0,[ t('',107,19,0),t('Name',23,0,0),t(=,10,0,0),t('"WWSeller"',3,0,0) ]).
-b_line_i(20,1,1,cmd,0,[ t('',107,20,0),t('Description',23,0,0),t(=,10,0,0),t('"Sellers"',3,0,0) ]).
-b_line_i(21,1,1,cmd,0,[ t('',107,21,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWSeller'),28,0,0),t(')',4,0,0) ]).
+b_line_i(19,1,1,cmd,0,[ t('',107,19,0),t('Name',23,0,0),t(=,10,0,0),t('"WWMenu"',3,0,0) ]).
+b_line_i(20,1,1,cmd,0,[ t('',107,20,0),t('Description',23,0,0),t(=,10,0,0),t('"Menus"',3,0,0) ]).
+b_line_i(21,1,1,cmd,0,[ t('',107,21,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWMenu'),28,0,0),t(')',4,0,0) ]).
 b_line_i(22,1,1,cmd,0,[ t('',145,22,0),t('''ADDPROGRAM''',3,22,4) ]).
 b_line_i(23,1,1,cmd,0,[]).
-b_line_i(24,1,1,cmd,0,[ t('',107,24,0),t('Name',23,0,0),t(=,10,0,0),t('"WWShoppingCart"',3,0,0) ]).
-b_line_i(25,1,1,cmd,0,[ t('',107,25,0),t('Description',23,0,0),t(=,10,0,0),t('"Shopping Carts"',3,0,0) ]).
-b_line_i(26,1,1,cmd,0,[ t('',107,26,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWShoppingCart'),28,0,0),t(')',4,0,0) ]).
+b_line_i(24,1,1,cmd,0,[ t('',107,24,0),t('Name',23,0,0),t(=,10,0,0),t('"WWProduct"',3,0,0) ]).
+b_line_i(25,1,1,cmd,0,[ t('',107,25,0),t('Description',23,0,0),t(=,10,0,0),t('"Products"',3,0,0) ]).
+b_line_i(26,1,1,cmd,0,[ t('',107,26,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWProduct'),28,0,0),t(')',4,0,0) ]).
 b_line_i(27,1,1,cmd,0,[ t('',145,27,0),t('''ADDPROGRAM''',3,27,4) ]).
 b_line_i(28,1,1,cmd,0,[]).
-b_line_i(29,1,1,cmd,0,[ t('',143,29,0),t('''ADDPROGRAM''',3,29,5) ]).
-b_line_i(30,1,2,cmd,0,[ t('',107,30,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
-b_line_i(31,1,2,cmd,0,[ t('',107,31,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('udp(',1,0,0),t('Isauthorized',3,0,0),t(31,3,0,0),t('Name',23,0,0),t(')',4,0,0) ]).
-b_line_i(32,1,2,cmd,0,[ t('',109,32,0),t('(',0,0,5),t('Isauthorized',23,0,6),t(')',4,0,19) ]).
-b_line_i(33,1,2,cmd,0,[ t('',107,33,0),t('Programname',23,0,0),t(=,10,0,0),t([ 'ProgramNames.ProgramName',[ t('(',0,33,131),t(')',4,33,132) ],n ],46,0,0) ]).
-b_line_i(34,1,2,cmd,0,[ t('',107,34,0),t([ t('Programname',23,0,0),t('Name',3,0,0) ],29,0,0),t(=,10,0,0),t('Name',23,0,0) ]).
-b_line_i(35,1,2,cmd,0,[ t('',107,35,0),t([ t('Programname',23,0,0),t('Description',3,0,0) ],29,0,0),t(=,10,0,0),t('Description',23,0,0) ]).
-b_line_i(36,1,2,cmd,0,[ t('',107,36,0),t([ t('Programname',23,0,0),t('Link',3,0,0) ],29,0,0),t(=,10,0,0),t('Link',23,0,0) ]).
-b_line_i(37,1,2,cmd,0,[ t('',107,37,0),t([ t('Programnames',23,37,3),t('add(',1,37,17) ],31,37,3),t('Programname',23,0,22),t(')',4,0,34) ]).
-b_line_i(38,1,2,cmd,0,[ t('',111,38,0) ]).
-b_line_i(39,1,2,cmd,0,[ t('',144,39,0) ]).
+b_line_i(29,1,1,cmd,0,[ t('',107,29,0),t('Name',23,0,0),t(=,10,0,0),t('"WWPromotion"',3,0,0) ]).
+b_line_i(30,1,1,cmd,0,[ t('',107,30,0),t('Description',23,0,0),t(=,10,0,0),t('"Promotions"',3,0,0) ]).
+b_line_i(31,1,1,cmd,0,[ t('',107,31,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWPromotion'),28,0,0),t(')',4,0,0) ]).
+b_line_i(32,1,1,cmd,0,[ t('',145,32,0),t('''ADDPROGRAM''',3,32,4) ]).
+b_line_i(33,1,1,cmd,0,[]).
+b_line_i(34,1,1,cmd,0,[ t('',107,34,0),t('Name',23,0,0),t(=,10,0,0),t('"WWSeller"',3,0,0) ]).
+b_line_i(35,1,1,cmd,0,[ t('',107,35,0),t('Description',23,0,0),t(=,10,0,0),t('"Sellers"',3,0,0) ]).
+b_line_i(36,1,1,cmd,0,[ t('',107,36,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWSeller'),28,0,0),t(')',4,0,0) ]).
+b_line_i(37,1,1,cmd,0,[ t('',145,37,0),t('''ADDPROGRAM''',3,37,4) ]).
+b_line_i(38,1,1,cmd,0,[]).
+b_line_i(39,1,1,cmd,0,[ t('',107,39,0),t('Name',23,0,0),t(=,10,0,0),t('"WWShoppingCart"',3,0,0) ]).
+b_line_i(40,1,1,cmd,0,[ t('',107,40,0),t('Description',23,0,0),t(=,10,0,0),t('"Shopping Carts"',3,0,0) ]).
+b_line_i(41,1,1,cmd,0,[ t('',107,41,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWShoppingCart'),28,0,0),t(')',4,0,0) ]).
+b_line_i(42,1,1,cmd,0,[ t('',145,42,0),t('''ADDPROGRAM''',3,42,4) ]).
+b_line_i(43,1,1,cmd,0,[]).
+b_line_i(44,1,1,cmd,0,[ t('',143,44,0),t('''ADDPROGRAM''',3,44,5) ]).
+b_line_i(45,1,2,cmd,0,[ t('',107,45,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('TRUE',40,0,0) ]).
+b_line_i(46,1,2,cmd,0,[ t('',107,46,0),t('Isauthorized',23,0,0),t(=,10,0,0),t('udp(',1,0,0),t('Isauthorized',3,0,0),t(46,3,0,0),t('Name',23,0,0),t(')',4,0,0) ]).
+b_line_i(47,1,2,cmd,0,[ t('',109,47,0),t('(',0,0,5),t('Isauthorized',23,0,6),t(')',4,0,19) ]).
+b_line_i(48,1,2,cmd,0,[ t('',107,48,0),t('Programname',23,0,0),t(=,10,0,0),t([ 'ProgramNames.ProgramName',[ t('(',0,48,131),t(')',4,48,132) ],n ],46,0,0) ]).
+b_line_i(49,1,2,cmd,0,[ t('',107,49,0),t([ t('Programname',23,0,0),t('Name',3,0,0) ],29,0,0),t(=,10,0,0),t('Name',23,0,0) ]).
+b_line_i(50,1,2,cmd,0,[ t('',107,50,0),t([ t('Programname',23,0,0),t('Description',3,0,0) ],29,0,0),t(=,10,0,0),t('Description',23,0,0) ]).
+b_line_i(51,1,2,cmd,0,[ t('',107,51,0),t([ t('Programname',23,0,0),t('Link',3,0,0) ],29,0,0),t(=,10,0,0),t('Link',23,0,0) ]).
+b_line_i(52,1,2,cmd,0,[ t('',107,52,0),t([ t('Programnames',23,52,3),t('add(',1,52,17) ],31,52,3),t('Programname',23,0,22),t(')',4,0,34) ]).
+b_line_i(53,1,2,cmd,0,[ t('',111,53,0) ]).
+b_line_i(54,1,2,cmd,0,[ t('',144,54,0) ]).
  
  
  
@@ -336,7 +351,10 @@ struct_dt_elem_i([ 26,57,85 ],3,pic,'99/99/99').
 pgm_parm_i(proc,13,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
 pgm_parm_i(web,16,'WWSHOPPINGCART',[],[]).
 pgm_parm_i(web,14,'WWSELLER',[],[]).
+pgm_parm_i(web,58,'WWPROMOTION',[],[]).
+pgm_parm_i(web,53,'WWPRODUCT',[],[]).
 pgm_parm_i(web,12,'WWMENU',[],[]).
+pgm_parm_i(web,49,'WWCUSTOMER',[],[]).
 pgm_parm_i(web,39,'WWCOUNTRY',[],[]).
 pgm_parm_i(web,45,'WWCATEGORY',[],[]).
  
@@ -344,7 +362,10 @@ pgm_callprotocol_i(proc,14,'LISTPROGRAMS','INTERNAL','Unsecure').
 pgm_callprotocol_i(proc,13,'ISAUTHORIZED','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,16,'WWSHOPPINGCART','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,14,'WWSELLER','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,58,'WWPROMOTION','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,53,'WWPRODUCT','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,12,'WWMENU','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,49,'WWCUSTOMER','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,39,'WWCOUNTRY','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,45,'WWCATEGORY','INTERNAL','Unsecure').
  

@@ -2345,7 +2345,7 @@ pgm_callprotocol_i(trn,5,'PRODUCT','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,29,'GX0020','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,31,'GX0040','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,30,'GX0030','INTERNAL','Unsecure').
-pgm_callprotocol_i(web,53,'WWPRODUCT','INTERNAL','').
+pgm_callprotocol_i(web,53,'WWPRODUCT','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,9,'NOTAUTHORIZED','INTERNAL','Unsecure').
 pgm_callprotocol_i(proc,13,'ISAUTHORIZED','INTERNAL','Unsecure').
  

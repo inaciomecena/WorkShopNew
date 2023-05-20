@@ -1,8 +1,59 @@
 <Objects>
   <Object>
     <Type>c9584656-94b6-4ccd-890f-332d11fc2c25</Type>
-    <Id>7</Id>
-    <Part>c44bd5ff-f918-415b-98e6-aca44fed84fa</Part>
+    <Id>19</Id>
+    <Part>d24a58ad-57ba-41b7-9e6e-eaca3543c778</Part>
   </Object>
-  <Recent />
+  <Recent>
+    <RecentKBObjectsList>
+      <MaximumItems>10</MaximumItems>
+      <RecentKBObjects>
+        <RecentKBObject>
+          <Key>c9584656-94b6-4ccd-890f-332d11fc2c25-19</Key>
+          <Name>CategoriesAndProducts</Name>
+          <LastAccess>2023-05-19T23:50:36.278431-04:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-18</Key>
+          <Name>CustomersList</Name>
+          <LastAccess>2023-05-19T23:47:04.5394982-04:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>87313f43-5eb2-41d7-9b8c-e8d9f5bf9588-1</Key>
+          <Name>CountryProduct</Name>
+          <LastAccess>2023-05-19T23:46:57.438437-04:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-16</Key>
+          <Name>CategoriesAndProductsProc</Name>
+          <LastAccess>2023-05-19T23:46:46.3370684-04:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-3</Key>
+          <Name>Country</Name>
+          <LastAccess>2023-05-19T22:59:51.4821951-04:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>78cecefe-be7d-4980-86ce-8d6e91fba04b-5</Key>
+          <Name>WorkWithCategory</Name>
+          <LastAccess>2023-05-19T22:50:49.188173-04:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>c9584656-94b6-4ccd-890f-332d11fc2c25-20</Key>
+          <Name>StartUp</Name>
+          <LastAccess>2023-05-19T22:47:23.3310748-04:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>78cecefe-be7d-4980-86ce-8d6e91fba04b-4</Key>
+          <Name>WorkWithCountry</Name>
+          <LastAccess>2023-05-19T22:46:46.5360546-04:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>c804fdbd-7c0b-440d-8527-4316c92649a6-1</Key>
+          <Name>Carmine</Name>
+          <LastAccess>2023-05-19T21:59:44.0153667-04:00</LastAccess>
+        </RecentKBObject>
+      </RecentKBObjects>
+    </RecentKBObjectsList>
+  </Recent>
 </Objects>

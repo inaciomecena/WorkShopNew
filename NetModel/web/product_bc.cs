@@ -61,6 +61,8 @@ namespace GeneXus.Programs {
             {
                GX_msglist.addItem(endTrnMsgTxt, endTrnMsgCod, 0, "", true);
             }
+            /* Execute user event: After Trn */
+            E11052 ();
             trnEnded = 0;
             standaloneNotModal( ) ;
             standaloneModal( ) ;
@@ -114,6 +116,18 @@ namespace GeneXus.Programs {
          {
             IsConfirmed = 1;
          }
+      }
+
+      protected void E12052( )
+      {
+         /* Start Routine */
+         returnInSub = false;
+      }
+
+      protected void E11052( )
+      {
+         /* After Trn Routine */
+         returnInSub = false;
       }
 
       protected void ZM056( short GX_JID )
@@ -629,6 +643,7 @@ namespace GeneXus.Programs {
 
       public void ScanKeyStart056( )
       {
+         /* Scan By routine */
          /* Using cursor BC000521 */
          pr_default.execute(19, new Object[] {A12ProductId});
          RcdFound6 = 0;
@@ -1454,6 +1469,8 @@ namespace GeneXus.Programs {
          );
          INITTRN();
          /* Execute Start event if defined. */
+         /* Execute user event: Start */
+         E12052 ();
          standaloneNotModal( ) ;
       }
 
@@ -1496,6 +1513,7 @@ namespace GeneXus.Programs {
       private string Z9CountryName ;
       private string A9CountryName ;
       private string sMode6 ;
+      private bool returnInSub ;
       private bool Gx_longc ;
       private bool mustCommit ;
       private string Z40000ProductPhoto_GXI ;

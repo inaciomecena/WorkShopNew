@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\viewpromotion.dll
+C:\Models\WorkShopNew\NetModel\web\bin\viewpromotion.pdb
+C:\Models\WorkShopNew\NetModel\build\viewpromotion\obj\Release\net6.0\viewpromotion.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\viewpromotion\obj\Release\net6.0\viewpromotion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\viewpromotion\obj\Release\net6.0\viewpromotion.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\viewpromotion\obj\Release\net6.0\viewpromotion.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\viewpromotion\obj\Release\net6.0\viewpromotion.dll
+C:\Models\WorkShopNew\NetModel\build\viewpromotion\obj\Release\net6.0\refint\viewpromotion.dll
+C:\Models\WorkShopNew\NetModel\build\viewpromotion\obj\Release\net6.0\viewpromotion.pdb
+C:\Models\WorkShopNew\NetModel\build\viewpromotion\obj\Release\net6.0\ref\viewpromotion.dll

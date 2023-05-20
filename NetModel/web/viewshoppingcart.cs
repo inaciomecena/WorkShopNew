@@ -145,7 +145,7 @@ namespace GeneXus.Programs {
          INITWEB( ) ;
          if ( ! isAjaxCallMode( ) )
          {
-            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("rwdmasterpage", "GeneXus.Programs.rwdmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
+            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("masterpage", "GeneXus.Programs.masterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
             MasterPageObj.setDataArea(this,false);
             ValidateSpaRequest();
             MasterPageObj.webExecute();
@@ -219,7 +219,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351822113765", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202351923484942", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1059,7 +1059,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351822113879", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351923484973", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1075,7 +1075,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("viewshoppingcart.js", "?202351822113880", false, true);
+         context.AddJavascriptSource("viewshoppingcart.js", "?202351923484973", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/HistoryManager.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/json2005.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/rsh.js", "", false, true);

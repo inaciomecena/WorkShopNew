@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\customershoppingcartwc.dll
+C:\Models\WorkShopNew\NetModel\web\bin\customershoppingcartwc.pdb
+C:\Models\WorkShopNew\NetModel\build\customershoppingcartwc\obj\Release\net6.0\customershoppingcartwc.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\customershoppingcartwc\obj\Release\net6.0\customershoppingcartwc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\customershoppingcartwc\obj\Release\net6.0\customershoppingcartwc.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\customershoppingcartwc\obj\Release\net6.0\customershoppingcartwc.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\customershoppingcartwc\obj\Release\net6.0\customershoppingcartwc.dll
+C:\Models\WorkShopNew\NetModel\build\customershoppingcartwc\obj\Release\net6.0\refint\customershoppingcartwc.dll
+C:\Models\WorkShopNew\NetModel\build\customershoppingcartwc\obj\Release\net6.0\customershoppingcartwc.pdb
+C:\Models\WorkShopNew\NetModel\build\customershoppingcartwc\obj\Release\net6.0\ref\customershoppingcartwc.dll

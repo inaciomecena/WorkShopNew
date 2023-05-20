@@ -1,7 +1,7 @@
 spec_i([ trn,8,'Promotion','Promotion',[],por,'17_0_9-159740' ]).
  
-struct_i(7,0,[],[]).
-struct_i(8,7,[ 15 ],[]).
+struct_i(7,0,[ 'Pgmname','Trncontext','Mode','Promotionid','Websession' ],[]).
+struct_i(8,7,[ 'Pgmname','Trncontext',15 ],[]).
  
 level_i(8,[ 8,[ [ 8,many ],[ 6,one ] ],[ 15,12 ],[],[],[],[ 15,12 ],'IPROMOTIONPRODUCT',[ 8,[ [ [],15,15 ] ] ],[] ]).
 level_i(7,[ 7,[ [ 7,many ] ],[ 15 ],[],[],[],[ 15 ],'IPROMOTION',[ 7,[] ],[] ]).
@@ -19,7 +19,7 @@ ta_i(8,[ [ [ 8,15 ],[ 6,13 ],[ 6,27 ],[ 8,12 ] ] ]).
 ta_i(7,[ [ [ 7,15 ],[ 7,29 ],[ 7,30 ],[ 7,40000 ],[ 7,31 ],[ 7,32 ] ] ]).
  
 las_i(8,[ [ 15,12,13,27 ] ]).
-las_i(7,[ [ 15,29,30,40000,31,32 ] ]).
+las_i(7,[ [ 'Pgmname','Trncontext','Mode','Promotionid','Websession',15,29,30,40000,31,32 ] ]).
  
 lac_i(8,[ [ 12 ] ]).
 lac_i(7,[ [ 15,29,30,31,32 ] ]).
@@ -41,6 +41,7 @@ pos_i(27,[ 1,2,26 ]).
  
 repeat_i(8,[ 1,2,[],[] ]).
  
+default_i(e('Pgmname',2,2,'"Promotion"')).
  
 rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
 rule_i(0,datastore(1,'LOCK_RETRY','10')).
@@ -157,42 +158,54 @@ rule_i(8,prompt([ 6,[ [ 8,12,12 ] ],[ 12 ],[ 12 ],[ t(o(13,'Gx0060'),28),t(12,2)
 rule_i(8,rule([ a(23,[ [ 12 ],[ t(o(13,'Gx0060'),28),t(12,2) ] ]) ],[],[],[ 12 ])).
 rule_i(8,prompt([ 8,[ [ [],15,15 ],[ [],12,12 ] ],[],[],[ t(o(13,'Gx0081'),28),t(15,2),t(',',7),t(12,2) ],[ 15 ],n,[] ])).
 rule_i(8,rule([ a(23,[ [ 15,12 ],[ t(o(13,'Gx0081'),28),t(15,2),t(',',7),t(12,2) ] ]) ],[],[],[ 15,12 ])).
-rule_i(7,prompt([ 7,[ [ [],15,15 ] ],[],[],[ t(o(13,'Gx0070'),28),t(15,2) ],[],n,[] ])).
-rule_i(7,rule([ a(23,[ [ 15 ],[ t(o(13,'Gx0070'),28),t(15,2) ] ]) ],[],[],[ 15 ])).
 rule_i(0,rule([ a(22,[ 'Dlt','"Eliminar"','' ]) ],[],[],[])).
 rule_i(0,maingen(41)).
+rule_i(0,rule([ a(10,[ 'Mode','Promotionid' ]) ],[],[ insert,update,delete,display ],[])).
+rule_i(0,parmio([ [ 'Mode',in ],[ 'Promotionid',in ] ])).
 rule_i(7,rule([ a(1,msg([ t('"Campo Date Start fora do intervalo"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(31,2),t(')',4),t('.OR.',9),t(31,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ],[ insert,update ],[ 31 ])).
 rule_i(7,rule([ a(1,msg([ t('"Campo Date Finish fora do intervalo"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(32,2),t(')',4),t('.OR.',9),t(32,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ],[ insert,update ],[ 32 ])).
+rule_i(7,rule([ a(3,[ t(15,2) ]) ],[],[ insert,update,delete,display ],[ 15 ])).
+rule_i(7,rule([ a(21,[ [ 15 ] ]) ],[],[ insert,update,delete,display ],[ 15 ])).
 rule_i(7,rule([ a(1,[ t('"The start date cannot be higher than finish date"',3) ]) ],[ t(31,2),t(>,10),t(32,2) ],[ insert,update,delete,display ],[ 31,32 ])).
 rule_i(8,rule([ a(19,[ [ 12 ],msg([ t('"Não existe ''Product''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 12 ])).
  
 a_i(1,7,b,0,[],[ [],[ a(1,msg([ t('"Campo Date Start fora do intervalo"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(31,2),t(')',4),t('.OR.',9),t(31,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
 a_i(2,7,b,0,[],[ [],[ a(1,msg([ t('"Campo Date Finish fora do intervalo"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(32,2),t(')',4),t('.OR.',9),t(32,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
-a_i(3,7,b,1,[],[ [],[ a(1,[ t('"The start date cannot be higher than finish date"',3) ]) ],[ t(31,2),t(>,10),t(32,2) ] ]).
-a_i(4,7,t,7,[],[ [ [ [],15,15 ] ],'IPROMOTION',[] ]).
-a_i(5,8,t,8,[],[ [ [ [],15,15 ],[ [],12,12 ] ],'IPROMOTIONPRODUCT',[] ]).
-a_i(6,8,r,6,[],[ [ [ 8,12,12 ] ],'IPRODUCT',[] ]).
+a_i(3,7,f,15,[],[ [],[ t('Promotionid',23),t('IF',17),t('.NOT.',8),t('null(',1),t('Promotionid',23),t(')',4),t(';',18) ] ]).
+a_i(4,7,f,[ t(15,2),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
+a_i(5,7,b,5,[],[ [],[ a(1,[ t('"The start date cannot be higher than finish date"',3) ]) ],[ t(31,2),t(>,10),t(32,2) ] ]).
+a_i(6,7,t,7,[],[ [ [ [],15,15 ] ],'IPROMOTION',[] ]).
+a_i(7,8,t,8,[],[ [ [ [],15,15 ],[ [],12,12 ] ],'IPROMOTIONPRODUCT',[] ]).
+a_i(8,8,r,6,[],[ [ [ 8,12,12 ] ],'IPRODUCT',[] ]).
+a_i(9,7,f,'Pgmname',[],[ [],[ t('"Promotion"',3) ] ]).
  
 v_i(b,i,1,31).
 v_i(b,o,1,[]).
 v_i(b,i,2,32).
 v_i(b,o,2,[]).
-v_i(b,i,3,31).
-v_i(b,i,3,32).
-v_i(b,o,3,[]).
-v_i(t,i,4,15).
-v_i(t,o,4,29).
-v_i(t,o,4,30).
-v_i(t,o,4,40000).
-v_i(t,o,4,31).
-v_i(t,o,4,32).
-v_i(t,i,5,15).
-v_i(t,i,5,12).
-v_i(t,o,5,[]).
-v_i(r,i,6,12).
-v_i(r,o,6,13).
-v_i(r,o,6,27).
+v_i(f,i,3,'Promotionid').
+v_i(f,o,3,15).
+v_i(f,i,4,[]).
+v_i(f,o,4,[ t(15,2),t('Enabled',3) ]).
+v_i(b,i,5,31).
+v_i(b,i,5,32).
+v_i(b,o,5,[]).
+v_i(t,i,6,15).
+v_i(t,o,6,29).
+v_i(t,o,6,30).
+v_i(t,o,6,40000).
+v_i(t,o,6,31).
+v_i(t,o,6,32).
+v_i(t,i,7,15).
+v_i(t,i,7,12).
+v_i(t,o,7,[]).
+v_i(r,i,8,12).
+v_i(r,o,8,13).
+v_i(r,o,8,27).
+v_i(f,i,9,[]).
+v_i(f,o,9,'Pgmname').
  
+act_info_i(3,[ [ 15 ] ]).
  
  
 tbl_to_delete_i(7,[ 8,[ [ 7,15,15 ] ],d,'IPROMOTIONPRODUCT',0,[ 15,12 ],'' ]).
@@ -208,7 +221,12 @@ attri_i(30,[ 'PromotionPhoto',bits,4,0,'',0,'Promotion Photo','',0 ]).
 attri_i(29,[ 'PromotionDescription',char,50,0,'',0,'Promotion Description','',0 ]).
 attri_i(15,[ 'PromotionId',int,4,0,'ZZZ9',0,'Promotion Id','',0 ]).
 attri_i(40000,[ 'PromotionPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
+attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',11 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
+attri_i('Websession',[ 'WebSession',o(websession),4,0,'',0,'Web Session','',10 ]).
+attri_i('Trncontext',[ 'TrnContext',o('TransactionContext'),0,0,'',0,'Trn Context','',9 ]).
+attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ]).
+attri_i('Promotionid',[ 'PromotionId',int,4,0,'ZZZ9',0,'Promotion Id','',7 ]).
 attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
  
 table_i(7,[ 'Promotion',[ 15,29,30,40000,31,32 ],'Promotion','Promotion' ]).
@@ -250,8 +268,14 @@ end_i(8,0,0,[ [ [ t(15,2),t(=,10),t(15,23) ] ] ]).
  
  
  
+enum_value_i(2,42,'"INS"','Insert','"Insert"',[ none ]).
+enum_value_i(2,42,'"UPD"','Update','"Update"',[ none ]).
+enum_value_i(2,42,'"DLT"','Delete','"Delete"',[ none ]).
+enum_value_i(2,42,'"DSP"','Display','"Display"',[ none ]).
  
+enum_value_info_i(2,42,'GeneXus\TrnMode').
  
+enum_type_i(2,42,char,3,0).
  
 dom_info_i(88,[ 'Id' ]).
 dom_info_i(89,[ 'Name' ]).
@@ -259,8 +283,26 @@ dom_info_i(89,[ 'Name' ]).
  
 break_i(2,nvg,1,[],[ [],[],[] ]).
  
-b_group_i(2,1,lit,0,1,0).
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,19).
+b_group_i(2,3,lit,0,20,0).
  
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
+b_line_i(5,2,2,cmd,1,[ t('',109,5,0),t('.NOT.',8,1,5),t('udp(',1,5,23),t(o(1,'IsAuthorized'),28,5,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
+b_line_i(6,2,2,cmd,1,[ t('',104,6,0),t(o(13,'NotAuthorized'),28,1,3),t('Pgmname',23,1,17) ]).
+b_line_i(7,2,2,cmd,1,[ t('',111,7,0) ]).
+b_line_i(9,2,2,cmd,1,[ t('',107,9,0),t([ t('Trncontext',23,9,2),t('fromxml(',1,9,14) ],31,9,2),t([ t('Websession',23,1,23),t('get(',1,1,35) ],31,9,35),t('"TrnContext"',3,9,40),t(')',4,1,53),t(')',4,1,54) ]).
+b_line_i(11,2,2,cmd,1,[ t('',109,11,0),t('Mode',23,1,5),t(=,10,1,11),t([ 42,'Delete' ],44,11,13) ]).
+b_line_i(12,2,2,cmd,1,[ t('',107,12,0),t([ t('Btn_enter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Eliminar"',3,1,0) ]).
+b_line_i(13,2,2,cmd,1,[ t('',107,13,0),t([ t('Btn_enter',3,1,0),t('Tooltiptext',3,1,0) ],29,1,0),t(=,10,1,0),t('"Eliminar"',3,1,0) ]).
+b_line_i(14,2,2,cmd,1,[ t('',111,14,0) ]).
+b_line_i(17,2,2,cmd,1,[ t('',147,17,0) ]).
+b_line_i(19,2,2,cmd,1,[ t('',146,19,0),t('After Trn',3,19,7) ]).
+b_line_i(23,2,3,cmd,1,[ t('',109,23,0),t('(',0,1,5),t('Mode',23,1,6),t(=,10,1,12),t([ 42,'Delete' ],44,23,14),t('.AND.',9,1,29),t('.NOT.',8,1,35),t([ t('Trncontext',23,23,41),t('Callerondelete',3,23,53) ],29,23,53),t(')',4,1,67) ]).
+b_line_i(24,2,3,cmd,1,[ t('',104,24,0),t(o(13,'WWPromotion'),28,1,3) ]).
+b_line_i(25,2,3,cmd,1,[ t('',111,25,0) ]).
+b_line_i(27,2,3,cmd,1,[ t('',118,27,0) ]).
+b_line_i(30,2,3,cmd,1,[ t('',147,30,0) ]).
  
 sf_break_i(63,8).
  
@@ -1416,6 +1458,7 @@ tbl_att_prop_i(2,6,12,'AUTONUMBER',y).
 tbl_att_prop_i(2,6,13,'AllowNulls',n).
 tbl_att_prop_i(2,6,27,'AllowNulls',n).
  
+var_prop_i(2,'Promotionid',idBasedOn,'',v).
  
  
  
@@ -1423,25 +1466,160 @@ tbl_att_prop_i(2,6,27,'AllowNulls',n).
 trn_level_i(7,[ [ 15,29,30,40000,31,32 ],'Promotion','Promotion','Promotion','',29 ]).
 trn_level_i(8,[ [ 12,13,27 ],'Product','Product','Product','',0 ]).
  
+struct_dt_i([ 26,56,0 ],name,'TransactionContext').
+struct_dt_i([ 26,56,0 ],namespace,'WorkShopNew').
+struct_dt_i([ 26,56,0 ],'ObjName','TransactionContext').
+struct_dt_i([ 26,56,0 ],'ObjDesc','Transaction Context').
+struct_dt_i([ 26,56,0 ],'ExternalName','TransactionContext').
+struct_dt_i([ 26,56,0 ],'ExternalNamespace','WorkShopNew').
+struct_dt_i([ 26,56,0 ],'JsonInclude',idJsonNoProperty).
+struct_dt_i([ 26,56,84 ],name,'Attribute').
+struct_dt_i([ 26,56,84 ],namespace,'WorkShopNew.TransactionContext').
+struct_dt_i([ 26,56,0 ],fullname,'TransactionContext').
+struct_dt_i([ 26,56,84 ],fullname,'TransactionContext.Attribute').
+ 
+struct_dt_elem_i([ 26,56,0 ],1,name,'Callerobject').
+struct_dt_elem_i([ 26,56,0 ],1,camelname,'CallerObject').
+struct_dt_elem_i([ 26,56,0 ],1,basedon,53).
+struct_dt_elem_i([ 26,56,0 ],1,length,256).
+struct_dt_elem_i([ 26,56,0 ],1,decimals,0).
+struct_dt_elem_i([ 26,56,0 ],1,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,56,0 ],1,pic,'').
+struct_dt_elem_i([ 26,56,0 ],1,collection,'False').
+struct_dt_elem_i([ 26,56,0 ],1,'ExternalName','CallerObject').
+struct_dt_elem_i([ 26,56,0 ],1,'ExternalNamespace','WorkShopNew').
+struct_dt_elem_i([ 26,56,0 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,56,0 ],1,'XmlName','').
+struct_dt_elem_i([ 26,56,0 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,56,0 ],1,soaptype,'').
+struct_dt_elem_i([ 26,56,0 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,56,0 ],1,'JsonName','').
+struct_dt_elem_i([ 26,56,0 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,56,0 ],2,name,'Callerondelete').
+struct_dt_elem_i([ 26,56,0 ],2,camelname,'CallerOnDelete').
+struct_dt_elem_i([ 26,56,0 ],2,length,4).
+struct_dt_elem_i([ 26,56,0 ],2,decimals,0).
+struct_dt_elem_i([ 26,56,0 ],2,type,[ 15,4,0 ]).
+struct_dt_elem_i([ 26,56,0 ],2,pic,'').
+struct_dt_elem_i([ 26,56,0 ],2,collection,'False').
+struct_dt_elem_i([ 26,56,0 ],2,'ExternalName','CallerOnDelete').
+struct_dt_elem_i([ 26,56,0 ],2,'ExternalNamespace','WorkShopNew').
+struct_dt_elem_i([ 26,56,0 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,56,0 ],2,'XmlName','').
+struct_dt_elem_i([ 26,56,0 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,56,0 ],2,soaptype,'').
+struct_dt_elem_i([ 26,56,0 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,56,0 ],2,'JsonName','').
+struct_dt_elem_i([ 26,56,0 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,56,0 ],3,name,'Callerurl').
+struct_dt_elem_i([ 26,56,0 ],3,camelname,'CallerURL').
+struct_dt_elem_i([ 26,56,0 ],3,basedon,32).
+struct_dt_elem_i([ 26,56,0 ],3,length,1000).
+struct_dt_elem_i([ 26,56,0 ],3,decimals,0).
+struct_dt_elem_i([ 26,56,0 ],3,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,56,0 ],3,pic,'').
+struct_dt_elem_i([ 26,56,0 ],3,collection,'False').
+struct_dt_elem_i([ 26,56,0 ],3,'ExternalName','CallerURL').
+struct_dt_elem_i([ 26,56,0 ],3,'ExternalNamespace','WorkShopNew').
+struct_dt_elem_i([ 26,56,0 ],3,'XmlType','Element').
+struct_dt_elem_i([ 26,56,0 ],3,'XmlName','').
+struct_dt_elem_i([ 26,56,0 ],3,'XmlNamespace','').
+struct_dt_elem_i([ 26,56,0 ],3,soaptype,'').
+struct_dt_elem_i([ 26,56,0 ],3,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,56,0 ],3,'JsonName','').
+struct_dt_elem_i([ 26,56,0 ],3,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,56,0 ],4,name,'Transactionname').
+struct_dt_elem_i([ 26,56,0 ],4,camelname,'TransactionName').
+struct_dt_elem_i([ 26,56,0 ],4,basedon,53).
+struct_dt_elem_i([ 26,56,0 ],4,length,256).
+struct_dt_elem_i([ 26,56,0 ],4,decimals,0).
+struct_dt_elem_i([ 26,56,0 ],4,type,[ 13,256,0 ]).
+struct_dt_elem_i([ 26,56,0 ],4,pic,'').
+struct_dt_elem_i([ 26,56,0 ],4,collection,'False').
+struct_dt_elem_i([ 26,56,0 ],4,'ExternalName','TransactionName').
+struct_dt_elem_i([ 26,56,0 ],4,'ExternalNamespace','WorkShopNew').
+struct_dt_elem_i([ 26,56,0 ],4,'XmlType','Element').
+struct_dt_elem_i([ 26,56,0 ],4,'XmlName','').
+struct_dt_elem_i([ 26,56,0 ],4,'XmlNamespace','').
+struct_dt_elem_i([ 26,56,0 ],4,soaptype,'').
+struct_dt_elem_i([ 26,56,0 ],4,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,56,0 ],4,'JsonName','').
+struct_dt_elem_i([ 26,56,0 ],4,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,56,0 ],5,name,'Attributes').
+struct_dt_elem_i([ 26,56,0 ],5,camelname,'Attributes').
+struct_dt_elem_i([ 26,56,0 ],5,type,[ [ 26,56,84 ],0,0 ]).
+struct_dt_elem_i([ 26,56,0 ],5,pic,'').
+struct_dt_elem_i([ 26,56,0 ],5,collection,'True').
+struct_dt_elem_i([ 26,56,0 ],5,'ObjName','Attributes').
+struct_dt_elem_i([ 26,56,0 ],5,'ObjDesc','Attributes').
+struct_dt_elem_i([ 26,56,0 ],5,'CollectionItemName','Attribute').
+struct_dt_elem_i([ 26,56,0 ],5,'XmlName','').
+struct_dt_elem_i([ 26,56,0 ],5,'XmlCollectionItemName','').
+struct_dt_elem_i([ 26,56,0 ],5,'XmlNamespace','').
+struct_dt_elem_i([ 26,56,0 ],5,'CollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,56,0 ],5,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,56,0 ],5,'JsonName','').
+struct_dt_elem_i([ 26,56,0 ],5,'JsonInclude',idJsonNoProperty).
+struct_dt_elem_i([ 26,56,0 ],5,'JsonCollectionSerialization',idXmlCollectionWrapped).
+struct_dt_elem_i([ 26,56,84 ],1,name,'Attributename').
+struct_dt_elem_i([ 26,56,84 ],1,camelname,'AttributeName').
+struct_dt_elem_i([ 26,56,84 ],1,length,128).
+struct_dt_elem_i([ 26,56,84 ],1,decimals,0).
+struct_dt_elem_i([ 26,56,84 ],1,type,[ 13,128,0 ]).
+struct_dt_elem_i([ 26,56,84 ],1,pic,'').
+struct_dt_elem_i([ 26,56,84 ],1,collection,'False').
+struct_dt_elem_i([ 26,56,84 ],1,'ExternalName','AttributeName').
+struct_dt_elem_i([ 26,56,84 ],1,'ExternalNamespace','WorkShopNew').
+struct_dt_elem_i([ 26,56,84 ],1,'XmlType','Element').
+struct_dt_elem_i([ 26,56,84 ],1,'XmlName','').
+struct_dt_elem_i([ 26,56,84 ],1,'XmlNamespace','').
+struct_dt_elem_i([ 26,56,84 ],1,soaptype,'').
+struct_dt_elem_i([ 26,56,84 ],1,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,56,84 ],1,'JsonName','').
+struct_dt_elem_i([ 26,56,84 ],1,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,56,84 ],2,name,'Attributevalue').
+struct_dt_elem_i([ 26,56,84 ],2,camelname,'AttributeValue').
+struct_dt_elem_i([ 26,56,84 ],2,length,1000).
+struct_dt_elem_i([ 26,56,84 ],2,decimals,0).
+struct_dt_elem_i([ 26,56,84 ],2,type,[ 13,1000,0 ]).
+struct_dt_elem_i([ 26,56,84 ],2,pic,'').
+struct_dt_elem_i([ 26,56,84 ],2,collection,'False').
+struct_dt_elem_i([ 26,56,84 ],2,'ExternalName','AttributeValue').
+struct_dt_elem_i([ 26,56,84 ],2,'ExternalNamespace','WorkShopNew').
+struct_dt_elem_i([ 26,56,84 ],2,'XmlType','Element').
+struct_dt_elem_i([ 26,56,84 ],2,'XmlName','').
+struct_dt_elem_i([ 26,56,84 ],2,'XmlNamespace','').
+struct_dt_elem_i([ 26,56,84 ],2,soaptype,'').
+struct_dt_elem_i([ 26,56,84 ],2,'XmlInclude',idXmlIncludeAlways).
+struct_dt_elem_i([ 26,56,84 ],2,'JsonName','').
+struct_dt_elem_i([ 26,56,84 ],2,'JsonInclude',idJsonEmpty).
+struct_dt_elem_i([ 26,56,0 ],3,pic,'99/99/99').
  
  
  
  
  
+sub_info_i(146,'Start',1,17,[ [ 'Pgmname','Websession','Mode' ],[ 'Trncontext',[ t('Btn_enter',3),t('Caption',3) ],[ t('Btn_enter',3),t('Tooltiptext',3) ] ] ]).
+sub_info_i(146,'After Trn',19,30,[ [ 'Mode','Trncontext' ],[] ]).
  
- 
-pgm_parm_i(web,35,'GX0070',[ [ int,4,0,0 ] ],[ [ pPromotionId,out,[] ] ]).
 pgm_parm_i(web,36,'GX0081',[ [ int,4,0,0 ],[ int,4,0,0 ] ],[ [ pPromotionId,in,[] ],[ pProductId,out,[] ] ]).
 pgm_parm_i(web,32,'GX0060',[ [ int,4,0,0 ] ],[ [ pProductId,out,[] ] ]).
+pgm_parm_i(web,58,'WWPROMOTION',[],[]).
+pgm_parm_i(web,9,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
+pgm_parm_i(proc,13,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(trn,8,'PROMOTION','INTERNAL','Unsecure').
-pgm_callprotocol_i(web,35,'GX0070','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,36,'GX0081','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,32,'GX0060','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,58,'WWPROMOTION','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,9,'NOTAUTHORIZED','INTERNAL','Unsecure').
+pgm_callprotocol_i(proc,13,'ISAUTHORIZED','INTERNAL','Unsecure').
  
  
  
  
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
  
  
  

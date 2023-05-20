@@ -158,7 +158,7 @@ namespace GeneXus.Programs {
          INITWEB( ) ;
          if ( ! isAjaxCallMode( ) )
          {
-            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("rwdmasterpage", "GeneXus.Programs.rwdmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
+            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("masterpage", "GeneXus.Programs.masterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
             MasterPageObj.setDataArea(this,false);
             ValidateSpaRequest();
             MasterPageObj.webExecute();
@@ -232,7 +232,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351822114424", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202351923485031", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -948,7 +948,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351822114461", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351923485049", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -964,7 +964,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("categoriesandproducts.js", "?202351822114461", false, true);
+         context.AddJavascriptSource("categoriesandproducts.js", "?202351923485049", false, true);
          /* End function include_jscripts */
       }
 

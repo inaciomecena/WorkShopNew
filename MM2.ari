@@ -10,7 +10,6 @@ pgm_main_i(mnproc,1,'CATEGORY_DATAPROVIDER',[ 41,'ACATEGORY_DATAPROVIDER','Categ
 pgm_main_i(mnproc,2,'COUNTRY_DATAPROVIDER',[ 41,'ACOUNTRY_DATAPROVIDER','Country_Data Provider','','','','INTERNAL' ]).
 pgm_main_i(web,20,'STARTUP',[ 41,'STARTUP','Start Up','','','','' ]).
  
-pgm_prop_i(trn,5,'PRODUCT',idISBUSINESSCOMPONENT,'-1').
 pgm_prop_i(web,25,'SHOPPINGCARTPRODUCTWC','WEB_COMP','Yes').
 pgm_prop_i(web,25,'SHOPPINGCARTPRODUCTWC','URLAccess','No').
 pgm_prop_i(web,10,'TABBEDVIEW','WEB_COMP','Yes').
@@ -52,13 +51,28 @@ pgm_prop_i(web,46,'CATEGORYGENERAL','URLAccess','No').
 pgm_prop_i(web,40,'COUNTRYGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,40,'COUNTRYGENERAL','URLAccess','No').
 pgm_prop_i(trn,2,'CATEGORY',idISBUSINESSCOMPONENT,'-1').
-pgm_prop_i(web,4,'RWDMASTERPAGE','WEB_COMP','Master').
 pgm_prop_i(mnproc,1,'ACATEGORY_DATAPROVIDER','OutputSDT',o(0,'Category')).
 pgm_prop_i(mnproc,1,'CATEGORY_DATAPROVIDER','OutputSDT',o(0,'Category')).
 pgm_prop_i(mnproc,2,'ACOUNTRY_DATAPROVIDER','OutputSDT',o(0,'Country')).
 pgm_prop_i(mnproc,2,'COUNTRY_DATAPROVIDER','OutputSDT',o(0,'Country')).
 pgm_prop_i(web,7,'MASTERPAGE','WEB_COMP','Master').
 pgm_prop_i(trn,3,'COUNTRY',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,60,'PROMOTIONPRODUCTWC','WEB_COMP','Yes').
+pgm_prop_i(web,60,'PROMOTIONPRODUCTWC','URLAccess','No').
+pgm_prop_i(web,51,'CUSTOMERSHOPPINGCARTWC','WEB_COMP','Yes').
+pgm_prop_i(web,51,'CUSTOMERSHOPPINGCARTWC','URLAccess','No').
+pgm_prop_i(web,56,'PRODUCTPRODUCT1WC','WEB_COMP','Yes').
+pgm_prop_i(web,56,'PRODUCTPRODUCT1WC','URLAccess','No').
+pgm_prop_i(web,54,'PRODUCTGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,54,'PRODUCTGENERAL','URLAccess','No').
+pgm_prop_i(trn,5,'PRODUCT',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,50,'CUSTOMERGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,50,'CUSTOMERGENERAL','URLAccess','No').
+pgm_prop_i(web,59,'PROMOTIONGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,59,'PROMOTIONGENERAL','URLAccess','No').
+pgm_prop_i(web,4,'RWDMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,55,'PRODUCTPRODUCTWC','WEB_COMP','Yes').
+pgm_prop_i(web,55,'PRODUCTPRODUCTWC','URLAccess','No').
  
 model_wrkinfo_i([ '.NET Environment','NetModel' ]).
  

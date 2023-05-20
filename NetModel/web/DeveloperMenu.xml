@@ -4,24 +4,6 @@
    <Charset>UTF-8</Charset>
    <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus17/</Path>
    <Object>
-      <ObjCls>0</ObjCls>
-      <ObjName>Product</ObjName>
-      <ObjDesc>Product</ObjDesc>
-      <ObjLink>product.aspx</ObjLink>
-   </Object>
-   <Object>
-      <ObjCls>0</ObjCls>
-      <ObjName>Customer</ObjName>
-      <ObjDesc>Customer</ObjDesc>
-      <ObjLink>customer.aspx</ObjLink>
-   </Object>
-   <Object>
-      <ObjCls>0</ObjCls>
-      <ObjName>Promotion</ObjName>
-      <ObjDesc>Promotion</ObjDesc>
-      <ObjLink>promotion.aspx</ObjLink>
-   </Object>
-   <Object>
       <ObjCls>13</ObjCls>
       <ObjName>Home</ObjName>
       <ObjDesc>Home</ObjDesc>
@@ -98,6 +80,24 @@
       <ObjName>WWCategory</ObjName>
       <ObjDesc>Categories</ObjDesc>
       <ObjLink>wwcategory.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWCustomer</ObjName>
+      <ObjDesc>Customers</ObjDesc>
+      <ObjLink>wwcustomer.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWProduct</ObjName>
+      <ObjDesc>Products</ObjDesc>
+      <ObjLink>wwproduct.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWPromotion</ObjName>
+      <ObjDesc>Promotions</ObjDesc>
+      <ObjLink>wwpromotion.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>1</ObjCls>
