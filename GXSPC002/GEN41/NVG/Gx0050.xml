@@ -52,7 +52,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute></Order>
+<Description>Cliente Id</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>ICUSTOMER</IndexName>
 <LevelOptions></LevelOptions>
@@ -65,7 +65,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute>
+<Description>Cliente Id</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
@@ -81,7 +81,7 @@
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>CustomerName</AttriName>
-<Description>Customer Name</Description></Attribute>
+<Description>Nome</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
@@ -102,7 +102,7 @@
 <Attribute>
 <AttriId>22</AttriId>
 <AttriName>CustomerEmail</AttriName>
-<Description>Customer Email</Description></Attribute>
+<Description>E-mail</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
@@ -123,7 +123,7 @@
 <Attribute>
 <AttriId>23</AttriId>
 <AttriName>CustomerPhone</AttriName>
-<Description>Customer Phone</Description></Attribute>
+<Description>Telefone</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
@@ -144,7 +144,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute>
+<Description>País Id</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
@@ -170,7 +170,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute></KeyAttributes>
+<Description>Cliente Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

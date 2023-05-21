@@ -237,7 +237,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351923485996", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235218301779", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -362,7 +362,7 @@ namespace GeneXus.Programs {
 
       public override string GetPgmdesc( )
       {
-         return "Promotions" ;
+         return "Promoçãoes" ;
       }
 
       protected void WB1M0( )
@@ -393,7 +393,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-7 col-sm-2 col-sm-offset-1", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblTitletext_Internalname, "Promotions", "", "", lblTitletext_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "SubTitle", 0, "", 1, 1, 0, 0, "HLP_WWPromotion.htm");
+            GxWebStd.gx_label_ctrl( context, lblTitletext_Internalname, "Promoçãoes", "", "", lblTitletext_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "SubTitle", 0, "", 1, 1, 0, 0, "HLP_WWPromotion.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-5 col-sm-3 col-sm-push-6 WWActionsCell", "Right", "top", "", "", "div");
@@ -640,7 +640,7 @@ namespace GeneXus.Programs {
             {
                Form.Meta.addItem("generator", "GeneXus .NET 17_0_9-159740", 0) ;
             }
-            Form.Meta.addItem("description", "Promotions", 0) ;
+            Form.Meta.addItem("description", "Promoçãoes", 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -1240,7 +1240,7 @@ namespace GeneXus.Programs {
          AssignAttri("", false, edtavUpdate_Internalname, AV12Update);
          AV13Delete = "Eliminar";
          AssignAttri("", false, edtavDelete_Internalname, AV13Delete);
-         Form.Caption = "Promotions";
+         Form.Caption = "Promoçãoes";
          AssignProp("", false, "FORM", "Caption", Form.Caption, true);
          /* Execute user subroutine: 'PREPARETRANSACTION' */
          S112 ();
@@ -1345,7 +1345,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235192349047", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235218301987", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1363,7 +1363,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("wwpromotion.js", "?20235192349047", false, true);
+            context.AddJavascriptSource("wwpromotion.js", "?20235218301988", false, true);
          }
          /* End function include_jscripts */
       }
@@ -1576,7 +1576,7 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "Promotions";
+         Form.Caption = "Promoçãoes";
          subGrid_Rows = 10;
          context.GX_msglist.DisplayMode = 1;
          if ( context.isSpaRequest( ) )

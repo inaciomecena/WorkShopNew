@@ -20,7 +20,7 @@ las_i(2,[ [ 'Countryid','Qty',9,17,40001,8,21,20,11,40000 ] ]).
 lac_i(2,[ [ 'Countryid','Qty' ] ]).
  
  
-lits_i('Customers And Shopping Carts',5,10).
+lits_i('Clientes e carrinhos de compras',5,10).
  
 cls_i([ 0,0 ],[ 5,2105 ]).
  
@@ -158,12 +158,12 @@ v_i(f,o,6,[ t('&Qty',23),t('Enabled',3) ]).
  
  
 attri_i(40001,[ 'CountryFlag_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(17,[ 'CountryFlag',bits,4,0,'',0,'Country Flag','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Customer Address','',0 ]).
-attri_i(20,[ 'CustomerName',char,20,0,'',0,'Customer Name','',0 ]).
-attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Customer Id','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(17,[ 'CountryFlag',bits,4,0,'',0,'Bandeira','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Endereço','',0 ]).
+attri_i(20,[ 'CustomerName',char,20,0,'',0,'Nome','',0 ]).
+attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Cliente Id','',0 ]).
 attri_i(40000,[ 'GXC1',int,9,0,'',0,'',[],0 ]).
 attri_i(16,[ 'ShoppingCartId',int,4,0,'ZZZ9',0,'Shopping Cart Id','',0 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',8 ]).
@@ -250,7 +250,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Customers And Shopping Carts',3))).
+html_sub_i(8,9,html_i(0,t('Clientes e carrinhos de compras',3))).
 html_sub_i(3,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,table(12))).
@@ -330,7 +330,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Customers And Shopping Carts',d,[ str ]).
+html_comp_i(9,'Caption','Clientes e carrinhos de compras',d,[ str ]).
 html_comp_i(9,'Id','Customersandshoppingcartstitle',v,[ str ]).
 html_comp_i(9,'Class','',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -507,7 +507,7 @@ html_comp_i(24,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(24,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(24,'Collinesfont',font('Courier New',9,[]),d,[ font ]).
 html_comp_i(24,'Collinescolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(24,'Coltitle','Customer Id',d,[ str ]).
+html_comp_i(24,'Coltitle','Cliente Id',d,[ str ]).
 html_comp_i(24,'Coltitlefont',font('Microsoft Sans Serif',8,[ bold ]),d,[ font ]).
 html_comp_i(24,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(24,'Horizontalalignment',right,d,[ str ]).
@@ -597,7 +597,7 @@ html_comp_i(27,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(27,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(27,'Collinesfont',font('Courier New',9,[]),d,[ font ]).
 html_comp_i(27,'Collinescolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(27,'Coltitle','Country Id',d,[ str ]).
+html_comp_i(27,'Coltitle','País Id',d,[ str ]).
 html_comp_i(27,'Coltitlefont',font('Microsoft Sans Serif',8,[ bold ]),d,[ font ]).
 html_comp_i(27,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(27,'Horizontalalignment',right,d,[ str ]).
@@ -698,7 +698,7 @@ html_comp_i(30,'Invitemsg','',d,[ str ]).
  
  
  
-lit_i(9,1,t('Customers And Shopping Carts',3),[ ctlname('Customersandshoppingcartstitle') ]).
+lit_i(9,1,t('Clientes e carrinhos de compras',3),[ ctlname('Customersandshoppingcartstitle') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(6,1,div(6),[ ctlname('Table1') ]).

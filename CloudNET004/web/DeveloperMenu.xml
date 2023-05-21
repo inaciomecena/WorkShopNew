@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="prgs.xsl"?>
+<Objects>
+   <Charset>UTF-8</Charset>
+   <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus17/</Path>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>Home</ObjName>
+      <ObjDesc>Home</ObjDesc>
+      <ObjLink>home.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWMenu</ObjName>
+      <ObjDesc>Menus</ObjDesc>
+      <ObjLink>wwmenu.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWSeller</ObjName>
+      <ObjDesc>Vendedores</ObjDesc>
+      <ObjLink>wwseller.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWShoppingCart</ObjName>
+      <ObjDesc>Carrinho de Compras</ObjDesc>
+      <ObjLink>wwshoppingcart.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>IncreasePrices</ObjName>
+      <ObjDesc>Increase Prices</ObjDesc>
+      <ObjLink>increaseprices.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>CountriesAndCustomers</ObjName>
+      <ObjDesc>Countries And Customers</ObjDesc>
+      <ObjLink>countriesandcustomers.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>CategoriesAndProducts</ObjName>
+      <ObjDesc>Categories And Products</ObjDesc>
+      <ObjLink>categoriesandproducts.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>PaginaPrincipal</ObjName>
+      <ObjDesc>Pagina Principal</ObjDesc>
+      <ObjLink>paginaprincipal.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>CustomersAndShoppingCarts</ObjName>
+      <ObjDesc>Customers And Shopping Carts</ObjDesc>
+      <ObjLink>customersandshoppingcarts.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>SellersAndProducts</ObjName>
+      <ObjDesc>Sellers And Products</ObjDesc>
+      <ObjLink>sellersandproducts.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>ProductsPerCountry</ObjName>
+      <ObjDesc>Produtos por País</ObjDesc>
+      <ObjLink>productspercountry.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWCountry</ObjName>
+      <ObjDesc>Countries</ObjDesc>
+      <ObjLink>wwcountry.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWCategory</ObjName>
+      <ObjDesc>Work With Category</ObjDesc>
+      <ObjLink>wwcategory.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWCustomer</ObjName>
+      <ObjDesc>Customers</ObjDesc>
+      <ObjLink>wwcustomer.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWProduct</ObjName>
+      <ObjDesc>Produtoss</ObjDesc>
+      <ObjLink>wwproduct.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWPromotion</ObjName>
+      <ObjDesc>Promoçãoes</ObjDesc>
+      <ObjLink>wwpromotion.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WP_Relatorios</ObjName>
+      <ObjDesc>Relatorios</ObjDesc>
+      <ObjLink>wp_relatorios.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>1</ObjCls>
+      <ObjName>ProductsPerCategory</ObjName>
+      <ObjDesc>Products Per Category</ObjDesc>
+      <ObjLink>aproductspercategory.aspx</ObjLink>
+   </Object>
+</Objects>

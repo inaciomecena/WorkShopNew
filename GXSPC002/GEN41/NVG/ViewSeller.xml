@@ -9,7 +9,7 @@
 <ObjDesc>View Seller</ObjDesc>
 <ObjPgmName>ViewSeller</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -56,7 +56,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute></Order>
+<Description>Vendedor Id</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>ISELLER</IndexName>
 <LevelOptions></LevelOptions>
@@ -66,7 +66,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute>
+<Description>Vendedor Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
@@ -78,7 +78,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute>
+<Description>Vendedor Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
@@ -96,7 +96,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute></KeyAttributes>
+<Description>Vendedor Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
@@ -121,7 +121,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute></Order>
+<Description>Vendedor Id</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>ISELLER</IndexName>
 <LevelOptions></LevelOptions>
@@ -131,7 +131,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute>
+<Description>Vendedor Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
@@ -143,7 +143,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute>
+<Description>Vendedor Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
@@ -161,7 +161,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute></KeyAttributes>
+<Description>Vendedor Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

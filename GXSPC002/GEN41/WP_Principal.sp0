@@ -1,0 +1,296 @@
+spec_i([ web,61,'Master Page','WP_Principal',0,por,'17_0_9-159740' ]).
+ 
+struct_i(2,1,[ 'Vruta','Vscript','Vscript2' ],[]).
+ 
+level_i(2,[ 0,[],[],[],[],[],[],[],[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [] ]).
+ 
+las_i(2,[ [] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+lits_i('Script1',5,10).
+lits_i('Script2',5,10).
+ 
+cls_i([ 5,10 ],[ 5,16 ]).
+ 
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','')).
+rule_i(0,datastore(1,'USER_PASSWORD','')).
+rule_i(0,datastore(1,'USER_ID','')).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','Yes')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','LENOVO\SQLEXPRESS01')).
+rule_i(0,datastore(1,'CS_DBNAME',lojaGXInacio)).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','WP_Principal')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Unsecure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('WebApplication',idDefault)).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('AUTO_REFRESH','VARS_CHANGE')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('WEB_COMP','Master')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Folder',o(8,'Web'))).
+rule_i(0,prop('ObjDesc','Master Page')).
+rule_i(0,prop('ObjName','WP_Principal')).
+rule_i(0,maingen(41)).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',11 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',10 ]).
+attri_i('Vscript11',[ vScript11,vchar,2097152,0,'',0,'v Script11','',9 ]).
+attri_i('Vscript2',[ vScript2,vchar,2097152,0,'',0,'v Script2','',8 ]).
+attri_i('Vscript',[ vScript,vchar,2097152,0,'',0,'v Script','',7 ]).
+attri_i('Httprequest',[ 'HttpRequest',o(httprequest),4,0,'',0,'Http Request','',6 ]).
+attri_i('Vruta',[ vRuta,svchar,400,0,'',0,'v Ruta','',5 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(2,nvg,1,[],[ [],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
+b_line_i(2,2,2,cmd,1,[ t('',107,2,0),t('Vruta',23,1,0),t(=,10,1,0),t([ t('Httprequest',23,1,0),t('Baseurl',3,1,0) ],29,1,0) ]).
+b_line_i(18,2,2,cmd,1,[ t('',107,18,0),t([ t('Form',3,1,0),t('Headerrawhtml',3,1,0) ],29,1,0),t(=,10,1,0),t('''<meta charset="utf-8">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<meta name="viewport" content="width=device-width, initial-scale=1">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<title>AdminLTE 3 | Dashboard</title>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<!-- Google Font: Source Sans Pro -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<!-- Font Awesome -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<!-- Ionicons -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<!-- Tempusdominus Bootstrap 4 -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''TemaInacio/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<!-- iCheck -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''TemaInacio/plugins/icheck-bootstrap/icheck-bootstrap.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<!-- JQVMap -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''TemaInacio/plugins/jqvmap/jqvmap.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<!-- Theme style -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''TemaInacio/dist/css/adminlte.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<!-- overlayScrollbars -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''TemaInacio/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<!-- Daterange picker -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''TemaInacio/plugins/daterangepicker/daterangepicker.css">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<!-- summernote -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<link rel="stylesheet" href="''',3,1,0),t(+,5,1,0),t('Vruta',23,1,0),t(+,5,1,0),t('''TemaInacio/plugins/summernote/summernote-bs4.min.css">''',3,1,0) ]).
+b_line_i(57,2,2,cmd,1,[ t('',107,57,0),t([ t([ t('Form',3,57,6),t('Jscriptsrc',3,57,11) ],29,57,6),t('add(',1,57,22) ],31,57,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/jquery/jquery.min.js''',3,57,34),t(')',4,1,75) ]).
+b_line_i(58,2,2,cmd,1,[ t('',107,58,0),t([ t([ t('Form',3,58,6),t('Jscriptsrc',3,58,11) ],29,58,6),t('add(',1,58,22) ],31,58,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/jquery-ui/jquery-ui.min.js''',3,58,34),t(')',4,1,81) ]).
+b_line_i(59,2,2,cmd,1,[ t('',107,59,0),t([ t([ t('Form',3,59,6),t('Jscriptsrc',3,59,11) ],29,59,6),t('add(',1,59,22) ],31,59,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/bootstrap/js/bootstrap.bundle.min.js''',3,59,34),t(')',4,1,91) ]).
+b_line_i(60,2,2,cmd,1,[ t('',107,60,0),t([ t([ t('Form',3,60,6),t('Jscriptsrc',3,60,11) ],29,60,6),t('add(',1,60,22) ],31,60,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/chart.js/Chart.min.js''',3,60,34),t(')',4,1,76) ]).
+b_line_i(61,2,2,cmd,1,[ t('',107,61,0),t([ t([ t('Form',3,61,6),t('Jscriptsrc',3,61,11) ],29,61,6),t('add(',1,61,22) ],31,61,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/sparklines/sparkline.js''',3,61,34),t(')',4,1,78) ]).
+b_line_i(62,2,2,cmd,1,[ t('',107,62,0),t([ t([ t('Form',3,62,6),t('Jscriptsrc',3,62,11) ],29,62,6),t('add(',1,62,22) ],31,62,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/jqvmap/jquery.vmap.min.js''',3,62,34),t(')',4,1,80) ]).
+b_line_i(63,2,2,cmd,1,[ t('',107,63,0),t([ t([ t('Form',3,63,6),t('Jscriptsrc',3,63,11) ],29,63,6),t('add(',1,63,22) ],31,63,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/jqvmap/maps/jquery.vmap.usa.js''',3,63,34),t(')',4,1,85) ]).
+b_line_i(64,2,2,cmd,1,[ t('',107,64,0),t([ t([ t('Form',3,64,6),t('Jscriptsrc',3,64,11) ],29,64,6),t('add(',1,64,22) ],31,64,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/jquery-knob/jquery.knob.min.js''',3,64,34),t(')',4,1,85) ]).
+b_line_i(65,2,2,cmd,1,[ t('',107,65,0),t([ t([ t('Form',3,65,6),t('Jscriptsrc',3,65,11) ],29,65,6),t('add(',1,65,22) ],31,65,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/moment/moment.min.js''',3,65,34),t(')',4,1,75) ]).
+b_line_i(66,2,2,cmd,1,[ t('',107,66,0),t([ t([ t('Form',3,66,6),t('Jscriptsrc',3,66,11) ],29,66,6),t('add(',1,66,22) ],31,66,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/daterangepicker/daterangepicker.js''',3,66,34),t(')',4,1,89) ]).
+b_line_i(67,2,2,cmd,1,[ t('',107,67,0),t([ t([ t('Form',3,67,6),t('Jscriptsrc',3,67,11) ],29,67,6),t('add(',1,67,22) ],31,67,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js''',3,67,34),t(')',4,1,116) ]).
+b_line_i(68,2,2,cmd,1,[ t('',107,68,0),t([ t([ t('Form',3,68,6),t('Jscriptsrc',3,68,11) ],29,68,6),t('add(',1,68,22) ],31,68,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/summernote/summernote-bs4.min.js''',3,68,34),t(')',4,1,87) ]).
+b_line_i(69,2,2,cmd,1,[ t('',107,69,0),t([ t([ t('Form',3,69,6),t('Jscriptsrc',3,69,11) ],29,69,6),t('add(',1,69,22) ],31,69,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js''',3,69,34),t(')',4,1,107) ]).
+b_line_i(70,2,2,cmd,1,[ t('',107,70,0),t([ t([ t('Form',3,70,6),t('Jscriptsrc',3,70,11) ],29,70,6),t('add(',1,70,22) ],31,70,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/dist/js/adminlte.js''',3,70,34),t(')',4,1,66) ]).
+b_line_i(71,2,2,cmd,1,[ t('',107,71,0),t([ t([ t('Form',3,71,6),t('Jscriptsrc',3,71,11) ],29,71,6),t('add(',1,71,22) ],31,71,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/dist/js/demo.js''',3,71,34),t(')',4,1,62) ]).
+b_line_i(72,2,2,cmd,1,[ t('',107,72,0),t([ t([ t('Form',3,72,6),t('Jscriptsrc',3,72,11) ],29,72,6),t('add(',1,72,22) ],31,72,22),t('Vruta',23,1,27),t(+,5,1,33),t('''TemaInacio/dist/js/pages/dashboard.js''',3,72,34),t(')',4,1,73) ]).
+b_line_i(146,2,2,cmd,1,[ t('',107,146,0),t('Vscript',23,1,0),t(=,10,1,0),t('''<section class="content">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<div class="container-fluid">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t(''' <!-- Small boxes (Stat box) -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t(''' <div class="row">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<div class="col-lg-3 col-6">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t(''' <!-- small box -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t(''' <div class="small-box bg-info">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''<div class="inner">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t(''' <h3>150</h3>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <p>New Orders</p>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <div class="icon">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <i class="ion ion-bag"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        <!-- ./col -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        <div class="col-lg-3 col-6">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          <!-- small box -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          <div class="small-box bg-success">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <div class="inner">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <h3>53<sup style="font-size: 20px">%</sup></h3>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <p>Bounce Rate</p>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <div class="icon">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <i class="ion ion-stats-bars"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        <!-- ./col -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        <div class="col-lg-3 col-6">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          <!-- small box -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          <div class="small-box bg-warning">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <div class="inner">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <h3>44</h3>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <p>User Registrations</p>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <div class="icon">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <i class="ion ion-person-add"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        <!-- ./col -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        <div class="col-lg-3 col-6">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          <!-- small box -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''         <div class="small-box bg-danger">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           <div class="inner">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <h3>65</h3>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <p>Unique Visitors</p>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <div class="icon">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <i class="ion ion-pie-graph"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''         <!-- ./col -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''       </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''       <!-- /.row -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''      <!-- Main row -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''       <div class="row">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          <!-- Left col -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          <section class="col-lg-7 connectedSortable">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           <!-- Custom tabs (Charts with tabs)-->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <div class="card">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <div class="card-header">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               <h3 class="card-title">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <i class="fas fa-chart-pie mr-1"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                Sales''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               </h3>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <div class="card-tools">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                <ul class="nav nav-pills ml-auto">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                  <li class="nav-item">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Area</a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                  </li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                  <li class="nav-item">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <a class="nav-link" href="#sales-chart" data-toggle="tab">Donut</a>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                  </li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                </ul>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            </div><!-- /.card-header -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <div class="card-body">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <div class="tab-content p-0">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               <!-- Morris chart - Sales -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               <div class="chart tab-pane active" id="revenue-chart"''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    style="position: relative; height: 300px;">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           </div><!-- /.card-body -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''         <!-- /.card -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''         <!-- TO DO List -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''         <div class="card">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           <div class="card-header">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <h3 class="card-title">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <i class="ion ion-clipboard mr-1"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              To Do List''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             </h3>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <div class="card-tools">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               <ul class="pagination pagination-sm">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <li class="page-item"><a href="#" class="page-link">1</a></li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <li class="page-item"><a href="#" class="page-link">2</a></li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <li class="page-item"><a href="#" class="page-link">3</a></li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               </ul>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           <!-- /.card-header -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           <div class="card-body">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <ul class="todo-list" data-widget="todo-list">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               <li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <!-- drag handle -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <span class="handle">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                  <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                  <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 </span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <!-- checkbox -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <div  class="icheck-primary d-inline ml-2">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <input type="checkbox" value="" name="todo1" id="todoCheck1">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <label for="todoCheck1"></label>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <!-- todo text -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <span class="text">Design a nice theme</span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <!-- Emphasis label -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <small class="badge badge-danger"><i class="far fa-clock"></i> 2 mins</small>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <!-- General tools such as edit or delete-->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <div class="tools">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-edit"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                      <i class="fas fa-trash-o"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 </li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <span class="handle">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                      <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    </span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <div  class="icheck-primary d-inline ml-2">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <input type="checkbox" value="" name="todo2" id="todoCheck2" checked>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <label for="todoCheck2"></label>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <span class="text">Make the theme responsive</span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <small class="badge badge-info"><i class="far fa-clock"></i> 4 hours</small>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <div class="tools">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-edit"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <i class="fas fa-trash-o"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                  </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 </li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <span class="handle">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   </span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <div  class="icheck-primary d-inline ml-2">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <input type="checkbox" value="" name="todo3" id="todoCheck3">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <label for="todoCheck3"></label>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <span class="text">Let theme shine like a star</span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <small class="badge badge-warning"><i class="far fa-clock"></i> 1 day</small>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <div class="tools">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-edit"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-trash-o"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 </li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <span class="handle">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                      <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   </span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <div  class="icheck-primary d-inline ml-2">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <input type="checkbox" value="" name="todo4" id="todoCheck4">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <label for="todoCheck4"></label>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <span class="text">Let theme shine like a star</span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <small class="badge badge-success"><i class="far fa-clock"></i> 3 days</small>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <div class="tools">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-edit"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-trash-o"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                  </li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <span class="handle">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                      <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   </span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <div  class="icheck-primary d-inline ml-2">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <input type="checkbox" value="" name="todo5" id="todoCheck5">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <label for="todoCheck5"></label>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <span class="text">Check your messages and notifications</span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <small class="badge badge-primary"><i class="far fa-clock"></i> 1 week</small>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <div class="tools">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                      <i class="fas fa-edit"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                      <i class="fas fa-trash-o"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                  </li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 <li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <span class="handle">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-ellipsis-v"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    </span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <div  class="icheck-primary d-inline ml-2">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <input type="checkbox" value="" name="todo6" id="todoCheck6">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                      <label for="todoCheck6"></label>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <span class="text">Let theme shine like a star</span>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                    <small class="badge badge-secondary"><i class="far fa-clock"></i> 1 month</small>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   <div class="tools">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-edit"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                     <i class="fas fa-trash-o"></i>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                   </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                 </li>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                </ul>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''              <!-- /.card-body -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <div class="card-footer clearfix">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               <button type="button" class="btn btn-primary float-right"><i class="fas fa-plus"></i> Add item</button>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <!-- /.card -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''         </section>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          <!-- /.Left col -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''          <!-- right col (We are only adding the ID to make the widgets sortable)-->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''         <section class="col-lg-5 connectedSortable">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''                <!-- /. tools -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''            <!-- /.card-header -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <div class="card-body pt-0">''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               <!--The calendar -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''               <div id="calendar" style="width: 100%"></div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''             <!-- /.card-body -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''           <!-- /.card -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''       </section>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''        <!-- right col -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''      </div>''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''      <!-- /.row (main row) -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''    </div><!-- /.container-fluid -->''',3,1,0),t(+,5,1,0),t('newline(',1,1,0),t(')',4,1,0),t(+,5,1,0),t('''  </section>''',3,1,0) ]).
+b_line_i(394,2,2,cmd,1,[ t('',107,394,0),t('Vscript2',23,1,0),t(=,10,1,0),t('''  </section></div></div>''',3,1,0) ]).
+b_line_i(395,2,2,cmd,1,[ t('',107,395,0),t([ t('Txtscrip1',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('Vscript',23,1,0) ]).
+b_line_i(396,2,2,cmd,1,[ t('',107,396,0),t([ t('Txtscript2',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('Vscript2',23,1,0) ]).
+b_line_i(398,2,2,cmd,1,[ t('',147,398,0) ]).
+b_line_i(1000,2,2,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,2,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,2,cmd,0,[ t('',147,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,t('Script1',3)).
+html_i(3,comp(conthold)).
+html_i(4,t('Script2',3)).
+ 
+ 
+html_tags_i(1,'Class','Form').
+ 
+html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(2,'Caption','Script1',d,[ str ]).
+html_comp_i(2,'Id','Txtscrip1',v,[ str ]).
+html_comp_i(2,'Class','TextBlock',d,[ str ]).
+html_comp_i(2,'Event','',d,[ str ]).
+html_comp_i(2,'Returnonclick',0,d,[ bool ]).
+html_comp_i(2,'Gxformat',2,v,[ num ]).
+html_comp_i(2,'Title','',d,[ str ]).
+html_comp_i(2,'Fill',-1,d,[ bool ]).
+html_comp_i(2,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(2,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(2,'Font',font('Microsoft Sans Serif',22,[]),d,[ font ]).
+html_comp_i(3,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(3,'Controlname','Contholder1',v,[ str ]).
+html_comp_i(4,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(4,'Caption','Script2',d,[ str ]).
+html_comp_i(4,'Id','Txtscript2',v,[ str ]).
+html_comp_i(4,'Class','TextBlock',d,[ str ]).
+html_comp_i(4,'Event','',d,[ str ]).
+html_comp_i(4,'Returnonclick',0,d,[ bool ]).
+html_comp_i(4,'Gxformat',2,v,[ num ]).
+html_comp_i(4,'Title','',d,[ str ]).
+html_comp_i(4,'Fill',-1,d,[ bool ]).
+html_comp_i(4,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(4,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(4,'Font',font('Microsoft Sans Serif',22,[]),d,[ font ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(2,1,t('Script1',3),[ ctlname('Txtscrip1') ]).
+lit_i(3,1,comp(conthold),[ ctlname('Contholder1'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(4,1,t('Script2',3),[ ctlname('Txtscript2') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,'Start',1,398,[ [ [ t('Httprequest',23),t('Baseurl',3) ] ],[ [ t('Form',3),t('Headerrawhtml',3) ],[ t('Txtscrip1',3),t('Caption',3) ],[ t('Txtscript2',3),t('Caption',3) ] ] ]).
+ 
+ 
+pgm_callprotocol_i(web,61,'WP_PRINCIPAL','INTERNAL','Unsecure').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

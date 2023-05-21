@@ -46,7 +46,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></Order>
+<Description>Categoria Id</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>ICATEGORY</IndexName>
 <LevelOptions></LevelOptions>
@@ -59,7 +59,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute>
+<Description>Categoria Id</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
@@ -75,7 +75,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Category Name</Description></Attribute>
+<Description>Noma da Categoria</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
@@ -101,7 +101,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></KeyAttributes>
+<Description>Categoria Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

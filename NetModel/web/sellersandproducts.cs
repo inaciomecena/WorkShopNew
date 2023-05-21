@@ -257,7 +257,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351923485412", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235211514551", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1167,7 +1167,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351923485460", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235211514619", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1185,7 +1185,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("sellersandproducts.js", "?202351923485460", false, true);
+            context.AddJavascriptSource("sellersandproducts.js", "?20235211514620", false, true);
          }
          /* End function include_jscripts */
       }
@@ -1311,7 +1311,7 @@ namespace GeneXus.Programs {
          }
          /* Single line edit */
          ROClassString = "";
-         Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtProductPrice_Internalname,StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 10, 2, ",", "")),StringUtil.LTrim( context.localUtil.Format( A27ProductPrice, "$ ZZZZ9.99")),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtProductPrice_Jsonclick,(short)0,(string)"",(string)"",(string)ROClassString,(string)"",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)10,(short)0,(short)0,(short)32,(short)0,(short)-1,(short)0,(bool)false,(string)"",(string)"right",(bool)false,(string)""});
+         Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtProductPrice_Internalname,StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 11, 2, ",", "")),StringUtil.LTrim( context.localUtil.Format( A27ProductPrice, "R$ ZZZZ9.99")),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtProductPrice_Jsonclick,(short)0,(string)"",(string)"",(string)ROClassString,(string)"",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)11,(short)0,(short)0,(short)32,(short)0,(short)-1,(short)0,(bool)false,(string)"",(string)"right",(bool)false,(string)""});
          send_integrity_lvl_hashes0M3( ) ;
          Grid1Container.AddRow(Grid1Row);
          nGXsfl_32_idx = ((subGrid1_Islastpage==1)&&(nGXsfl_32_idx+1>subGrid1_fnc_Recordsperpage( )) ? 1 : nGXsfl_32_idx+1);
@@ -1411,7 +1411,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          Grid2Row.AddColumnProperties("div_start", -1, isAjaxCallMode( ), new Object[] {(string)"",(short)1,(short)0,(string)"px",(short)0,(string)"px",(string)" gx-attribute",(string)"left",(string)"top",(string)"",(string)"",(string)"div"});
          /* Attribute/Variable Label */
-         Grid2Row.AddColumnProperties("html_label", -1, isAjaxCallMode( ), new Object[] {(string)"",(string)"Seller Photo",(string)"col-sm-3 ImageAttributeLabel",(short)0,(bool)true,(string)""});
+         Grid2Row.AddColumnProperties("html_label", -1, isAjaxCallMode( ), new Object[] {(string)"",(string)"Foto",(string)"col-sm-3 ImageAttributeLabel",(short)0,(bool)true,(string)""});
          /* Static Bitmap Variable */
          ClassString = "ImageAttribute";
          StyleString = "";
@@ -1425,7 +1425,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          Grid2Row.AddColumnProperties("div_start", -1, isAjaxCallMode( ), new Object[] {(string)"",(short)1,(short)0,(string)"px",(short)0,(string)"px",(string)" gx-attribute",(string)"left",(string)"top",(string)"",(string)"",(string)"div"});
          /* Attribute/Variable Label */
-         Grid2Row.AddColumnProperties("html_label", -1, isAjaxCallMode( ), new Object[] {(string)edtSellerName_Internalname,(string)"Seller Name",(string)"col-sm-3 ",(short)0,(bool)true,(string)""});
+         Grid2Row.AddColumnProperties("html_label", -1, isAjaxCallMode( ), new Object[] {(string)edtSellerName_Internalname,(string)"Vendedor Nome",(string)"col-sm-3 ",(short)0,(bool)true,(string)""});
          /* Single line edit */
          ROClassString = "";
          Grid2Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtSellerName_Internalname,StringUtil.RTrim( A18SellerName),(string)"",(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtSellerName_Jsonclick,(short)0,(string)"",(string)"",(string)ROClassString,(string)"",(string)"",(short)1,(short)0,(short)0,(string)"text",(string)"",(short)20,(string)"chr",(short)1,(string)"row",(short)20,(short)0,(short)0,(short)15,(short)0,(short)-1,(short)-1,(bool)true,(string)"Name",(string)"left",(bool)true,(string)""});
@@ -1541,7 +1541,7 @@ namespace GeneXus.Programs {
             Grid1Column.AddObjectProperty("Value", StringUtil.RTrim( A7CategoryName));
             Grid1Container.AddColumnProperties(Grid1Column);
             Grid1Column = GXWebColumn.GetNew(isAjaxCallMode( ));
-            Grid1Column.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 10, 2, ".", "")));
+            Grid1Column.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 11, 2, ".", "")));
             Grid1Container.AddColumnProperties(Grid1Column);
             Grid1Container.AddObjectProperty("Selectedindex", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid1_Selectedindex), 4, 0, ".", "")));
             Grid1Container.AddObjectProperty("Allowselection", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid1_Allowselection), 1, 0, ".", "")));

@@ -9,7 +9,7 @@
 <ObjDesc>Category General</ObjDesc>
 <ObjPgmName>CategoryGeneral</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -22,7 +22,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></Parameter></Parameters>
+<Description>Categoria Id</Description></Attribute></Parameter></Parameters>
 <StandAloneRules></StandAloneRules>
 <Event>
 <EventName>Start</EventName>
@@ -54,7 +54,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></Order>
+<Description>Categoria Id</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>ICATEGORY</IndexName>
 <LevelOptions></LevelOptions>
@@ -64,27 +64,27 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute>
+<Description>Categoria Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>@CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></Condition></StartFrom>
+<Description>Categoria Id</Description></Attribute></Condition></StartFrom>
 <LoopWhile>
 <Condition>
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute>
+<Description>Categoria Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>@CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<Description>Categoria Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
 <NonOptimizedWhere></NonOptimizedWhere>
 <NavigationTree>
 <Table>
@@ -96,7 +96,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></KeyAttributes>
+<Description>Categoria Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
@@ -120,7 +120,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></Expression>
+<Description>Categoria Id</Description></Attribute></Expression>
 <IF></IF></CALL></Event>
 <Event>
 <EventName>'DoDelete'</EventName>
@@ -140,7 +140,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></Expression>
+<Description>Categoria Id</Description></Attribute></Expression>
 <IF></IF></CALL></Event>
 <Event>
 <EventName>'PREPARETRANSACTION'</EventName>

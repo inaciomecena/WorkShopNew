@@ -153,10 +153,10 @@ v_i(f,o,5,[ t('&Delete',23),t('Enabled',3) ]).
  
  
 attri_i(40000,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Seller Photo','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Seller Name','',0 ]).
-attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Seller Id','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',17 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',16 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',15 ]).
@@ -529,7 +529,7 @@ html_comp_i(22,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(22,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(22,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(22,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(22,'Coltitle','Name',d,[ str ]).
+html_comp_i(22,'Coltitle','Nome',d,[ str ]).
 html_comp_i(22,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(22,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(22,'Horizontalalignment',left,d,[ str ]).
@@ -553,7 +553,7 @@ html_comp_i(23,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(23,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(23,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(23,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(23,'Coltitle','Photo',d,[ str ]).
+html_comp_i(23,'Coltitle','Foto',d,[ str ]).
 html_comp_i(23,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(23,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(23,'Colvisible',-1,v,[ bool ]).
@@ -658,7 +658,7 @@ html_comp_i(29,'Eventgx','',d,[ str ]).
 html_comp_i(29,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(29,'Captionstyle','',v,[ str ]).
 html_comp_i(29,'Captionposition','None',v,[ str ]).
-html_comp_i(29,'Captionvalue','Country Id',d,[ str ]).
+html_comp_i(29,'Captionvalue','País Id',d,[ str ]).
 html_comp_i(29,'Layoutclass','',v,[ str ]).
 html_comp_i(29,'Controltype',2,v,[ num ]).
 html_comp_i(29,'Inputtype',0,v,[ num ]).

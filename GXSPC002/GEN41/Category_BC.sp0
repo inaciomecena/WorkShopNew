@@ -167,8 +167,8 @@ tbl_to_delete_i(2,[ 6,[ [ 2,6,6 ] ],c,'IPRODUCT3',0,[ 12 ],'' ]).
  
  
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Category Name','',0 ]).
-attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
 attri_i('Websession',[ 'WebSession',o(websession),4,0,'',0,'Web Session','',10 ]).
 attri_i('Trncontext',[ 'TrnContext',o('TransactionContext'),0,0,'',0,'Trn Context','',9 ]).
@@ -219,13 +219,13 @@ dom_info_i(89,[ 'Name' ]).
 break_i(2,nvg,1,[],[ [],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
-b_group_i(2,2,lit,0,2,19).
-b_group_i(2,3,lit,0,20,0).
+b_group_i(2,2,lit,0,2,15).
+b_group_i(2,3,lit,0,16,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
-b_line_i(17,2,2,cmd,1,[ t('',147,17,0) ]).
-b_line_i(19,2,2,cmd,1,[ t('',146,19,0),t('After Trn',3,19,7) ]).
-b_line_i(30,2,3,cmd,1,[ t('',147,30,0) ]).
+b_line_i(13,2,2,cmd,1,[ t('',147,13,0) ]).
+b_line_i(15,2,2,cmd,1,[ t('',146,15,0),t('After Trn',3,15,7) ]).
+b_line_i(26,2,3,cmd,1,[ t('',147,26,0) ]).
  
  
  
@@ -261,7 +261,7 @@ b_line_i(30,2,3,cmd,1,[ t('',147,30,0) ]).
  
  
  
-att_prop_i(2,6,'HORIZONTAL_DESCRIPTION','Category Id',d).
+att_prop_i(2,6,'HORIZONTAL_DESCRIPTION','Categoria Id',d).
 att_prop_i(2,6,'ExternalName','CategoryId',d).
 att_prop_i(2,6,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,6,'EmptyAsNull','Yes',d).
@@ -276,7 +276,7 @@ att_prop_i(2,6,'AttValidationFailedMsg','',d).
 att_prop_i(2,6,'DownloadOffline','0',d).
 att_prop_i(2,6,'VarServiceExtName','',d).
 att_prop_i(2,6,'FullName','CategoryId',v).
-att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Category Name',d).
+att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Noma da Categoria',d).
 att_prop_i(2,7,'ExternalName','CategoryName',d).
 att_prop_i(2,7,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,7,'EmptyAsNull','Yes',d).
@@ -318,7 +318,7 @@ tbl_att_prop_i(2,6,6,'AllowNulls',n).
 var_prop_i(2,'Categoryid',idBasedOn,'',v).
  
 i_tbl_best_trn(2,[ 2,1,'Category','Category',[] ]).
-i_tbl_best_trn(6,[ 5,1,'Product','Product',[] ]).
+i_tbl_best_trn(6,[ 5,1,'Product','Produtos',[] ]).
  
  
  
@@ -562,8 +562,8 @@ struct_dt_elem_i([ 26,56,0 ],3,pic,'99/99/99').
  
  
  
-sub_info_i(146,'Start',1,17,[ [],[] ]).
-sub_info_i(146,'After Trn',19,30,[ [],[] ]).
+sub_info_i(146,'Start',1,13,[ [],[] ]).
+sub_info_i(146,'After Trn',15,26,[ [],[] ]).
  
  
 pgm_callprotocol_i(trn,2,'CATEGORY_BC','INTERNAL','Unsecure').

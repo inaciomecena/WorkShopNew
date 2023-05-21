@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\sellersandproducts.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\sellersandproducts.pdb
+C:\Models\WorkShopNew\CloudNET004\build\sellersandproducts\obj\Release\net6.0\sellersandproducts.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\sellersandproducts\obj\Release\net6.0\sellersandproducts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\sellersandproducts\obj\Release\net6.0\sellersandproducts.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\sellersandproducts\obj\Release\net6.0\sellersandproducts.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\sellersandproducts\obj\Release\net6.0\sellersandproducts.dll
+C:\Models\WorkShopNew\CloudNET004\build\sellersandproducts\obj\Release\net6.0\refint\sellersandproducts.dll
+C:\Models\WorkShopNew\CloudNET004\build\sellersandproducts\obj\Release\net6.0\sellersandproducts.pdb
+C:\Models\WorkShopNew\CloudNET004\build\sellersandproducts\obj\Release\net6.0\ref\sellersandproducts.dll

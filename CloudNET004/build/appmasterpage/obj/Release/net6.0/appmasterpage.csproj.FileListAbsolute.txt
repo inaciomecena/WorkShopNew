@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\appmasterpage.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\appmasterpage.pdb
+C:\Models\WorkShopNew\CloudNET004\build\appmasterpage\obj\Release\net6.0\appmasterpage.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\appmasterpage\obj\Release\net6.0\appmasterpage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\appmasterpage\obj\Release\net6.0\appmasterpage.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\appmasterpage\obj\Release\net6.0\appmasterpage.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\appmasterpage\obj\Release\net6.0\appmasterpage.dll
+C:\Models\WorkShopNew\CloudNET004\build\appmasterpage\obj\Release\net6.0\refint\appmasterpage.dll
+C:\Models\WorkShopNew\CloudNET004\build\appmasterpage\obj\Release\net6.0\appmasterpage.pdb
+C:\Models\WorkShopNew\CloudNET004\build\appmasterpage\obj\Release\net6.0\ref\appmasterpage.dll

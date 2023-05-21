@@ -9,7 +9,7 @@
 <ObjDesc>Selection List Seller</ObjDesc>
 <ObjPgmName>Gx0040</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -48,7 +48,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute></Order>
+<Description>Vendedor Id</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>ISELLER</IndexName>
 <LevelOptions></LevelOptions>
@@ -61,7 +61,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute>
+<Description>Vendedor Id</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
@@ -77,7 +77,7 @@
 <Attribute>
 <AttriId>18</AttriId>
 <AttriName>SellerName</AttriName>
-<Description>Seller Name</Description></Attribute>
+<Description>Vendedor Nome</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
@@ -98,7 +98,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute>
+<Description>País Id</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
@@ -124,7 +124,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute></KeyAttributes>
+<Description>Vendedor Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

@@ -9,7 +9,7 @@
 <ObjDesc>Country General</ObjDesc>
 <ObjPgmName>CountryGeneral</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -22,7 +22,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></Parameter></Parameters>
+<Description>País Id</Description></Attribute></Parameter></Parameters>
 <StandAloneRules></StandAloneRules>
 <Event>
 <EventName>Start</EventName>
@@ -54,7 +54,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></Order>
+<Description>País Id</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>ICOUNTRY</IndexName>
 <LevelOptions></LevelOptions>
@@ -64,27 +64,27 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute>
+<Description>País Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>@CountryId</AttriName>
-<Description>Country Id</Description></Attribute></Condition></StartFrom>
+<Description>País Id</Description></Attribute></Condition></StartFrom>
 <LoopWhile>
 <Condition>
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute>
+<Description>País Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>@CountryId</AttriName>
-<Description>Country Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<Description>País Id</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
 <NonOptimizedWhere></NonOptimizedWhere>
 <NavigationTree>
 <Table>
@@ -96,7 +96,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></KeyAttributes>
+<Description>País Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
@@ -120,7 +120,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></Expression>
+<Description>País Id</Description></Attribute></Expression>
 <IF></IF></CALL></Event>
 <Event>
 <EventName>'DoDelete'</EventName>
@@ -140,7 +140,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></Expression>
+<Description>País Id</Description></Attribute></Expression>
 <IF></IF></CALL></Event>
 <Event>
 <EventName>'PREPARETRANSACTION'</EventName>

@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\menugeneral.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\menugeneral.pdb
+C:\Models\WorkShopNew\CloudNET004\build\menugeneral\obj\Release\net6.0\menugeneral.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\menugeneral\obj\Release\net6.0\menugeneral.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\menugeneral\obj\Release\net6.0\menugeneral.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\menugeneral\obj\Release\net6.0\menugeneral.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\menugeneral\obj\Release\net6.0\menugeneral.dll
+C:\Models\WorkShopNew\CloudNET004\build\menugeneral\obj\Release\net6.0\refint\menugeneral.dll
+C:\Models\WorkShopNew\CloudNET004\build\menugeneral\obj\Release\net6.0\menugeneral.pdb
+C:\Models\WorkShopNew\CloudNET004\build\menugeneral\obj\Release\net6.0\ref\menugeneral.dll

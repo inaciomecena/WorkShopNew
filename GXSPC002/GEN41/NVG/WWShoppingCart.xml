@@ -6,10 +6,10 @@
 <ObjCls>13</ObjCls>
 <ObjId>16</ObjId>
 <ObjName>WWShoppingCart</ObjName>
-<ObjDesc>Shopping Carts</ObjDesc>
+<ObjDesc>Carrinho de Compras</ObjDesc>
 <ObjPgmName>WWShoppingCart</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0038</MsgCode>
@@ -152,7 +152,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute></KeyAttributes>
+<Description>Cliente Id</Description></Attribute></KeyAttributes>
 <Tables>
 <Table>
 <TableId>3</TableId>
@@ -163,7 +163,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></KeyAttributes>
+<Description>País Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></Tables></Table>
 <Table>
 <TableId>9</TableId>
@@ -203,7 +203,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></KeyAttributes>
+<Description>Categoria Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></Tables></Table></Tables></Table></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

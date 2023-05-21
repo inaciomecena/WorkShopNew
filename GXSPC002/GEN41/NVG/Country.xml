@@ -9,7 +9,7 @@
 <ObjDesc>Country</ObjDesc>
 <ObjPgmName>Country</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -47,7 +47,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></KeyAttributes>
+<Description>País Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
@@ -67,11 +67,11 @@
 <Attribute>
 <AttriId>9</AttriId>
 <AttriName>CountryName</AttriName>
-<Description>Country Name</Description></Attribute>
+<Description>País</Description></Attribute>
 <Attribute>
 <AttriId>17</AttriId>
 <AttriName>CountryFlag</AttriName>
-<Description>Country Flag</Description></Attribute>
+<Description>Bandeira</Description></Attribute>
 <Attribute>
 <AttriId>40000</AttriId>
 <AttriName>CountryFlag.Uri  </AttriName>
@@ -86,11 +86,11 @@
 <Attribute>
 <AttriId>9</AttriId>
 <AttriName>CountryName</AttriName>
-<Description>Country Name</Description></Attribute>
+<Description>País</Description></Attribute>
 <Attribute>
 <AttriId>17</AttriId>
 <AttriName>CountryFlag</AttriName>
-<Description>Country Flag</Description></Attribute>
+<Description>Bandeira</Description></Attribute>
 <Attribute>
 <AttriId>40000</AttriId>
 <AttriName>CountryFlag.Uri  </AttriName>
@@ -115,7 +115,7 @@
 <Attribute>
 <AttriId>14</AttriId>
 <AttriName>ProductCountryID</AttriName>
-<Description>Product Country ID</Description></Attribute></KeyAttributes></Table>
+<Description>Pais ID</Description></Attribute></KeyAttributes></Table>
 <Table>
 <TableId>5</TableId>
 <TableName>Customer</TableName>
@@ -125,7 +125,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></KeyAttributes></Table>
+<Description>País Id</Description></Attribute></KeyAttributes></Table>
 <Table>
 <TableId>4</TableId>
 <TableName>Seller</TableName>
@@ -135,7 +135,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Description>País Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
 <Levels></Levels>
 <AfterTrnRules></AfterTrnRules>
 <AfterLevelRules></AfterLevelRules></Level></Levels>

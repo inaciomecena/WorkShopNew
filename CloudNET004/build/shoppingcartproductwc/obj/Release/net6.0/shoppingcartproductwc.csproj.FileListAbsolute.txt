@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\shoppingcartproductwc.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\shoppingcartproductwc.pdb
+C:\Models\WorkShopNew\CloudNET004\build\shoppingcartproductwc\obj\Release\net6.0\shoppingcartproductwc.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\shoppingcartproductwc\obj\Release\net6.0\shoppingcartproductwc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\shoppingcartproductwc\obj\Release\net6.0\shoppingcartproductwc.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\shoppingcartproductwc\obj\Release\net6.0\shoppingcartproductwc.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\shoppingcartproductwc\obj\Release\net6.0\shoppingcartproductwc.dll
+C:\Models\WorkShopNew\CloudNET004\build\shoppingcartproductwc\obj\Release\net6.0\refint\shoppingcartproductwc.dll
+C:\Models\WorkShopNew\CloudNET004\build\shoppingcartproductwc\obj\Release\net6.0\shoppingcartproductwc.pdb
+C:\Models\WorkShopNew\CloudNET004\build\shoppingcartproductwc\obj\Release\net6.0\ref\shoppingcartproductwc.dll

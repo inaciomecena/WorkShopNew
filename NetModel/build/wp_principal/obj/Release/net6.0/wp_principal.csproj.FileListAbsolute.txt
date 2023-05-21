@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\wp_principal.dll
+C:\Models\WorkShopNew\NetModel\web\bin\wp_principal.pdb
+C:\Models\WorkShopNew\NetModel\build\wp_principal\obj\Release\net6.0\wp_principal.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\wp_principal\obj\Release\net6.0\wp_principal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\wp_principal\obj\Release\net6.0\wp_principal.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\wp_principal\obj\Release\net6.0\wp_principal.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\wp_principal\obj\Release\net6.0\wp_principal.dll
+C:\Models\WorkShopNew\NetModel\build\wp_principal\obj\Release\net6.0\refint\wp_principal.dll
+C:\Models\WorkShopNew\NetModel\build\wp_principal\obj\Release\net6.0\wp_principal.pdb
+C:\Models\WorkShopNew\NetModel\build\wp_principal\obj\Release\net6.0\ref\wp_principal.dll

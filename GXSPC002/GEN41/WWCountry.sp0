@@ -152,9 +152,9 @@ v_i(f,o,5,[ t('&Delete',23),t('Enabled',3) ]).
  
  
 attri_i(40000,[ 'CountryFlag_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i(17,[ 'CountryFlag',bits,4,0,'',0,'Country Flag','',0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
+attri_i(17,[ 'CountryFlag',bits,4,0,'',0,'Bandeira','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',17 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',16 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',15 ]).
@@ -452,7 +452,7 @@ html_comp_i(16,'Font',font('Arial',10,[]),d,[ font ]).
 html_comp_i(16,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(16,'Gxformat',0,d,[ num ]).
 html_comp_i(16,'Title','',d,[ str ]).
-html_comp_i(16,'Invitemsg','Name',v,[ str ]).
+html_comp_i(16,'Invitemsg','País',v,[ str ]).
 html_comp_i(17,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(17,'Class',row,v,[ str ]).
 html_comp_i(17,'Id','',d,[ str ]).
@@ -598,7 +598,7 @@ html_comp_i(27,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(27,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(27,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(27,'Coltitle','Name',d,[ str ]).
+html_comp_i(27,'Coltitle','País',d,[ str ]).
 html_comp_i(27,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(27,'Horizontalalignment',left,d,[ str ]).
@@ -622,7 +622,7 @@ html_comp_i(28,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(28,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(28,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(28,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(28,'Coltitle','Flag',d,[ str ]).
+html_comp_i(28,'Coltitle','Bandeira',d,[ str ]).
 html_comp_i(28,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(28,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(28,'Colvisible',-1,v,[ bool ]).

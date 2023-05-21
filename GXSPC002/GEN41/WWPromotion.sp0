@@ -1,4 +1,4 @@
-spec_i([ web,58,'Promotions','WWPromotion',0,por,'17_0_9-159740' ]).
+spec_i([ web,58,'Promoçãoes','WWPromotion',0,por,'17_0_9-159740' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
@@ -20,7 +20,7 @@ las_i(2,[ [ 'Promotiondescription','Update','Delete',32,31,30,40000,29,15 ] ]).
 lac_i(2,[ [ 'Promotiondescription','Update','Delete' ] ]).
  
  
-lits_i('Promotions',5,10).
+lits_i('Promoçãoes',5,10).
  
 cls_i([ 0,0 ],[ 5,1139 ]).
  
@@ -123,7 +123,7 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'MasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('ObjDesc','Promotions')).
+rule_i(0,prop('ObjDesc','Promoçãoes')).
 rule_i(0,prop('ObjName','WWPromotion')).
 rule_i(0,maingen(41)).
 rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
@@ -230,7 +230,7 @@ b_line_i(4,2,2,cmd,1,[ t('',111,4,0) ]).
 b_line_i(6,2,2,cmd,1,[ t('',107,6,0),t([ t('Grid',3,1,0),t('Rows',3,1,0) ],29,1,0),t(=,10,1,0),t('10',3,1,0) ]).
 b_line_i(7,2,2,cmd,1,[ t('',107,7,0),t('Update',23,1,0),t(=,10,1,0),t('"Modifica"',3,1,0) ]).
 b_line_i(8,2,2,cmd,1,[ t('',107,8,0),t('Delete',23,1,0),t(=,10,1,0),t('"Eliminar"',3,1,0) ]).
-b_line_i(9,2,2,cmd,1,[ t('',107,9,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Promotions''',3,1,0) ]).
+b_line_i(9,2,2,cmd,1,[ t('',107,9,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Promoçãoes''',3,1,0) ]).
 b_line_i(11,2,2,cmd,1,[ t('',145,11,0),t('''PREPARETRANSACTION''',3,11,5) ]).
 b_line_i(12,2,2,cmd,1,[ t('',107,12,0),t([ t('Grid',3,12,2),t('loadsessionstate(',1,12,7) ],31,12,7),t(')',4,1,25) ]).
 b_line_i(13,2,2,cmd,1,[ t('',147,13,0) ]).
@@ -277,7 +277,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Promotions',3))).
+html_sub_i(8,9,html_i(0,t('Promoçãoes',3))).
 html_sub_i(7,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,div(12))).
@@ -361,7 +361,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Promotions',d,[ str ]).
+html_comp_i(9,'Caption','Promoçãoes',d,[ str ]).
 html_comp_i(9,'Id','Titletext',v,[ str ]).
 html_comp_i(9,'Class','SubTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -766,7 +766,7 @@ warn_gen_i(msg([],spc0038,[ 'There is no index for order ',[ att(2,29) ],'; poor
  
  
  
-lit_i(9,1,t('Promotions',3),[ ctlname('Titletext') ]).
+lit_i(9,1,t('Promoçãoes',3),[ ctlname('Titletext') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(13,1,button('''DoInsert'''),[ ctlname('Btninsert'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(12,1,div(12),[ ctlname('') ]).

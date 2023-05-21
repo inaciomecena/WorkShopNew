@@ -6,10 +6,10 @@
 <ObjCls>13</ObjCls>
 <ObjId>45</ObjId>
 <ObjName>WWCategory</ObjName>
-<ObjDesc>Categories</ObjDesc>
+<ObjDesc>Work With Category</ObjDesc>
 <ObjPgmName>WWCategory</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -50,7 +50,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Category Name</Description></Attribute></Order>
+<Description>Noma da Categoria</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>UCATEGORY</IndexName>
 <LevelOptions></LevelOptions>
@@ -70,7 +70,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Category Name</Description></Attribute>
+<Description>Noma da Categoria</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
@@ -96,7 +96,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></KeyAttributes>
+<Description>Categoria Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
@@ -122,7 +122,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute>
+<Description>Categoria Id</Description></Attribute>
 <Token>)</Token></Expression>
 <IF></IF></CALL></Event>
 <Event>

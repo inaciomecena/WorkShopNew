@@ -2320,6 +2320,9 @@
               "C:\\Models\\WorkShopNew\\NetModel\\build\\notauthorized\\notauthorized.csproj": {
                 "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\notauthorized\\notauthorized.csproj"
               },
+              "C:\\Models\\WorkShopNew\\NetModel\\build\\paginaprincipal\\paginaprincipal.csproj": {
+                "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\paginaprincipal\\paginaprincipal.csproj"
+              },
               "C:\\Models\\WorkShopNew\\NetModel\\build\\productgeneral\\productgeneral.csproj": {
                 "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\productgeneral\\productgeneral.csproj"
               },
@@ -2380,9 +2383,6 @@
               "C:\\Models\\WorkShopNew\\NetModel\\build\\shoppingcart\\shoppingcart.csproj": {
                 "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\shoppingcart\\shoppingcart.csproj"
               },
-              "C:\\Models\\WorkShopNew\\NetModel\\build\\startup\\startup.csproj": {
-                "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\startup\\startup.csproj"
-              },
               "C:\\Models\\WorkShopNew\\NetModel\\build\\tabbedview\\tabbedview.csproj": {
                 "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\tabbedview\\tabbedview.csproj"
               },
@@ -2409,6 +2409,12 @@
               },
               "C:\\Models\\WorkShopNew\\NetModel\\build\\viewshoppingcart\\viewshoppingcart.csproj": {
                 "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\viewshoppingcart\\viewshoppingcart.csproj"
+              },
+              "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_principal\\wp_principal.csproj": {
+                "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_principal\\wp_principal.csproj"
+              },
+              "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_relatorios\\wp_relatorios.csproj": {
+                "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_relatorios\\wp_relatorios.csproj"
               },
               "C:\\Models\\WorkShopNew\\NetModel\\build\\wwcategory\\wwcategory.csproj": {
                 "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\wwcategory\\wwcategory.csproj"
@@ -3971,6 +3977,110 @@
         "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\notauthorized\\notauthorized.csproj",
         "packagesPath": "C:\\Users\\Inácio\\.nuget\\packages\\",
         "outputPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\notauthorized\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Inácio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Models\\WorkShopNew\\NetModel\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[1.0.19269.1, )"
+            },
+            "Microsoft.Extensions.DependencyModel": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NetTopologySuite": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "NetTopologySuite.Core": {
+              "target": "Package",
+              "version": "[1.15.3, )"
+            },
+            "Novell.Directory.Ldap.NETStandard": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Sandwych.GeographicLib": {
+              "target": "Package",
+              "version": "[1.49.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.DirectoryServices": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "iTextSharp-LGPL": {
+              "target": "Package",
+              "version": "[4.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Models\\WorkShopNew\\NetModel\\build\\paginaprincipal\\paginaprincipal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Models\\WorkShopNew\\NetModel\\build\\paginaprincipal\\paginaprincipal.csproj",
+        "projectName": "paginaprincipal",
+        "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\paginaprincipal\\paginaprincipal.csproj",
+        "packagesPath": "C:\\Users\\Inácio\\.nuget\\packages\\",
+        "outputPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\paginaprincipal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Inácio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6147,110 +6257,6 @@
         }
       }
     },
-    "C:\\Models\\WorkShopNew\\NetModel\\build\\startup\\startup.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Models\\WorkShopNew\\NetModel\\build\\startup\\startup.csproj",
-        "projectName": "startup",
-        "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\startup\\startup.csproj",
-        "packagesPath": "C:\\Users\\Inácio\\.nuget\\packages\\",
-        "outputPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\startup\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Inácio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Models\\WorkShopNew\\NetModel\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
-                "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "noWarn": [
-            "NU1603",
-            "NU1701"
-          ],
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[1.0.19269.1, )"
-            },
-            "Microsoft.Extensions.DependencyModel": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "NetTopologySuite": {
-              "target": "Package",
-              "version": "[2.0.0, )"
-            },
-            "NetTopologySuite.Core": {
-              "target": "Package",
-              "version": "[1.15.3, )"
-            },
-            "Novell.Directory.Ldap.NETStandard": {
-              "target": "Package",
-              "version": "[3.3.1, )"
-            },
-            "Sandwych.GeographicLib": {
-              "target": "Package",
-              "version": "[1.49.3, )"
-            },
-            "System.Configuration.ConfigurationManager": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            },
-            "System.DirectoryServices": {
-              "target": "Package",
-              "version": "[4.7.0, )"
-            },
-            "iTextSharp-LGPL": {
-              "target": "Package",
-              "version": "[4.1.6, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\Models\\WorkShopNew\\NetModel\\build\\tabbedview\\tabbedview.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -7091,6 +7097,214 @@
         "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\viewshoppingcart\\viewshoppingcart.csproj",
         "packagesPath": "C:\\Users\\Inácio\\.nuget\\packages\\",
         "outputPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\viewshoppingcart\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Inácio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Models\\WorkShopNew\\NetModel\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[1.0.19269.1, )"
+            },
+            "Microsoft.Extensions.DependencyModel": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NetTopologySuite": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "NetTopologySuite.Core": {
+              "target": "Package",
+              "version": "[1.15.3, )"
+            },
+            "Novell.Directory.Ldap.NETStandard": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Sandwych.GeographicLib": {
+              "target": "Package",
+              "version": "[1.49.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.DirectoryServices": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "iTextSharp-LGPL": {
+              "target": "Package",
+              "version": "[4.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_principal\\wp_principal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_principal\\wp_principal.csproj",
+        "projectName": "wp_principal",
+        "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_principal\\wp_principal.csproj",
+        "packagesPath": "C:\\Users\\Inácio\\.nuget\\packages\\",
+        "outputPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_principal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Inácio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Models\\WorkShopNew\\NetModel\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj": {
+                "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\GeneXus.Programs.Common\\GeneXus.Programs.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1603",
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[1.0.19269.1, )"
+            },
+            "Microsoft.Extensions.DependencyModel": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NetTopologySuite": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "NetTopologySuite.Core": {
+              "target": "Package",
+              "version": "[1.15.3, )"
+            },
+            "Novell.Directory.Ldap.NETStandard": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Sandwych.GeographicLib": {
+              "target": "Package",
+              "version": "[1.49.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "System.DirectoryServices": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "iTextSharp-LGPL": {
+              "target": "Package",
+              "version": "[4.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_relatorios\\wp_relatorios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_relatorios\\wp_relatorios.csproj",
+        "projectName": "wp_relatorios",
+        "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_relatorios\\wp_relatorios.csproj",
+        "packagesPath": "C:\\Users\\Inácio\\.nuget\\packages\\",
+        "outputPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_relatorios\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Inácio\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,4 @@
-spec_i([ web,14,'Sellers','WWSeller',0,por,'17_0_9-159740' ]).
+spec_i([ web,14,'Vendedores','WWSeller',0,por,'17_0_9-159740' ]).
  
 struct_i(2,1,[ 'Pgmname' ],[]).
  
@@ -20,7 +20,7 @@ las_i(2,[ [ 'Sellername',9,8,19,40000,18,10 ] ]).
 lac_i(2,[ [ 'Sellername' ] ]).
  
  
-lits_i('Sellers',5,10).
+lits_i('Vendedores',5,10).
  
 cls_i([ 0,0 ],[ 5,1075 ]).
  
@@ -121,7 +121,7 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'MasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('ObjDesc','Sellers')).
+rule_i(0,prop('ObjDesc','Vendedores')).
 rule_i(0,prop('ObjName','WWSeller')).
 rule_i(0,maingen(41)).
 rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
@@ -150,11 +150,11 @@ v_i(r,o,4,9).
  
  
 attri_i(40000,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Seller Photo','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Seller Name','',0 ]).
-attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Seller Id','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',13 ]).
@@ -215,16 +215,16 @@ break_i(2,nvg,1,[ 18 ],[ [ 10,18,19,8,9 ],[],[] ]).
 b_group_i(2,1,lit,0,1,1).
 b_group_i(2,2,lit,0,2,13).
 b_group_i(2,3,lit,0,14,17).
-b_group_i(2,4,lit,0,18,21).
-b_group_i(2,5,lit,0,22,25).
-b_group_i(2,6,lit,0,26,0).
+b_group_i(2,4,lit,0,18,22).
+b_group_i(2,5,lit,0,23,26).
+b_group_i(2,6,lit,0,27,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
 b_line_i(2,2,2,cmd,1,[ t('',109,2,0),t('.NOT.',8,1,5),t('udp(',1,2,23),t(o(1,'IsAuthorized'),28,2,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
 b_line_i(3,2,2,cmd,1,[ t('',104,3,0),t(o(13,'NotAuthorized'),28,1,3),t('Pgmname',23,1,17) ]).
 b_line_i(4,2,2,cmd,1,[ t('',111,4,0) ]).
 b_line_i(6,2,2,cmd,1,[ t('',107,6,0),t([ t('Grid',3,1,0),t('Rows',3,1,0) ],29,1,0),t(=,10,1,0),t('10',3,1,0) ]).
-b_line_i(7,2,2,cmd,1,[ t('',107,7,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Sellers''',3,1,0) ]).
+b_line_i(7,2,2,cmd,1,[ t('',107,7,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Vendedores''',3,1,0) ]).
 b_line_i(9,2,2,cmd,1,[ t('',145,9,0),t('''PREPARETRANSACTION''',3,9,5) ]).
 b_line_i(10,2,2,cmd,1,[ t('',107,10,0),t([ t('Grid',3,10,2),t('loadsessionstate(',1,10,7) ],31,10,7),t(')',4,1,25) ]).
 b_line_i(11,2,2,cmd,1,[ t('',147,11,0) ]).
@@ -233,19 +233,20 @@ b_line_i(14,2,3,cmd,1,[ t('',107,14,0),t([ t('Grid',3,14,2),t('savesessionstate(
 b_line_i(15,2,3,cmd,1,[ t('',147,15,0) ]).
 b_line_i(17,2,3,cmd,1,[ t('',146,17,0),t([ t('Grid',3,17,7),t('Load',3,17,12) ],29,17,12) ]).
 b_line_i(18,2,4,cmd,1,[ t('',107,18,0),t([ t(18,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewSeller'),28,1,0),t(',',7,1,0),t(10,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
-b_line_i(19,2,4,cmd,1,[ t('',107,19,0),t([ t('Grid',3,0,0),t('load(',1,0,0) ],31,0,0),t(')',4,0,0) ]).
-b_line_i(19,2,4,cmd,1,[ t('',147,19,0) ]).
-b_line_i(21,2,4,cmd,1,[ t('',146,21,0),t('''DoInsert''',3,21,7) ]).
-b_line_i(22,2,5,cmd,1,[ t('',104,22,0),t(o(0,'Seller'),28,1,2),t([ 42,'Insert' ],44,22,9),t(',',7,1,0),t('nullvalue(',1,22,25),t(10,2,22,36),t(')',4,1,44) ]).
-b_line_i(23,2,5,cmd,1,[ t('',147,23,0) ]).
-b_line_i(25,2,5,cmd,1,[ t('',143,25,0),t('''PREPARETRANSACTION''',3,25,5) ]).
-b_line_i(26,2,6,cmd,1,[ t('',107,26,0),t('Trncontext',23,1,0),t(=,10,1,0),t([ 'TransactionContext',[ t('(',0,26,19),t(')',4,26,20) ],n ],46,1,0) ]).
-b_line_i(27,2,6,cmd,1,[ t('',107,27,0),t([ t('Trncontext',23,1,0),t('Callerobject',3,1,0) ],29,1,0),t(=,10,1,0),t('Pgmname',23,1,0) ]).
-b_line_i(28,2,6,cmd,1,[ t('',107,28,0),t([ t('Trncontext',23,1,0),t('Callerondelete',3,1,0) ],29,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
-b_line_i(29,2,6,cmd,1,[ t('',107,29,0),t([ t('Trncontext',23,1,0),t('Callerurl',3,1,0) ],29,1,0),t(=,10,1,0),t([ t('Httprequest',23,1,0),t('Scriptname',3,1,0) ],29,1,0),t(+,5,1,0),t('"?"',3,1,0),t(+,5,1,0),t([ t('Httprequest',23,1,0),t('Querystring',3,1,0) ],29,1,0) ]).
-b_line_i(30,2,6,cmd,1,[ t('',107,30,0),t([ t('Trncontext',23,1,0),t('Transactionname',3,1,0) ],29,1,0),t(=,10,1,0),t('"Seller"',3,1,0) ]).
-b_line_i(32,2,6,cmd,1,[ t('',107,32,0),t([ t('Session',23,32,2),t('set(',1,32,11) ],31,32,2),t('"TrnContext"',3,32,16),t(',',7,1,29),t([ t('Trncontext',23,1,31),t('toxml(',1,1,43) ],31,32,43),t(')',4,1,50),t(')',4,1,51) ]).
-b_line_i(33,2,6,cmd,1,[ t('',144,33,0) ]).
+b_line_i(19,2,4,cmd,1,[ t('',107,19,0),t([ t(9,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewCountry'),28,1,0),t(',',7,1,0),t(8,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
+b_line_i(20,2,4,cmd,1,[ t('',107,20,0),t([ t('Grid',3,0,0),t('load(',1,0,0) ],31,0,0),t(')',4,0,0) ]).
+b_line_i(20,2,4,cmd,1,[ t('',147,20,0) ]).
+b_line_i(22,2,4,cmd,1,[ t('',146,22,0),t('''DoInsert''',3,22,7) ]).
+b_line_i(23,2,5,cmd,1,[ t('',104,23,0),t(o(0,'Seller'),28,1,2),t([ 42,'Insert' ],44,23,9),t(',',7,1,0),t('nullvalue(',1,23,25),t(10,2,23,36),t(')',4,1,44) ]).
+b_line_i(24,2,5,cmd,1,[ t('',147,24,0) ]).
+b_line_i(26,2,5,cmd,1,[ t('',143,26,0),t('''PREPARETRANSACTION''',3,26,5) ]).
+b_line_i(27,2,6,cmd,1,[ t('',107,27,0),t('Trncontext',23,1,0),t(=,10,1,0),t([ 'TransactionContext',[ t('(',0,27,19),t(')',4,27,20) ],n ],46,1,0) ]).
+b_line_i(28,2,6,cmd,1,[ t('',107,28,0),t([ t('Trncontext',23,1,0),t('Callerobject',3,1,0) ],29,1,0),t(=,10,1,0),t('Pgmname',23,1,0) ]).
+b_line_i(29,2,6,cmd,1,[ t('',107,29,0),t([ t('Trncontext',23,1,0),t('Callerondelete',3,1,0) ],29,1,0),t(=,10,1,0),t('TRUE',40,1,0) ]).
+b_line_i(30,2,6,cmd,1,[ t('',107,30,0),t([ t('Trncontext',23,1,0),t('Callerurl',3,1,0) ],29,1,0),t(=,10,1,0),t([ t('Httprequest',23,1,0),t('Scriptname',3,1,0) ],29,1,0),t(+,5,1,0),t('"?"',3,1,0),t(+,5,1,0),t([ t('Httprequest',23,1,0),t('Querystring',3,1,0) ],29,1,0) ]).
+b_line_i(31,2,6,cmd,1,[ t('',107,31,0),t([ t('Trncontext',23,1,0),t('Transactionname',3,1,0) ],29,1,0),t(=,10,1,0),t('"Seller"',3,1,0) ]).
+b_line_i(33,2,6,cmd,1,[ t('',107,33,0),t([ t('Session',23,33,2),t('set(',1,33,11) ],31,33,2),t('"TrnContext"',3,33,16),t(',',7,1,29),t([ t('Trncontext',23,1,31),t('toxml(',1,1,43) ],31,33,43),t(')',4,1,50),t(')',4,1,51) ]).
+b_line_i(34,2,6,cmd,1,[ t('',144,34,0) ]).
  
 sf_break_i(25,2).
  
@@ -269,7 +270,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Sellers',3))).
+html_sub_i(8,9,html_i(0,t('Vendedores',3))).
 html_sub_i(7,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,div(12))).
@@ -353,7 +354,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Sellers',d,[ str ]).
+html_comp_i(9,'Caption','Vendedores',d,[ str ]).
 html_comp_i(9,'Id','Titletext',v,[ str ]).
 html_comp_i(9,'Class','SubTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -449,7 +450,7 @@ html_comp_i(16,'Font',font('Arial',10,[]),d,[ font ]).
 html_comp_i(16,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(16,'Gxformat',0,d,[ num ]).
 html_comp_i(16,'Title','',d,[ str ]).
-html_comp_i(16,'Invitemsg','Name',v,[ str ]).
+html_comp_i(16,'Invitemsg','Nome',v,[ str ]).
 html_comp_i(17,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(17,'Class',row,v,[ str ]).
 html_comp_i(17,'Id','',d,[ str ]).
@@ -595,7 +596,7 @@ html_comp_i(27,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(27,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(27,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(27,'Coltitle','Name',d,[ str ]).
+html_comp_i(27,'Coltitle','Nome',d,[ str ]).
 html_comp_i(27,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(27,'Horizontalalignment',left,d,[ str ]).
@@ -619,7 +620,7 @@ html_comp_i(28,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(28,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(28,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(28,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(28,'Coltitle','Photo',d,[ str ]).
+html_comp_i(28,'Coltitle','Foto',d,[ str ]).
 html_comp_i(28,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(28,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(28,'Colvisible',-1,v,[ bool ]).
@@ -648,7 +649,7 @@ html_comp_i(29,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(29,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(29,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(29,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(29,'Coltitle','Country Id',d,[ str ]).
+html_comp_i(29,'Coltitle','País Id',d,[ str ]).
 html_comp_i(29,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(29,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(29,'Horizontalalignment',right,d,[ str ]).
@@ -679,7 +680,7 @@ html_comp_i(30,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(30,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(30,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(30,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(30,'Coltitle','Country Name',d,[ str ]).
+html_comp_i(30,'Coltitle','País',d,[ str ]).
 html_comp_i(30,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(30,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(30,'Horizontalalignment',left,d,[ str ]).
@@ -697,7 +698,7 @@ warn_gen_i(msg([],spc0038,[ 'There is no index for order ',[ att(2,18) ],'; poor
  
  
  
-lit_i(9,1,t('Sellers',3),[ ctlname('Titletext') ]).
+lit_i(9,1,t('Vendedores',3),[ ctlname('Titletext') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(13,1,button('''DoInsert'''),[ ctlname('Btninsert'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(12,1,div(12),[ ctlname('') ]).
@@ -1056,17 +1057,19 @@ struct_dt_elem_i([ 26,56,0 ],3,pic,'99/99/99').
  
 sub_info_i(146,'Start',1,11,[ [ 'Pgmname',[ t('Httprequest',23),t('Querystring',3) ],[ t('Httprequest',23),t('Scriptname',3) ] ],[ [ t('Grid',3),t('Rows',3) ],[ t('Form',3),t('Caption',3) ] ] ]).
 sub_info_i(146,'Refresh',13,15,[ [],[] ]).
-sub_info_i(146,[ t('Grid',3,17,7),t('Load',3,17,12) ],17,19,[ [ 10 ],[ [ t(18,2),t('Link',3) ] ] ]).
-sub_info_i(146,'''DoInsert''',21,23,[ [ 10 ],[] ]).
+sub_info_i(146,[ t('Grid',3,17,7),t('Load',3,17,12) ],17,20,[ [ 10,8 ],[ [ t(18,2),t('Link',3) ],[ t(9,2),t('Link',3) ] ] ]).
+sub_info_i(146,'''DoInsert''',22,24,[ [ 10 ],[] ]).
  
 pgm_parm_i(trn,4,'SELLER',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'SellerId',in,[] ] ]).
 pgm_parm_i(web,9,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
+pgm_parm_i(web,38,'VIEWCOUNTRY',[ [ int,4,0,0 ],[ char,50,0,0 ] ],[ [ 'CountryId',in,[] ],[ 'TabCode',in,[] ] ]).
 pgm_parm_i(web,26,'VIEWSELLER',[ [ int,4,0,0 ],[ char,50,0,0 ] ],[ [ 'SellerId',in,[] ],[ 'TabCode',in,[] ] ]).
 pgm_parm_i(proc,13,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(web,14,'WWSELLER','INTERNAL','Unsecure').
 pgm_callprotocol_i(trn,4,'SELLER','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,9,'NOTAUTHORIZED','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,38,'VIEWCOUNTRY','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,26,'VIEWSELLER','INTERNAL','Unsecure').
 pgm_callprotocol_i(proc,13,'ISAUTHORIZED','INTERNAL','Unsecure').
  

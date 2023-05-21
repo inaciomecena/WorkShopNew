@@ -18,7 +18,7 @@ las_i(2,[ [ 'Pgmname','Trncontext','Mode','Categoryid','Websession',6,7 ] ]).
 lac_i(2,[ [ 6,7 ] ]).
  
  
-lits_i('Category',5,10).
+lits_i('Categoria',5,10).
  
 cls_i([ 0,0 ],[ 5,19 ]).
  
@@ -184,8 +184,8 @@ tbl_to_delete_i(2,[ 6,[ [ 2,6,6 ] ],c,'IPRODUCT3',0,[ 12 ],'' ]).
  
  
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Category Name','',0 ]).
-attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',11 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
 attri_i('Websession',[ 'WebSession',o(websession),4,0,'',0,'Web Session','',10 ]).
@@ -243,25 +243,21 @@ dom_info_i(89,[ 'Name' ]).
 break_i(2,nvg,1,[],[ [],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
-b_group_i(2,2,lit,0,2,19).
-b_group_i(2,3,lit,0,20,0).
+b_group_i(2,2,lit,0,2,15).
+b_group_i(2,3,lit,0,16,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
 b_line_i(5,2,2,cmd,1,[ t('',109,5,0),t('.NOT.',8,1,5),t('udp(',1,5,23),t(o(1,'IsAuthorized'),28,5,11),t(',',7,1,0),t('Pgmname',23,1,24),t(')',4,1,0) ]).
 b_line_i(6,2,2,cmd,1,[ t('',104,6,0),t(o(13,'NotAuthorized'),28,1,3),t('Pgmname',23,1,17) ]).
 b_line_i(7,2,2,cmd,1,[ t('',111,7,0) ]).
 b_line_i(9,2,2,cmd,1,[ t('',107,9,0),t([ t('Trncontext',23,9,2),t('fromxml(',1,9,14) ],31,9,2),t([ t('Websession',23,1,23),t('get(',1,1,35) ],31,9,35),t('"TrnContext"',3,9,40),t(')',4,1,53),t(')',4,1,54) ]).
-b_line_i(11,2,2,cmd,1,[ t('',109,11,0),t('Mode',23,1,5),t(=,10,1,11),t([ 42,'Delete' ],44,11,13) ]).
-b_line_i(12,2,2,cmd,1,[ t('',107,12,0),t([ t('Btn_enter',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('"Eliminar"',3,1,0) ]).
-b_line_i(13,2,2,cmd,1,[ t('',107,13,0),t([ t('Btn_enter',3,1,0),t('Tooltiptext',3,1,0) ],29,1,0),t(=,10,1,0),t('"Eliminar"',3,1,0) ]).
-b_line_i(14,2,2,cmd,1,[ t('',111,14,0) ]).
-b_line_i(17,2,2,cmd,1,[ t('',147,17,0) ]).
-b_line_i(19,2,2,cmd,1,[ t('',146,19,0),t('After Trn',3,19,7) ]).
-b_line_i(23,2,3,cmd,1,[ t('',109,23,0),t('(',0,1,5),t('Mode',23,1,6),t(=,10,1,12),t([ 42,'Delete' ],44,23,14),t('.AND.',9,1,29),t('.NOT.',8,1,35),t([ t('Trncontext',23,23,41),t('Callerondelete',3,23,53) ],29,23,53),t(')',4,1,67) ]).
-b_line_i(24,2,3,cmd,1,[ t('',104,24,0),t(o(13,'WWCategory'),28,1,3) ]).
-b_line_i(25,2,3,cmd,1,[ t('',111,25,0) ]).
-b_line_i(27,2,3,cmd,1,[ t('',118,27,0) ]).
-b_line_i(30,2,3,cmd,1,[ t('',147,30,0) ]).
+b_line_i(13,2,2,cmd,1,[ t('',147,13,0) ]).
+b_line_i(15,2,2,cmd,1,[ t('',146,15,0),t('After Trn',3,15,7) ]).
+b_line_i(19,2,3,cmd,1,[ t('',109,19,0),t('(',0,1,5),t('Mode',23,1,6),t(=,10,1,12),t([ 42,'Delete' ],44,19,14),t('.AND.',9,1,29),t('.NOT.',8,1,35),t([ t('Trncontext',23,19,41),t('Callerondelete',3,19,53) ],29,19,53),t(')',4,1,67) ]).
+b_line_i(20,2,3,cmd,1,[ t('',104,20,0),t(o(13,'WWCategory'),28,1,3) ]).
+b_line_i(21,2,3,cmd,1,[ t('',111,21,0) ]).
+b_line_i(23,2,3,cmd,1,[ t('',118,23,0) ]).
+b_line_i(26,2,3,cmd,1,[ t('',147,26,0) ]).
  
  
  
@@ -284,7 +280,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Category',3))).
+html_sub_i(8,9,html_i(0,t('Categoria',3))).
 html_sub_i(6,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,comp(errview))).
@@ -402,7 +398,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Category',d,[ str ]).
+html_comp_i(9,'Caption','Categoria',d,[ str ]).
 html_comp_i(9,'Id','Title',v,[ str ]).
 html_comp_i(9,'Class','Title',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -696,7 +692,7 @@ html_comp_i(39,'Returnonclick',0,v,[ bool ]).
 html_comp_i(39,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(39,'Captionstyle','',v,[ str ]).
 html_comp_i(39,'Captionposition','Left',v,[ str ]).
-html_comp_i(39,'Captionvalue','Name',d,[ str ]).
+html_comp_i(39,'Captionvalue','da Categoria',d,[ str ]).
 html_comp_i(39,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(39,'Controltype',2,d,[ num ]).
 html_comp_i(39,'Inputtype',0,d,[ num ]).
@@ -814,7 +810,7 @@ html_comp_i(48,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
-lit_i(9,1,t('Category',3),[ ctlname('Title') ]).
+lit_i(9,1,t('Categoria',3),[ ctlname('Title') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(12,1,comp(errview),[ ctlname('Errorviewer'),width(0),rect(0,0,10,10),title('Nothing') ]).
@@ -871,7 +867,7 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-att_prop_i(2,6,'HORIZONTAL_DESCRIPTION','Category Id',d).
+att_prop_i(2,6,'HORIZONTAL_DESCRIPTION','Categoria Id',d).
 att_prop_i(2,6,'ExternalName','CategoryId',d).
 att_prop_i(2,6,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,6,'EmptyAsNull','Yes',d).
@@ -886,7 +882,7 @@ att_prop_i(2,6,'AttValidationFailedMsg','',d).
 att_prop_i(2,6,'DownloadOffline','0',d).
 att_prop_i(2,6,'VarServiceExtName','',d).
 att_prop_i(2,6,'FullName','CategoryId',v).
-att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Category Name',d).
+att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Noma da Categoria',d).
 att_prop_i(2,7,'ExternalName','CategoryName',d).
 att_prop_i(2,7,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,7,'EmptyAsNull','Yes',d).
@@ -1170,8 +1166,8 @@ struct_dt_elem_i([ 26,56,0 ],3,pic,'99/99/99').
  
  
  
-sub_info_i(146,'Start',1,17,[ [ 'Pgmname','Websession','Mode' ],[ 'Trncontext',[ t('Btn_enter',3),t('Caption',3) ],[ t('Btn_enter',3),t('Tooltiptext',3) ] ] ]).
-sub_info_i(146,'After Trn',19,30,[ [ 'Mode','Trncontext' ],[] ]).
+sub_info_i(146,'Start',1,13,[ [ 'Pgmname','Websession' ],[ 'Trncontext' ] ]).
+sub_info_i(146,'After Trn',15,26,[ [ 'Mode','Trncontext' ],[] ]).
  
 pgm_parm_i(web,45,'WWCATEGORY',[],[]).
 pgm_parm_i(web,9,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).

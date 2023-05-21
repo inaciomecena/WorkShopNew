@@ -253,7 +253,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351923485542", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352115134913", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -380,7 +380,7 @@ namespace GeneXus.Programs {
 
       public override string GetPgmdesc( )
       {
-         return "Products Per Country" ;
+         return "Produtos por País" ;
       }
 
       protected void WB0N0( )
@@ -531,7 +531,7 @@ namespace GeneXus.Programs {
                Grid1Column.AddObjectProperty("Value", context.convertURL( AV8ProductPhoto));
                Grid1Container.AddColumnProperties(Grid1Column);
                Grid1Column = GXWebColumn.GetNew(isAjaxCallMode( ));
-               Grid1Column.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( AV9ProductPrice, 10, 2, ".", "")));
+               Grid1Column.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( AV9ProductPrice, 11, 2, ".", "")));
                Grid1Container.AddColumnProperties(Grid1Column);
                Grid1Column = GXWebColumn.GetNew(isAjaxCallMode( ));
                Grid1Column.AddObjectProperty("Value", StringUtil.RTrim( AV10ProductCountryName));
@@ -630,7 +630,7 @@ namespace GeneXus.Programs {
             {
                Form.Meta.addItem("generator", "GeneXus .NET 17_0_9-159740", 0) ;
             }
-            Form.Meta.addItem("description", "Products Per Country", 0) ;
+            Form.Meta.addItem("description", "Produtos por País", 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -1117,7 +1117,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351923485590", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352115135035", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1135,7 +1135,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("productspercountry.js", "?202351923485590", false, true);
+            context.AddJavascriptSource("productspercountry.js", "?202352115135036", false, true);
          }
          /* End function include_jscripts */
       }
@@ -1247,7 +1247,7 @@ namespace GeneXus.Programs {
          }
          /* Single line edit */
          ROClassString = "";
-         Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtavProductprice_Internalname,StringUtil.LTrim( StringUtil.NToC( AV9ProductPrice, 10, 2, ",", "")),StringUtil.LTrim( context.localUtil.Format( AV9ProductPrice, "$ ZZZZ9.99")),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtavProductprice_Jsonclick,(short)0,(string)"",(string)"",(string)ROClassString,(string)"",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)10,(short)0,(short)0,(short)23,(short)0,(short)-1,(short)0,(bool)false,(string)"",(string)"right",(bool)false,(string)""});
+         Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtavProductprice_Internalname,StringUtil.LTrim( StringUtil.NToC( AV9ProductPrice, 11, 2, ",", "")),StringUtil.LTrim( context.localUtil.Format( AV9ProductPrice, "R$ ZZZZ9.99")),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtavProductprice_Jsonclick,(short)0,(string)"",(string)"",(string)ROClassString,(string)"",(string)"",(short)-1,(short)0,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)11,(short)0,(short)0,(short)23,(short)0,(short)-1,(short)0,(bool)false,(string)"",(string)"right",(bool)false,(string)""});
          /* Subfile cell */
          if ( Grid1Container.GetWrapped() == 1 )
          {
@@ -1332,7 +1332,7 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "Products Per Country";
+         Form.Caption = "Produtos por País";
          if ( context.isSpaRequest( ) )
          {
             enableJsOutput();
@@ -1346,7 +1346,7 @@ namespace GeneXus.Programs {
 
       public override void InitializeDynEvents( )
       {
-         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'A13ProductName',fld:'PRODUCTNAME',pic:''},{av:'A14ProductCountryID',fld:'PRODUCTCOUNTRYID',pic:'ZZZ9'},{av:'A28ProductPhoto',fld:'PRODUCTPHOTO',pic:''},{av:'A40000ProductPhoto_GXI',fld:'PRODUCTPHOTO_GXI',pic:''},{av:'A27ProductPrice',fld:'PRODUCTPRICE',pic:'$ ZZZZ9.99'},{av:'A39ProductCountryName',fld:'PRODUCTCOUNTRYNAME',pic:''},{av:'A7CategoryName',fld:'CATEGORYNAME',pic:''},{av:'A19SellerPhoto',fld:'SELLERPHOTO',pic:''},{av:'A40001SellerPhoto_GXI',fld:'SELLERPHOTO_GXI',pic:''},{av:'dynavProductcountryid'},{av:'AV5ProductCountryId',fld:'vPRODUCTCOUNTRYID',pic:'ZZZ9'}]");
+         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'A13ProductName',fld:'PRODUCTNAME',pic:''},{av:'A14ProductCountryID',fld:'PRODUCTCOUNTRYID',pic:'ZZZ9'},{av:'A28ProductPhoto',fld:'PRODUCTPHOTO',pic:''},{av:'A40000ProductPhoto_GXI',fld:'PRODUCTPHOTO_GXI',pic:''},{av:'A27ProductPrice',fld:'PRODUCTPRICE',pic:'R$ ZZZZ9.99'},{av:'A39ProductCountryName',fld:'PRODUCTCOUNTRYNAME',pic:''},{av:'A7CategoryName',fld:'CATEGORYNAME',pic:''},{av:'A19SellerPhoto',fld:'SELLERPHOTO',pic:''},{av:'A40001SellerPhoto_GXI',fld:'SELLERPHOTO_GXI',pic:''},{av:'dynavProductcountryid'},{av:'AV5ProductCountryId',fld:'vPRODUCTCOUNTRYID',pic:'ZZZ9'}]");
          setEventMetadata("REFRESH",",oparms:[{av:'dynavProductcountryid'},{av:'AV5ProductCountryId',fld:'vPRODUCTCOUNTRYID',pic:'ZZZ9'}]}");
          setEventMetadata("NULL","{handler:'Validv_Sellerphoto',iparms:[{av:'dynavProductcountryid'},{av:'AV5ProductCountryId',fld:'vPRODUCTCOUNTRYID',pic:'ZZZ9'}]");
          setEventMetadata("NULL",",oparms:[{av:'dynavProductcountryid'},{av:'AV5ProductCountryId',fld:'vPRODUCTCOUNTRYID',pic:'ZZZ9'}]}");

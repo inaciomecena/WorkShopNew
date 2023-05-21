@@ -18,9 +18,9 @@ las_i(2,[ [] ]).
 lac_i(2,[ [] ]).
  
  
-lits_i('Enjoy Life!',5,10).
+lits_i('Aproveite a vida. Somos eternos aprendizes!',5,10).
  
-cls_i([ 5,10 ],[ 5,20 ]).
+cls_i([ 5,10 ],[ 5,52 ]).
  
  
  
@@ -186,12 +186,17 @@ html_i(2,div(2)).
 html_sub_i(2,3,html_i(0,div(3))).
 html_sub_i(3,4,html_i(0,div(4))).
 html_sub_i(4,5,html_i(0,div(5))).
-html_sub_i(5,6,html_i(0,t('Enjoy Life!',3))).
+html_sub_i(5,6,html_i(0,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-109'))).
+html_sub_i(4,7,html_i(1,div(7))).
+html_sub_i(3,8,html_i(1,div(8))).
+html_sub_i(8,9,html_i(0,div(9))).
+html_sub_i(9,10,html_i(0,t('Aproveite a vida. Somos eternos aprendizes!',3))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-gx-base-lib',bootstrapv3).
 html_tags_i(2,'data-abstract-form','').
-html_tags_i(6,'ControlType','').
+html_tags_i(6,'data-gx-image','').
+html_tags_i(10,'ControlType','').
  
 html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(2,'Class','Section',d,[ str ]).
@@ -218,25 +223,66 @@ html_comp_i(4,'Semanticcontent',div,d,[ str ]).
 html_comp_i(4,'Align',left,d,[ str ]).
 html_comp_i(4,'Valign',top,d,[ str ]).
 html_comp_i(5,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(5,'Class','col-xs-12',v,[ str ]).
+html_comp_i(5,'Class','col-xs-12 col-sm-6',v,[ str ]).
 html_comp_i(5,'Id','',d,[ str ]).
 html_comp_i(5,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(5,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(5,'Semanticcontent',div,d,[ str ]).
 html_comp_i(5,'Align','Center',v,[ str ]).
-html_comp_i(5,'Valign',top,d,[ str ]).
+html_comp_i(5,'Valign','Middle',v,[ str ]).
 html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(6,'Caption','Enjoy Life!',d,[ str ]).
-html_comp_i(6,'Id','Textblock1',v,[ str ]).
-html_comp_i(6,'Class','',v,[ str ]).
-html_comp_i(6,'Event','',d,[ str ]).
+html_comp_i(6,'Id','Image1',v,[ str ]).
+html_comp_i(6,'Class','Image',v,[ str ]).
+html_comp_i(6,'Srcname','Image1',d,[ str ]).
+html_comp_i(6,src,i(98,'689d7696-788a-4588-8ad6-72fce5aa7f0a'),v,[ image ]).
+html_comp_i(6,lowsrc,'',d,[ str ]).
 html_comp_i(6,'Returnonclick',0,d,[ bool ]).
-html_comp_i(6,'Gxformat',0,d,[ num ]).
+html_comp_i(6,'Eventgx','',d,[ str ]).
+html_comp_i(6,'Height',measure(400,px),v,[ measure ]).
+html_comp_i(6,'Width',measure(600,px),v,[ measure ]).
+html_comp_i(6,'Border','0',d,[ str ]).
+html_comp_i(6,'Alt','',d,[ str ]).
 html_comp_i(6,'Title','',d,[ str ]).
-html_comp_i(6,'Fill',-1,d,[ bool ]).
-html_comp_i(6,'Backcolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(6,'Forecolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(6,'Font','',d,[ str ]).
+html_comp_i(6,'Hspace',0,d,[ num ]).
+html_comp_i(6,'Vspace',0,d,[ num ]).
+html_comp_i(6,'Align',left,d,[ str ]).
+html_comp_i(6,'Usemap','',d,[ str ]).
+html_comp_i(7,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(7,'Class','col-xs-12 col-sm-6',v,[ str ]).
+html_comp_i(7,'Id','',d,[ str ]).
+html_comp_i(7,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Semanticcontent',div,d,[ str ]).
+html_comp_i(7,'Align','Center',v,[ str ]).
+html_comp_i(7,'Valign',top,d,[ str ]).
+html_comp_i(8,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(8,'Class',row,v,[ str ]).
+html_comp_i(8,'Id','',d,[ str ]).
+html_comp_i(8,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(8,'Semanticcontent',div,d,[ str ]).
+html_comp_i(8,'Align',left,d,[ str ]).
+html_comp_i(8,'Valign',top,d,[ str ]).
+html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(9,'Class','col-xs-12',v,[ str ]).
+html_comp_i(9,'Id','',d,[ str ]).
+html_comp_i(9,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(9,'Width',measure(0,px),d,[ measure ]).
+html_comp_i(9,'Semanticcontent',div,d,[ str ]).
+html_comp_i(9,'Align','Center',v,[ str ]).
+html_comp_i(9,'Valign',top,d,[ str ]).
+html_comp_i(10,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(10,'Caption','Aproveite a vida. Somos eternos aprendizes!',d,[ str ]).
+html_comp_i(10,'Id','Textblock1',v,[ str ]).
+html_comp_i(10,'Class','',v,[ str ]).
+html_comp_i(10,'Event','',d,[ str ]).
+html_comp_i(10,'Returnonclick',0,d,[ bool ]).
+html_comp_i(10,'Gxformat',0,d,[ num ]).
+html_comp_i(10,'Title','',d,[ str ]).
+html_comp_i(10,'Fill',-1,d,[ bool ]).
+html_comp_i(10,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(10,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(10,'Font','',d,[ str ]).
  
  
  
@@ -246,9 +292,13 @@ html_comp_i(6,'Font','',d,[ str ]).
  
  
  
-lit_i(6,1,t('Enjoy Life!',3),[ ctlname('Textblock1') ]).
+lit_i(6,1,bitmap('9fb193d9-64a4-4d30-b129-ff7c76830f7e-109'),[ ctlname('Image1') ]).
 lit_i(5,1,div(5),[ ctlname('') ]).
+lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(4,1,div(4),[ ctlname('') ]).
+lit_i(10,1,t('Aproveite a vida. Somos eternos aprendizes!',3),[ ctlname('Textblock1') ]).
+lit_i(9,1,div(9),[ ctlname('') ]).
+lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(3,1,div(3),[ ctlname('Maintable') ]).
 lit_i(2,1,div(2),[ ctlname('') ]).
 lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).

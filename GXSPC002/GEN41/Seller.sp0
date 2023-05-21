@@ -1,4 +1,4 @@
-spec_i([ trn,4,'Seller','Seller',[],por,'17_0_9-159740' ]).
+spec_i([ trn,4,'Vendedores','Seller',[],por,'17_0_9-159740' ]).
  
 struct_i(4,0,[ 'Pgmname','Trncontext','Insert_countryid','GXV1','Trncontextatt','Mode','Sellerid','Websession' ],[]).
  
@@ -18,7 +18,7 @@ las_i(4,[ [ 'Pgmname','Trncontext','Insert_countryid','GXV1','Trncontextatt','Mo
 lac_i(4,[ [ 10,18,19,8 ] ]).
  
  
-lits_i('Seller',5,10).
+lits_i('Vendedores',5,10).
  
 cls_i([ 0,0 ],[ 5,1023 ]).
  
@@ -140,7 +140,7 @@ rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop(idBC,'0')).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
-rule_i(0,prop('ObjDesc','Seller')).
+rule_i(0,prop('ObjDesc','Vendedores')).
 rule_i(0,prop('ObjName','Seller')).
 rule_i(4,prompt([ 3,[ [ 4,8,8 ] ],[ 8 ],[ 8 ],[ t(o(13,'Gx0030'),28),t(8,2) ],[],n,[] ])).
 rule_i(4,rule([ a(23,[ [ 8 ],[ t(o(13,'Gx0030'),28),t(8,2) ] ]) ],[],[],[ 8 ])).
@@ -196,11 +196,11 @@ tbl_to_delete_i(4,[ 6,[ [ 4,10,10 ] ],c,'IPRODUCT2',0,[ 12 ],'' ]).
  
  
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Seller Photo','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Seller Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Seller Id','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
 attri_i(40000,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
 attri_i('GXV1',[ 'GXV1',int,8,0,'',0,'','',14 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',13 ]).
@@ -318,7 +318,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Seller',3))).
+html_sub_i(8,9,html_i(0,t('Vendedores',3))).
 html_sub_i(6,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,comp(errview))).
@@ -457,7 +457,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Seller',d,[ str ]).
+html_comp_i(9,'Caption','Vendedores',d,[ str ]).
 html_comp_i(9,'Id','Title',v,[ str ]).
 html_comp_i(9,'Class','Title',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -751,7 +751,7 @@ html_comp_i(39,'Returnonclick',0,v,[ bool ]).
 html_comp_i(39,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(39,'Captionstyle','',v,[ str ]).
 html_comp_i(39,'Captionposition','Left',v,[ str ]).
-html_comp_i(39,'Captionvalue','Name',d,[ str ]).
+html_comp_i(39,'Captionvalue','Nome',d,[ str ]).
 html_comp_i(39,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(39,'Controltype',2,d,[ num ]).
 html_comp_i(39,'Inputtype',0,d,[ num ]).
@@ -817,7 +817,7 @@ html_comp_i(44,'Returnonclick',0,v,[ bool ]).
 html_comp_i(44,'Captionclass','col-sm-3 ImageAttributeLabel',v,[ str ]).
 html_comp_i(44,'Captionstyle','',v,[ str ]).
 html_comp_i(44,'Captionposition','Left',v,[ str ]).
-html_comp_i(44,'Captionvalue','Photo',d,[ str ]).
+html_comp_i(44,'Captionvalue','Foto',d,[ str ]).
 html_comp_i(44,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(44,'Controltype',2,d,[ num ]).
 html_comp_i(44,'Inputtype',0,d,[ num ]).
@@ -874,7 +874,7 @@ html_comp_i(49,'Returnonclick',0,v,[ bool ]).
 html_comp_i(49,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(49,'Captionstyle','',v,[ str ]).
 html_comp_i(49,'Captionposition','Left',v,[ str ]).
-html_comp_i(49,'Captionvalue','Country Id',d,[ str ]).
+html_comp_i(49,'Captionvalue','País Id',d,[ str ]).
 html_comp_i(49,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(49,'Controltype',2,d,[ num ]).
 html_comp_i(49,'Inputtype',0,d,[ num ]).
@@ -937,7 +937,7 @@ html_comp_i(54,'Returnonclick',0,v,[ bool ]).
 html_comp_i(54,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(54,'Captionstyle','',v,[ str ]).
 html_comp_i(54,'Captionposition','Left',v,[ str ]).
-html_comp_i(54,'Captionvalue','Country Name',d,[ str ]).
+html_comp_i(54,'Captionvalue','País',d,[ str ]).
 html_comp_i(54,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(54,'Controltype',2,d,[ num ]).
 html_comp_i(54,'Inputtype',0,d,[ num ]).
@@ -1055,7 +1055,7 @@ html_comp_i(63,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
-lit_i(9,1,t('Seller',3),[ ctlname('Title') ]).
+lit_i(9,1,t('Vendedores',3),[ ctlname('Title') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(12,1,comp(errview),[ ctlname('Errorviewer'),width(0),rect(0,0,10,10),title('Nothing') ]).
@@ -1238,7 +1238,7 @@ var_prop_i(2,'Insert_countryid',idBasedOn,'',v).
  
  
  
-trn_level_i(4,[ [ 10,18,19,40000,8,9 ],'Seller','Seller','Seller','',18 ]).
+trn_level_i(4,[ [ 10,18,19,40000,8,9 ],'Seller','Vendedores','Seller','',18 ]).
  
 struct_dt_i([ 26,56,0 ],name,'TransactionContext').
 struct_dt_i([ 26,56,0 ],namespace,'WorkShopNew').

@@ -9,7 +9,7 @@
 <ObjDesc>Responsive Master Page</ObjDesc>
 <ObjPgmName>RwdMasterPage</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0024</MsgCode>
@@ -65,7 +65,15 @@
 <Token>calling</Token>
 <Sp></Sp>
 <Token>Category</Token>
-<Token>.</Token></Message></Warning></Warnings>
+<Token>.</Token></Message></Warning>
+<Warning>
+<MsgCode>spc0156</MsgCode>
+<Message>
+<Token>Event </Token>
+<Token>'Catalogue'</Token>
+<Token> for control '</Token>
+<Token>Button14</Token>
+<Token>' is not defined.</Token></Message></Warning></Warnings>
 <Errors></Errors>
 <Generator>
 <GenId>41</GenId>
@@ -150,7 +158,7 @@
 <Expression></Expression>
 <IF></IF></CALL></Event>
 <Event>
-<EventName>'Catalogue'</EventName>
+<EventName>'Catalogo'</EventName>
 <CALL>
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
@@ -180,8 +188,8 @@
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
 <ObjId>20</ObjId>
-<ObjName>StartUp</ObjName>
-<ObjPgmName>StartUp</ObjPgmName>
+<ObjName>PaginaPrincipal</ObjName>
+<ObjPgmName>PaginaPrincipal</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
 <Expression></Expression>
 <IF></IF></CALL></Event>

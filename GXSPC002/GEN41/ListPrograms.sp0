@@ -185,22 +185,22 @@ b_line_i(21,1,1,cmd,0,[ t('',107,21,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,
 b_line_i(22,1,1,cmd,0,[ t('',145,22,0),t('''ADDPROGRAM''',3,22,4) ]).
 b_line_i(23,1,1,cmd,0,[]).
 b_line_i(24,1,1,cmd,0,[ t('',107,24,0),t('Name',23,0,0),t(=,10,0,0),t('"WWProduct"',3,0,0) ]).
-b_line_i(25,1,1,cmd,0,[ t('',107,25,0),t('Description',23,0,0),t(=,10,0,0),t('"Products"',3,0,0) ]).
+b_line_i(25,1,1,cmd,0,[ t('',107,25,0),t('Description',23,0,0),t(=,10,0,0),t('"Produtoss"',3,0,0) ]).
 b_line_i(26,1,1,cmd,0,[ t('',107,26,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWProduct'),28,0,0),t(')',4,0,0) ]).
 b_line_i(27,1,1,cmd,0,[ t('',145,27,0),t('''ADDPROGRAM''',3,27,4) ]).
 b_line_i(28,1,1,cmd,0,[]).
 b_line_i(29,1,1,cmd,0,[ t('',107,29,0),t('Name',23,0,0),t(=,10,0,0),t('"WWPromotion"',3,0,0) ]).
-b_line_i(30,1,1,cmd,0,[ t('',107,30,0),t('Description',23,0,0),t(=,10,0,0),t('"Promotions"',3,0,0) ]).
+b_line_i(30,1,1,cmd,0,[ t('',107,30,0),t('Description',23,0,0),t(=,10,0,0),t('"Promoçãoes"',3,0,0) ]).
 b_line_i(31,1,1,cmd,0,[ t('',107,31,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWPromotion'),28,0,0),t(')',4,0,0) ]).
 b_line_i(32,1,1,cmd,0,[ t('',145,32,0),t('''ADDPROGRAM''',3,32,4) ]).
 b_line_i(33,1,1,cmd,0,[]).
 b_line_i(34,1,1,cmd,0,[ t('',107,34,0),t('Name',23,0,0),t(=,10,0,0),t('"WWSeller"',3,0,0) ]).
-b_line_i(35,1,1,cmd,0,[ t('',107,35,0),t('Description',23,0,0),t(=,10,0,0),t('"Sellers"',3,0,0) ]).
+b_line_i(35,1,1,cmd,0,[ t('',107,35,0),t('Description',23,0,0),t(=,10,0,0),t('"Vendedores"',3,0,0) ]).
 b_line_i(36,1,1,cmd,0,[ t('',107,36,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWSeller'),28,0,0),t(')',4,0,0) ]).
 b_line_i(37,1,1,cmd,0,[ t('',145,37,0),t('''ADDPROGRAM''',3,37,4) ]).
 b_line_i(38,1,1,cmd,0,[]).
 b_line_i(39,1,1,cmd,0,[ t('',107,39,0),t('Name',23,0,0),t(=,10,0,0),t('"WWShoppingCart"',3,0,0) ]).
-b_line_i(40,1,1,cmd,0,[ t('',107,40,0),t('Description',23,0,0),t(=,10,0,0),t('"Shopping Carts"',3,0,0) ]).
+b_line_i(40,1,1,cmd,0,[ t('',107,40,0),t('Description',23,0,0),t(=,10,0,0),t('"Carrinho de Compras"',3,0,0) ]).
 b_line_i(41,1,1,cmd,0,[ t('',107,41,0),t('Link',23,0,0),t(=,10,0,0),t('link(',1,0,0),t(o(13,'WWShoppingCart'),28,0,0),t(')',4,0,0) ]).
 b_line_i(42,1,1,cmd,0,[ t('',145,42,0),t('''ADDPROGRAM''',3,42,4) ]).
 b_line_i(43,1,1,cmd,0,[]).

@@ -26,12 +26,12 @@ lac_i(2,[ [] ]).
 lac_i(3,[ [] ]).
  
  
-lits_i('Shopping Cart Information',5,10).
-lits_i('Shopping Carts',5,10).
+lits_i('Carrinho de Compras Information',5,10).
+lits_i('Carrinho de Compras',5,10).
 lits_i('General',5,10).
 lits_i('Product',5,10).
  
-cls_i([ 0,0 ],[ 5,34 ]).
+cls_i([ 0,0 ],[ 5,40 ]).
  
 pos_i(33,[ 0,0,0 ]).
  
@@ -275,9 +275,9 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Shopping Cart Information',3))).
+html_sub_i(8,9,html_i(0,t('Carrinho de Compras Information',3))).
 html_sub_i(7,10,html_i(1,div(10))).
-html_sub_i(10,11,html_i(0,t('Shopping Carts',3))).
+html_sub_i(10,11,html_i(0,t('Carrinho de Compras',3))).
 html_sub_i(3,12,html_i(1,div(12))).
 html_sub_i(12,13,html_i(0,div(13))).
 html_sub_i(13,14,html_i(0,div(14))).
@@ -377,7 +377,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Shopping Cart Information',d,[ str ]).
+html_comp_i(9,'Caption','Carrinho de Compras Information',d,[ str ]).
 html_comp_i(9,'Id','Viewtitle',v,[ str ]).
 html_comp_i(9,'Class','SubTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -397,7 +397,7 @@ html_comp_i(10,'Semanticcontent',div,d,[ str ]).
 html_comp_i(10,'Align','Right',v,[ str ]).
 html_comp_i(10,'Valign',top,d,[ str ]).
 html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(11,'Caption','Shopping Carts',d,[ str ]).
+html_comp_i(11,'Caption','Carrinho de Compras',d,[ str ]).
 html_comp_i(11,'Id','Viewall',v,[ str ]).
 html_comp_i(11,'Class','BtnTextBlockBack',v,[ str ]).
 html_comp_i(11,'Event','',d,[ str ]).
@@ -632,9 +632,9 @@ html_comp_i(38,'Params',[],v,[ params ]).
  
  
  
-lit_i(9,1,t('Shopping Cart Information',3),[ ctlname('Viewtitle') ]).
+lit_i(9,1,t('Carrinho de Compras Information',3),[ ctlname('Viewtitle') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
-lit_i(11,1,t('Shopping Carts',3),[ ctlname('Viewall') ]).
+lit_i(11,1,t('Carrinho de Compras',3),[ ctlname('Viewall') ]).
 lit_i(10,1,div(10),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(6,1,div(6),[ ctlname('Tabletop') ]).

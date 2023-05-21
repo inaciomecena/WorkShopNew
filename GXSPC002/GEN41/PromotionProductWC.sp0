@@ -20,7 +20,7 @@ lac_i(2,[ [] ]).
  
  
  
-cls_i([ 0,0 ],[ 2,35 ]).
+cls_i([ 0,0 ],[ 2,36 ]).
  
 pos_i(12,[ 1,2,0 ]).
 pos_i(13,[ 1,2,5 ]).
@@ -145,8 +145,8 @@ v_i(r,o,4,13).
  
  
 attri_i(15,[ 'PromotionId',int,4,0,'ZZZ9',0,'Promotion Id','',0 ]).
-attri_i(27,[ 'ProductPrice',int,8,2,'$ ZZZZ9.99',0,'Product Price','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Product Name','',0 ]).
+attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
@@ -429,7 +429,7 @@ html_comp_i(14,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(14,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(14,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(14,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(14,'Coltitle','Product Name',d,[ str ]).
+html_comp_i(14,'Coltitle','Nome do Produto',d,[ str ]).
 html_comp_i(14,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(14,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(14,'Horizontalalignment',left,d,[ str ]).
@@ -438,7 +438,7 @@ html_comp_i(14,'Colvisible',-1,v,[ bool ]).
 html_comp_i(14,'Title','',d,[ str ]).
 html_comp_i(14,'Invitemsg','',d,[ str ]).
 html_comp_i(15,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(15,'Colcount',10,d,[ num ]).
+html_comp_i(15,'Colcount',11,d,[ num ]).
 html_comp_i(15,'Colattid',27,v,[ num ]).
 html_comp_i(15,'Controlname','Productprice',d,[ str ]).
 html_comp_i(15,'Class','Attribute',v,[ str ]).
@@ -457,7 +457,7 @@ html_comp_i(15,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(15,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(15,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(15,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(15,'Coltitle','Product Price',d,[ str ]).
+html_comp_i(15,'Coltitle','Preço',d,[ str ]).
 html_comp_i(15,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(15,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(15,'Horizontalalignment',right,d,[ str ]).

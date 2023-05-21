@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\NetModel\web\bin\wp_relatorios.dll
+C:\Models\WorkShopNew\NetModel\web\bin\wp_relatorios.pdb
+C:\Models\WorkShopNew\NetModel\build\wp_relatorios\obj\Release\net6.0\wp_relatorios.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\NetModel\build\wp_relatorios\obj\Release\net6.0\wp_relatorios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\NetModel\build\wp_relatorios\obj\Release\net6.0\wp_relatorios.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\NetModel\build\wp_relatorios\obj\Release\net6.0\wp_relatorios.csproj.CopyComplete
+C:\Models\WorkShopNew\NetModel\build\wp_relatorios\obj\Release\net6.0\wp_relatorios.dll
+C:\Models\WorkShopNew\NetModel\build\wp_relatorios\obj\Release\net6.0\refint\wp_relatorios.dll
+C:\Models\WorkShopNew\NetModel\build\wp_relatorios\obj\Release\net6.0\wp_relatorios.pdb
+C:\Models\WorkShopNew\NetModel\build\wp_relatorios\obj\Release\net6.0\ref\wp_relatorios.dll

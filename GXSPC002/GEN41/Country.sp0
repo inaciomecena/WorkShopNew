@@ -154,11 +154,11 @@ rule_i(0,rule([ a(10,[ 'Mode','Countryid' ]) ],[],[ insert,update,delete,display
 rule_i(0,parmio([ [ 'Mode',in ],[ 'Countryid',in ] ])).
 rule_i(3,rule([ a(3,[ t(8,2) ]) ],[],[ insert,update,delete,display ],[ 8 ])).
 rule_i(3,rule([ a(21,[ [ 8 ] ]) ],[],[ insert,update,delete,display ],[ 8 ])).
-rule_i(3,rule([ a(1,[ t('"O Campo nome deve ser preenchido"',3) ]) ],[ t('null(',1),t(9,2),t(')',4) ],[ insert,update,delete,display ],[ 9 ])).
+rule_i(3,rule([ a(1,[ t('"O Campo Nome do País deve ser preenchido"',3) ]) ],[ t('null(',1),t(9,2),t(')',4) ],[ insert,update,delete,display ],[ 9 ])).
  
 a_i(1,3,f,8,[],[ [],[ t('Countryid',23),t('IF',17),t('.NOT.',8),t('null(',1),t('Countryid',23),t(')',4),t(';',18) ] ]).
 a_i(2,3,f,[ t(8,2),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
-a_i(3,3,b,5,[],[ [],[ a(1,[ t('"O Campo nome deve ser preenchido"',3) ]) ],[ t('null(',1),t(9,2),t(')',4) ] ]).
+a_i(3,3,b,5,[],[ [],[ a(1,[ t('"O Campo Nome do País deve ser preenchido"',3) ]) ],[ t('null(',1),t(9,2),t(')',4) ] ]).
 a_i(4,3,t,3,[],[ [ [ [],8,8 ] ],'ICOUNTRY',[] ]).
 a_i(5,3,k,3,[],[ [ [ [],9,9 ] ],'UCOUNTRY',[] ]).
 a_i(6,3,f,'Pgmname',[],[ [],[ t('"Country"',3) ] ]).
@@ -189,12 +189,12 @@ tbl_to_delete_i(3,[ 4,[ [ 3,8,8 ] ],c,'ISELLER1',0,[ 10 ],'' ]).
  
  
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
-attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Product Country ID','',0 ]).
-attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Customer Id','',0 ]).
-attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Seller Id','',0 ]).
-attri_i(17,[ 'CountryFlag',bits,4,0,'',0,'Country Flag','',0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
+attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Pais ID','',0 ]).
+attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Cliente Id','',0 ]).
+attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
+attri_i(17,[ 'CountryFlag',bits,4,0,'',0,'Bandeira','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
 attri_i(40000,[ 'CountryFlag_GXI',svchar,2048,0,'',0,'',[],0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',11 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
@@ -724,7 +724,7 @@ html_comp_i(39,'Returnonclick',0,v,[ bool ]).
 html_comp_i(39,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(39,'Captionstyle','',v,[ str ]).
 html_comp_i(39,'Captionposition','Left',v,[ str ]).
-html_comp_i(39,'Captionvalue','Name',d,[ str ]).
+html_comp_i(39,'Captionvalue','País',d,[ str ]).
 html_comp_i(39,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(39,'Controltype',2,d,[ num ]).
 html_comp_i(39,'Inputtype',0,d,[ num ]).
@@ -790,7 +790,7 @@ html_comp_i(44,'Returnonclick',0,v,[ bool ]).
 html_comp_i(44,'Captionclass','col-sm-3 ImageAttributeLabel',v,[ str ]).
 html_comp_i(44,'Captionstyle','',v,[ str ]).
 html_comp_i(44,'Captionposition','Left',v,[ str ]).
-html_comp_i(44,'Captionvalue','Flag',d,[ str ]).
+html_comp_i(44,'Captionvalue','Bandeira',d,[ str ]).
 html_comp_i(44,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(44,'Controltype',2,d,[ num ]).
 html_comp_i(44,'Inputtype',0,d,[ num ]).
@@ -961,7 +961,7 @@ lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
  
  
  
-att_prop_i(2,8,'HORIZONTAL_DESCRIPTION','Country Id',d).
+att_prop_i(2,8,'HORIZONTAL_DESCRIPTION','País Id',d).
 att_prop_i(2,8,'ExternalName','CountryId',d).
 att_prop_i(2,8,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,8,'EmptyAsNull','Yes',d).
@@ -976,7 +976,7 @@ att_prop_i(2,8,'AttValidationFailedMsg','',d).
 att_prop_i(2,8,'DownloadOffline','0',d).
 att_prop_i(2,8,'VarServiceExtName','',d).
 att_prop_i(2,8,'FullName','CountryId',v).
-att_prop_i(2,9,'HORIZONTAL_DESCRIPTION','Country Name',d).
+att_prop_i(2,9,'HORIZONTAL_DESCRIPTION','País',d).
 att_prop_i(2,9,'ExternalName','CountryName',d).
 att_prop_i(2,9,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,9,'EmptyAsNull','Yes',d).
@@ -988,7 +988,7 @@ att_prop_i(2,9,'AttValidationFailedMsg','',d).
 att_prop_i(2,9,'DownloadOffline','0',d).
 att_prop_i(2,9,'VarServiceExtName','',d).
 att_prop_i(2,9,'FullName','CountryName',v).
-att_prop_i(2,17,'HORIZONTAL_DESCRIPTION','Country Flag',d).
+att_prop_i(2,17,'HORIZONTAL_DESCRIPTION','Bandeira',d).
 att_prop_i(2,17,'ExternalName','CountryFlag',d).
 att_prop_i(2,17,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,17,'EmptyAsNull','Yes',d).
@@ -1000,7 +1000,7 @@ att_prop_i(2,17,'AttValidationFailedMsg','',d).
 att_prop_i(2,17,'DownloadOffline','0',d).
 att_prop_i(2,17,'VarServiceExtName','',d).
 att_prop_i(2,17,'FullName','CountryFlag',v).
-att_prop_i(2,10,'HORIZONTAL_DESCRIPTION','Seller Id',d).
+att_prop_i(2,10,'HORIZONTAL_DESCRIPTION','Vendedor Id',d).
 att_prop_i(2,10,'ExternalName','SellerId',d).
 att_prop_i(2,10,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,10,'EmptyAsNull','Yes',d).
@@ -1015,7 +1015,7 @@ att_prop_i(2,10,'AttValidationFailedMsg','',d).
 att_prop_i(2,10,'DownloadOffline','0',d).
 att_prop_i(2,10,'VarServiceExtName','',d).
 att_prop_i(2,10,'FullName','SellerId',v).
-att_prop_i(2,11,'HORIZONTAL_DESCRIPTION','Customer Id',d).
+att_prop_i(2,11,'HORIZONTAL_DESCRIPTION','Cliente Id',d).
 att_prop_i(2,11,'ExternalName','CustomerId',d).
 att_prop_i(2,11,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,11,'EmptyAsNull','Yes',d).
@@ -1030,7 +1030,7 @@ att_prop_i(2,11,'AttValidationFailedMsg','',d).
 att_prop_i(2,11,'DownloadOffline','0',d).
 att_prop_i(2,11,'VarServiceExtName','',d).
 att_prop_i(2,11,'FullName','CustomerId',v).
-att_prop_i(2,14,'HORIZONTAL_DESCRIPTION','Product Country ID',d).
+att_prop_i(2,14,'HORIZONTAL_DESCRIPTION','Pais ID',d).
 att_prop_i(2,14,'ExternalName','ProductCountryID',d).
 att_prop_i(2,14,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,14,'EmptyAsNull','Yes',d).

@@ -53,7 +53,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute></Order>
+<Description>Vendedor Id</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>IPRODUCT2</IndexName>
 <LevelOptions></LevelOptions>
@@ -66,7 +66,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute>
+<Description>Vendedor Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
@@ -78,7 +78,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute>
+<Description>Vendedor Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
@@ -108,7 +108,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></KeyAttributes>
+<Description>Categoria Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table>
 <Table>
 <TableId>3</TableId>
@@ -119,10 +119,36 @@
 <Attribute>
 <AttriId>14</AttriId>
 <AttriName>ProductCountryID</AttriName>
-<Description>Product Country ID</Description></Attribute></KeyAttributes>
+<Description>Pais ID</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
 <AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Event>
+<EventName>'DoInsert'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>5</ObjId>
+<ObjName>Product</ObjName>
+<ObjPgmName>Product</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Expression>
+<Token>TrnMode</Token>
+<Token>.Insert</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>nullvalue(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>12</AttriId>
+<AttriName>ProductId</AttriName>
+<Description>Product Id</Description></Attribute>
+<Token>)</Token></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'PREPARETRANSACTION'</EventName>
+<EventType>Subrutine</EventType></Event>
 <Suggests></Suggests></ObjectSpec>

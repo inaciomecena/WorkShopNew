@@ -9,7 +9,7 @@
 <ObjDesc>Countries</ObjDesc>
 <ObjPgmName>WWCountry</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -50,7 +50,7 @@
 <Attribute>
 <AttriId>9</AttriId>
 <AttriName>CountryName</AttriName>
-<Description>Country Name</Description></Attribute></Order>
+<Description>País</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>UCOUNTRY</IndexName>
 <LevelOptions></LevelOptions>
@@ -70,7 +70,7 @@
 <Attribute>
 <AttriId>9</AttriId>
 <AttriName>CountryName</AttriName>
-<Description>Country Name</Description></Attribute>
+<Description>País</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
@@ -96,7 +96,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></KeyAttributes>
+<Description>País Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
@@ -122,7 +122,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute>
+<Description>País Id</Description></Attribute>
 <Token>)</Token></Expression>
 <IF></IF></CALL></Event>
 <Event>

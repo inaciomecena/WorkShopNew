@@ -123,7 +123,7 @@ namespace GeneXus.Programs {
          {
             disableOutput();
          }
-         context.AddJavascriptSource("rwdmasterpage.js", "?202351923484520", false, true);
+         context.AddJavascriptSource("rwdmasterpage.js", "?202352192920", false, true);
          context.WriteHtmlTextNl( "</body>") ;
          context.WriteHtmlTextNl( "</html>") ;
          if ( context.isSpaRequest( ) )
@@ -291,35 +291,35 @@ namespace GeneXus.Programs {
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 38,'',true,'',0)\"";
             ClassString = "";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttButton14_Internalname, "", "Catalogue", bttButton14_Jsonclick, 7, "Catalogue", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",true,"+"'"+"e20041_client"+"'", TempTags, "", 2, "HLP_RwdMasterPage.htm");
+            GxWebStd.gx_button_ctrl( context, bttButton14_Internalname, "", "Catalogue", bttButton14_Jsonclick, 5, "Catalogue", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",true,"+"'"+"ECATALOGUE_MPAGE."+"'", TempTags, "", context.GetButtonType( ), "HLP_RwdMasterPage.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 40,'',true,'',0)\"";
             ClassString = "";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttButton17_Internalname, "", "CustomersCarts", bttButton17_Jsonclick, 7, "CustomersCarts", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",true,"+"'"+"e21041_client"+"'", TempTags, "", 2, "HLP_RwdMasterPage.htm");
+            GxWebStd.gx_button_ctrl( context, bttButton17_Internalname, "", "CustomersCarts", bttButton17_Jsonclick, 7, "CustomersCarts", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",true,"+"'"+"e20041_client"+"'", TempTags, "", 2, "HLP_RwdMasterPage.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 42,'',true,'',0)\"";
             ClassString = "";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttButton19_Internalname, "", "SellersProducts", bttButton19_Jsonclick, 7, "SellersProducts", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",true,"+"'"+"e22041_client"+"'", TempTags, "", 2, "HLP_RwdMasterPage.htm");
+            GxWebStd.gx_button_ctrl( context, bttButton19_Internalname, "", "SellersProducts", bttButton19_Jsonclick, 7, "SellersProducts", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",true,"+"'"+"e21041_client"+"'", TempTags, "", 2, "HLP_RwdMasterPage.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 44,'',true,'',0)\"";
             ClassString = "";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttButton12_Internalname, "", "ProductsCountry", bttButton12_Jsonclick, 7, "ProductsCountry", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",true,"+"'"+"e23041_client"+"'", TempTags, "", 2, "HLP_RwdMasterPage.htm");
+            GxWebStd.gx_button_ctrl( context, bttButton12_Internalname, "", "ProductsCountry", bttButton12_Jsonclick, 7, "ProductsCountry", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",true,"+"'"+"e22041_client"+"'", TempTags, "", 2, "HLP_RwdMasterPage.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 46,'',true,'',0)\"";
             ClassString = "";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttButton13_Internalname, "", "Principal", bttButton13_Jsonclick, 7, "Principal", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",true,"+"'"+"e24041_client"+"'", TempTags, "", 2, "HLP_RwdMasterPage.htm");
+            GxWebStd.gx_button_ctrl( context, bttButton13_Internalname, "", "Principal", bttButton13_Jsonclick, 7, "Principal", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",true,"+"'"+"e23041_client"+"'", TempTags, "", 2, "HLP_RwdMasterPage.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -439,21 +439,21 @@ namespace GeneXus.Programs {
                            context.wbHandled = 1;
                            dynload_actions( ) ;
                            /* Execute user event: Start */
-                           E25042 ();
+                           E24042 ();
                         }
                         else if ( StringUtil.StrCmp(sEvt, "REFRESH_MPAGE") == 0 )
                         {
                            context.wbHandled = 1;
                            dynload_actions( ) ;
                            /* Execute user event: Refresh */
-                           E26042 ();
+                           E25042 ();
                         }
                         else if ( StringUtil.StrCmp(sEvt, "LOAD_MPAGE") == 0 )
                         {
                            context.wbHandled = 1;
                            dynload_actions( ) ;
                            /* Execute user event: Load */
-                           E27042 ();
+                           E26042 ();
                         }
                         else if ( StringUtil.StrCmp(sEvt, "ENTER_MPAGE") == 0 )
                         {
@@ -467,6 +467,11 @@ namespace GeneXus.Programs {
                               dynload_actions( ) ;
                            }
                            /* No code required for Cancel button. It is implemented as the Reset button. */
+                        }
+                        else if ( StringUtil.StrCmp(sEvt, "CATALOGUE_MPAGE") == 0 )
+                        {
+                           context.wbHandled = 1;
+                           dynload_actions( ) ;
                         }
                         else if ( StringUtil.StrCmp(sEvt, "LSCR") == 0 )
                         {
@@ -576,7 +581,7 @@ namespace GeneXus.Programs {
          if ( ShowMPWhenPopUp( ) || ! context.isPopUpObject( ) )
          {
             /* Execute user event: Refresh */
-            E26042 ();
+            E25042 ();
             gxdyncontrolsrefreshing = true;
             fix_multi_value_controls( ) ;
             gxdyncontrolsrefreshing = false;
@@ -584,7 +589,7 @@ namespace GeneXus.Programs {
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
             /* Execute user event: Load */
-            E27042 ();
+            E26042 ();
             WB040( ) ;
             if ( context.isSpaRequest( ) )
             {
@@ -610,7 +615,7 @@ namespace GeneXus.Programs {
          /* Execute Start event if defined. */
          context.wbGlbDoneStart = 0;
          /* Execute user event: Start */
-         E25042 ();
+         E24042 ();
          context.wbGlbDoneStart = 1;
          /* After Start, stand alone formulas. */
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
@@ -631,17 +636,17 @@ namespace GeneXus.Programs {
       protected void GXStart( )
       {
          /* Execute user event: Start */
-         E25042 ();
+         E24042 ();
          if (returnInSub) return;
       }
 
-      protected void E25042( )
+      protected void E24042( )
       {
          /* Start Routine */
          returnInSub = false;
       }
 
-      protected void E26042( )
+      protected void E25042( )
       {
          /* Refresh Routine */
          returnInSub = false;
@@ -651,7 +656,7 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void E27042( )
+      protected void E26042( )
       {
          /* Load Routine */
          returnInSub = false;
@@ -701,7 +706,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= (getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)(getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Item(idxLst))), "?202351923484550", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)(getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Item(idxLst))), "?202352192956", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -716,7 +721,7 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("rwdmasterpage.js", "?202351923484550", false, true);
+         context.AddJavascriptSource("rwdmasterpage.js", "?202352192956", false, true);
          /* End function include_jscripts */
       }
 
@@ -785,21 +790,19 @@ namespace GeneXus.Programs {
          setEventMetadata("INCREASE PRICE_MPAGE",",oparms:[]}");
          setEventMetadata("CUSTOMERSCOUNTRIES_MPAGE","{handler:'E19041',iparms:[]");
          setEventMetadata("CUSTOMERSCOUNTRIES_MPAGE",",oparms:[]}");
-         setEventMetadata("CATALOGUE_MPAGE","{handler:'E20041',iparms:[]");
-         setEventMetadata("CATALOGUE_MPAGE",",oparms:[]}");
          setEventMetadata("PROMOTIONS_MPAGE","{handler:'E16041',iparms:[]");
          setEventMetadata("PROMOTIONS_MPAGE",",oparms:[]}");
-         setEventMetadata("PRINCIPAL_MPAGE","{handler:'E24041',iparms:[]");
+         setEventMetadata("PRINCIPAL_MPAGE","{handler:'E23041',iparms:[]");
          setEventMetadata("PRINCIPAL_MPAGE",",oparms:[]}");
          setEventMetadata("COUNTRY_MPAGE","{handler:'E14041',iparms:[]");
          setEventMetadata("COUNTRY_MPAGE",",oparms:[]}");
          setEventMetadata("CATEGORY_MPAGE","{handler:'E15041',iparms:[]");
          setEventMetadata("CATEGORY_MPAGE",",oparms:[]}");
-         setEventMetadata("CUSTOMERSCARTS_MPAGE","{handler:'E21041',iparms:[]");
+         setEventMetadata("CUSTOMERSCARTS_MPAGE","{handler:'E20041',iparms:[]");
          setEventMetadata("CUSTOMERSCARTS_MPAGE",",oparms:[]}");
-         setEventMetadata("SELLERSPRODUCTS_MPAGE","{handler:'E22041',iparms:[]");
+         setEventMetadata("SELLERSPRODUCTS_MPAGE","{handler:'E21041',iparms:[]");
          setEventMetadata("SELLERSPRODUCTS_MPAGE",",oparms:[]}");
-         setEventMetadata("PRODUCTSCOUNTRY_MPAGE","{handler:'E23041',iparms:[]");
+         setEventMetadata("PRODUCTSCOUNTRY_MPAGE","{handler:'E22041',iparms:[]");
          setEventMetadata("PRODUCTSCOUNTRY_MPAGE",",oparms:[]}");
          return  ;
       }

@@ -85,7 +85,7 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ProductName</AttriName>
-<Description>Product Name</Description></Attribute>
+<Description>Nome do Produto</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
@@ -106,7 +106,7 @@
 <Attribute>
 <AttriId>26</AttriId>
 <AttriName>ProductDescription</AttriName>
-<Description>Product Description</Description></Attribute>
+<Description>Descrição do Produto</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
@@ -127,7 +127,7 @@
 <Attribute>
 <AttriId>27</AttriId>
 <AttriName>ProductPrice</AttriName>
-<Description>Product Price</Description></Attribute>
+<Description>Preço</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
@@ -148,7 +148,7 @@
 <Attribute>
 <AttriId>14</AttriId>
 <AttriName>ProductCountryID</AttriName>
-<Description>Product Country ID</Description></Attribute>
+<Description>Pais ID</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
@@ -169,7 +169,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute>
+<Description>Categoria Id</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>
@@ -190,7 +190,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute>
+<Description>Vendedor Id</Description></Attribute>
 <Sp></Sp>
 <Token>&gt;=</Token>
 <Sp></Sp>

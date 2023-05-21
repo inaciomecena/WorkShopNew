@@ -77,6 +77,23 @@
 <AttriId>1</AttriId>
 <AttriName>MenuXid</AttriName>
 <Description>Menu Xid</Description></Attribute></KeyAttributes>
+<Into>
+<Attribute>
+<AttriId>5</AttriId>
+<AttriName>MenXEst</AttriName>
+<Description>Estado</Description></Attribute>
+<Attribute>
+<AttriId>2</AttriId>
+<AttriName>MenuXDesc</AttriName>
+<Description>Menu XDesc</Description></Attribute>
+<Attribute>
+<AttriId>4</AttriId>
+<AttriName>MenXUrl</AttriName>
+<Description>Url</Description></Attribute>
+<Attribute>
+<AttriId>3</AttriId>
+<AttriName>MenuXPosi</AttriName>
+<Description>Position</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

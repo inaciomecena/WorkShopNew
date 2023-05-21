@@ -9,7 +9,7 @@
 <ObjDesc>Customer</ObjDesc>
 <ObjPgmName>Customer</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -47,7 +47,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute></KeyAttributes>
+<Description>Cliente Id</Description></Attribute></KeyAttributes>
 <Tables>
 <Table>
 <TableId>3</TableId>
@@ -58,7 +58,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></KeyAttributes>
+<Description>País Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
@@ -78,23 +78,23 @@
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>CustomerName</AttriName>
-<Description>Customer Name</Description></Attribute>
+<Description>Nome</Description></Attribute>
 <Attribute>
 <AttriId>21</AttriId>
 <AttriName>CustomerAddress</AttriName>
-<Description>Customer Address</Description></Attribute>
+<Description>Endereço</Description></Attribute>
 <Attribute>
 <AttriId>22</AttriId>
 <AttriName>CustomerEmail</AttriName>
-<Description>Customer Email</Description></Attribute>
+<Description>E-mail</Description></Attribute>
 <Attribute>
 <AttriId>23</AttriId>
 <AttriName>CustomerPhone</AttriName>
-<Description>Customer Phone</Description></Attribute>
+<Description>Telefone</Description></Attribute>
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>País Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>5</TableId>
@@ -105,23 +105,23 @@
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>CustomerName</AttriName>
-<Description>Customer Name</Description></Attribute>
+<Description>Nome</Description></Attribute>
 <Attribute>
 <AttriId>21</AttriId>
 <AttriName>CustomerAddress</AttriName>
-<Description>Customer Address</Description></Attribute>
+<Description>Endereço</Description></Attribute>
 <Attribute>
 <AttriId>22</AttriId>
 <AttriName>CustomerEmail</AttriName>
-<Description>Customer Email</Description></Attribute>
+<Description>E-mail</Description></Attribute>
 <Attribute>
 <AttriId>23</AttriId>
 <AttriName>CustomerPhone</AttriName>
-<Description>Customer Phone</Description></Attribute>
+<Description>Telefone</Description></Attribute>
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>País Id</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>5</TableId>
@@ -142,7 +142,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
+<Description>Cliente Id</Description></Attribute></KeyAttributes></Table></TablesToControlOnDelete>
 <Levels></Levels>
 <AfterTrnRules></AfterTrnRules>
 <AfterLevelRules></AfterLevelRules></Level></Levels>
@@ -164,6 +164,6 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></OutputParameters>
+<Description>País Id</Description></Attribute></OutputParameters>
 <PromptType>System</PromptType></Prompt></Prompts>
 <Suggests></Suggests></ObjectSpec>

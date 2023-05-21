@@ -265,7 +265,7 @@ struct_dt_i([ 0,6,0 ],name,'ShoppingCart').
 struct_dt_i([ 0,6,0 ],namespace,'WorkShopNew').
 struct_dt_i([ 0,6,0 ],significantName,'ShoppingCart').
 struct_dt_i([ 0,6,0 ],'ObjName','ShoppingCart').
-struct_dt_i([ 0,6,0 ],'ObjDesc','Shopping Cart').
+struct_dt_i([ 0,6,0 ],'ObjDesc','Carrinho de Compras').
 struct_dt_i([ 0,6,0 ],'ExternalName','ShoppingCart').
 struct_dt_i([ 0,6,0 ],'ExternalNamespace','WorkShopNew').
 struct_dt_i([ 0,6,0 ],key,[ 16 ]).
@@ -393,7 +393,7 @@ struct_dt_elem_i([ 0,6,0 ],9,basedon,48).
 struct_dt_elem_i([ 0,6,0 ],9,length,20).
 struct_dt_elem_i([ 0,6,0 ],9,decimals,0).
 struct_dt_elem_i([ 0,6,0 ],9,type,[ 5,20,0 ]).
-struct_dt_elem_i([ 0,6,0 ],9,pic,'').
+struct_dt_elem_i([ 0,6,0 ],9,pic,'(99) 9999-9999').
 struct_dt_elem_i([ 0,6,0 ],9,collection,'False').
 struct_dt_elem_i([ 0,6,0 ],9,attributeid,'23').
 struct_dt_elem_i([ 0,6,0 ],9,'ExternalName','CustomerPhone').
@@ -443,7 +443,7 @@ struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,length,8).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,decimals,2).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,sign,0).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,type,[ 4,8,2 ]).
-struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,pic,'$ ZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,pic,'R$ ZZZZ9.99').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,collection,'False').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,attributeid,'27').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,'ExternalName','ProductPrice').
@@ -465,7 +465,7 @@ struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,length,8).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,decimals,2).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,sign,0).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,type,[ 4,8,2 ]).
-struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,pic,'$ ZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,pic,'R$ ZZZZ9.99').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,collection,'False').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,attributeid,'35').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,'ExternalName','TotalProduct').

@@ -1,4 +1,4 @@
-spec_i([ trn,8,'Promotion','Promotion',[],por,'17_0_9-159740' ]).
+spec_i([ trn,8,'Promoção','Promotion',[],por,'17_0_9-159740' ]).
  
 struct_i(7,0,[ 'Pgmname','Trncontext','Mode','Promotionid','Websession' ],[]).
 struct_i(8,7,[ 'Pgmname','Trncontext',15 ],[]).
@@ -25,7 +25,7 @@ lac_i(8,[ [ 12 ] ]).
 lac_i(7,[ [ 15,29,30,31,32 ] ]).
  
  
-lits_i('Promotion',5,10).
+lits_i('Promoção',5,10).
 lits_i('Product',5,10).
  
 cls_i([ 0,0 ],[ 5,1023 ]).
@@ -152,7 +152,7 @@ rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop(idBC,'0')).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
-rule_i(0,prop('ObjDesc','Promotion')).
+rule_i(0,prop('ObjDesc','Promoção')).
 rule_i(0,prop('ObjName','Promotion')).
 rule_i(8,prompt([ 6,[ [ 8,12,12 ] ],[ 12 ],[ 12 ],[ t(o(13,'Gx0060'),28),t(12,2) ],[],n,[] ])).
 rule_i(8,rule([ a(23,[ [ 12 ],[ t(o(13,'Gx0060'),28),t(12,2) ] ]) ],[],[],[ 12 ])).
@@ -166,14 +166,14 @@ rule_i(7,rule([ a(1,msg([ t('"Campo Date Start fora do intervalo"',3) ],[ t('Out
 rule_i(7,rule([ a(1,msg([ t('"Campo Date Finish fora do intervalo"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(32,2),t(')',4),t('.OR.',9),t(32,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ],[ insert,update ],[ 32 ])).
 rule_i(7,rule([ a(3,[ t(15,2) ]) ],[],[ insert,update,delete,display ],[ 15 ])).
 rule_i(7,rule([ a(21,[ [ 15 ] ]) ],[],[ insert,update,delete,display ],[ 15 ])).
-rule_i(7,rule([ a(1,[ t('"The start date cannot be higher than finish date"',3) ]) ],[ t(31,2),t(>,10),t(32,2) ],[ insert,update,delete,display ],[ 31,32 ])).
+rule_i(7,rule([ a(1,[ t('"A data de início não pode ser posterior à data de término"',3) ]) ],[ t(31,2),t(>,10),t(32,2) ],[ insert,update,delete,display ],[ 31,32 ])).
 rule_i(8,rule([ a(19,[ [ 12 ],msg([ t('"Não existe ''Product''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 12 ])).
  
 a_i(1,7,b,0,[],[ [],[ a(1,msg([ t('"Campo Date Start fora do intervalo"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(31,2),t(')',4),t('.OR.',9),t(31,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
 a_i(2,7,b,0,[],[ [],[ a(1,msg([ t('"Campo Date Finish fora do intervalo"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(32,2),t(')',4),t('.OR.',9),t(32,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
 a_i(3,7,f,15,[],[ [],[ t('Promotionid',23),t('IF',17),t('.NOT.',8),t('null(',1),t('Promotionid',23),t(')',4),t(';',18) ] ]).
 a_i(4,7,f,[ t(15,2),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
-a_i(5,7,b,5,[],[ [],[ a(1,[ t('"The start date cannot be higher than finish date"',3) ]) ],[ t(31,2),t(>,10),t(32,2) ] ]).
+a_i(5,7,b,5,[],[ [],[ a(1,[ t('"A data de início não pode ser posterior à data de término"',3) ]) ],[ t(31,2),t(>,10),t(32,2) ] ]).
 a_i(6,7,t,7,[],[ [ [ [],15,15 ] ],'IPROMOTION',[] ]).
 a_i(7,8,t,8,[],[ [ [ [],15,15 ],[ [],12,12 ] ],'IPROMOTIONPRODUCT',[] ]).
 a_i(8,8,r,6,[],[ [ [ 8,12,12 ] ],'IPRODUCT',[] ]).
@@ -212,8 +212,8 @@ tbl_to_delete_i(7,[ 8,[ [ 7,15,15 ] ],d,'IPROMOTIONPRODUCT',0,[ 15,12 ],'' ]).
  
  
  
-attri_i(27,[ 'ProductPrice',int,8,2,'$ ZZZZ9.99',0,'Product Price','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Product Name','',0 ]).
+attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i(32,[ 'DateFinish',date,8,0,'99/99/99',0,'Date Finish','',0 ]).
 attri_i(31,[ 'DateStart',date,8,0,'99/99/99',0,'Date Start','',0 ]).
@@ -326,7 +326,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Promotion',3))).
+html_sub_i(8,9,html_i(0,t('Promoção',3))).
 html_sub_i(6,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,comp(errview))).
@@ -475,7 +475,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Promotion',d,[ str ]).
+html_comp_i(9,'Caption','Promoção',d,[ str ]).
 html_comp_i(9,'Id','Title',v,[ str ]).
 html_comp_i(9,'Class','Title',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -1123,7 +1123,7 @@ html_comp_i(65,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(65,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(65,'Collinesfont',font('Courier New',9,[]),d,[ font ]).
 html_comp_i(65,'Collinescolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(65,'Coltitle','Product Name',d,[ str ]).
+html_comp_i(65,'Coltitle','Nome do Produto',d,[ str ]).
 html_comp_i(65,'Coltitlefont',font('Microsoft Sans Serif',8,[ bold ]),d,[ font ]).
 html_comp_i(65,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(65,'Horizontalalignment',left,d,[ str ]).
@@ -1132,7 +1132,7 @@ html_comp_i(65,'Colvisible',-1,d,[ bool ]).
 html_comp_i(65,'Title','',d,[ str ]).
 html_comp_i(65,'Invitemsg','',d,[ str ]).
 html_comp_i(66,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(66,'Colcount',10,d,[ num ]).
+html_comp_i(66,'Colcount',11,d,[ num ]).
 html_comp_i(66,'Colattid',27,v,[ num ]).
 html_comp_i(66,'Controlname','Productprice',d,[ str ]).
 html_comp_i(66,'Class','Attribute',v,[ str ]).
@@ -1150,7 +1150,7 @@ html_comp_i(66,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(66,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(66,'Collinesfont',font('Courier New',9,[]),d,[ font ]).
 html_comp_i(66,'Collinescolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(66,'Coltitle','Product Price',d,[ str ]).
+html_comp_i(66,'Coltitle','Preço',d,[ str ]).
 html_comp_i(66,'Coltitlefont',font('Microsoft Sans Serif',8,[ bold ]),d,[ font ]).
 html_comp_i(66,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(66,'Horizontalalignment',right,d,[ str ]).
@@ -1251,7 +1251,7 @@ html_comp_i(75,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
-lit_i(9,1,t('Promotion',3),[ ctlname('Title') ]).
+lit_i(9,1,t('Promoção',3),[ ctlname('Title') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(12,1,comp(errview),[ ctlname('Errorviewer'),width(0),rect(0,0,10,10),title('Nothing') ]).
@@ -1463,7 +1463,7 @@ var_prop_i(2,'Promotionid',idBasedOn,'',v).
  
  
  
-trn_level_i(7,[ [ 15,29,30,40000,31,32 ],'Promotion','Promotion','Promotion','',29 ]).
+trn_level_i(7,[ [ 15,29,30,40000,31,32 ],'Promotion','Promoção','Promotion','',29 ]).
 trn_level_i(8,[ [ 12,13,27 ],'Product','Product','Product','',0 ]).
  
 struct_dt_i([ 26,56,0 ],name,'TransactionContext').

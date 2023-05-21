@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\sellergeneral.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\sellergeneral.pdb
+C:\Models\WorkShopNew\CloudNET004\build\sellergeneral\obj\Release\net6.0\sellergeneral.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\sellergeneral\obj\Release\net6.0\sellergeneral.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\sellergeneral\obj\Release\net6.0\sellergeneral.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\sellergeneral\obj\Release\net6.0\sellergeneral.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\sellergeneral\obj\Release\net6.0\sellergeneral.dll
+C:\Models\WorkShopNew\CloudNET004\build\sellergeneral\obj\Release\net6.0\refint\sellergeneral.dll
+C:\Models\WorkShopNew\CloudNET004\build\sellergeneral\obj\Release\net6.0\sellergeneral.pdb
+C:\Models\WorkShopNew\CloudNET004\build\sellergeneral\obj\Release\net6.0\ref\sellergeneral.dll

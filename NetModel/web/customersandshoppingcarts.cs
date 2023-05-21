@@ -130,7 +130,7 @@ namespace GeneXus.Programs {
          INITWEB( ) ;
          if ( ! isAjaxCallMode( ) )
          {
-            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("rwdmasterpage", "GeneXus.Programs.rwdmasterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
+            MasterPageObj = (GXMasterPage) ClassLoader.GetInstance("masterpage", "GeneXus.Programs.masterpage", new Object[] {new GxContext( context.handle, context.DataStores, context.HttpContext)});
             MasterPageObj.setDataArea(this,false);
             ValidateSpaRequest();
             MasterPageObj.webExecute();
@@ -204,7 +204,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351822114674", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235219561322", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -349,7 +349,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblCustomersandshoppingcartstitle_Internalname, "Customers And ShoppingCarts", "", "", lblCustomersandshoppingcartstitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "", 0, "", 1, 1, 0, 0, "HLP_CustomersAndShoppingCarts.htm");
+            GxWebStd.gx_label_ctrl( context, lblCustomersandshoppingcartstitle_Internalname, "Clientes e carrinhos de compras", "", "", lblCustomersandshoppingcartstitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "", 0, "", 1, 1, 0, 0, "HLP_CustomersAndShoppingCarts.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
@@ -674,13 +674,13 @@ namespace GeneXus.Programs {
          returnInSub = false;
          if ( (DateTime.MinValue==AV5FromDate) || (DateTime.MinValue==AV6ToDate) )
          {
-            GX_msglist.addItem("Los campos no pueden quedar vacios");
+            GX_msglist.addItem("Os campos não podem estar vazios");
          }
          else
          {
             if ( DateTimeUtil.ResetTime ( AV5FromDate ) > DateTimeUtil.ResetTime ( AV6ToDate ) )
             {
-               GX_msglist.addItem("La fecha inicial no puede ser mayor a la fecha final");
+               GX_msglist.addItem("A data de início não pode ser posterior à data de término");
             }
             else
             {
@@ -714,13 +714,13 @@ namespace GeneXus.Programs {
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 31,'',false,'',0)\"";
             ClassString = "";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttCustomers_Internalname, "", "Customers", bttCustomers_Jsonclick, 7, "Customers", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e130l1_client"+"'", TempTags, "", 2, "HLP_CustomersAndShoppingCarts.htm");
+            GxWebStd.gx_button_ctrl( context, bttCustomers_Internalname, "", "Clientes", bttCustomers_Jsonclick, 7, "Clientes", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e130l1_client"+"'", TempTags, "", 2, "HLP_CustomersAndShoppingCarts.htm");
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "<td data-align=\"Center\"  style=\""+CSSHelper.Prettify( "text-align:-khtml-Center;text-align:-moz-Center;text-align:-webkit-Center")+"\">") ;
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 33,'',false,'',0)\"";
             ClassString = "";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttDeletecarts_Internalname, "", "Delete Carts", bttDeletecarts_Jsonclick, 5, "Delete Carts", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"E\\'DELETE CARTS\\'."+"'", TempTags, "", context.GetButtonType( ), "HLP_CustomersAndShoppingCarts.htm");
+            GxWebStd.gx_button_ctrl( context, bttDeletecarts_Internalname, "", "Excluir carrinhos", bttDeletecarts_Jsonclick, 5, "Excluir carrinhos", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"E\\'DELETE CARTS\\'."+"'", TempTags, "", context.GetButtonType( ), "HLP_CustomersAndShoppingCarts.htm");
             context.WriteHtmlText( "</td>") ;
             context.WriteHtmlText( "</tr>") ;
             /* End of table */
@@ -745,7 +745,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group gx-default-form-group", "left", "top", ""+" data-gx-for=\""+edtavFromdate_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtavFromdate_Internalname, "From Date", "gx-form-item AttributeLabel", 1, true, "width: 25%;");
+            GxWebStd.gx_label_element( context, edtavFromdate_Internalname, "Data Inicial", "gx-form-item AttributeLabel", 1, true, "width: 25%;");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 75, "%", 0, "px", "gx-form-item gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
@@ -763,7 +763,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group gx-default-form-group", "left", "top", ""+" data-gx-for=\""+edtavTodate_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtavTodate_Internalname, "To Date", "gx-form-item AttributeLabel", 1, true, "width: 25%;");
+            GxWebStd.gx_label_element( context, edtavTodate_Internalname, "Data Final", "gx-form-item AttributeLabel", 1, true, "width: 25%;");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 75, "%", 0, "px", "gx-form-item gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
@@ -826,7 +826,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351822114715", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235219561365", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -842,7 +842,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("customersandshoppingcarts.js", "?202351822114716", false, true);
+         context.AddJavascriptSource("customersandshoppingcarts.js", "?20235219561366", false, true);
          /* End function include_jscripts */
       }
 

@@ -204,7 +204,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351922375127", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235218571556", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -345,9 +345,23 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-6", "Center", "Middle", "", "", "div");
+            /* Static images/pictures */
+            ClassString = "Image";
+            StyleString = "";
+            sImgUrl = (string)(context.GetImagePath( "689d7696-788a-4588-8ad6-72fce5aa7f0a", "", context.GetTheme( )));
+            GxWebStd.gx_bitmap( context, imgImage1_Internalname, sImgUrl, "", "", "", context.GetTheme( ), 1, 1, "", "", 0, 0, 600, "px", 400, "px", 0, 0, 0, "", "", StyleString, ClassString, "", "", "", "", " "+"data-gx-image"+" ", "", "", 1, false, false, context.GetImageSrcSet( sImgUrl), "HLP_StartUp.htm");
+            GxWebStd.gx_div_end( context, "Center", "Middle", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 col-sm-6", "Center", "top", "", "", "div");
+            GxWebStd.gx_div_end( context, "Center", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "Center", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblTextblock1_Internalname, "Enjoy Life!", "", "", lblTextblock1_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "", 0, "", 1, 1, 0, 0, "HLP_StartUp.htm");
+            GxWebStd.gx_label_ctrl( context, lblTextblock1_Internalname, "Aproveite a vida. Somos eternos aprendizes!", "", "", lblTextblock1_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "", 0, "", 1, 1, 0, 0, "HLP_StartUp.htm");
             GxWebStd.gx_div_end( context, "Center", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -628,7 +642,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351922375133", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235218571566", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -646,7 +660,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("startup.js", "?202351922375134", false, true);
+            context.AddJavascriptSource("startup.js", "?20235218571567", false, true);
          }
          /* End function include_jscripts */
       }
@@ -658,6 +672,7 @@ namespace GeneXus.Programs {
 
       protected void init_default_properties( )
       {
+         imgImage1_Internalname = "IMAGE1";
          lblTextblock1_Internalname = "TEXTBLOCK1";
          divMaintable_Internalname = "MAINTABLE";
          Form.Internalname = "FORM";
@@ -719,6 +734,9 @@ namespace GeneXus.Programs {
          GX_FocusControl = "";
          Form = new GXWebForm();
          sPrefix = "";
+         ClassString = "";
+         StyleString = "";
+         sImgUrl = "";
          lblTextblock1_Jsonclick = "";
          sEvt = "";
          EvtGridId = "";
@@ -749,6 +767,10 @@ namespace GeneXus.Programs {
       private string GX_FocusControl ;
       private string sPrefix ;
       private string divMaintable_Internalname ;
+      private string ClassString ;
+      private string StyleString ;
+      private string sImgUrl ;
+      private string imgImage1_Internalname ;
       private string lblTextblock1_Internalname ;
       private string lblTextblock1_Jsonclick ;
       private string sEvt ;

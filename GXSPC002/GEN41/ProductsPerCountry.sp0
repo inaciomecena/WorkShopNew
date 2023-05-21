@@ -1,4 +1,4 @@
-spec_i([ web,23,'Products Per Country','ProductsPerCountry',0,por,'17_0_9-159740' ]).
+spec_i([ web,23,'Produtos por País','ProductsPerCountry',0,por,'17_0_9-159740' ]).
  
 struct_i(2,1,[],[]).
 struct_i(3,2,[],[]).
@@ -27,15 +27,15 @@ lac_i(3,[ [ 'Productcountryid' ] ]).
  
 lits_i('Products Per Country',5,10).
  
-cls_i([ 0,0 ],[ 5,2122 ]).
+cls_i([ 0,0 ],[ 5,2123 ]).
  
 pos_i('Productcountryid',[ 0,0,0 ]).
 pos_i('Productname',[ 1,2,0 ]).
 pos_i('Productphoto',[ 1,2,21 ]).
 pos_i('Productprice',[ 1,2,1046 ]).
-pos_i('Productcountryname',[ 1,2,1057 ]).
-pos_i('Categoryname',[ 1,2,1078 ]).
-pos_i('Sellerphoto',[ 1,2,1099 ]).
+pos_i('Productcountryname',[ 1,2,1058 ]).
+pos_i('Categoryname',[ 1,2,1079 ]).
+pos_i('Sellerphoto',[ 1,2,1100 ]).
  
 repeat_i(2,[ 1,2,[ 'Productname','Productphoto','Productprice','Productcountryname','Categoryname','Sellerphoto' ],[ 'Productname','Productprice','Productcountryname','Categoryname' ] ]).
 repeat_i(3,[ 1,2,[ 'Productname','Productphoto','Productprice','Productcountryname','Categoryname','Sellerphoto' ],[] ]).
@@ -128,7 +128,7 @@ rule_i(0,prop('MasterPage',o(13,'MasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
-rule_i(0,prop('ObjDesc','Products Per Country')).
+rule_i(0,prop('ObjDesc','Produtos por País')).
 rule_i(0,prop('ObjName','ProductsPerCountry')).
 rule_i(0,maingen(41)).
  
@@ -165,16 +165,16 @@ v_i(d,o,6,'Productcountryid').
  
  
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Seller Id','',0 ]).
-attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
-attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Product Country ID','',0 ]).
-attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Product Photo','',0 ]).
-attri_i(27,[ 'ProductPrice',int,8,2,'$ ZZZZ9.99',0,'Product Price','',0 ]).
-attri_i(39,[ 'ProductCountryName',char,20,0,'',0,'Product Country Name','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Category Name','',0 ]).
-attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Seller Photo','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Product Name','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
+attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
+attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Pais ID','',0 ]).
+attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
+attri_i(39,[ 'ProductCountryName',char,20,0,'',0,'Pais Nome','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
 attri_i(40001,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
 attri_i('Sellerphoto_GXI',[ 'Sellerphoto_GXI',svchar,2048,0,'',0,'',[],16 ]).
 attri_i(40000,[ 'ProductPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
@@ -183,7 +183,7 @@ attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',13 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',12 ]).
 attri_i('Categoryname',[ 'CategoryName',char,20,0,'',0,'Category Name','',11 ]).
 attri_i('Productcountryname',[ 'ProductCountryName',char,20,0,'',0,'Product Country Name','',10 ]).
-attri_i('Productprice',[ 'ProductPrice',int,8,2,'$ ZZZZ9.99',0,'Product Price','',9 ]).
+attri_i('Productprice',[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Product Price','',9 ]).
 attri_i('Productphoto',[ 'ProductPhoto',bits,1024,0,'',0,'Product Photo','',8 ]).
 attri_i('Productname',[ 'ProductName',char,20,0,'',0,'Product Name','',7 ]).
 attri_i('Sellerphoto',[ 'SellerPhoto',bits,1024,0,'',0,'Seller Photo','',6 ]).
@@ -589,7 +589,7 @@ html_comp_i(25,'Title','',d,[ str ]).
 html_comp_i(25,'Hspace',0,d,[ num ]).
 html_comp_i(25,'Vspace',0,d,[ num ]).
 html_comp_i(26,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(26,'Colcount',10,d,[ num ]).
+html_comp_i(26,'Colcount',11,d,[ num ]).
 html_comp_i(26,'Colattid',-9,v,[ num ]).
 html_comp_i(26,'Controlname','&Productprice',d,[ str ]).
 html_comp_i(26,'Class','',v,[ str ]).

@@ -1,4 +1,4 @@
-spec_i([ web,53,'Products','WWProduct',0,por,'17_0_9-159740' ]).
+spec_i([ web,53,'Produtoss','WWProduct',0,por,'17_0_9-159740' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
@@ -20,27 +20,27 @@ las_i(2,[ [ 'Productname','Update','Delete',9,8,19,40001,18,10,7,6,39,14,28,4000
 lac_i(2,[ [ 'Productname','Update','Delete' ] ]).
  
  
-lits_i('Products',5,10).
+lits_i('Produtoss',5,10).
  
-cls_i([ 0,0 ],[ 5,2282 ]).
+cls_i([ 0,0 ],[ 5,2283 ]).
  
 pos_i('Productname',[ 0,0,0 ]).
 pos_i(12,[ 1,2,0 ]).
 pos_i(13,[ 1,2,5 ]).
 pos_i(26,[ 1,2,26 ]).
 pos_i(27,[ 1,2,77 ]).
-pos_i(28,[ 1,2,88 ]).
-pos_i(14,[ 1,2,1113 ]).
-pos_i(39,[ 1,2,1118 ]).
-pos_i(6,[ 1,2,1139 ]).
-pos_i(7,[ 1,2,1144 ]).
-pos_i(10,[ 1,2,1165 ]).
-pos_i(18,[ 1,2,1170 ]).
-pos_i(19,[ 1,2,1191 ]).
-pos_i(8,[ 1,2,2216 ]).
-pos_i(9,[ 1,2,2221 ]).
-pos_i('Update',[ 1,2,2242 ]).
-pos_i('Delete',[ 1,2,2263 ]).
+pos_i(28,[ 1,2,89 ]).
+pos_i(14,[ 1,2,1114 ]).
+pos_i(39,[ 1,2,1119 ]).
+pos_i(6,[ 1,2,1140 ]).
+pos_i(7,[ 1,2,1145 ]).
+pos_i(10,[ 1,2,1166 ]).
+pos_i(18,[ 1,2,1171 ]).
+pos_i(19,[ 1,2,1192 ]).
+pos_i(8,[ 1,2,2217 ]).
+pos_i(9,[ 1,2,2222 ]).
+pos_i('Update',[ 1,2,2243 ]).
+pos_i('Delete',[ 1,2,2264 ]).
  
 repeat_i(2,[ 1,2,[ 12,13,26,27,28,14,39,6,7,10,18,19,8,9,'Update','Delete' ],[ 'Update','Delete' ] ]).
  
@@ -132,7 +132,7 @@ rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('MasterPage',o(13,'MasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('ObjDesc','Products')).
+rule_i(0,prop('ObjDesc','Produtoss')).
 rule_i(0,prop('ObjName','WWProduct')).
 rule_i(0,maingen(41)).
 rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
@@ -184,19 +184,19 @@ v_i(f,o,9,[ t('&Delete',23),t('Enabled',3) ]).
  
 attri_i(40001,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
 attri_i(40000,[ 'ProductPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Seller Photo','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Seller Name','',0 ]).
-attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Seller Id','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Category Name','',0 ]).
-attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
-attri_i(39,[ 'ProductCountryName',char,20,0,'',0,'Product Country Name','',0 ]).
-attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Product Country ID','',0 ]).
-attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Product Photo','',0 ]).
-attri_i(27,[ 'ProductPrice',int,8,2,'$ ZZZZ9.99',0,'Product Price','',0 ]).
-attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Product Description','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Product Name','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
+attri_i(39,[ 'ProductCountryName',char,20,0,'',0,'Pais Nome','',0 ]).
+attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Pais ID','',0 ]).
+attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
+attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Descrição do Produto','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',17 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',16 ]).
@@ -280,7 +280,7 @@ b_line_i(4,2,2,cmd,1,[ t('',111,4,0) ]).
 b_line_i(6,2,2,cmd,1,[ t('',107,6,0),t([ t('Grid',3,1,0),t('Rows',3,1,0) ],29,1,0),t(=,10,1,0),t('10',3,1,0) ]).
 b_line_i(7,2,2,cmd,1,[ t('',107,7,0),t('Update',23,1,0),t(=,10,1,0),t('"Modifica"',3,1,0) ]).
 b_line_i(8,2,2,cmd,1,[ t('',107,8,0),t('Delete',23,1,0),t(=,10,1,0),t('"Eliminar"',3,1,0) ]).
-b_line_i(9,2,2,cmd,1,[ t('',107,9,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Products''',3,1,0) ]).
+b_line_i(9,2,2,cmd,1,[ t('',107,9,0),t([ t('Form',3,1,0),t('Caption',3,1,0) ],29,1,0),t(=,10,1,0),t('''Produtoss''',3,1,0) ]).
 b_line_i(11,2,2,cmd,1,[ t('',145,11,0),t('''PREPARETRANSACTION''',3,11,5) ]).
 b_line_i(12,2,2,cmd,1,[ t('',107,12,0),t([ t('Grid',3,12,2),t('loadsessionstate(',1,12,7) ],31,12,7),t(')',4,1,25) ]).
 b_line_i(13,2,2,cmd,1,[ t('',147,13,0) ]).
@@ -330,7 +330,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Products',3))).
+html_sub_i(8,9,html_i(0,t('Produtoss',3))).
 html_sub_i(7,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,div(12))).
@@ -414,7 +414,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Products',d,[ str ]).
+html_comp_i(9,'Caption','Produtoss',d,[ str ]).
 html_comp_i(9,'Id','Titletext',v,[ str ]).
 html_comp_i(9,'Class','SubTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -510,7 +510,7 @@ html_comp_i(16,'Font',font('Arial',10,[]),d,[ font ]).
 html_comp_i(16,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(16,'Gxformat',0,d,[ num ]).
 html_comp_i(16,'Title','',d,[ str ]).
-html_comp_i(16,'Invitemsg','Name',v,[ str ]).
+html_comp_i(16,'Invitemsg','do Produto',v,[ str ]).
 html_comp_i(17,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(17,'Class',row,v,[ str ]).
 html_comp_i(17,'Id','',d,[ str ]).
@@ -656,7 +656,7 @@ html_comp_i(27,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(27,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(27,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(27,'Coltitle','Name',d,[ str ]).
+html_comp_i(27,'Coltitle','do Produto',d,[ str ]).
 html_comp_i(27,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(27,'Horizontalalignment',left,d,[ str ]).
@@ -687,7 +687,7 @@ html_comp_i(28,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(28,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(28,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(28,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(28,'Coltitle','Description',d,[ str ]).
+html_comp_i(28,'Coltitle','do Produto',d,[ str ]).
 html_comp_i(28,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(28,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(28,'Horizontalalignment',left,d,[ str ]).
@@ -696,7 +696,7 @@ html_comp_i(28,'Colvisible',-1,v,[ bool ]).
 html_comp_i(28,'Title','',d,[ str ]).
 html_comp_i(28,'Invitemsg','',d,[ str ]).
 html_comp_i(29,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(29,'Colcount',10,d,[ num ]).
+html_comp_i(29,'Colcount',11,d,[ num ]).
 html_comp_i(29,'Colattid',27,v,[ num ]).
 html_comp_i(29,'Controlname','Productprice',d,[ str ]).
 html_comp_i(29,'Class','Attribute',v,[ str ]).
@@ -715,7 +715,7 @@ html_comp_i(29,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(29,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(29,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(29,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(29,'Coltitle','Price',d,[ str ]).
+html_comp_i(29,'Coltitle','Preço',d,[ str ]).
 html_comp_i(29,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(29,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(29,'Horizontalalignment',right,d,[ str ]).
@@ -739,7 +739,7 @@ html_comp_i(30,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(30,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(30,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(30,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(30,'Coltitle','Photo',d,[ str ]).
+html_comp_i(30,'Coltitle','Foto',d,[ str ]).
 html_comp_i(30,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(30,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(30,'Colvisible',-1,v,[ bool ]).
@@ -768,7 +768,7 @@ html_comp_i(31,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(31,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(31,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(31,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(31,'Coltitle','Country ID',d,[ str ]).
+html_comp_i(31,'Coltitle','ID',d,[ str ]).
 html_comp_i(31,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(31,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(31,'Horizontalalignment',right,d,[ str ]).
@@ -799,7 +799,7 @@ html_comp_i(32,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(32,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(32,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(32,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(32,'Coltitle','Country Name',d,[ str ]).
+html_comp_i(32,'Coltitle','Nome',d,[ str ]).
 html_comp_i(32,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(32,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(32,'Horizontalalignment',left,d,[ str ]).
@@ -827,7 +827,7 @@ html_comp_i(33,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(33,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(33,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(33,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(33,'Coltitle','Category Id',d,[ str ]).
+html_comp_i(33,'Coltitle','Categoria Id',d,[ str ]).
 html_comp_i(33,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(33,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(33,'Horizontalalignment',right,d,[ str ]).
@@ -858,7 +858,7 @@ html_comp_i(34,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(34,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(34,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(34,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(34,'Coltitle','Category Name',d,[ str ]).
+html_comp_i(34,'Coltitle','Noma da Categoria',d,[ str ]).
 html_comp_i(34,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(34,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(34,'Horizontalalignment',left,d,[ str ]).
@@ -886,7 +886,7 @@ html_comp_i(35,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(35,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(35,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(35,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(35,'Coltitle','Seller Id',d,[ str ]).
+html_comp_i(35,'Coltitle','Vendedor Id',d,[ str ]).
 html_comp_i(35,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(35,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(35,'Horizontalalignment',right,d,[ str ]).
@@ -917,7 +917,7 @@ html_comp_i(36,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(36,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(36,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(36,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(36,'Coltitle','Seller Name',d,[ str ]).
+html_comp_i(36,'Coltitle','Vendedor Nome',d,[ str ]).
 html_comp_i(36,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(36,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(36,'Horizontalalignment',left,d,[ str ]).
@@ -941,7 +941,7 @@ html_comp_i(37,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(37,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(37,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(37,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(37,'Coltitle','Seller Photo',d,[ str ]).
+html_comp_i(37,'Coltitle','Foto',d,[ str ]).
 html_comp_i(37,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(37,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(37,'Colvisible',-1,v,[ bool ]).
@@ -970,7 +970,7 @@ html_comp_i(38,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(38,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(38,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(38,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(38,'Coltitle','Country Id',d,[ str ]).
+html_comp_i(38,'Coltitle','País Id',d,[ str ]).
 html_comp_i(38,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(38,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(38,'Horizontalalignment',right,d,[ str ]).
@@ -1001,7 +1001,7 @@ html_comp_i(39,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(39,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(39,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(39,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(39,'Coltitle','Country Name',d,[ str ]).
+html_comp_i(39,'Coltitle','País',d,[ str ]).
 html_comp_i(39,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(39,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(39,'Horizontalalignment',left,d,[ str ]).
@@ -1080,7 +1080,7 @@ html_comp_i(41,'Invitemsg','',d,[ str ]).
  
  
  
-lit_i(9,1,t('Products',3),[ ctlname('Titletext') ]).
+lit_i(9,1,t('Produtoss',3),[ ctlname('Titletext') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(13,1,button('''DoInsert'''),[ ctlname('Btninsert'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(12,1,div(12),[ ctlname('') ]).

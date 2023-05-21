@@ -23,7 +23,7 @@
 <Event>
 <EventName>&amp;List.Click</EventName></Event>
 <Event>
-<EventName>'Catalogue'</EventName></Event>
+<EventName>'Catalago'</EventName></Event>
 <Event>
 <EventName>Load</EventName>
 <ImplicitForEach>
@@ -38,7 +38,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></Order>
+<Description>Categoria Id</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>ICATEGORY</IndexName>
 <LevelOptions></LevelOptions>
@@ -60,16 +60,16 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></KeyAttributes>
+<Description>Categoria Id</Description></Attribute></KeyAttributes>
 <Into>
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Category Name</Description></Attribute>
+<Description>Noma da Categoria</Description></Attribute>
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></Into>
+<Description>Categoria Id</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\countriesandcustomers.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\countriesandcustomers.pdb
+C:\Models\WorkShopNew\CloudNET004\build\countriesandcustomers\obj\Release\net6.0\countriesandcustomers.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\countriesandcustomers\obj\Release\net6.0\countriesandcustomers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\countriesandcustomers\obj\Release\net6.0\countriesandcustomers.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\countriesandcustomers\obj\Release\net6.0\countriesandcustomers.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\countriesandcustomers\obj\Release\net6.0\countriesandcustomers.dll
+C:\Models\WorkShopNew\CloudNET004\build\countriesandcustomers\obj\Release\net6.0\refint\countriesandcustomers.dll
+C:\Models\WorkShopNew\CloudNET004\build\countriesandcustomers\obj\Release\net6.0\countriesandcustomers.pdb
+C:\Models\WorkShopNew\CloudNET004\build\countriesandcustomers\obj\Release\net6.0\ref\countriesandcustomers.dll

@@ -1,4 +1,4 @@
-spec_i([ trn,6,'Shopping Cart','ShoppingCart_BC',[],por,'17_0_9-159740' ]).
+spec_i([ trn,6,'Carrinho de Compras','ShoppingCart_BC',[],por,'17_0_9-159740' ]).
  
 struct_i(9,0,[ 'Websession' ],[]).
 struct_i(10,9,[ 16,34 ],[ 34 ]).
@@ -149,13 +149,13 @@ rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop(idISBUSINESSCOMPONENT,'-1')).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
-rule_i(0,prop('ObjDesc','Shopping Cart')).
+rule_i(0,prop('ObjDesc','Carrinho de Compras')).
 rule_i(0,prop('ObjName','ShoppingCart')).
 rule_i(0,rule([ a(22,[ 'Dlt','"Eliminar"','' ]) ],[],[],[])).
 rule_i(0,maingen(41)).
 rule_i(9,rule([ a(1,msg([ t('"Campo Shopping Cart Date fora do intervalo"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(33,2),t(')',4),t('.OR.',9),t(33,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ],[ insert,update ],[ 33 ])).
 rule_i(9,rule([ a(99,[ [ oe([ t(16,2) ]) ] ]) ],[],[ insert,update,delete ],[ oe([ t(16,2) ]) ])).
-rule_i(9,rule([ a(1,[ t('"Can''t delete today''s cart"',3) ]) ],[ t(33,2),t(=,10),t('today(',1),t(')',4) ],[ insert,update,delete,display ],[ 33 ])).
+rule_i(9,rule([ a(1,[ t('"Não é possível excluir o carrinho de hoje"',3) ]) ],[ t(33,2),t(=,10),t('today(',1),t(')',4) ],[ insert,update,delete,display ],[ 33 ])).
 rule_i(9,rule([ a(19,[ [ 11 ],msg([ t('"Não existe ''Customer''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 11 ])).
 rule_i(9,rule([ a(19,[ [ 8 ],msg([ t('"Não existe ''Country''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 8 ])).
 rule_i(10,rule([ a(19,[ [ 12 ],msg([ t('"Não existe ''Product''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 12 ])).
@@ -164,7 +164,7 @@ rule_i(10,rule([ a(19,[ [ 6 ],msg([ t('"Não existe ''Category''."',3) ],[ t('For
 a_i(1,9,b,0,[],[ [],[ a(1,msg([ t('"Campo Shopping Cart Date fora do intervalo"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t(33,2),t(')',4),t('.OR.',9),t(33,2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
 a_i(2,9,f,38,[],[ [],[ t(33,2),t(+,5),t('5',3),t(';',18) ] ]).
 a_i(3,9,f,33,[],[ [ insert ],[ t('today(',1),t(')',4),t('IF',17),t(insert,1),t('AND',9),t('null1(',1),t(33,2),t(')',4),t('AND',9),t('GxBScreen',23),t(=,10),t(0,3),t(';',18) ] ]).
-a_i(4,9,b,1,[ bdelete ],[ [],[ a(1,[ t('"Can''t delete today''s cart"',3) ]) ],[ t(33,2),t(=,10),t('today(',1),t(')',4) ] ]).
+a_i(4,9,b,1,[ bdelete ],[ [],[ a(1,[ t('"Não é possível excluir o carrinho de hoje"',3) ]) ],[ t(33,2),t(=,10),t('today(',1),t(')',4) ] ]).
 a_i(5,10,f,35,[],[ [],[ t('(',0),t(27,2),t(*,6),t('0.9',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Entretenimiento"',3),t(';',18),t('(',0),t(27,2),t(*,6),t('1.05',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Joyería"',3),t(';',18),t(27,2),t(*,6),t(36,2),t('OTHERWISE',19),t(';',18) ] ]).
 a_i(6,10,f,34,[],[ [ insert,update,delete ],[ t('old(',1),t(34,2),t(')',4),t(+,5),t(35,2),t('IF',17),t(insert,1),t(';',18),t('old(',1),t(34,2),t(')',4),t(+,5),t(35,2),t(-,5),t('old(',1),t(35,2),t(')',4),t('IF',17),t(update,1),t(';',18),t('old(',1),t(34,2),t(')',4),t(-,5),t('old(',1),t(35,2),t(')',4),t('IF',17),t(delete,1),t(';',18) ] ]).
 a_i(7,9,t,9,[],[ [ [ [],16,16 ] ],'ISHOPPINGCART',[] ]).
@@ -223,20 +223,20 @@ tbl_to_delete_i(9,[ 10,[ [ 9,16,16 ] ],d,'ISHOPPINGCARTPRODUCT',0,[ 16,12 ],'' ]
  
  
  
-attri_i(35,[ 'TotalProduct',int,8,2,'$ ZZZZ9.99',0,'Total Product','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Category Name','',0 ]).
-attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
-attri_i(27,[ 'ProductPrice',int,8,2,'$ ZZZZ9.99',0,'Product Price','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Product Name','',0 ]).
+attri_i(35,[ 'TotalProduct',int,8,2,'R$ ZZZZ9.99',0,'Total Product','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
+attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
 attri_i(36,[ 'QtyProduct',int,4,0,'ZZZ9',0,'Qty Product','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i(34,[ 'ShoppingCartFinalPrice',int,10,2,'$ ZZZZZZ9.99',0,'Shopping Cart Final Price','',0 ]).
-attri_i(23,[ 'CustomerPhone',char,20,0,'',0,'Customer Phone','',0 ]).
-attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Customer Address','',0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(20,[ 'CustomerName',char,20,0,'',0,'Customer Name','',0 ]).
-attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Customer Id','',0 ]).
+attri_i(23,[ 'CustomerPhone',char,20,0,'(99) 9999-9999',0,'Telefone','',0 ]).
+attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Endereço','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(20,[ 'CustomerName',char,20,0,'',0,'Nome','',0 ]).
+attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Cliente Id','',0 ]).
 attri_i(33,[ 'ShoppingCartDate',date,8,0,'99/99/99',0,'Shopping Cart Date','',0 ]).
 attri_i(38,[ 'ShoppingCartDateDelivery',date,8,0,'99/99/99',0,'Shopping Cart Date Delivery','',0 ]).
 attri_i(16,[ 'ShoppingCartId',int,4,0,'ZZZ9',0,'Shopping Cart Id','',0 ]).
@@ -397,7 +397,7 @@ att_prop_i(2,38,idDATEFORMAT,idDATEFORMAT_SHORT,v).
 att_prop_i(2,38,'DownloadOffline','0',d).
 att_prop_i(2,38,'VarServiceExtName','',d).
 att_prop_i(2,38,'FullName','ShoppingCartDateDelivery',v).
-att_prop_i(2,11,'HORIZONTAL_DESCRIPTION','Customer Id',d).
+att_prop_i(2,11,'HORIZONTAL_DESCRIPTION','Cliente Id',d).
 att_prop_i(2,11,'ExternalName','CustomerId',d).
 att_prop_i(2,11,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,11,'EmptyAsNull','Yes',d).
@@ -412,7 +412,7 @@ att_prop_i(2,11,'AttValidationFailedMsg','',d).
 att_prop_i(2,11,'DownloadOffline','0',d).
 att_prop_i(2,11,'VarServiceExtName','',d).
 att_prop_i(2,11,'FullName','CustomerId',v).
-att_prop_i(2,20,'HORIZONTAL_DESCRIPTION','Customer Name',d).
+att_prop_i(2,20,'HORIZONTAL_DESCRIPTION','Nome',d).
 att_prop_i(2,20,'ExternalName','CustomerName',d).
 att_prop_i(2,20,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,20,'EmptyAsNull','Yes',d).
@@ -424,7 +424,7 @@ att_prop_i(2,20,'AttValidationFailedMsg','',d).
 att_prop_i(2,20,'DownloadOffline','0',d).
 att_prop_i(2,20,'VarServiceExtName','',d).
 att_prop_i(2,20,'FullName','CustomerName',v).
-att_prop_i(2,8,'HORIZONTAL_DESCRIPTION','Country Id',d).
+att_prop_i(2,8,'HORIZONTAL_DESCRIPTION','País Id',d).
 att_prop_i(2,8,'ExternalName','CountryId',d).
 att_prop_i(2,8,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,8,'EmptyAsNull','Yes',d).
@@ -439,7 +439,7 @@ att_prop_i(2,8,'AttValidationFailedMsg','',d).
 att_prop_i(2,8,'DownloadOffline','0',d).
 att_prop_i(2,8,'VarServiceExtName','',d).
 att_prop_i(2,8,'FullName','CountryId',v).
-att_prop_i(2,9,'HORIZONTAL_DESCRIPTION','Country Name',d).
+att_prop_i(2,9,'HORIZONTAL_DESCRIPTION','País',d).
 att_prop_i(2,9,'ExternalName','CountryName',d).
 att_prop_i(2,9,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,9,'EmptyAsNull','Yes',d).
@@ -451,7 +451,7 @@ att_prop_i(2,9,'AttValidationFailedMsg','',d).
 att_prop_i(2,9,'DownloadOffline','0',d).
 att_prop_i(2,9,'VarServiceExtName','',d).
 att_prop_i(2,9,'FullName','CountryName',v).
-att_prop_i(2,21,'HORIZONTAL_DESCRIPTION','Customer Address',d).
+att_prop_i(2,21,'HORIZONTAL_DESCRIPTION','Endereço',d).
 att_prop_i(2,21,'ExternalName','CustomerAddress',d).
 att_prop_i(2,21,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,21,'EmptyAsNull','Yes',d).
@@ -463,7 +463,7 @@ att_prop_i(2,21,'AttValidationFailedMsg','',d).
 att_prop_i(2,21,'DownloadOffline','0',d).
 att_prop_i(2,21,'VarServiceExtName','',d).
 att_prop_i(2,21,'FullName','CustomerAddress',v).
-att_prop_i(2,23,'HORIZONTAL_DESCRIPTION','Customer Phone',d).
+att_prop_i(2,23,'HORIZONTAL_DESCRIPTION','Telefone',d).
 att_prop_i(2,23,'ExternalName','CustomerPhone',d).
 att_prop_i(2,23,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,23,'EmptyAsNull','Yes',d).
@@ -497,7 +497,7 @@ att_prop_i(2,12,'AttValidationFailedMsg','',d).
 att_prop_i(2,12,'DownloadOffline','0',d).
 att_prop_i(2,12,'VarServiceExtName','',d).
 att_prop_i(2,12,'FullName','ProductId',v).
-att_prop_i(2,13,'HORIZONTAL_DESCRIPTION','Product Name',d).
+att_prop_i(2,13,'HORIZONTAL_DESCRIPTION','Nome do Produto',d).
 att_prop_i(2,13,'ExternalName','ProductName',d).
 att_prop_i(2,13,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,13,'EmptyAsNull','Yes',d).
@@ -509,7 +509,7 @@ att_prop_i(2,13,'AttValidationFailedMsg','',d).
 att_prop_i(2,13,'DownloadOffline','0',d).
 att_prop_i(2,13,'VarServiceExtName','',d).
 att_prop_i(2,13,'FullName','ProductName',v).
-att_prop_i(2,27,'HORIZONTAL_DESCRIPTION','Product Price',d).
+att_prop_i(2,27,'HORIZONTAL_DESCRIPTION','Preço',d).
 att_prop_i(2,27,'ExternalName','ProductPrice',d).
 att_prop_i(2,27,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,27,'EmptyAsNull','Yes',d).
@@ -540,7 +540,7 @@ att_prop_i(2,35,idBasedOn,'',d).
 att_prop_i(2,35,'DownloadOffline','0',d).
 att_prop_i(2,35,'VarServiceExtName','',d).
 att_prop_i(2,35,'FullName','TotalProduct',v).
-att_prop_i(2,6,'HORIZONTAL_DESCRIPTION','Category Id',d).
+att_prop_i(2,6,'HORIZONTAL_DESCRIPTION','Categoria Id',d).
 att_prop_i(2,6,'ExternalName','CategoryId',d).
 att_prop_i(2,6,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,6,'EmptyAsNull','Yes',d).
@@ -555,7 +555,7 @@ att_prop_i(2,6,'AttValidationFailedMsg','',d).
 att_prop_i(2,6,'DownloadOffline','0',d).
 att_prop_i(2,6,'VarServiceExtName','',d).
 att_prop_i(2,6,'FullName','CategoryId',v).
-att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Category Name',d).
+att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Noma da Categoria',d).
 att_prop_i(2,7,'ExternalName','CategoryName',d).
 att_prop_i(2,7,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,7,'EmptyAsNull','Yes',d).
@@ -614,18 +614,18 @@ tbl_att_prop_i(2,2000,16,'AUTONUMBER',y).
 var_prop_i(2,'Insert_customerid',idBasedOn,'',v).
 var_prop_i(2,'Shoppingcartid',idBasedOn,'',v).
  
-i_tbl_best_trn(9,[ 6,1,'ShoppingCart','Shopping Cart',[ 38,34 ] ]).
-i_tbl_best_trn(10,[ 6,2,'ShoppingCart','Shopping Cart',[] ]).
+i_tbl_best_trn(9,[ 6,1,'ShoppingCart','Carrinho de Compras',[ 38,34 ] ]).
+i_tbl_best_trn(10,[ 6,2,'ShoppingCart','Carrinho de Compras',[] ]).
 i_tbl_best_trn(3,[ 3,1,'Country','Country',[] ]).
-i_tbl_best_trn(2000,[ 6,1,'ShoppingCart','Shopping Cart',[] ]).
-i_tbl_best_trn(6,[ 5,1,'Product','Product',[] ]).
+i_tbl_best_trn(2000,[ 6,1,'ShoppingCart','Carrinho de Compras',[] ]).
+i_tbl_best_trn(6,[ 5,1,'Product','Produtos',[] ]).
 i_tbl_best_trn(2,[ 2,1,'Category','Category',[] ]).
  
  
 a_alias_i([ 'sum(',se(35,[ [ 6,27 ],[ 10,36 ],[ 2,7 ] ],[ t('(',0),t(27,2),t(*,6),t('0.9',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Entretenimiento"',3),t(';',18),t('(',0),t(27,2),t(*,6),t('1.05',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Joyería"',3),t(';',18),t(27,2),t(*,6),t(36,2),t('OTHERWISE',19) ]) ],'ShoppingCartFinalPrice').
 a_alias_i(se(34,[ [ 2000,34 ] ],[ t('coalesce(',1),t(34,2),t(',',7),t('0',3),t(')',4) ]),'ShoppingCartFinalPrice').
  
-trn_level_i(9,[ [ 16,33,38,11,20,8,9,21,23,34 ],'ShoppingCart','Shopping Cart','ShoppingCart','',33 ]).
+trn_level_i(9,[ [ 16,33,38,11,20,8,9,21,23,34 ],'ShoppingCart','Carrinho de Compras','ShoppingCart','',33 ]).
 trn_level_i(10,[ [ 12,13,27,36,35,6,7 ],'Product','Product','Product','',36 ]).
  
 struct_dt_i([ 26,56,0 ],name,'TransactionContext').
@@ -641,7 +641,7 @@ struct_dt_i([ 0,6,0 ],name,'ShoppingCart').
 struct_dt_i([ 0,6,0 ],namespace,'WorkShopNew').
 struct_dt_i([ 0,6,0 ],significantName,'ShoppingCart').
 struct_dt_i([ 0,6,0 ],'ObjName','ShoppingCart').
-struct_dt_i([ 0,6,0 ],'ObjDesc','Shopping Cart').
+struct_dt_i([ 0,6,0 ],'ObjDesc','Carrinho de Compras').
 struct_dt_i([ 0,6,0 ],'ExternalName','ShoppingCart').
 struct_dt_i([ 0,6,0 ],'ExternalNamespace','WorkShopNew').
 struct_dt_i([ 0,6,0 ],key,[ 16 ]).
@@ -886,7 +886,7 @@ struct_dt_elem_i([ 0,6,0 ],9,basedon,48).
 struct_dt_elem_i([ 0,6,0 ],9,length,20).
 struct_dt_elem_i([ 0,6,0 ],9,decimals,0).
 struct_dt_elem_i([ 0,6,0 ],9,type,[ 5,20,0 ]).
-struct_dt_elem_i([ 0,6,0 ],9,pic,'').
+struct_dt_elem_i([ 0,6,0 ],9,pic,'(99) 9999-9999').
 struct_dt_elem_i([ 0,6,0 ],9,collection,'False').
 struct_dt_elem_i([ 0,6,0 ],9,attributeid,'23').
 struct_dt_elem_i([ 0,6,0 ],9,'ExternalName','CustomerPhone').
@@ -936,7 +936,7 @@ struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,length,8).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,decimals,2).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,sign,0).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,type,[ 4,8,2 ]).
-struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,pic,'$ ZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,pic,'R$ ZZZZ9.99').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,collection,'False').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,attributeid,'27').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],3,'ExternalName','ProductPrice').
@@ -958,7 +958,7 @@ struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,length,8).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,decimals,2).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,sign,0).
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,type,[ 4,8,2 ]).
-struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,pic,'$ ZZZZ9.99').
+struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,pic,'R$ ZZZZ9.99').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,collection,'False').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,attributeid,'35').
 struct_dt_elem_i([ 0,6,[ 12,16 ] ],5,'ExternalName','TotalProduct').

@@ -18,9 +18,9 @@ las_i(2,[ [ 'Fromdate','Todate' ] ]).
 lac_i(2,[ [ 'Fromdate','Todate' ] ]).
  
  
-lits_i('Customers And ShoppingCarts',5,10).
+lits_i('Clientes e carrinhos de compras',5,10).
  
-cls_i([ 0,0 ],[ 5,36 ]).
+cls_i([ 0,0 ],[ 5,40 ]).
  
 pos_i('Fromdate',[ 0,0,0 ]).
 pos_i('Todate',[ 0,0,0 ]).
@@ -110,7 +110,7 @@ rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop('IsMain','0')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
-rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
+rule_i(0,prop('MasterPage',o(13,'MasterPage'))).
 rule_i(0,prop('WEB_COMP','No')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
@@ -179,10 +179,10 @@ b_group_i(2,3,lit,0,17,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('''Customers''',3,1,7) ]).
 b_line_i(4,2,2,cmd,1,[ t('',109,4,0),t('null(',1,4,15),t('Fromdate',23,1,5),t(')',4,1,24),t('.OR.',9,1,26),t('null(',1,4,39),t('Todate',23,1,31),t(')',4,1,48) ]).
-b_line_i(5,2,2,cmd,1,[ t('',141,5,0),t('"Los campos no pueden quedar vacios"',3,5,7),t(')',4,1,43) ]).
+b_line_i(5,2,2,cmd,1,[ t('',141,5,0),t('"Os campos não podem estar vazios"',3,5,7),t(')',4,1,41) ]).
 b_line_i(6,2,2,cmd,1,[ t('',110,6,0) ]).
 b_line_i(7,2,2,cmd,1,[ t('',109,7,0),t('Fromdate',23,1,6),t(>,10,1,16),t('Todate',23,1,18) ]).
-b_line_i(8,2,2,cmd,1,[ t('',141,8,0),t('"La fecha inicial no puede ser mayor a la fecha final"',3,8,8),t(')',4,1,62) ]).
+b_line_i(8,2,2,cmd,1,[ t('',141,8,0),t('"A data de início não pode ser posterior à data de término"',3,8,8),t(')',4,1,67) ]).
 b_line_i(9,2,2,cmd,1,[ t('',110,9,0) ]).
 b_line_i(10,2,2,cmd,1,[ t('',188,10,0),t(o(1,'CustomersList'),28,1,4),t('Fromdate',23,1,25),t(',',7,1,0),t('Todate',23,1,35) ]).
 b_line_i(11,2,2,cmd,1,[ t('',111,11,0) ]).
@@ -190,10 +190,10 @@ b_line_i(12,2,2,cmd,1,[ t('',111,12,0) ]).
 b_line_i(14,2,2,cmd,1,[ t('',147,14,0) ]).
 b_line_i(16,2,2,cmd,1,[ t('',146,16,0),t('''Delete Carts''',3,16,7) ]).
 b_line_i(19,2,3,cmd,1,[ t('',109,19,0),t('null(',1,19,15),t('Fromdate',23,1,5),t(')',4,1,24),t('.OR.',9,1,26),t('null(',1,19,39),t('Todate',23,1,31),t(')',4,1,48) ]).
-b_line_i(20,2,3,cmd,1,[ t('',141,20,0),t('"Los campos no pueden quedar vacios"',3,20,7),t(')',4,1,43) ]).
+b_line_i(20,2,3,cmd,1,[ t('',141,20,0),t('"Os campos não podem estar vazios"',3,20,7),t(')',4,1,41) ]).
 b_line_i(21,2,3,cmd,1,[ t('',110,21,0) ]).
 b_line_i(22,2,3,cmd,1,[ t('',109,22,0),t('Fromdate',23,1,6),t(>,10,1,16),t('Todate',23,1,18) ]).
-b_line_i(23,2,3,cmd,1,[ t('',141,23,0),t('"La fecha inicial no puede ser mayor a la fecha final"',3,23,8),t(')',4,1,62) ]).
+b_line_i(23,2,3,cmd,1,[ t('',141,23,0),t('"A data de início não pode ser posterior à data de término"',3,23,8),t(')',4,1,67) ]).
 b_line_i(24,2,3,cmd,1,[ t('',110,24,0) ]).
 b_line_i(25,2,3,cmd,1,[ t('',104,25,0),t(o(1,'DeleteCarts'),28,1,4),t('Fromdate',23,1,16),t(',',7,1,0),t('Todate',23,1,26) ]).
 b_line_i(26,2,3,cmd,1,[ t('',111,26,0) ]).
@@ -224,7 +224,7 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Customers And ShoppingCarts',3))).
+html_sub_i(8,9,html_i(0,t('Clientes e carrinhos de compras',3))).
 html_sub_i(6,10,html_i(1,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
 html_sub_i(11,12,html_i(0,comp(errview))).
@@ -319,7 +319,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Customers And ShoppingCarts',d,[ str ]).
+html_comp_i(9,'Caption','Clientes e carrinhos de compras',d,[ str ]).
 html_comp_i(9,'Id','Customersandshoppingcartstitle',v,[ str ]).
 html_comp_i(9,'Class','',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -409,7 +409,7 @@ html_comp_i(20,'Returnonclick',0,v,[ bool ]).
 html_comp_i(20,'Captionclass','gx-form-item AttributeLabel',v,[ str ]).
 html_comp_i(20,'Captionstyle','width: 25%;',v,[ str ]).
 html_comp_i(20,'Captionposition','Left',v,[ str ]).
-html_comp_i(20,'Captionvalue','From Date',d,[ str ]).
+html_comp_i(20,'Captionvalue','Data Inicial',d,[ str ]).
 html_comp_i(20,'Layoutclass','gx-form-item',v,[ str ]).
 html_comp_i(20,'Controltype',2,d,[ num ]).
 html_comp_i(20,'Inputtype',0,d,[ num ]).
@@ -457,7 +457,7 @@ html_comp_i(25,'Returnonclick',0,v,[ bool ]).
 html_comp_i(25,'Captionclass','gx-form-item AttributeLabel',v,[ str ]).
 html_comp_i(25,'Captionstyle','width: 25%;',v,[ str ]).
 html_comp_i(25,'Captionposition','Left',v,[ str ]).
-html_comp_i(25,'Captionvalue','To Date',d,[ str ]).
+html_comp_i(25,'Captionvalue','Data Final',d,[ str ]).
 html_comp_i(25,'Layoutclass','gx-form-item',v,[ str ]).
 html_comp_i(25,'Controltype',2,d,[ num ]).
 html_comp_i(25,'Inputtype',0,d,[ num ]).
@@ -516,8 +516,8 @@ html_comp_i(31,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(31,'Controlname','Customers',v,[ str ]).
 html_comp_i(31,'Class','',v,[ str ]).
 html_comp_i(31,'Event','''Customers''',v,[ str ]).
-html_comp_i(31,'Caption','Customers',d,[ str ]).
-html_comp_i(31,'Title','Customers',d,[ str ]).
+html_comp_i(31,'Caption','Clientes',d,[ str ]).
+html_comp_i(31,'Title','Clientes',d,[ str ]).
 html_comp_i(31,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(31,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(31,'Backcolor',rgb(240,240,240),d,[ color ]).
@@ -529,8 +529,8 @@ html_comp_i(33,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(33,'Controlname','Deletecarts',v,[ str ]).
 html_comp_i(33,'Class','',v,[ str ]).
 html_comp_i(33,'Event','''Delete Carts''',v,[ str ]).
-html_comp_i(33,'Caption','Delete Carts',d,[ str ]).
-html_comp_i(33,'Title','Delete Carts',d,[ str ]).
+html_comp_i(33,'Caption','Excluir carrinhos',d,[ str ]).
+html_comp_i(33,'Title','Excluir carrinhos',d,[ str ]).
 html_comp_i(33,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(33,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(33,'Backcolor',rgb(240,240,240),d,[ color ]).
@@ -546,7 +546,7 @@ html_comp_i(33,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
-lit_i(9,1,t('Customers And ShoppingCarts',3),[ ctlname('Customersandshoppingcartstitle') ]).
+lit_i(9,1,t('Clientes e carrinhos de compras',3),[ ctlname('Customersandshoppingcartstitle') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(12,1,comp(errview),[ ctlname('Errorviewer1'),width(0),rect(0,0,10,10),title('Nothing') ]).

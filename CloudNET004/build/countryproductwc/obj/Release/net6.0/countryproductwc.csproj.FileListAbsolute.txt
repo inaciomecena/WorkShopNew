@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\countryproductwc.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\countryproductwc.pdb
+C:\Models\WorkShopNew\CloudNET004\build\countryproductwc\obj\Release\net6.0\countryproductwc.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\countryproductwc\obj\Release\net6.0\countryproductwc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\countryproductwc\obj\Release\net6.0\countryproductwc.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\countryproductwc\obj\Release\net6.0\countryproductwc.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\countryproductwc\obj\Release\net6.0\countryproductwc.dll
+C:\Models\WorkShopNew\CloudNET004\build\countryproductwc\obj\Release\net6.0\refint\countryproductwc.dll
+C:\Models\WorkShopNew\CloudNET004\build\countryproductwc\obj\Release\net6.0\countryproductwc.pdb
+C:\Models\WorkShopNew\CloudNET004\build\countryproductwc\obj\Release\net6.0\ref\countryproductwc.dll

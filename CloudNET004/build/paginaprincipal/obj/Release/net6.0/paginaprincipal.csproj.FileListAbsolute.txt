@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\paginaprincipal.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\paginaprincipal.pdb
+C:\Models\WorkShopNew\CloudNET004\build\paginaprincipal\obj\Release\net6.0\paginaprincipal.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\paginaprincipal\obj\Release\net6.0\paginaprincipal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\paginaprincipal\obj\Release\net6.0\paginaprincipal.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\paginaprincipal\obj\Release\net6.0\paginaprincipal.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\paginaprincipal\obj\Release\net6.0\paginaprincipal.dll
+C:\Models\WorkShopNew\CloudNET004\build\paginaprincipal\obj\Release\net6.0\refint\paginaprincipal.dll
+C:\Models\WorkShopNew\CloudNET004\build\paginaprincipal\obj\Release\net6.0\paginaprincipal.pdb
+C:\Models\WorkShopNew\CloudNET004\build\paginaprincipal\obj\Release\net6.0\ref\paginaprincipal.dll

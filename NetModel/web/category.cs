@@ -258,7 +258,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
          /* Text block */
-         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, "Category", "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "Title", 0, "", 1, 1, 0, 0, "HLP_Category.htm");
+         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, "Categoria", "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "Title", 0, "", 1, 1, 0, 0, "HLP_Category.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
@@ -349,7 +349,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCategoryName_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtCategoryName_Internalname, "Name", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtCategoryName_Internalname, "da Categoria", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
@@ -373,7 +373,7 @@ namespace GeneXus.Programs {
          TempTags = "  onfocus=\"gx.evt.onfocus(this, 44,'',false,'',0)\"";
          ClassString = "BtnEnter";
          StyleString = "";
-         GxWebStd.gx_button_ctrl( context, bttBtn_enter_Internalname, "", bttBtn_enter_Caption, bttBtn_enter_Jsonclick, 5, bttBtn_enter_Tooltiptext, "", StyleString, ClassString, bttBtn_enter_Visible, bttBtn_enter_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EENTER."+"'", TempTags, "", context.GetButtonType( ), "HLP_Category.htm");
+         GxWebStd.gx_button_ctrl( context, bttBtn_enter_Internalname, "", "Confirmar", bttBtn_enter_Jsonclick, 5, "Confirmar", "", StyleString, ClassString, bttBtn_enter_Visible, bttBtn_enter_Enabled, "standard", "'"+""+"'"+",false,"+"'"+"EENTER."+"'", TempTags, "", context.GetButtonType( ), "HLP_Category.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
@@ -689,13 +689,6 @@ namespace GeneXus.Programs {
             context.wjLocDisableFrm = 1;
          }
          AV9TrnContext.FromXml(AV10WebSession.Get("TrnContext"), null, "", "");
-         if ( StringUtil.StrCmp(Gx_mode, "DLT") == 0 )
-         {
-            bttBtn_enter_Caption = "Eliminar";
-            AssignProp("", false, bttBtn_enter_Internalname, "Caption", bttBtn_enter_Caption, true);
-            bttBtn_enter_Tooltiptext = "Eliminar";
-            AssignProp("", false, bttBtn_enter_Internalname, "Tooltiptext", bttBtn_enter_Tooltiptext, true);
-         }
       }
 
       protected void E12022( )
@@ -797,7 +790,7 @@ namespace GeneXus.Programs {
          pr_default.execute(3, new Object[] {A7CategoryName, A6CategoryId});
          if ( (pr_default.getStatus(3) != 101) )
          {
-            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Category Name"}), 1, "CATEGORYNAME");
+            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Noma da Categoria"}), 1, "CATEGORYNAME");
             AnyError = 1;
             GX_FocusControl = edtCategoryName_Internalname;
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
@@ -1406,7 +1399,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351922251529", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235218291349", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1575,7 +1568,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351922251538", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235218291361", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1591,7 +1584,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("category.js", "?202351922251538", false, true);
+         context.AddJavascriptSource("category.js", "?20235218291361", false, true);
          /* End function include_jscripts */
       }
 
@@ -1631,8 +1624,6 @@ namespace GeneXus.Programs {
          bttBtn_delete_Enabled = 0;
          bttBtn_delete_Visible = 1;
          bttBtn_cancel_Visible = 1;
-         bttBtn_enter_Tooltiptext = "Confirmar";
-         bttBtn_enter_Caption = "Confirmar";
          bttBtn_enter_Enabled = 1;
          bttBtn_enter_Visible = 1;
          edtCategoryName_Jsonclick = "";
@@ -1687,7 +1678,7 @@ namespace GeneXus.Programs {
          pr_default.execute(12, new Object[] {A7CategoryName, A6CategoryId});
          if ( (pr_default.getStatus(12) != 101) )
          {
-            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Category Name"}), 1, "CATEGORYNAME");
+            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Noma da Categoria"}), 1, "CATEGORYNAME");
             AnyError = 1;
             GX_FocusControl = edtCategoryName_Internalname;
          }
@@ -1902,9 +1893,7 @@ namespace GeneXus.Programs {
       private string A7CategoryName ;
       private string edtCategoryName_Jsonclick ;
       private string bttBtn_enter_Internalname ;
-      private string bttBtn_enter_Caption ;
       private string bttBtn_enter_Jsonclick ;
-      private string bttBtn_enter_Tooltiptext ;
       private string bttBtn_cancel_Internalname ;
       private string bttBtn_cancel_Jsonclick ;
       private string bttBtn_delete_Internalname ;

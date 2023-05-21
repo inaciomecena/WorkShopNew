@@ -150,7 +150,7 @@ namespace GeneXus.Programs {
             {
                Form.Meta.addItem("generator", "GeneXus .NET 17_0_9-159740", 0) ;
             }
-            Form.Meta.addItem("description", "Promotion", 0) ;
+            Form.Meta.addItem("description", "Promoção", 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -285,7 +285,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
          /* Text block */
-         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, "Promotion", "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "Title", 0, "", 1, 1, 0, 0, "HLP_Promotion.htm");
+         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, "Promoção", "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "Title", 0, "", 1, 1, 0, 0, "HLP_Promotion.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
@@ -532,7 +532,7 @@ namespace GeneXus.Programs {
          Gridpromotion_productColumn.AddObjectProperty("Enabled", StringUtil.LTrim( StringUtil.NToC( (decimal)(edtProductName_Enabled), 5, 0, ".", "")));
          Gridpromotion_productContainer.AddColumnProperties(Gridpromotion_productColumn);
          Gridpromotion_productColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-         Gridpromotion_productColumn.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 10, 2, ".", "")));
+         Gridpromotion_productColumn.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 11, 2, ".", "")));
          Gridpromotion_productColumn.AddObjectProperty("Enabled", StringUtil.LTrim( StringUtil.NToC( (decimal)(edtProductPrice_Enabled), 5, 0, ".", "")));
          Gridpromotion_productContainer.AddColumnProperties(Gridpromotion_productColumn);
          Gridpromotion_productContainer.AddObjectProperty("Selectedindex", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGridpromotion_product_Selectedindex), 4, 0, ".", "")));
@@ -1080,7 +1080,7 @@ namespace GeneXus.Programs {
             }
             ChangePostValue( edtProductId_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A12ProductId), 4, 0, ",", ""))) ;
             ChangePostValue( edtProductName_Internalname, StringUtil.RTrim( A13ProductName)) ;
-            ChangePostValue( edtProductPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 10, 2, ",", ""))) ;
+            ChangePostValue( edtProductPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 11, 2, ",", ""))) ;
             ChangePostValue( "ZT_"+"Z12ProductId_"+sGXsfl_63_idx, StringUtil.LTrim( StringUtil.NToC( (decimal)(Z12ProductId), 4, 0, ",", ""))) ;
             ChangePostValue( "nRcdDeleted_8_"+sGXsfl_63_idx, StringUtil.LTrim( StringUtil.NToC( (decimal)(nRcdDeleted_8), 4, 0, ",", ""))) ;
             ChangePostValue( "nRcdExists_8_"+sGXsfl_63_idx, StringUtil.LTrim( StringUtil.NToC( (decimal)(nRcdExists_8), 4, 0, ",", ""))) ;
@@ -1241,7 +1241,7 @@ namespace GeneXus.Programs {
          }
          if ( DateTimeUtil.ResetTime ( A31DateStart ) > DateTimeUtil.ResetTime ( A32DateFinish ) )
          {
-            GX_msglist.addItem("The start date cannot be higher than finish date", 1, "DATESTART");
+            GX_msglist.addItem("A data de início não pode ser posterior à data de término", 1, "DATESTART");
             AnyError = 1;
             GX_FocusControl = edtDateStart_Internalname;
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
@@ -1789,7 +1789,7 @@ namespace GeneXus.Programs {
             }
             ChangePostValue( edtProductId_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A12ProductId), 4, 0, ",", ""))) ;
             ChangePostValue( edtProductName_Internalname, StringUtil.RTrim( A13ProductName)) ;
-            ChangePostValue( edtProductPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 10, 2, ",", ""))) ;
+            ChangePostValue( edtProductPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 11, 2, ",", ""))) ;
             ChangePostValue( "ZT_"+"Z12ProductId_"+sGXsfl_63_idx, StringUtil.LTrim( StringUtil.NToC( (decimal)(Z12ProductId), 4, 0, ",", ""))) ;
             ChangePostValue( "nRcdDeleted_8_"+sGXsfl_63_idx, StringUtil.LTrim( StringUtil.NToC( (decimal)(nRcdDeleted_8), 4, 0, ",", ""))) ;
             ChangePostValue( "nRcdExists_8_"+sGXsfl_63_idx, StringUtil.LTrim( StringUtil.NToC( (decimal)(nRcdExists_8), 4, 0, ",", ""))) ;
@@ -2479,7 +2479,7 @@ namespace GeneXus.Programs {
          /* Subfile cell */
          /* Single line edit */
          ROClassString = "Attribute";
-         Gridpromotion_productRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtProductPrice_Internalname,StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 10, 2, ",", "")),StringUtil.LTrim( ((edtProductPrice_Enabled!=0) ? context.localUtil.Format( A27ProductPrice, "$ ZZZZ9.99") : context.localUtil.Format( A27ProductPrice, "$ ZZZZ9.99"))),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtProductPrice_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"",(string)"",(short)-1,(int)edtProductPrice_Enabled,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)10,(short)0,(short)0,(short)63,(short)1,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
+         Gridpromotion_productRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtProductPrice_Internalname,StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 11, 2, ",", "")),StringUtil.LTrim( ((edtProductPrice_Enabled!=0) ? context.localUtil.Format( A27ProductPrice, "R$ ZZZZ9.99") : context.localUtil.Format( A27ProductPrice, "R$ ZZZZ9.99"))),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtProductPrice_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"",(string)"",(short)-1,(int)edtProductPrice_Enabled,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)11,(short)0,(short)0,(short)63,(short)1,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
          ajax_sending_grid_row(Gridpromotion_productRow);
          send_integrity_lvl_hashes088( ) ;
          GXCCtl = "Z12ProductId_" + sGXsfl_63_idx;
@@ -2595,7 +2595,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351923484771", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235218295592", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -2741,7 +2741,7 @@ namespace GeneXus.Programs {
 
       public override string GetPgmdesc( )
       {
-         return "Promotion" ;
+         return "Promoção" ;
       }
 
       protected void InitializeNonKey087( )
@@ -2803,7 +2803,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351923484781", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2023521829569", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -2819,7 +2819,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("promotion.js", "?202351923484783", false, true);
+         context.AddJavascriptSource("promotion.js", "?2023521829569", false, true);
          /* End function include_jscripts */
       }
 
@@ -2871,7 +2871,7 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "Promotion";
+         Form.Caption = "Promoção";
          edtProductPrice_Jsonclick = "";
          edtProductName_Jsonclick = "";
          imgprompt_12_Visible = 1;
@@ -3005,8 +3005,8 @@ namespace GeneXus.Programs {
          setEventMetadata("VALID_DATESTART",",oparms:[]}");
          setEventMetadata("VALID_DATEFINISH","{handler:'Valid_Datefinish',iparms:[]");
          setEventMetadata("VALID_DATEFINISH",",oparms:[]}");
-         setEventMetadata("VALID_PRODUCTID","{handler:'Valid_Productid',iparms:[{av:'A12ProductId',fld:'PRODUCTID',pic:'ZZZ9'},{av:'A13ProductName',fld:'PRODUCTNAME',pic:''},{av:'A27ProductPrice',fld:'PRODUCTPRICE',pic:'$ ZZZZ9.99'}]");
-         setEventMetadata("VALID_PRODUCTID",",oparms:[{av:'A13ProductName',fld:'PRODUCTNAME',pic:''},{av:'A27ProductPrice',fld:'PRODUCTPRICE',pic:'$ ZZZZ9.99'}]}");
+         setEventMetadata("VALID_PRODUCTID","{handler:'Valid_Productid',iparms:[{av:'A12ProductId',fld:'PRODUCTID',pic:'ZZZ9'},{av:'A13ProductName',fld:'PRODUCTNAME',pic:''},{av:'A27ProductPrice',fld:'PRODUCTPRICE',pic:'R$ ZZZZ9.99'}]");
+         setEventMetadata("VALID_PRODUCTID",",oparms:[{av:'A13ProductName',fld:'PRODUCTNAME',pic:''},{av:'A27ProductPrice',fld:'PRODUCTPRICE',pic:'R$ ZZZZ9.99'}]}");
          setEventMetadata("NULL","{handler:'Valid_Productprice',iparms:[]");
          setEventMetadata("NULL",",oparms:[]}");
          return  ;

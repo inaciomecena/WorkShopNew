@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\viewproduct.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\viewproduct.pdb
+C:\Models\WorkShopNew\CloudNET004\build\viewproduct\obj\Release\net6.0\viewproduct.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\viewproduct\obj\Release\net6.0\viewproduct.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\viewproduct\obj\Release\net6.0\viewproduct.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\viewproduct\obj\Release\net6.0\viewproduct.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\viewproduct\obj\Release\net6.0\viewproduct.dll
+C:\Models\WorkShopNew\CloudNET004\build\viewproduct\obj\Release\net6.0\refint\viewproduct.dll
+C:\Models\WorkShopNew\CloudNET004\build\viewproduct\obj\Release\net6.0\viewproduct.pdb
+C:\Models\WorkShopNew\CloudNET004\build\viewproduct\obj\Release\net6.0\ref\viewproduct.dll

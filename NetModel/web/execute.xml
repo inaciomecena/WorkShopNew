@@ -16,13 +16,13 @@
   <Object>
     <ObjCls>13</ObjCls>
     <ObjName>WWSeller</ObjName>
-    <ObjDesc>Sellers</ObjDesc>
+    <ObjDesc>Vendedores</ObjDesc>
     <ObjLink>wwseller.aspx</ObjLink>
   </Object>
   <Object>
     <ObjCls>13</ObjCls>
     <ObjName>WWShoppingCart</ObjName>
-    <ObjDesc>Shopping Carts</ObjDesc>
+    <ObjDesc>Carrinho de Compras</ObjDesc>
     <ObjLink>wwshoppingcart.aspx</ObjLink>
   </Object>
   <Object>
@@ -45,9 +45,9 @@
   </Object>
   <Object>
     <ObjCls>13</ObjCls>
-    <ObjName>StartUp</ObjName>
-    <ObjDesc>Start Up</ObjDesc>
-    <ObjLink>startup.aspx</ObjLink>
+    <ObjName>PaginaPrincipal</ObjName>
+    <ObjDesc>Pagina Principal</ObjDesc>
+    <ObjLink>paginaprincipal.aspx</ObjLink>
   </Object>
   <Object>
     <ObjCls>13</ObjCls>
@@ -64,7 +64,7 @@
   <Object>
     <ObjCls>13</ObjCls>
     <ObjName>ProductsPerCountry</ObjName>
-    <ObjDesc>Products Per Country</ObjDesc>
+    <ObjDesc>Produtos por País</ObjDesc>
     <ObjLink>productspercountry.aspx</ObjLink>
   </Object>
   <Object>
@@ -76,7 +76,7 @@
   <Object>
     <ObjCls>13</ObjCls>
     <ObjName>WWCategory</ObjName>
-    <ObjDesc>Categories</ObjDesc>
+    <ObjDesc>Work With Category</ObjDesc>
     <ObjLink>wwcategory.aspx</ObjLink>
   </Object>
   <Object>
@@ -88,13 +88,19 @@
   <Object>
     <ObjCls>13</ObjCls>
     <ObjName>WWProduct</ObjName>
-    <ObjDesc>Products</ObjDesc>
+    <ObjDesc>Produtoss</ObjDesc>
     <ObjLink>wwproduct.aspx</ObjLink>
   </Object>
   <Object>
     <ObjCls>13</ObjCls>
     <ObjName>WWPromotion</ObjName>
-    <ObjDesc>Promotions</ObjDesc>
+    <ObjDesc>Promoçãoes</ObjDesc>
     <ObjLink>wwpromotion.aspx</ObjLink>
+  </Object>
+  <Object>
+    <ObjCls>13</ObjCls>
+    <ObjName>WP_Relatorios</ObjName>
+    <ObjDesc>WP_Relatorios</ObjDesc>
+    <ObjLink>wp_relatorios.aspx</ObjLink>
   </Object>
 </Objects>

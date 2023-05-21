@@ -21,9 +21,9 @@ las_i(2,[ [ 'Psellerid','Csellerid','Csellername','Ccountryid',8,19,40000,18,10 
 lac_i(2,[ [ 'Csellerid','Csellername','Ccountryid' ] ]).
  
  
-lits_i('Seller Id',5,10).
-lits_i('Seller Name',5,10).
-lits_i('Country Id',5,10).
+lits_i('Vendedor Id',5,10).
+lits_i('Vendedor Nome',5,10).
+lits_i('País Id',5,10).
  
 cls_i([ 0,0 ],[ 5,2079 ]).
  
@@ -154,18 +154,18 @@ v_i(t,o,2,10).
  
  
 attri_i(40000,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Seller Photo','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Seller Name','',0 ]).
-attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Seller Id','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
 attri_i('Linkselection_GXI',[ 'Linkselection_GXI',svchar,2048,0,'',0,'',[],13 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',11 ]).
 attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,'ADVANCED_LABEL_TEMPLATE','',10 ]).
-attri_i('Psellerid',[ pSellerId,int,4,0,'ZZZ9',0,'Seller Id','',9 ]).
-attri_i('Ccountryid',[ cCountryId,int,4,0,'ZZZ9',0,'Country Id','',8 ]).
-attri_i('Csellername',[ cSellerName,char,20,0,'',0,'Seller Name','',7 ]).
-attri_i('Csellerid',[ cSellerId,int,4,0,'ZZZ9',0,'Seller Id','',6 ]).
+attri_i('Psellerid',[ pSellerId,int,4,0,'ZZZ9',0,'Vendedor Id','',9 ]).
+attri_i('Ccountryid',[ cCountryId,int,4,0,'ZZZ9',0,'País Id','',8 ]).
+attri_i('Csellername',[ cSellerName,char,20,0,'',0,'Vendedor Nome','',7 ]).
+attri_i('Csellerid',[ cSellerId,int,4,0,'ZZZ9',0,'Vendedor Id','',6 ]).
 attri_i('Linkselection',[ 'LinkSelection',bits,1024,0,'',0,'Link Selection','',5 ]).
  
 table_i(4,[ 'Seller',[ 10,18,19,40000,8 ],'Seller','Seller' ]).
@@ -290,7 +290,7 @@ html_sub_i(7,8,html_i(0,div(8))).
 html_sub_i(8,9,html_i(0,div(9))).
 html_sub_i(9,10,html_i(0,div(10))).
 html_sub_i(10,11,html_i(0,div(11))).
-html_sub_i(11,12,html_i(0,t('Seller Id',3))).
+html_sub_i(11,12,html_i(0,t('Vendedor Id',3))).
 html_sub_i(9,13,html_i(1,div(13))).
 html_sub_i(13,14,html_i(0,div(14))).
 html_sub_i(14,15,html_i(0,div(15))).
@@ -300,7 +300,7 @@ html_sub_i(17,18,html_i(0,div(18))).
 html_sub_i(18,19,html_i(0,div(19))).
 html_sub_i(19,20,html_i(0,div(20))).
 html_sub_i(20,21,html_i(0,div(21))).
-html_sub_i(21,22,html_i(0,t('Seller Name',3))).
+html_sub_i(21,22,html_i(0,t('Vendedor Nome',3))).
 html_sub_i(19,23,html_i(1,div(23))).
 html_sub_i(23,24,html_i(0,div(24))).
 html_sub_i(24,25,html_i(0,div(25))).
@@ -310,7 +310,7 @@ html_sub_i(27,28,html_i(0,div(28))).
 html_sub_i(28,29,html_i(0,div(29))).
 html_sub_i(29,30,html_i(0,div(30))).
 html_sub_i(30,31,html_i(0,div(31))).
-html_sub_i(31,32,html_i(0,t('Country Id',3))).
+html_sub_i(31,32,html_i(0,t('País Id',3))).
 html_sub_i(29,33,html_i(1,div(33))).
 html_sub_i(33,34,html_i(0,div(34))).
 html_sub_i(34,35,html_i(0,div(35))).
@@ -420,7 +420,7 @@ html_comp_i(11,'Semanticcontent',div,d,[ str ]).
 html_comp_i(11,'Align',left,d,[ str ]).
 html_comp_i(11,'Valign',top,d,[ str ]).
 html_comp_i(12,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(12,'Caption','Seller Id',d,[ str ]).
+html_comp_i(12,'Caption','Vendedor Id',d,[ str ]).
 html_comp_i(12,'Id','Lblselleridfilter',v,[ str ]).
 html_comp_i(12,'Class','WWAdvancedLabel WWFilterLabel',v,[ str ]).
 html_comp_i(12,'Event','',d,[ str ]).
@@ -464,7 +464,7 @@ html_comp_i(16,'Returnonclick',0,v,[ bool ]).
 html_comp_i(16,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(16,'Captionstyle','',v,[ str ]).
 html_comp_i(16,'Captionposition','None',v,[ str ]).
-html_comp_i(16,'Captionvalue','Seller Id',d,[ str ]).
+html_comp_i(16,'Captionvalue','Vendedor Id',d,[ str ]).
 html_comp_i(16,'Layoutclass','',v,[ str ]).
 html_comp_i(16,'Controltype',2,d,[ num ]).
 html_comp_i(16,'Inputtype',0,d,[ num ]).
@@ -527,7 +527,7 @@ html_comp_i(21,'Semanticcontent',div,d,[ str ]).
 html_comp_i(21,'Align',left,d,[ str ]).
 html_comp_i(21,'Valign',top,d,[ str ]).
 html_comp_i(22,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(22,'Caption','Seller Name',d,[ str ]).
+html_comp_i(22,'Caption','Vendedor Nome',d,[ str ]).
 html_comp_i(22,'Id','Lblsellernamefilter',v,[ str ]).
 html_comp_i(22,'Class','WWAdvancedLabel WWFilterLabel',v,[ str ]).
 html_comp_i(22,'Event','',d,[ str ]).
@@ -571,7 +571,7 @@ html_comp_i(26,'Returnonclick',0,v,[ bool ]).
 html_comp_i(26,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(26,'Captionstyle','',v,[ str ]).
 html_comp_i(26,'Captionposition','None',v,[ str ]).
-html_comp_i(26,'Captionvalue','Seller Name',d,[ str ]).
+html_comp_i(26,'Captionvalue','Vendedor Nome',d,[ str ]).
 html_comp_i(26,'Layoutclass','',v,[ str ]).
 html_comp_i(26,'Controltype',2,d,[ num ]).
 html_comp_i(26,'Inputtype',0,d,[ num ]).
@@ -637,7 +637,7 @@ html_comp_i(31,'Semanticcontent',div,d,[ str ]).
 html_comp_i(31,'Align',left,d,[ str ]).
 html_comp_i(31,'Valign',top,d,[ str ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(32,'Caption','Country Id',d,[ str ]).
+html_comp_i(32,'Caption','País Id',d,[ str ]).
 html_comp_i(32,'Id','Lblcountryidfilter',v,[ str ]).
 html_comp_i(32,'Class','WWAdvancedLabel WWFilterLabel',v,[ str ]).
 html_comp_i(32,'Event','',d,[ str ]).
@@ -681,7 +681,7 @@ html_comp_i(36,'Returnonclick',0,v,[ bool ]).
 html_comp_i(36,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(36,'Captionstyle','',v,[ str ]).
 html_comp_i(36,'Captionposition','None',v,[ str ]).
-html_comp_i(36,'Captionvalue','Country Id',d,[ str ]).
+html_comp_i(36,'Captionvalue','País Id',d,[ str ]).
 html_comp_i(36,'Layoutclass','',v,[ str ]).
 html_comp_i(36,'Controltype',2,d,[ num ]).
 html_comp_i(36,'Inputtype',0,d,[ num ]).
@@ -870,7 +870,7 @@ html_comp_i(47,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(47,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(47,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(47,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(47,'Coltitle','Name',d,[ str ]).
+html_comp_i(47,'Coltitle','Nome',d,[ str ]).
 html_comp_i(47,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(47,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(47,'Horizontalalignment',left,d,[ str ]).
@@ -894,7 +894,7 @@ html_comp_i(48,'Emptyasnull','Yes',d,[ str ]).
 html_comp_i(48,'Colautoresize',-1,d,[ bool ]).
 html_comp_i(48,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(48,'Height',measure(17,px),d,[ measure ]).
-html_comp_i(48,'Coltitle','Photo',d,[ str ]).
+html_comp_i(48,'Coltitle','Foto',d,[ str ]).
 html_comp_i(48,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(48,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(48,'Colvisible',-1,d,[ bool ]).
@@ -923,7 +923,7 @@ html_comp_i(49,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(49,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(49,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(49,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(49,'Coltitle','Country Id',d,[ str ]).
+html_comp_i(49,'Coltitle','País Id',d,[ str ]).
 html_comp_i(49,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(49,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(49,'Horizontalalignment',right,d,[ str ]).
@@ -968,7 +968,7 @@ html_comp_i(52,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
-lit_i(12,1,t('Seller Id',3),[ ctlname('Lblselleridfilter') ]).
+lit_i(12,1,t('Vendedor Id',3),[ ctlname('Lblselleridfilter') ]).
 lit_i(11,1,div(11),[ ctlname('') ]).
 lit_i(10,1,div(10),[ ctlname('') ]).
 lit_i(16,1,t('Csellerid',23),[ ctlname('&Csellerid'),ctrltype(edit,16),pos(16),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
@@ -978,7 +978,7 @@ lit_i(13,1,div(13),[ ctlname('') ]).
 lit_i(9,1,div(9),[ ctlname('Selleridfiltercontainer') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
-lit_i(22,1,t('Seller Name',3),[ ctlname('Lblsellernamefilter') ]).
+lit_i(22,1,t('Vendedor Nome',3),[ ctlname('Lblsellernamefilter') ]).
 lit_i(21,1,div(21),[ ctlname('') ]).
 lit_i(20,1,div(20),[ ctlname('') ]).
 lit_i(26,1,t('Csellername',23),[ ctlname('&Csellername'),ctrltype(edit,26),pos(26),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
@@ -988,7 +988,7 @@ lit_i(23,1,div(23),[ ctlname('') ]).
 lit_i(19,1,div(19),[ ctlname('Sellernamefiltercontainer') ]).
 lit_i(18,1,div(18),[ ctlname('') ]).
 lit_i(17,1,div(17),[ ctlname('') ]).
-lit_i(32,1,t('Country Id',3),[ ctlname('Lblcountryidfilter') ]).
+lit_i(32,1,t('País Id',3),[ ctlname('Lblcountryidfilter') ]).
 lit_i(31,1,div(31),[ ctlname('') ]).
 lit_i(30,1,div(30),[ ctlname('') ]).
 lit_i(36,1,t('Ccountryid',23),[ ctlname('&Ccountryid'),ctrltype(edit,36),pos(36),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).

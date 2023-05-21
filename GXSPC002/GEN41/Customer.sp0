@@ -150,24 +150,24 @@ rule_i(0,rule([ a(22,[ 'Dlt','"Eliminar"','' ]) ],[],[],[])).
 rule_i(0,maingen(41)).
 rule_i(0,rule([ a(10,[ 'Mode','Customerid' ]) ],[],[ insert,update,delete,display ],[])).
 rule_i(0,parmio([ [ 'Mode',in ],[ 'Customerid',in ] ])).
-rule_i(5,rule([ a(1,msg([ t('"O valor de Customer Email não coincide com o padrão especificado"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t([ t(22,2),t('ismatch(',1) ],31),t('"^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$"',3),t(')',4),t(')',4) ],[ insert,update ],[ 22 ])).
+rule_i(5,rule([ a(1,msg([ t('"O valor de E-mail não coincide com o padrão especificado"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t([ t(22,2),t('ismatch(',1) ],31),t('"^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$"',3),t(')',4),t(')',4) ],[ insert,update ],[ 22 ])).
 rule_i(5,rule([ a(3,[ t(11,2) ]) ],[],[ insert,update,delete,display ],[ 11 ])).
 rule_i(5,rule([ a(21,[ [ 11 ] ]) ],[],[ insert,update,delete,display ],[ 11 ])).
 rule_i(5,rule([ a(3,[ t(8,2) ]) ],[ t('Mode',23),t(=,10),t([ 42,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_countryid',23),t(')',4) ],[ insert,update,delete,display ],[ 8,'Mode','Insert_countryid' ])).
-rule_i(5,rule([ a(1,[ t('"Their name cannot be empty"',3) ]) ],[ t('null(',1),t(20,2),t(')',4) ],[ insert,update,delete,display ],[ 20 ])).
-rule_i(5,rule([ a(1,[ t('"Their address cannot be empty"',3) ]) ],[ t('null(',1),t(21,2),t(')',4) ],[ insert,update,delete,display ],[ 21 ])).
-rule_i(5,rule([ a(4,[ t('"Their phone is empty!"',3) ]) ],[ t('null(',1),t(23,2),t(')',4) ],[ insert,update,delete,display ],[ 23 ])).
+rule_i(5,rule([ a(1,[ t('"Campo nome deve ser preenchido!"',3) ]) ],[ t('null(',1),t(20,2),t(')',4) ],[ insert,update,delete,display ],[ 20 ])).
+rule_i(5,rule([ a(1,[ t('"Campo endereço deve ser preenchido!"',3) ]) ],[ t('null(',1),t(21,2),t(')',4) ],[ insert,update,delete,display ],[ 21 ])).
+rule_i(5,rule([ a(4,[ t('"Campo telefone deve ser preenchido!"',3) ]) ],[ t('null(',1),t(23,2),t(')',4) ],[ insert,update,delete,display ],[ 23 ])).
 rule_i(5,rule([ a(19,[ [ 8 ],msg([ t('"Não existe ''Country''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 8 ])).
  
-a_i(3,5,b,0,[],[ [],[ a(1,msg([ t('"O valor de Customer Email não coincide com o padrão especificado"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t([ t(22,2),t('ismatch(',1) ],31),t('"^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$"',3),t(')',4),t(')',4) ] ]).
+a_i(3,5,b,0,[],[ [],[ a(1,msg([ t('"O valor de E-mail não coincide com o padrão especificado"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t([ t(22,2),t('ismatch(',1) ],31),t('"^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$"',3),t(')',4),t(')',4) ] ]).
 a_i(4,5,f,11,[],[ [],[ t('Customerid',23),t('IF',17),t('.NOT.',8),t('null(',1),t('Customerid',23),t(')',4),t(';',18) ] ]).
 a_i(5,5,f,[ t(11,2),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(6,5,f,8,[],[ [],[ t('Insert_countryid',23),t('IF',17),t('Mode',23),t(=,10),t([ 42,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_countryid',23),t(')',4),t(';',18) ] ]).
 a_i(7,5,f,[ t(8,2),t('Enabled',3) ],[],[ [],[ t(0,3),t('IF',17),t('Mode',23),t(=,10),t([ 42,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_countryid',23),t(')',4),t(';',18),t(1,3),t('OTHERWISE',19),t(';',18) ] ]).
 a_i(8,5,b,6,[],[ [],[ a(3,[ t(8,2) ]) ],[ t('Mode',23),t(=,10),t([ 42,'Insert' ],44),t('.AND.',9),t('.NOT.',8),t('null(',1),t('Insert_countryid',23),t(')',4) ] ]).
-a_i(9,5,b,7,[],[ [],[ a(1,[ t('"Their name cannot be empty"',3) ]) ],[ t('null(',1),t(20,2),t(')',4) ] ]).
-a_i(10,5,b,8,[],[ [],[ a(1,[ t('"Their address cannot be empty"',3) ]) ],[ t('null(',1),t(21,2),t(')',4) ] ]).
-a_i(11,5,b,9,[],[ [],[ a(4,[ t('"Their phone is empty!"',3) ]) ],[ t('null(',1),t(23,2),t(')',4) ] ]).
+a_i(9,5,b,7,[],[ [],[ a(1,[ t('"Campo nome deve ser preenchido!"',3) ]) ],[ t('null(',1),t(20,2),t(')',4) ] ]).
+a_i(10,5,b,8,[],[ [],[ a(1,[ t('"Campo endereço deve ser preenchido!"',3) ]) ],[ t('null(',1),t(21,2),t(')',4) ] ]).
+a_i(11,5,b,9,[],[ [],[ a(4,[ t('"Campo telefone deve ser preenchido!"',3) ]) ],[ t('null(',1),t(23,2),t(')',4) ] ]).
 a_i(12,5,t,5,[],[ [ [ [],11,11 ] ],'ICUSTOMER',[] ]).
 a_i(13,5,r,3,[],[ [ [ 5,8,8 ] ],'ICOUNTRY',[] ]).
 a_i(14,5,f,'Pgmname',[],[ [],[ t('"Customer"',3) ] ]).
@@ -211,13 +211,13 @@ tbl_to_delete_i(5,[ 9,[ [ 5,11,11 ] ],c,'ISHOPPINGCART1',0,[ 16 ],'' ]).
  
  
 attri_i(16,[ 'ShoppingCartId',int,4,0,'ZZZ9',0,'Shopping Cart Id','',0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(23,[ 'CustomerPhone',char,20,0,'',0,'Customer Phone','',0 ]).
-attri_i(22,[ 'CustomerEmail',svchar,100,0,'',0,'Customer Email','',0 ]).
-attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Customer Address','',0 ]).
-attri_i(20,[ 'CustomerName',char,20,0,'',0,'Customer Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Customer Id','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(23,[ 'CustomerPhone',char,20,0,'(99) 9999-9999',0,'Telefone','',0 ]).
+attri_i(22,[ 'CustomerEmail',svchar,100,0,'',0,'E-mail','',0 ]).
+attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Endereço','',0 ]).
+attri_i(20,[ 'CustomerName',char,20,0,'',0,'Nome','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Cliente Id','',0 ]).
 attri_i('GXV1',[ 'GXV1',int,8,0,'',0,'','',14 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',13 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
@@ -783,7 +783,7 @@ html_comp_i(39,'Returnonclick',0,v,[ bool ]).
 html_comp_i(39,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(39,'Captionstyle','',v,[ str ]).
 html_comp_i(39,'Captionposition','Left',v,[ str ]).
-html_comp_i(39,'Captionvalue','Name',d,[ str ]).
+html_comp_i(39,'Captionvalue','Nome',d,[ str ]).
 html_comp_i(39,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(39,'Controltype',2,d,[ num ]).
 html_comp_i(39,'Inputtype',0,d,[ num ]).
@@ -849,7 +849,7 @@ html_comp_i(44,'Returnonclick',0,v,[ bool ]).
 html_comp_i(44,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(44,'Captionstyle','',v,[ str ]).
 html_comp_i(44,'Captionposition','Left',v,[ str ]).
-html_comp_i(44,'Captionvalue','Address',d,[ str ]).
+html_comp_i(44,'Captionvalue','Endereço',d,[ str ]).
 html_comp_i(44,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(44,'Controltype',2,d,[ num ]).
 html_comp_i(44,'Inputtype',0,d,[ num ]).
@@ -915,7 +915,7 @@ html_comp_i(49,'Returnonclick',0,v,[ bool ]).
 html_comp_i(49,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(49,'Captionstyle','',v,[ str ]).
 html_comp_i(49,'Captionposition','Left',v,[ str ]).
-html_comp_i(49,'Captionvalue','Email',d,[ str ]).
+html_comp_i(49,'Captionvalue','E-mail',d,[ str ]).
 html_comp_i(49,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(49,'Controltype',2,d,[ num ]).
 html_comp_i(49,'Inputtype',0,d,[ num ]).
@@ -981,7 +981,7 @@ html_comp_i(54,'Returnonclick',0,v,[ bool ]).
 html_comp_i(54,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(54,'Captionstyle','',v,[ str ]).
 html_comp_i(54,'Captionposition','Left',v,[ str ]).
-html_comp_i(54,'Captionvalue','Phone',d,[ str ]).
+html_comp_i(54,'Captionvalue','Telefone',d,[ str ]).
 html_comp_i(54,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(54,'Controltype',2,d,[ num ]).
 html_comp_i(54,'Inputtype',0,d,[ num ]).
@@ -1047,7 +1047,7 @@ html_comp_i(59,'Returnonclick',0,v,[ bool ]).
 html_comp_i(59,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(59,'Captionstyle','',v,[ str ]).
 html_comp_i(59,'Captionposition','Left',v,[ str ]).
-html_comp_i(59,'Captionvalue','Country Id',d,[ str ]).
+html_comp_i(59,'Captionvalue','País Id',d,[ str ]).
 html_comp_i(59,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(59,'Controltype',2,d,[ num ]).
 html_comp_i(59,'Inputtype',0,d,[ num ]).
@@ -1110,7 +1110,7 @@ html_comp_i(64,'Returnonclick',0,v,[ bool ]).
 html_comp_i(64,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(64,'Captionstyle','',v,[ str ]).
 html_comp_i(64,'Captionposition','Left',v,[ str ]).
-html_comp_i(64,'Captionvalue','Country Name',d,[ str ]).
+html_comp_i(64,'Captionvalue','País',d,[ str ]).
 html_comp_i(64,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(64,'Controltype',2,d,[ num ]).
 html_comp_i(64,'Inputtype',0,d,[ num ]).

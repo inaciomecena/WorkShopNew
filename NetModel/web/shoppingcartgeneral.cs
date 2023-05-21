@@ -259,7 +259,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351822103657", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352022414662", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -332,6 +332,11 @@ namespace GeneXus.Programs {
       protected void send_integrity_footer_hashes( )
       {
          GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
+         forbiddenHiddens = new GXProperties();
+         forbiddenHiddens.Add("hshsalt", sPrefix+"hsh"+"ShoppingCartGeneral");
+         forbiddenHiddens.Add("CustomerId", context.localUtil.Format( (decimal)(A11CustomerId), "ZZZ9"));
+         GxWebStd.gx_hidden_field( context, sPrefix+"hsh", GetEncryptedHash( forbiddenHiddens.ToString(), GXKey));
+         GXUtil.WriteLogInfo("shoppingcartgeneral:[ SendSecurityCheck value for]"+forbiddenHiddens.ToJSonString());
       }
 
       protected void SendCloseFormHiddens( )
@@ -504,7 +509,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCustomerId_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtCustomerId_Internalname, "Customer Id", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            GxWebStd.gx_label_element( context, edtCustomerId_Internalname, "Cliente Id", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
@@ -520,11 +525,11 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCustomerName_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtCustomerName_Internalname, "Customer Name", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            GxWebStd.gx_label_element( context, edtCustomerName_Internalname, "Nome", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtCustomerName_Internalname, StringUtil.RTrim( A20CustomerName), StringUtil.RTrim( context.localUtil.Format( A20CustomerName, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", "", "", "", "", edtCustomerName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtCustomerName_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_ShoppingCartGeneral.htm");
+            GxWebStd.gx_single_line_edit( context, edtCustomerName_Internalname, StringUtil.RTrim( A20CustomerName), StringUtil.RTrim( context.localUtil.Format( A20CustomerName, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", edtCustomerName_Link, "", "", "", edtCustomerName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtCustomerName_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_ShoppingCartGeneral.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -536,7 +541,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCustomerAddress_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtCustomerAddress_Internalname, "Customer Address", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            GxWebStd.gx_label_element( context, edtCustomerAddress_Internalname, "Endereço", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Multiple line edit */
@@ -556,7 +561,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCountryId_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtCountryId_Internalname, "Country Id", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            GxWebStd.gx_label_element( context, edtCountryId_Internalname, "País Id", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
@@ -572,11 +577,11 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCountryName_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtCountryName_Internalname, "Country Name", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            GxWebStd.gx_label_element( context, edtCountryName_Internalname, "País", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtCountryName_Internalname, StringUtil.RTrim( A9CountryName), StringUtil.RTrim( context.localUtil.Format( A9CountryName, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", "", "", "", "", edtCountryName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtCountryName_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_ShoppingCartGeneral.htm");
+            GxWebStd.gx_single_line_edit( context, edtCountryName_Internalname, StringUtil.RTrim( A9CountryName), StringUtil.RTrim( context.localUtil.Format( A9CountryName, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", edtCountryName_Link, "", "", "", edtCountryName_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtCountryName_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "Name", "left", true, "", "HLP_ShoppingCartGeneral.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -604,7 +609,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCustomerPhone_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtCustomerPhone_Internalname, "Customer Phone", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            GxWebStd.gx_label_element( context, edtCustomerPhone_Internalname, "Telefone", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
@@ -612,7 +617,7 @@ namespace GeneXus.Programs {
             {
                gxphoneLink = "tel:" + StringUtil.RTrim( A23CustomerPhone);
             }
-            GxWebStd.gx_single_line_edit( context, edtCustomerPhone_Internalname, StringUtil.RTrim( A23CustomerPhone), StringUtil.RTrim( context.localUtil.Format( A23CustomerPhone, "")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", gxphoneLink, "", "", "", edtCustomerPhone_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtCustomerPhone_Enabled, 0, "tel", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, 0, true, "GeneXus\\Phone", "left", true, "", "HLP_ShoppingCartGeneral.htm");
+            GxWebStd.gx_single_line_edit( context, edtCustomerPhone_Internalname, StringUtil.RTrim( A23CustomerPhone), StringUtil.RTrim( context.localUtil.Format( A23CustomerPhone, "(99) 9999-9999")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", gxphoneLink, "", "", "", edtCustomerPhone_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtCustomerPhone_Enabled, 0, "tel", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, 0, true, "GeneXus\\Phone", "left", true, "", "HLP_ShoppingCartGeneral.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -1009,6 +1014,23 @@ namespace GeneXus.Programs {
             /* Read subfile selected row values. */
             /* Read hidden variables. */
             GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
+            forbiddenHiddens = new GXProperties();
+            forbiddenHiddens.Add("hshsalt", sPrefix+"hsh"+"ShoppingCartGeneral");
+            A11CustomerId = (short)(context.localUtil.CToN( cgiGet( edtCustomerId_Internalname), ",", "."));
+            AssignAttri(sPrefix, false, "A11CustomerId", StringUtil.LTrimStr( (decimal)(A11CustomerId), 4, 0));
+            forbiddenHiddens.Add("CustomerId", context.localUtil.Format( (decimal)(A11CustomerId), "ZZZ9"));
+            hsh = cgiGet( sPrefix+"hsh");
+            if ( ! GXUtil.CheckEncryptedHash( forbiddenHiddens.ToString(), hsh, GXKey) )
+            {
+               GXUtil.WriteLogError("shoppingcartgeneral:[ SecurityCheckFailed (403 Forbidden) value for]"+forbiddenHiddens.ToJSonString());
+               GxWebError = 1;
+               context.HttpContext.Response.StatusCode = 403;
+               context.WriteHtmlText( "<title>403 Forbidden</title>") ;
+               context.WriteHtmlText( "<h1>403 Forbidden</h1>") ;
+               context.WriteHtmlText( "<p /><hr />") ;
+               GXUtil.WriteLog("send_http_error_code " + 403.ToString());
+               return  ;
+            }
          }
          else
          {
@@ -1053,6 +1075,10 @@ namespace GeneXus.Programs {
       {
          /* Load Routine */
          returnInSub = false;
+         edtCustomerName_Link = formatLink("viewcustomer.aspx", new object[] {UrlEncode(StringUtil.LTrimStr(A11CustomerId,4,0)),UrlEncode(StringUtil.RTrim(""))}, new string[] {"CustomerId","TabCode"}) ;
+         AssignProp(sPrefix, false, edtCustomerName_Internalname, "Link", edtCustomerName_Link, true);
+         edtCountryName_Link = formatLink("viewcountry.aspx", new object[] {UrlEncode(StringUtil.LTrimStr(A8CountryId,4,0)),UrlEncode(StringUtil.RTrim(""))}, new string[] {"CountryId","TabCode"}) ;
+         AssignProp(sPrefix, false, edtCountryName_Internalname, "Link", edtCountryName_Link, true);
       }
 
       protected void S112( )
@@ -1268,7 +1294,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351822103765", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352022414776", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1283,7 +1309,7 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("shoppingcartgeneral.js", "?202351822103765", false, true);
+         context.AddJavascriptSource("shoppingcartgeneral.js", "?202352022414777", false, true);
          /* End function include_jscripts */
       }
 
@@ -1329,11 +1355,13 @@ namespace GeneXus.Programs {
          edtShoppingCartFinalPrice_Jsonclick = "";
          edtShoppingCartFinalPrice_Enabled = 0;
          edtCountryName_Jsonclick = "";
+         edtCountryName_Link = "";
          edtCountryName_Enabled = 0;
          edtCountryId_Jsonclick = "";
          edtCountryId_Enabled = 0;
          edtCustomerAddress_Enabled = 0;
          edtCustomerName_Jsonclick = "";
+         edtCustomerName_Link = "";
          edtCustomerName_Enabled = 0;
          edtCustomerId_Jsonclick = "";
          edtCustomerId_Enabled = 0;
@@ -1359,7 +1387,7 @@ namespace GeneXus.Programs {
 
       public override void InitializeDynEvents( )
       {
-         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'}]");
+         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'},{av:'A11CustomerId',fld:'CUSTOMERID',pic:'ZZZ9'}]");
          setEventMetadata("REFRESH",",oparms:[]}");
          setEventMetadata("'DOUPDATE'","{handler:'E110O1',iparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'}]");
          setEventMetadata("'DOUPDATE'",",oparms:[]}");
@@ -1401,6 +1429,7 @@ namespace GeneXus.Programs {
          FormProcess = "";
          bodyStyle = "";
          GXKey = "";
+         forbiddenHiddens = new GXProperties();
          GX_FocusControl = "";
          TempTags = "";
          ClassString = "";
@@ -1431,6 +1460,7 @@ namespace GeneXus.Programs {
          H000O5_A33ShoppingCartDate = new DateTime[] {DateTime.MinValue} ;
          H000O7_A34ShoppingCartFinalPrice = new decimal[1] ;
          H000O7_n34ShoppingCartFinalPrice = new bool[] {false} ;
+         hsh = "";
          AV7TrnContext = new SdtTransactionContext(context);
          AV10HTTPRequest = new GxHttpRequest( context);
          AV8TrnContextAtt = new SdtTransactionContext_Attribute(context);
@@ -1463,9 +1493,9 @@ namespace GeneXus.Programs {
       private short GxWebError ;
       private short nDynComponent ;
       private short initialized ;
+      private short A11CustomerId ;
       private short wbEnd ;
       private short wbStart ;
-      private short A11CustomerId ;
       private short A8CountryId ;
       private short nDraw ;
       private short nDoneStart ;
@@ -1514,12 +1544,14 @@ namespace GeneXus.Programs {
       private string edtCustomerId_Jsonclick ;
       private string edtCustomerName_Internalname ;
       private string A20CustomerName ;
+      private string edtCustomerName_Link ;
       private string edtCustomerName_Jsonclick ;
       private string edtCustomerAddress_Internalname ;
       private string edtCountryId_Internalname ;
       private string edtCountryId_Jsonclick ;
       private string edtCountryName_Internalname ;
       private string A9CountryName ;
+      private string edtCountryName_Link ;
       private string edtCountryName_Jsonclick ;
       private string edtShoppingCartFinalPrice_Internalname ;
       private string edtShoppingCartFinalPrice_Jsonclick ;
@@ -1532,6 +1564,7 @@ namespace GeneXus.Programs {
       private string EvtGridId ;
       private string EvtRowId ;
       private string sEvtType ;
+      private string hsh ;
       private string sCtrlA16ShoppingCartId ;
       private DateTime A33ShoppingCartDate ;
       private DateTime A38ShoppingCartDateDelivery ;
@@ -1544,6 +1577,7 @@ namespace GeneXus.Programs {
       private bool gxdyncontrolsrefreshing ;
       private bool returnInSub ;
       private string A21CustomerAddress ;
+      private GXProperties forbiddenHiddens ;
       private GXWebForm Form ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;

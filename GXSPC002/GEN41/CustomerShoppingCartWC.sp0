@@ -157,12 +157,12 @@ v_i(f,o,7,[ t('&Delete',23),t('Enabled',3) ]).
  
  
  
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Category Name','',0 ]).
-attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
-attri_i(27,[ 'ProductPrice',int,8,2,'$ ZZZZ9.99',0,'Product Price','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
+attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
 attri_i(36,[ 'QtyProduct',int,4,0,'ZZZ9',0,'Qty Product','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
-attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Customer Id','',0 ]).
+attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Cliente Id','',0 ]).
 attri_i(34,[ 'ShoppingCartFinalPrice',int,10,2,'$ ZZZZZZ9.99',0,'Shopping Cart Final Price','',0 ]).
 attri_i(38,[ 'ShoppingCartDateDelivery',date,8,0,'99/99/99',0,'Shopping Cart Date Delivery','',0 ]).
 attri_i(33,[ 'ShoppingCartDate',date,8,0,'99/99/99',0,'Shopping Cart Date','',0 ]).
@@ -710,7 +710,7 @@ html_comp_i(30,'Eventgx','',d,[ str ]).
 html_comp_i(30,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(30,'Captionstyle','',v,[ str ]).
 html_comp_i(30,'Captionposition','None',v,[ str ]).
-html_comp_i(30,'Captionvalue','Customer Id',d,[ str ]).
+html_comp_i(30,'Captionvalue','Cliente Id',d,[ str ]).
 html_comp_i(30,'Layoutclass','',v,[ str ]).
 html_comp_i(30,'Controltype',2,v,[ num ]).
 html_comp_i(30,'Inputtype',0,v,[ num ]).

@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\rwdmasterpage.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\rwdmasterpage.pdb
+C:\Models\WorkShopNew\CloudNET004\build\rwdmasterpage\obj\Release\net6.0\rwdmasterpage.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\rwdmasterpage\obj\Release\net6.0\rwdmasterpage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\rwdmasterpage\obj\Release\net6.0\rwdmasterpage.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\rwdmasterpage\obj\Release\net6.0\rwdmasterpage.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\rwdmasterpage\obj\Release\net6.0\rwdmasterpage.dll
+C:\Models\WorkShopNew\CloudNET004\build\rwdmasterpage\obj\Release\net6.0\refint\rwdmasterpage.dll
+C:\Models\WorkShopNew\CloudNET004\build\rwdmasterpage\obj\Release\net6.0\rwdmasterpage.pdb
+C:\Models\WorkShopNew\CloudNET004\build\rwdmasterpage\obj\Release\net6.0\ref\rwdmasterpage.dll

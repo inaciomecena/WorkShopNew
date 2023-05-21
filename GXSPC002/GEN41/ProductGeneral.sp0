@@ -173,19 +173,19 @@ v_i(r,o,7,39).
  
 attri_i(40001,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
 attri_i(40000,[ 'ProductPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Seller Photo','',0 ]).
-attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Product Photo','',0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Seller Name','',0 ]).
-attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Seller Id','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Category Name','',0 ]).
-attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
-attri_i(39,[ 'ProductCountryName',char,20,0,'',0,'Product Country Name','',0 ]).
-attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Product Country ID','',0 ]).
-attri_i(27,[ 'ProductPrice',int,8,2,'$ ZZZZ9.99',0,'Product Price','',0 ]).
-attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Product Description','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Product Name','',0 ]).
+attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
+attri_i(39,[ 'ProductCountryName',char,20,0,'',0,'Pais Nome','',0 ]).
+attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Pais ID','',0 ]).
+attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
+attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Descrição do Produto','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',13 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
@@ -630,7 +630,7 @@ html_comp_i(23,'Eventgx','',d,[ str ]).
 html_comp_i(23,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(23,'Captionstyle','',v,[ str ]).
 html_comp_i(23,'Captionposition','Left',v,[ str ]).
-html_comp_i(23,'Captionvalue','Name',d,[ str ]).
+html_comp_i(23,'Captionvalue','do Produto',d,[ str ]).
 html_comp_i(23,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(23,'Controltype',2,d,[ num ]).
 html_comp_i(23,'Inputtype',0,d,[ num ]).
@@ -697,7 +697,7 @@ html_comp_i(28,'Eventgx','',d,[ str ]).
 html_comp_i(28,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(28,'Captionstyle','',v,[ str ]).
 html_comp_i(28,'Captionposition','Left',v,[ str ]).
-html_comp_i(28,'Captionvalue','Description',d,[ str ]).
+html_comp_i(28,'Captionvalue','do Produto',d,[ str ]).
 html_comp_i(28,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(28,'Controltype',2,d,[ num ]).
 html_comp_i(28,'Inputtype',0,d,[ num ]).
@@ -755,7 +755,7 @@ html_comp_i(32,'Semanticcontent',div,d,[ str ]).
 html_comp_i(32,'Align',left,d,[ str ]).
 html_comp_i(32,'Valign',top,d,[ str ]).
 html_comp_i(33,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(33,'Colcount',10,d,[ num ]).
+html_comp_i(33,'Colcount',11,d,[ num ]).
 html_comp_i(33,'Attid',27,v,[ num ]).
 html_comp_i(33,'Class','ReadonlyAttribute',v,[ str ]).
 html_comp_i(33,'Controlname','Productprice',d,[ str ]).
@@ -764,7 +764,7 @@ html_comp_i(33,'Eventgx','',d,[ str ]).
 html_comp_i(33,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(33,'Captionstyle','',v,[ str ]).
 html_comp_i(33,'Captionposition','Left',v,[ str ]).
-html_comp_i(33,'Captionvalue','Price',d,[ str ]).
+html_comp_i(33,'Captionvalue','Preço',d,[ str ]).
 html_comp_i(33,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(33,'Controltype',2,d,[ num ]).
 html_comp_i(33,'Inputtype',0,d,[ num ]).
@@ -774,7 +774,7 @@ html_comp_i(33,'Readonly',-1,v,[ bool ]).
 html_comp_i(33,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(33,'Ispassword',0,d,[ bool ]).
 html_comp_i(33,'Autoresize',-1,d,[ bool ]).
-html_comp_i(33,'Gxwidth',measure(10,chr),d,[ measure ]).
+html_comp_i(33,'Gxwidth',measure(11,chr),d,[ measure ]).
 html_comp_i(33,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(33,'Ismultiline',0,d,[ bool ]).
 html_comp_i(33,'Maxtextnumberlines',0,d,[ num ]).
@@ -828,7 +828,7 @@ html_comp_i(38,'Eventgx','',d,[ str ]).
 html_comp_i(38,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(38,'Captionstyle','',v,[ str ]).
 html_comp_i(38,'Captionposition','Left',v,[ str ]).
-html_comp_i(38,'Captionvalue','Country ID',d,[ str ]).
+html_comp_i(38,'Captionvalue','ID',d,[ str ]).
 html_comp_i(38,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(38,'Controltype',2,d,[ num ]).
 html_comp_i(38,'Inputtype',0,d,[ num ]).
@@ -892,7 +892,7 @@ html_comp_i(43,'Eventgx','',d,[ str ]).
 html_comp_i(43,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(43,'Captionstyle','',v,[ str ]).
 html_comp_i(43,'Captionposition','Left',v,[ str ]).
-html_comp_i(43,'Captionvalue','Country Name',d,[ str ]).
+html_comp_i(43,'Captionvalue','Nome',d,[ str ]).
 html_comp_i(43,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(43,'Controltype',2,d,[ num ]).
 html_comp_i(43,'Inputtype',0,d,[ num ]).
@@ -959,7 +959,7 @@ html_comp_i(48,'Eventgx','',d,[ str ]).
 html_comp_i(48,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(48,'Captionstyle','',v,[ str ]).
 html_comp_i(48,'Captionposition','Left',v,[ str ]).
-html_comp_i(48,'Captionvalue','Category Id',d,[ str ]).
+html_comp_i(48,'Captionvalue','Categoria Id',d,[ str ]).
 html_comp_i(48,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(48,'Controltype',2,d,[ num ]).
 html_comp_i(48,'Inputtype',0,d,[ num ]).
@@ -1023,7 +1023,7 @@ html_comp_i(53,'Eventgx','',d,[ str ]).
 html_comp_i(53,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(53,'Captionstyle','',v,[ str ]).
 html_comp_i(53,'Captionposition','Left',v,[ str ]).
-html_comp_i(53,'Captionvalue','Category Name',d,[ str ]).
+html_comp_i(53,'Captionvalue','Noma da Categoria',d,[ str ]).
 html_comp_i(53,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(53,'Controltype',2,d,[ num ]).
 html_comp_i(53,'Inputtype',0,d,[ num ]).
@@ -1090,7 +1090,7 @@ html_comp_i(58,'Eventgx','',d,[ str ]).
 html_comp_i(58,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(58,'Captionstyle','',v,[ str ]).
 html_comp_i(58,'Captionposition','Left',v,[ str ]).
-html_comp_i(58,'Captionvalue','Seller Id',d,[ str ]).
+html_comp_i(58,'Captionvalue','Vendedor Id',d,[ str ]).
 html_comp_i(58,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(58,'Controltype',2,d,[ num ]).
 html_comp_i(58,'Inputtype',0,d,[ num ]).
@@ -1154,7 +1154,7 @@ html_comp_i(63,'Eventgx','',d,[ str ]).
 html_comp_i(63,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(63,'Captionstyle','',v,[ str ]).
 html_comp_i(63,'Captionposition','Left',v,[ str ]).
-html_comp_i(63,'Captionvalue','Seller Name',d,[ str ]).
+html_comp_i(63,'Captionvalue','Vendedor Nome',d,[ str ]).
 html_comp_i(63,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(63,'Controltype',2,d,[ num ]).
 html_comp_i(63,'Inputtype',0,d,[ num ]).
@@ -1221,7 +1221,7 @@ html_comp_i(68,'Eventgx','',d,[ str ]).
 html_comp_i(68,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(68,'Captionstyle','',v,[ str ]).
 html_comp_i(68,'Captionposition','Left',v,[ str ]).
-html_comp_i(68,'Captionvalue','Country Id',d,[ str ]).
+html_comp_i(68,'Captionvalue','País Id',d,[ str ]).
 html_comp_i(68,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(68,'Controltype',2,d,[ num ]).
 html_comp_i(68,'Inputtype',0,d,[ num ]).
@@ -1285,7 +1285,7 @@ html_comp_i(73,'Eventgx','',d,[ str ]).
 html_comp_i(73,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(73,'Captionstyle','',v,[ str ]).
 html_comp_i(73,'Captionposition','Left',v,[ str ]).
-html_comp_i(73,'Captionvalue','Country Name',d,[ str ]).
+html_comp_i(73,'Captionvalue','País',d,[ str ]).
 html_comp_i(73,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(73,'Controltype',2,d,[ num ]).
 html_comp_i(73,'Inputtype',0,d,[ num ]).
@@ -1360,7 +1360,7 @@ html_comp_i(79,'Eventgx','',d,[ str ]).
 html_comp_i(79,'Captionclass','col-sm-3 ReadonlyAttributeLabel ReadonlyResponsiveImageAttributeLabel',v,[ str ]).
 html_comp_i(79,'Captionstyle','',v,[ str ]).
 html_comp_i(79,'Captionposition','None',v,[ str ]).
-html_comp_i(79,'Captionvalue','Photo',d,[ str ]).
+html_comp_i(79,'Captionvalue','Foto',d,[ str ]).
 html_comp_i(79,'Layoutclass','',v,[ str ]).
 html_comp_i(79,'Controltype',2,d,[ num ]).
 html_comp_i(79,'Inputtype',0,d,[ num ]).
@@ -1409,7 +1409,7 @@ html_comp_i(83,'Eventgx','',d,[ str ]).
 html_comp_i(83,'Captionclass','col-sm-3 ReadonlyAttributeLabel ReadonlyResponsiveImageAttributeLabel',v,[ str ]).
 html_comp_i(83,'Captionstyle','',v,[ str ]).
 html_comp_i(83,'Captionposition','None',v,[ str ]).
-html_comp_i(83,'Captionvalue','Seller Photo',d,[ str ]).
+html_comp_i(83,'Captionvalue','Foto',d,[ str ]).
 html_comp_i(83,'Layoutclass','',v,[ str ]).
 html_comp_i(83,'Controltype',2,d,[ num ]).
 html_comp_i(83,'Inputtype',0,d,[ num ]).

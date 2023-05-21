@@ -1,4 +1,4 @@
-spec_i([ trn,5,'Product','Product_BC',[],por,'17_0_9-159740' ]).
+spec_i([ trn,5,'Produtos','Product_BC',[],por,'17_0_9-159740' ]).
  
 struct_i(6,0,[ 'Websession' ],[]).
  
@@ -141,19 +141,19 @@ rule_i(0,prop('OBJECT_METADATA','')).
 rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop(idISBUSINESSCOMPONENT,'-1')).
 rule_i(0,prop('Folder',o(120,'Root Module'))).
-rule_i(0,prop('ObjDesc','Product')).
+rule_i(0,prop('ObjDesc','Produtos')).
 rule_i(0,prop('ObjName','Product')).
 rule_i(0,rule([ a(22,[ 'Dlt','"Eliminar"','' ]) ],[],[],[])).
 rule_i(0,maingen(41)).
-rule_i(6,rule([ a(1,[ t('"Their name cannot be empty"',3) ]) ],[ t('null(',1),t(13,2),t(')',4) ],[ insert,update,delete,display ],[ 13 ])).
-rule_i(6,rule([ a(1,[ t('"Their price cannot be empty"',3) ]) ],[ t('null(',1),t(27,2),t(')',4) ],[ insert,update,delete,display ],[ 27 ])).
+rule_i(6,rule([ a(1,[ t('"O Nome não pode estar vazio"',3) ]) ],[ t('null(',1),t(13,2),t(')',4) ],[ insert,update,delete,display ],[ 13 ])).
+rule_i(6,rule([ a(1,[ t('"Preço não pode estar vazio"',3) ]) ],[ t('null(',1),t(27,2),t(')',4) ],[ insert,update,delete,display ],[ 27 ])).
 rule_i(6,rule([ a(19,[ [ 6 ],msg([ t('"Não existe ''Category''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 6 ])).
 rule_i(6,rule([ a(19,[ [ 10 ],msg([ t('"Não existe ''Seller''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 10 ])).
 rule_i(6,rule([ a(19,[ [ 14 ],msg([ t('"Não existe ''Country Product''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 14 ])).
 rule_i(6,rule([ a(19,[ [ 8 ],msg([ t('"Não existe ''Country''."',3) ],[ t('ForeignKeyNotFound',3) ]) ]) ],[],[ insert,update,delete ],[ 8 ])).
  
-a_i(1,6,b,1,[],[ [],[ a(1,[ t('"Their name cannot be empty"',3) ]) ],[ t('null(',1),t(13,2),t(')',4) ] ]).
-a_i(2,6,b,2,[],[ [],[ a(1,[ t('"Their price cannot be empty"',3) ]) ],[ t('null(',1),t(27,2),t(')',4) ] ]).
+a_i(1,6,b,1,[],[ [],[ a(1,[ t('"O Nome não pode estar vazio"',3) ]) ],[ t('null(',1),t(13,2),t(')',4) ] ]).
+a_i(2,6,b,2,[],[ [],[ a(1,[ t('"Preço não pode estar vazio"',3) ]) ],[ t('null(',1),t(27,2),t(')',4) ] ]).
 a_i(3,6,t,6,[],[ [ [ [],12,12 ] ],'IPRODUCT',[] ]).
 a_i(4,6,k,6,[],[ [ [ [],13,13 ] ],'UPRODUCT',[] ]).
 a_i(5,6,r,2,[],[ [ [ 6,6,6 ] ],'ICATEGORY',[] ]).
@@ -198,19 +198,19 @@ tbl_to_delete_i(6,[ 8,[ [ 6,12,12 ] ],c,'IPROMOTIONPRODUCT1',0,[ 15,12 ],'' ]).
  
 attri_i(16,[ 'ShoppingCartId',int,4,0,'ZZZ9',0,'Shopping Cart Id','',0 ]).
 attri_i(15,[ 'PromotionId',int,4,0,'ZZZ9',0,'Promotion Id','',0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Seller Photo','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Seller Name','',0 ]).
-attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Seller Id','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Category Name','',0 ]).
-attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
-attri_i(39,[ 'ProductCountryName',char,20,0,'',0,'Product Country Name','',0 ]).
-attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Product Country ID','',0 ]).
-attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Product Photo','',0 ]).
-attri_i(27,[ 'ProductPrice',int,8,2,'$ ZZZZ9.99',0,'Product Price','',0 ]).
-attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Product Description','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Product Name','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
+attri_i(39,[ 'ProductCountryName',char,20,0,'',0,'Pais Nome','',0 ]).
+attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Pais ID','',0 ]).
+attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Foto','',0 ]).
+attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
+attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Descrição do Produto','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i(40001,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
 attri_i(40000,[ 'ProductPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
@@ -340,7 +340,7 @@ att_prop_i(2,12,'AttValidationFailedMsg','',d).
 att_prop_i(2,12,'DownloadOffline','0',d).
 att_prop_i(2,12,'VarServiceExtName','',d).
 att_prop_i(2,12,'FullName','ProductId',v).
-att_prop_i(2,13,'HORIZONTAL_DESCRIPTION','Product Name',d).
+att_prop_i(2,13,'HORIZONTAL_DESCRIPTION','Nome do Produto',d).
 att_prop_i(2,13,'ExternalName','ProductName',d).
 att_prop_i(2,13,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,13,'EmptyAsNull','Yes',d).
@@ -352,7 +352,7 @@ att_prop_i(2,13,'AttValidationFailedMsg','',d).
 att_prop_i(2,13,'DownloadOffline','0',d).
 att_prop_i(2,13,'VarServiceExtName','',d).
 att_prop_i(2,13,'FullName','ProductName',v).
-att_prop_i(2,26,'HORIZONTAL_DESCRIPTION','Product Description',d).
+att_prop_i(2,26,'HORIZONTAL_DESCRIPTION','Descrição do Produto',d).
 att_prop_i(2,26,'ExternalName','ProductDescription',d).
 att_prop_i(2,26,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,26,'EmptyAsNull','Yes',d).
@@ -364,7 +364,7 @@ att_prop_i(2,26,'AttValidationFailedMsg','',d).
 att_prop_i(2,26,'DownloadOffline','0',d).
 att_prop_i(2,26,'VarServiceExtName','',d).
 att_prop_i(2,26,'FullName','ProductDescription',v).
-att_prop_i(2,27,'HORIZONTAL_DESCRIPTION','Product Price',d).
+att_prop_i(2,27,'HORIZONTAL_DESCRIPTION','Preço',d).
 att_prop_i(2,27,'ExternalName','ProductPrice',d).
 att_prop_i(2,27,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,27,'EmptyAsNull','Yes',d).
@@ -376,7 +376,7 @@ att_prop_i(2,27,'AttValidationFailedMsg','',d).
 att_prop_i(2,27,'DownloadOffline','0',d).
 att_prop_i(2,27,'VarServiceExtName','',d).
 att_prop_i(2,27,'FullName','ProductPrice',v).
-att_prop_i(2,28,'HORIZONTAL_DESCRIPTION','Product Photo',d).
+att_prop_i(2,28,'HORIZONTAL_DESCRIPTION','Foto',d).
 att_prop_i(2,28,'ExternalName','ProductPhoto',d).
 att_prop_i(2,28,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,28,'EmptyAsNull','Yes',d).
@@ -388,7 +388,7 @@ att_prop_i(2,28,'AttValidationFailedMsg','',d).
 att_prop_i(2,28,'DownloadOffline','0',d).
 att_prop_i(2,28,'VarServiceExtName','',d).
 att_prop_i(2,28,'FullName','ProductPhoto',v).
-att_prop_i(2,14,'HORIZONTAL_DESCRIPTION','Product Country ID',d).
+att_prop_i(2,14,'HORIZONTAL_DESCRIPTION','Pais ID',d).
 att_prop_i(2,14,'ExternalName','ProductCountryID',d).
 att_prop_i(2,14,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,14,'EmptyAsNull','Yes',d).
@@ -403,7 +403,7 @@ att_prop_i(2,14,'AttValidationFailedMsg','',d).
 att_prop_i(2,14,'DownloadOffline','0',d).
 att_prop_i(2,14,'VarServiceExtName','',d).
 att_prop_i(2,14,'FullName','ProductCountryID',v).
-att_prop_i(2,39,'HORIZONTAL_DESCRIPTION','Product Country Name',d).
+att_prop_i(2,39,'HORIZONTAL_DESCRIPTION','Pais Nome',d).
 att_prop_i(2,39,'ExternalName','ProductCountryName',d).
 att_prop_i(2,39,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,39,'EmptyAsNull','Yes',d).
@@ -415,7 +415,7 @@ att_prop_i(2,39,'AttValidationFailedMsg','',d).
 att_prop_i(2,39,'DownloadOffline','0',d).
 att_prop_i(2,39,'VarServiceExtName','',d).
 att_prop_i(2,39,'FullName','ProductCountryName',v).
-att_prop_i(2,6,'HORIZONTAL_DESCRIPTION','Category Id',d).
+att_prop_i(2,6,'HORIZONTAL_DESCRIPTION','Categoria Id',d).
 att_prop_i(2,6,'ExternalName','CategoryId',d).
 att_prop_i(2,6,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,6,'EmptyAsNull','Yes',d).
@@ -430,7 +430,7 @@ att_prop_i(2,6,'AttValidationFailedMsg','',d).
 att_prop_i(2,6,'DownloadOffline','0',d).
 att_prop_i(2,6,'VarServiceExtName','',d).
 att_prop_i(2,6,'FullName','CategoryId',v).
-att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Category Name',d).
+att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Noma da Categoria',d).
 att_prop_i(2,7,'ExternalName','CategoryName',d).
 att_prop_i(2,7,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,7,'EmptyAsNull','Yes',d).
@@ -442,7 +442,7 @@ att_prop_i(2,7,'AttValidationFailedMsg','',d).
 att_prop_i(2,7,'DownloadOffline','0',d).
 att_prop_i(2,7,'VarServiceExtName','',d).
 att_prop_i(2,7,'FullName','CategoryName',v).
-att_prop_i(2,10,'HORIZONTAL_DESCRIPTION','Seller Id',d).
+att_prop_i(2,10,'HORIZONTAL_DESCRIPTION','Vendedor Id',d).
 att_prop_i(2,10,'ExternalName','SellerId',d).
 att_prop_i(2,10,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,10,'EmptyAsNull','Yes',d).
@@ -457,7 +457,7 @@ att_prop_i(2,10,'AttValidationFailedMsg','',d).
 att_prop_i(2,10,'DownloadOffline','0',d).
 att_prop_i(2,10,'VarServiceExtName','',d).
 att_prop_i(2,10,'FullName','SellerId',v).
-att_prop_i(2,18,'HORIZONTAL_DESCRIPTION','Seller Name',d).
+att_prop_i(2,18,'HORIZONTAL_DESCRIPTION','Vendedor Nome',d).
 att_prop_i(2,18,'ExternalName','SellerName',d).
 att_prop_i(2,18,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,18,'EmptyAsNull','Yes',d).
@@ -469,7 +469,7 @@ att_prop_i(2,18,'AttValidationFailedMsg','',d).
 att_prop_i(2,18,'DownloadOffline','0',d).
 att_prop_i(2,18,'VarServiceExtName','',d).
 att_prop_i(2,18,'FullName','SellerName',v).
-att_prop_i(2,19,'HORIZONTAL_DESCRIPTION','Seller Photo',d).
+att_prop_i(2,19,'HORIZONTAL_DESCRIPTION','Foto',d).
 att_prop_i(2,19,'ExternalName','SellerPhoto',d).
 att_prop_i(2,19,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,19,'EmptyAsNull','Yes',d).
@@ -481,7 +481,7 @@ att_prop_i(2,19,'AttValidationFailedMsg','',d).
 att_prop_i(2,19,'DownloadOffline','0',d).
 att_prop_i(2,19,'VarServiceExtName','',d).
 att_prop_i(2,19,'FullName','SellerPhoto',v).
-att_prop_i(2,8,'HORIZONTAL_DESCRIPTION','Country Id',d).
+att_prop_i(2,8,'HORIZONTAL_DESCRIPTION','País Id',d).
 att_prop_i(2,8,'ExternalName','CountryId',d).
 att_prop_i(2,8,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,8,'EmptyAsNull','Yes',d).
@@ -496,7 +496,7 @@ att_prop_i(2,8,'AttValidationFailedMsg','',d).
 att_prop_i(2,8,'DownloadOffline','0',d).
 att_prop_i(2,8,'VarServiceExtName','',d).
 att_prop_i(2,8,'FullName','CountryId',v).
-att_prop_i(2,9,'HORIZONTAL_DESCRIPTION','Country Name',d).
+att_prop_i(2,9,'HORIZONTAL_DESCRIPTION','País',d).
 att_prop_i(2,9,'ExternalName','CountryName',d).
 att_prop_i(2,9,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,9,'EmptyAsNull','Yes',d).
@@ -605,8 +605,8 @@ var_prop_i(2,'Insert_productcountryid',idBasedOn,'',v).
 var_prop_i(2,'Insert_categoryid',idBasedOn,'',v).
 var_prop_i(2,'Insert_sellerid',idBasedOn,'',v).
  
-i_tbl_best_trn(6,[ 5,1,'Product','Product',[ 39 ] ]).
-i_tbl_best_trn(10,[ 6,2,'ShoppingCart','Shopping Cart',[] ]).
+i_tbl_best_trn(6,[ 5,1,'Product','Produtos',[ 39 ] ]).
+i_tbl_best_trn(10,[ 6,2,'ShoppingCart','Carrinho de Compras',[] ]).
 i_tbl_best_trn(2,[ 2,1,'Category','Category',[] ]).
 i_tbl_best_trn(502,[ 3,1,'Country','Country',[] ]).
 i_tbl_best_trn(3,[ 3,1,'Country','Country',[] ]).
@@ -615,7 +615,7 @@ i_tbl_best_trn(3,[ 3,1,'Country','Country',[] ]).
 a_alias_i(14,'ProductCountryID').
 a_alias_i(39,'ProductCountryName').
  
-trn_level_i(6,[ [ 12,13,26,27,28,40000,14,39,6,7,10,18,19,40001,8,9 ],'Product','Product','Product','',13 ]).
+trn_level_i(6,[ [ 12,13,26,27,28,40000,14,39,6,7,10,18,19,40001,8,9 ],'Product','Produtos','Product','',13 ]).
  
 struct_dt_i([ 26,56,0 ],name,'TransactionContext').
 struct_dt_i([ 26,56,0 ],namespace,'WorkShopNew').
@@ -630,7 +630,7 @@ struct_dt_i([ 0,5,0 ],name,'Product').
 struct_dt_i([ 0,5,0 ],namespace,'WorkShopNew').
 struct_dt_i([ 0,5,0 ],significantName,'Product').
 struct_dt_i([ 0,5,0 ],'ObjName','Product').
-struct_dt_i([ 0,5,0 ],'ObjDesc','Product').
+struct_dt_i([ 0,5,0 ],'ObjDesc','Produtos').
 struct_dt_i([ 0,5,0 ],'ExternalName','Product').
 struct_dt_i([ 0,5,0 ],'ExternalNamespace','WorkShopNew').
 struct_dt_i([ 0,5,0 ],key,[ 12 ]).
@@ -815,7 +815,7 @@ struct_dt_elem_i([ 0,5,0 ],4,length,8).
 struct_dt_elem_i([ 0,5,0 ],4,decimals,2).
 struct_dt_elem_i([ 0,5,0 ],4,sign,0).
 struct_dt_elem_i([ 0,5,0 ],4,type,[ 4,8,2 ]).
-struct_dt_elem_i([ 0,5,0 ],4,pic,'$ ZZZZ9.99').
+struct_dt_elem_i([ 0,5,0 ],4,pic,'R$ ZZZZ9.99').
 struct_dt_elem_i([ 0,5,0 ],4,collection,'False').
 struct_dt_elem_i([ 0,5,0 ],4,attributeid,'27').
 struct_dt_elem_i([ 0,5,0 ],4,'ExternalName','ProductPrice').

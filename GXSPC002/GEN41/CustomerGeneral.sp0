@@ -149,13 +149,13 @@ v_i(r,o,4,9).
  
  
  
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
-attri_i(23,[ 'CustomerPhone',char,20,0,'',0,'Customer Phone','',0 ]).
-attri_i(22,[ 'CustomerEmail',svchar,100,0,'',0,'Customer Email','',0 ]).
-attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Customer Address','',0 ]).
-attri_i(20,[ 'CustomerName',char,20,0,'',0,'Customer Name','',0 ]).
-attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Customer Id','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
+attri_i(23,[ 'CustomerPhone',char,20,0,'(99) 9999-9999',0,'Telefone','',0 ]).
+attri_i(22,[ 'CustomerEmail',svchar,100,0,'',0,'E-mail','',0 ]).
+attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Endereço','',0 ]).
+attri_i(20,[ 'CustomerName',char,20,0,'',0,'Nome','',0 ]).
+attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Cliente Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',13 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',11 ]).
@@ -543,7 +543,7 @@ html_comp_i(23,'Eventgx','',d,[ str ]).
 html_comp_i(23,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(23,'Captionstyle','',v,[ str ]).
 html_comp_i(23,'Captionposition','Left',v,[ str ]).
-html_comp_i(23,'Captionvalue','Name',d,[ str ]).
+html_comp_i(23,'Captionvalue','Nome',d,[ str ]).
 html_comp_i(23,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(23,'Controltype',2,d,[ num ]).
 html_comp_i(23,'Inputtype',0,d,[ num ]).
@@ -610,7 +610,7 @@ html_comp_i(28,'Eventgx','',d,[ str ]).
 html_comp_i(28,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(28,'Captionstyle','',v,[ str ]).
 html_comp_i(28,'Captionposition','Left',v,[ str ]).
-html_comp_i(28,'Captionvalue','Address',d,[ str ]).
+html_comp_i(28,'Captionvalue','Endereço',d,[ str ]).
 html_comp_i(28,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(28,'Controltype',2,d,[ num ]).
 html_comp_i(28,'Inputtype',0,d,[ num ]).
@@ -677,7 +677,7 @@ html_comp_i(33,'Eventgx','',d,[ str ]).
 html_comp_i(33,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(33,'Captionstyle','',v,[ str ]).
 html_comp_i(33,'Captionposition','Left',v,[ str ]).
-html_comp_i(33,'Captionvalue','Email',d,[ str ]).
+html_comp_i(33,'Captionvalue','E-mail',d,[ str ]).
 html_comp_i(33,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(33,'Controltype',2,d,[ num ]).
 html_comp_i(33,'Inputtype',0,d,[ num ]).
@@ -744,7 +744,7 @@ html_comp_i(38,'Eventgx','',d,[ str ]).
 html_comp_i(38,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(38,'Captionstyle','',v,[ str ]).
 html_comp_i(38,'Captionposition','Left',v,[ str ]).
-html_comp_i(38,'Captionvalue','Phone',d,[ str ]).
+html_comp_i(38,'Captionvalue','Telefone',d,[ str ]).
 html_comp_i(38,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(38,'Controltype',2,d,[ num ]).
 html_comp_i(38,'Inputtype',0,d,[ num ]).
@@ -811,7 +811,7 @@ html_comp_i(43,'Eventgx','',d,[ str ]).
 html_comp_i(43,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(43,'Captionstyle','',v,[ str ]).
 html_comp_i(43,'Captionposition','Left',v,[ str ]).
-html_comp_i(43,'Captionvalue','Country Id',d,[ str ]).
+html_comp_i(43,'Captionvalue','País Id',d,[ str ]).
 html_comp_i(43,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(43,'Controltype',2,d,[ num ]).
 html_comp_i(43,'Inputtype',0,d,[ num ]).
@@ -875,7 +875,7 @@ html_comp_i(48,'Eventgx','',d,[ str ]).
 html_comp_i(48,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(48,'Captionstyle','',v,[ str ]).
 html_comp_i(48,'Captionposition','Left',v,[ str ]).
-html_comp_i(48,'Captionvalue','Country Name',d,[ str ]).
+html_comp_i(48,'Captionvalue','País',d,[ str ]).
 html_comp_i(48,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(48,'Controltype',2,d,[ num ]).
 html_comp_i(48,'Inputtype',0,d,[ num ]).

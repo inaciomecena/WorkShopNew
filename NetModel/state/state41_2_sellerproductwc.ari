@@ -33,4 +33,6 @@ obj_parms_i([ 'short aP0_SellerId' ],[ [ 'Sellerid',in ] ]).
  
 module_info_i('GeneXus\Common','CSHARP_NAME_SPACE','GeneXus.Core').
 module_info_i('GeneXus\Common','AssemblyName','GeneXus.dll').
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
  

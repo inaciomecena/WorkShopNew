@@ -349,7 +349,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCountryName_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtCountryName_Internalname, "Name", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtCountryName_Internalname, "País", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
@@ -366,7 +366,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+imgCountryFlag_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, "", "Flag", "col-sm-3 ImageAttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, "", "Bandeira", "col-sm-3 ImageAttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Static Bitmap Variable */
@@ -832,7 +832,7 @@ namespace GeneXus.Programs {
          pr_default.execute(3, new Object[] {A9CountryName, A8CountryId});
          if ( (pr_default.getStatus(3) != 101) )
          {
-            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Country Name"}), 1, "COUNTRYNAME");
+            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"País"}), 1, "COUNTRYNAME");
             AnyError = 1;
             GX_FocusControl = edtCountryName_Internalname;
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
@@ -840,7 +840,7 @@ namespace GeneXus.Programs {
          pr_default.close(3);
          if ( String.IsNullOrEmpty(StringUtil.RTrim( A9CountryName)) )
          {
-            GX_msglist.addItem("O Campo nome deve ser preenchido", 1, "COUNTRYNAME");
+            GX_msglist.addItem("O Campo Nome do País deve ser preenchido", 1, "COUNTRYNAME");
             AnyError = 1;
             GX_FocusControl = edtCountryName_Internalname;
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
@@ -1473,7 +1473,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351922594665", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235219523272", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1652,7 +1652,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351922594683", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235219523296", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1668,7 +1668,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("country.js", "?202351922594684", false, true);
+         context.AddJavascriptSource("country.js", "?20235219523297", false, true);
          /* End function include_jscripts */
       }
 
@@ -1766,14 +1766,14 @@ namespace GeneXus.Programs {
          pr_default.execute(15, new Object[] {A9CountryName, A8CountryId});
          if ( (pr_default.getStatus(15) != 101) )
          {
-            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Country Name"}), 1, "COUNTRYNAME");
+            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"País"}), 1, "COUNTRYNAME");
             AnyError = 1;
             GX_FocusControl = edtCountryName_Internalname;
          }
          pr_default.close(15);
          if ( String.IsNullOrEmpty(StringUtil.RTrim( A9CountryName)) )
          {
-            GX_msglist.addItem("O Campo nome deve ser preenchido", 1, "COUNTRYNAME");
+            GX_msglist.addItem("O Campo Nome do País deve ser preenchido", 1, "COUNTRYNAME");
             AnyError = 1;
             GX_FocusControl = edtCountryName_Internalname;
          }

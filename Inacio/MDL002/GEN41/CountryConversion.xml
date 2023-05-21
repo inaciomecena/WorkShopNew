@@ -6,15 +6,15 @@
 <TableName>Country</TableName>
 <Description>Country</Description></Table>
 <ReorgCls>c</ReorgCls>
-<ReorgCode>new</ReorgCode>
-<ReorgMsg>Country is new (initialize with Country_DataProvider)</ReorgMsg>
-<ReorgAction>*</ReorgAction>
+<ReorgCode>same</ReorgCode>
+<ReorgMsg>Country needs initialization (initialize with Country_DataProvider)</ReorgMsg>
+<ReorgAction>#</ReorgAction>
 <TableAttributes>
 <AttrisInTable>
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description>
+<Description>País Id</Description>
 <TakesValueFrom></TakesValueFrom>
 <OnPrimaryKey>Yes</OnPrimaryKey>
 <AttriType>
@@ -34,7 +34,7 @@
 <Attribute>
 <AttriId>9</AttriId>
 <AttriName>CountryName</AttriName>
-<Description>Country Name</Description>
+<Description>País</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>C</DataType>
@@ -56,7 +56,7 @@
 <Attribute>
 <AttriId>17</AttriId>
 <AttriName>CountryFlag</AttriName>
-<Description>Country Flag</Description>
+<Description>Bandeira</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>B</DataType>
@@ -73,7 +73,7 @@
 <Name>AllowNulls</Name>
 <Value>No</Value></Property></Properties></AttriType></Attribute>
 <Attribute>
-<AttriId>40003</AttriId>
+<AttriId>40002</AttriId>
 <AttriName>CountryFlag_GXI</AttriName>
 <Description>CountryFlag_GXI</Description>
 <TakesValueFrom></TakesValueFrom>
@@ -102,7 +102,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></IndexAttris>
+<Description>País Id</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>Yes</Clustered></Index>
 <Index>
@@ -112,13 +112,11 @@
 <Attribute>
 <AttriId>9</AttriId>
 <AttriName>CountryName</AttriName>
-<Description>Country Name</Description></Attribute></IndexAttris>
+<Description>País</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>No</Clustered></Index></Indices></TableIndices>
 <FKConstraints></FKConstraints>
-<Statements>
-<Statement>CREATE TABLE [Country] ([CountryId] smallint NOT NULL IDENTITY(1,1), [CountryName] nchar(20) NOT NULL , [CountryFlag] VARBINARY(MAX) NOT NULL , [CountryFlag_GXI] varchar(2048) NOT NULL , PRIMARY KEY([CountryId])) </Statement>
-<Statement>CREATE UNIQUE NONCLUSTERED INDEX [UCOUNTRY] ON [Country] ([CountryName] )</Statement></Statements>
+<Statements></Statements>
 <NeedReorganizationProgram>False</NeedReorganizationProgram>
 <Warnings></Warnings>
 <Errors></Errors></ReorgSpec>

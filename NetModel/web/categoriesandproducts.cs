@@ -232,7 +232,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351923485031", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235219523092", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -370,7 +370,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblCategoriesandproductstitle_Internalname, "Categories And Products", "", "", lblCategoriesandproductstitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "TextBlock", 0, "", 1, 1, 0, 0, "HLP_CategoriesAndProducts.htm");
+            GxWebStd.gx_label_ctrl( context, lblCategoriesandproductstitle_Internalname, "Categorias e Produtos", "", "", lblCategoriesandproductstitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "TextBlock", 0, "", 1, 1, 0, 0, "HLP_CategoriesAndProducts.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
@@ -415,10 +415,10 @@ namespace GeneXus.Programs {
                   }
                }
                context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+"display:none;"+""+"\" "+">") ;
-               context.SendWebValue( "Category Id") ;
+               context.SendWebValue( "Categoria Id") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+""+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Category Name") ;
+               context.SendWebValue( "Noma da Categoria") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+""+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "List") ;
@@ -500,7 +500,7 @@ namespace GeneXus.Programs {
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 15,'',false,'',0)\"";
             ClassString = "";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttCatalogue_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(9), 1, 0)+","+"null"+");", "Catalogue", bttCatalogue_Jsonclick, 7, "Catalogue", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e110j1_client"+"'", TempTags, "", 2, "HLP_CategoriesAndProducts.htm");
+            GxWebStd.gx_button_ctrl( context, bttCatalago_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(9), 1, 0)+","+"null"+");", "Catalago", bttCatalago_Jsonclick, 7, "Catalago", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e110j1_client"+"'", TempTags, "", 2, "HLP_CategoriesAndProducts.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -894,7 +894,7 @@ namespace GeneXus.Programs {
       {
          /* Start Routine */
          returnInSub = false;
-         AV5List = "List";
+         AV5List = "Exibir Relatório!";
          AssignAttri("", false, edtavList_Internalname, AV5List);
       }
 
@@ -948,7 +948,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351923485049", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235219523126", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -964,7 +964,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("categoriesandproducts.js", "?202351923485049", false, true);
+         context.AddJavascriptSource("categoriesandproducts.js", "?20235219523127", false, true);
          /* End function include_jscripts */
       }
 
@@ -1087,7 +1087,7 @@ namespace GeneXus.Programs {
          edtCategoryId_Internalname = "CATEGORYID";
          edtCategoryName_Internalname = "CATEGORYNAME";
          edtavList_Internalname = "vLIST";
-         bttCatalogue_Internalname = "CATALOGUE";
+         bttCatalago_Internalname = "CATALAGO";
          divMaintable_Internalname = "MAINTABLE";
          Form.Internalname = "FORM";
          subGrid1_Internalname = "GRID1";
@@ -1133,8 +1133,8 @@ namespace GeneXus.Programs {
          setEventMetadata("REFRESH",",oparms:[]}");
          setEventMetadata("VLIST.CLICK","{handler:'E140J2',iparms:[{av:'A6CategoryId',fld:'CATEGORYID',pic:'ZZZ9'},{av:'A7CategoryName',fld:'CATEGORYNAME',pic:''}]");
          setEventMetadata("VLIST.CLICK",",oparms:[{av:'A7CategoryName',fld:'CATEGORYNAME',pic:''},{av:'A6CategoryId',fld:'CATEGORYID',pic:'ZZZ9'}]}");
-         setEventMetadata("'CATALOGUE'","{handler:'E110J1',iparms:[]");
-         setEventMetadata("'CATALOGUE'",",oparms:[]}");
+         setEventMetadata("'CATALAGO'","{handler:'E110J1',iparms:[]");
+         setEventMetadata("'CATALAGO'",",oparms:[]}");
          setEventMetadata("NULL","{handler:'Validv_List',iparms:[]");
          setEventMetadata("NULL",",oparms:[]}");
          return  ;
@@ -1175,7 +1175,7 @@ namespace GeneXus.Programs {
          TempTags = "";
          ClassString = "";
          StyleString = "";
-         bttCatalogue_Jsonclick = "";
+         bttCatalago_Jsonclick = "";
          sEvt = "";
          EvtGridId = "";
          EvtRowId = "";
@@ -1253,8 +1253,8 @@ namespace GeneXus.Programs {
       private string TempTags ;
       private string ClassString ;
       private string StyleString ;
-      private string bttCatalogue_Internalname ;
-      private string bttCatalogue_Jsonclick ;
+      private string bttCatalago_Internalname ;
+      private string bttCatalago_Jsonclick ;
       private string sEvt ;
       private string EvtGridId ;
       private string EvtRowId ;

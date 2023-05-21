@@ -9,7 +9,7 @@
 <ObjDesc>Customers</ObjDesc>
 <ObjPgmName>WWCustomer</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0038</MsgCode>
@@ -18,7 +18,7 @@
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>CustomerName</AttriName>
-<Description>Customer Name</Description></Attribute>
+<Description>Nome</Description></Attribute>
 <Token>; poor performance may be noticed</Token>
 <Token> in grid '</Token>
 <Token>Grid</Token>
@@ -63,7 +63,7 @@
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>CustomerName</AttriName>
-<Description>Customer Name</Description></Attribute></Order>
+<Description>Nome</Description></Attribute></Order>
 <Condition></Condition>
 <LevelOptions></LevelOptions>
 <Optimizations>
@@ -82,7 +82,7 @@
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>CustomerName</AttriName>
-<Description>Customer Name</Description></Attribute>
+<Description>Nome</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>
@@ -109,7 +109,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute></KeyAttributes>
+<Description>Cliente Id</Description></Attribute></KeyAttributes>
 <Tables>
 <Table>
 <TableId>3</TableId>
@@ -120,7 +120,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></KeyAttributes>
+<Description>País Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
@@ -146,7 +146,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute>
+<Description>Cliente Id</Description></Attribute>
 <Token>)</Token></Expression>
 <IF></IF></CALL></Event>
 <Event>

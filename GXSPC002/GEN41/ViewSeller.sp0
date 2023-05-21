@@ -26,12 +26,12 @@ lac_i(2,[ [] ]).
 lac_i(3,[ [] ]).
  
  
-lits_i('Seller Information',5,10).
-lits_i('Sellers',5,10).
+lits_i('Vendedores Information',5,10).
+lits_i('Vendedores',5,10).
 lits_i('General',5,10).
-lits_i('Product',5,10).
+lits_i('Produtos',5,10).
  
-cls_i([ 0,0 ],[ 5,27 ]).
+cls_i([ 0,0 ],[ 5,31 ]).
  
 pos_i(18,[ 0,0,0 ]).
  
@@ -151,8 +151,8 @@ v_i(t,o,4,18).
  
  
  
-attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Seller Id','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Seller Name','',0 ]).
+attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
 attri_i('GXLvl6',[ 'GXLvl6',int,1,0,'',0,'',[],16 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
@@ -277,9 +277,9 @@ html_sub_i(4,5,html_i(0,div(5))).
 html_sub_i(5,6,html_i(0,div(6))).
 html_sub_i(6,7,html_i(0,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
-html_sub_i(8,9,html_i(0,t('Seller Information',3))).
+html_sub_i(8,9,html_i(0,t('Vendedores Information',3))).
 html_sub_i(7,10,html_i(1,div(10))).
-html_sub_i(10,11,html_i(0,t('Sellers',3))).
+html_sub_i(10,11,html_i(0,t('Vendedores',3))).
 html_sub_i(3,12,html_i(1,div(12))).
 html_sub_i(12,13,html_i(0,div(13))).
 html_sub_i(13,14,html_i(0,div(14))).
@@ -301,7 +301,7 @@ html_sub_i(27,28,html_i(0,div(28))).
 html_sub_i(28,29,html_i(0,div(29))).
 html_sub_i(29,30,html_i(0,comp(webcomp))).
 html_sub_i(22,31,html_i(2,container(31))).
-html_sub_i(31,32,html_i(0,t('Product',3))).
+html_sub_i(31,32,html_i(0,t('Produtos',3))).
 html_sub_i(31,33,html_i(1,div(33))).
 html_sub_i(33,0,html_i(0,html('Product'))).
 html_sub_i(22,34,html_i(3,container(34))).
@@ -379,7 +379,7 @@ html_comp_i(8,'Semanticcontent',div,d,[ str ]).
 html_comp_i(8,'Align',left,d,[ str ]).
 html_comp_i(8,'Valign',top,d,[ str ]).
 html_comp_i(9,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(9,'Caption','Seller Information',d,[ str ]).
+html_comp_i(9,'Caption','Vendedores Information',d,[ str ]).
 html_comp_i(9,'Id','Viewtitle',v,[ str ]).
 html_comp_i(9,'Class','SubTitle',v,[ str ]).
 html_comp_i(9,'Event','',d,[ str ]).
@@ -399,7 +399,7 @@ html_comp_i(10,'Semanticcontent',div,d,[ str ]).
 html_comp_i(10,'Align','Right',v,[ str ]).
 html_comp_i(10,'Valign',top,d,[ str ]).
 html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(11,'Caption','Sellers',d,[ str ]).
+html_comp_i(11,'Caption','Vendedores',d,[ str ]).
 html_comp_i(11,'Id','Viewall',v,[ str ]).
 html_comp_i(11,'Class','BtnTextBlockBack',v,[ str ]).
 html_comp_i(11,'Event','',d,[ str ]).
@@ -476,7 +476,7 @@ html_comp_i(19,'Eventgx','',d,[ str ]).
 html_comp_i(19,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(19,'Captionstyle','',v,[ str ]).
 html_comp_i(19,'Captionposition','Left',v,[ str ]).
-html_comp_i(19,'Captionvalue','Name',d,[ str ]).
+html_comp_i(19,'Captionvalue','Nome',d,[ str ]).
 html_comp_i(19,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(19,'Controltype',2,d,[ num ]).
 html_comp_i(19,'Inputtype',0,d,[ num ]).
@@ -580,7 +580,7 @@ html_comp_i(30,'Controlname','Generalwc',v,[ str ]).
 html_comp_i(30,'Params',[],v,[ params ]).
 html_comp_i(31,'Containerid',title2,v,[ str ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(32,'Caption','Product',d,[ str ]).
+html_comp_i(32,'Caption','Produtos',d,[ str ]).
 html_comp_i(32,'Id','Product_title',v,[ str ]).
 html_comp_i(32,'Class','TextBlock',d,[ str ]).
 html_comp_i(32,'Event','',d,[ str ]).
@@ -636,9 +636,9 @@ html_comp_i(38,'Params',[],v,[ params ]).
  
  
  
-lit_i(9,1,t('Seller Information',3),[ ctlname('Viewtitle') ]).
+lit_i(9,1,t('Vendedores Information',3),[ ctlname('Viewtitle') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
-lit_i(11,1,t('Sellers',3),[ ctlname('Viewall') ]).
+lit_i(11,1,t('Vendedores',3),[ ctlname('Viewall') ]).
 lit_i(10,1,div(10),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
 lit_i(6,1,div(6),[ ctlname('Tabletop') ]).
@@ -658,7 +658,7 @@ lit_i(30,1,comp(webcomp),[ ctlname('Generalwc'),width(0),rect(0,0,10,10),title('
 lit_i(29,1,div(29),[ ctlname('') ]).
 lit_i(28,1,div(28),[ ctlname('') ]).
 lit_i(27,1,div(27),[ ctlname('Tablegeneral') ]).
-lit_i(32,1,t('Product',3),[ ctlname('Product_title') ]).
+lit_i(32,1,t('Produtos',3),[ ctlname('Product_title') ]).
 lit_i(33,1,div(33),[ ctlname('') ]).
 lit_i(38,1,comp(webcomp),[ ctlname('Productwc'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(37,1,div(37),[ ctlname('') ]).

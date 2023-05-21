@@ -117,7 +117,7 @@ rule_i(0,prop(sessiontype,'RW')).
 rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
 rule_i(0,prop('WEB_COMP','Master')).
 rule_i(0,prop('Theme',o(25,'Carmine'))).
-rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('Folder',o(8,'Web'))).
 rule_i(0,prop('ObjDesc','Master Page')).
 rule_i(0,prop('ObjName','MasterPage')).
 rule_i(0,maingen(41)).

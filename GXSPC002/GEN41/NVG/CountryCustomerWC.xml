@@ -9,7 +9,7 @@
 <ObjDesc>Country Customer WC</ObjDesc>
 <ObjPgmName>CountryCustomerWC</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -53,7 +53,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></Order>
+<Description>País Id</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>ICUSTOMER1</IndexName>
 <LevelOptions></LevelOptions>
@@ -66,7 +66,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute>
+<Description>País Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
@@ -78,7 +78,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute>
+<Description>País Id</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
@@ -96,10 +96,36 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute></KeyAttributes>
+<Description>Cliente Id</Description></Attribute></KeyAttributes>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>
 <VerticalFormulas></VerticalFormulas>
 <AggSelFormulas></AggSelFormulas></Formulas></ImplicitForEach></Event>
+<Event>
+<EventName>'DoInsert'</EventName>
+<CALL>
+<Object>
+<ObjClsGuid>1db606f2-af09-4cf9-a3b5-b481519d28f6</ObjClsGuid>
+<ObjCls>0</ObjCls>
+<ObjId>7</ObjId>
+<ObjName>Customer</ObjName>
+<ObjPgmName>Customer</ObjPgmName>
+<ObjClsName>Transaction</ObjClsName></Object>
+<Expression>
+<Token>TrnMode</Token>
+<Token>.Insert</Token>
+<Token>,</Token>
+<Sp></Sp>
+<Token>nullvalue(</Token>
+<Sp></Sp>
+<Attribute>
+<AttriId>11</AttriId>
+<AttriName>CustomerId</AttriName>
+<Description>Cliente Id</Description></Attribute>
+<Token>)</Token></Expression>
+<IF></IF></CALL></Event>
+<Event>
+<EventName>'PREPARETRANSACTION'</EventName>
+<EventType>Subrutine</EventType></Event>
 <Suggests></Suggests></ObjectSpec>

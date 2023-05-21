@@ -120,7 +120,7 @@ rule_i(0,rule([ a(22,[ '''Sellers''','''Sellers''','' ]) ],[],[],[])).
 rule_i(0,rule([ a(22,[ '''Shopping Cart''','''Shopping Cart''','' ]) ],[],[],[])).
 rule_i(0,rule([ a(22,[ '''Increase Price''','''Increase Price''','' ]) ],[],[],[])).
 rule_i(0,rule([ a(22,[ '''CustomersCountries''','''CustomersCountries''','' ]) ],[],[],[])).
-rule_i(0,rule([ a(22,[ '''Catalogue''','''Catalogue''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Catalogo''','''Catalogo''','' ]) ],[],[],[])).
 rule_i(0,rule([ a(22,[ '''Promotions''','''Promotions''','' ]) ],[],[],[])).
 rule_i(0,rule([ a(22,[ '''Principal''','''Principal''','' ]) ],[],[],[])).
 rule_i(0,rule([ a(22,[ '''Country''','''Country''','' ]) ],[],[],[])).
@@ -212,14 +212,14 @@ b_line_i(86,2,8,cmd,1,[ t('',147,86,0) ]).
 b_line_i(88,2,8,cmd,1,[ t('',146,88,0),t('''CustomersCountries''',3,88,7) ]).
 b_line_i(90,2,9,cmd,1,[ t('',104,90,0),t(o(13,'CountriesAndCustomers'),28,1,2) ]).
 b_line_i(92,2,9,cmd,1,[ t('',147,92,0) ]).
-b_line_i(94,2,9,cmd,1,[ t('',146,94,0),t('''Catalogue''',3,94,7) ]).
+b_line_i(94,2,9,cmd,1,[ t('',146,94,0),t('''Catalogo''',3,94,7) ]).
 b_line_i(96,2,10,cmd,1,[ t('',104,96,0),t(o(13,'CategoriesAndProducts'),28,1,2) ]).
 b_line_i(98,2,10,cmd,1,[ t('',147,98,0) ]).
 b_line_i(100,2,10,cmd,1,[ t('',146,100,0),t('''Promotions''',3,100,7) ]).
 b_line_i(102,2,11,cmd,1,[ t('',104,102,0),t(o(0,'Promotion'),28,1,2) ]).
 b_line_i(104,2,11,cmd,1,[ t('',147,104,0) ]).
 b_line_i(106,2,11,cmd,1,[ t('',146,106,0),t('''Principal''',3,106,7) ]).
-b_line_i(108,2,12,cmd,1,[ t('',104,108,0),t(o(13,'StartUp'),28,1,2) ]).
+b_line_i(108,2,12,cmd,1,[ t('',104,108,0),t(o(13,'PaginaPrincipal'),28,1,2) ]).
 b_line_i(110,2,12,cmd,1,[ t('',147,110,0) ]).
 b_line_i(112,2,12,cmd,1,[ t('',146,112,0),t('''Country''',3,112,7) ]).
 b_line_i(114,2,13,cmd,1,[ t('',104,114,0),t(o(0,'Country'),28,1,2) ]).
@@ -804,6 +804,7 @@ warn_gen_i(msg(events(66,[]),spc0024,[ 'Not enough parameters ',calling,' ','Cus
 warn_gen_i(msg(events(102,[]),spc0024,[ 'Not enough parameters ',calling,' ','Promotion','.' ])).
 warn_gen_i(msg(events(114,[]),spc0024,[ 'Not enough parameters ',calling,' ','Country','.' ])).
 warn_gen_i(msg(events(120,[]),spc0024,[ 'Not enough parameters ',calling,' ','Category','.' ])).
+warn_gen_i(msg([],spc0156,[ 'Event ','''Catalogue''',' for control ''','Button14',''' is not defined.' ])).
  
  
  
@@ -890,7 +891,7 @@ sub_info_i(146,'''Sellers''',70,74,[ [],[] ]).
 sub_info_i(146,'''Shopping Cart''',76,80,[ [],[] ]).
 sub_info_i(146,'''Increase Price''',82,86,[ [],[] ]).
 sub_info_i(146,'''CustomersCountries''',88,92,[ [],[] ]).
-sub_info_i(146,'''Catalogue''',94,98,[ [],[] ]).
+sub_info_i(146,'''Catalogo''',94,98,[ [],[] ]).
 sub_info_i(146,'''Promotions''',100,104,[ [],[] ]).
 sub_info_i(146,'''Principal''',106,110,[ [],[] ]).
 sub_info_i(146,'''Country''',112,116,[ [],[] ]).
@@ -904,7 +905,7 @@ pgm_parm_i(web,22,'SELLERSANDPRODUCTS',[],[]).
 pgm_parm_i(web,21,'CUSTOMERSANDSHOPPINGCARTS',[],[]).
 pgm_parm_i(trn,2,'CATEGORY',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'CategoryId',in,[] ] ]).
 pgm_parm_i(trn,3,'COUNTRY',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'CountryId',in,[] ] ]).
-pgm_parm_i(web,20,'STARTUP',[],[]).
+pgm_parm_i(web,20,'PAGINAPRINCIPAL',[],[]).
 pgm_parm_i(trn,8,'PROMOTION',[ [ char,3,0,0 ],[ int,4,0,0 ] ],[ [ 'Mode',in,[] ],[ 'PromotionId',in,[] ] ]).
 pgm_parm_i(web,19,'CATEGORIESANDPRODUCTS',[],[]).
 pgm_parm_i(web,18,'COUNTRIESANDCUSTOMERS',[],[]).
@@ -920,7 +921,7 @@ pgm_callprotocol_i(web,22,'SELLERSANDPRODUCTS','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,21,'CUSTOMERSANDSHOPPINGCARTS','INTERNAL','Unsecure').
 pgm_callprotocol_i(trn,2,'CATEGORY','INTERNAL','Unsecure').
 pgm_callprotocol_i(trn,3,'COUNTRY','INTERNAL','Unsecure').
-pgm_callprotocol_i(web,20,'STARTUP','INTERNAL','Unsecure').
+pgm_callprotocol_i(web,20,'PAGINAPRINCIPAL','INTERNAL','Unsecure').
 pgm_callprotocol_i(trn,8,'PROMOTION','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,19,'CATEGORIESANDPRODUCTS','INTERNAL','Unsecure').
 pgm_callprotocol_i(web,18,'COUNTRIESANDCUSTOMERS','INTERNAL','Unsecure').
@@ -931,7 +932,7 @@ pgm_callprotocol_i(trn,7,'CUSTOMER','INTERNAL','Unsecure').
 pgm_callprotocol_i(trn,5,'PRODUCT','INTERNAL','Unsecure').
  
  
-pgm_main_info_i(web,20,'STARTUP',[ 41,'STARTUP','','','','','INTERNAL' ]).
+pgm_main_info_i(web,20,'PAGINAPRINCIPAL',[ 41,'PAGINAPRINCIPAL','','','','','INTERNAL' ]).
  
  
  

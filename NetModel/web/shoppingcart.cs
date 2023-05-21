@@ -201,7 +201,7 @@ namespace GeneXus.Programs {
             {
                Form.Meta.addItem("generator", "GeneXus .NET 17_0_9-159740", 0) ;
             }
-            Form.Meta.addItem("description", "Shopping Cart", 0) ;
+            Form.Meta.addItem("description", "Carrinho de Compras", 0) ;
          }
          context.wjLoc = "";
          context.nUserReturn = 0;
@@ -336,7 +336,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
          /* Text block */
-         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, "Shopping Cart", "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "Title", 0, "", 1, 1, 0, 0, "HLP_ShoppingCart.htm");
+         GxWebStd.gx_label_ctrl( context, lblTitle_Internalname, "Carrinho de Compras", "", "", lblTitle_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "Title", 0, "", 1, 1, 0, 0, "HLP_ShoppingCart.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          /* Div Control */
@@ -466,7 +466,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCustomerId_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtCustomerId_Internalname, "Customer Id", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtCustomerId_Internalname, "Cliente Id", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
@@ -475,7 +475,7 @@ namespace GeneXus.Programs {
          /* Static images/pictures */
          ClassString = "gx-prompt Image";
          StyleString = "";
-         sImgUrl = (string)(context.GetImagePath( "prompt.gif", "", context.GetTheme( )));
+         sImgUrl = (string)(context.GetImagePath( "f5b04895-0024-488b-8e3b-b687ca4598ee", "", context.GetTheme( )));
          GxWebStd.gx_bitmap( context, imgprompt_11_Internalname, sImgUrl, imgprompt_11_Link, "", "", context.GetTheme( ), imgprompt_11_Visible, 1, "", "", 0, 0, 0, "", 0, "", 0, 0, 0, "", "", StyleString, ClassString, "", "", "", "", "", "", "", 1, false, false, context.GetImageSrcSet( sImgUrl), "HLP_ShoppingCart.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -488,7 +488,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCustomerName_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtCustomerName_Internalname, "Customer Name", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtCustomerName_Internalname, "Nome", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
@@ -504,7 +504,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCountryId_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtCountryId_Internalname, "Country Id", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtCountryId_Internalname, "País Id", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
@@ -520,7 +520,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCountryName_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtCountryName_Internalname, "Country Name", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtCountryName_Internalname, "País", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
@@ -536,7 +536,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCustomerAddress_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtCustomerAddress_Internalname, "Customer Address", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtCustomerAddress_Internalname, "Endereço", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Multiple line edit */
@@ -556,7 +556,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCustomerPhone_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtCustomerPhone_Internalname, "Customer Phone", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtCustomerPhone_Internalname, "Telefone", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
@@ -564,7 +564,7 @@ namespace GeneXus.Programs {
          {
             gxphoneLink = "tel:" + StringUtil.RTrim( A23CustomerPhone);
          }
-         GxWebStd.gx_single_line_edit( context, edtCustomerPhone_Internalname, StringUtil.RTrim( A23CustomerPhone), StringUtil.RTrim( context.localUtil.Format( A23CustomerPhone, "")), "", "'"+""+"'"+",false,"+"'"+""+"'", gxphoneLink, "", "", "", edtCustomerPhone_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtCustomerPhone_Enabled, 0, "tel", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, 0, true, "GeneXus\\Phone", "left", true, "", "HLP_ShoppingCart.htm");
+         GxWebStd.gx_single_line_edit( context, edtCustomerPhone_Internalname, StringUtil.RTrim( A23CustomerPhone), StringUtil.RTrim( context.localUtil.Format( A23CustomerPhone, "(99) 9999-9999")), "", "'"+""+"'"+",false,"+"'"+""+"'", gxphoneLink, "", "", "", edtCustomerPhone_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtCustomerPhone_Enabled, 0, "tel", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, 0, true, "GeneXus\\Phone", "left", true, "", "HLP_ShoppingCart.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -668,7 +668,7 @@ namespace GeneXus.Programs {
          Gridshoppingcart_productColumn.AddObjectProperty("Enabled", StringUtil.LTrim( StringUtil.NToC( (decimal)(edtProductName_Enabled), 5, 0, ".", "")));
          Gridshoppingcart_productContainer.AddColumnProperties(Gridshoppingcart_productColumn);
          Gridshoppingcart_productColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-         Gridshoppingcart_productColumn.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 10, 2, ".", "")));
+         Gridshoppingcart_productColumn.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 11, 2, ".", "")));
          Gridshoppingcart_productColumn.AddObjectProperty("Enabled", StringUtil.LTrim( StringUtil.NToC( (decimal)(edtProductPrice_Enabled), 5, 0, ".", "")));
          Gridshoppingcart_productContainer.AddColumnProperties(Gridshoppingcart_productColumn);
          Gridshoppingcart_productColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
@@ -676,7 +676,7 @@ namespace GeneXus.Programs {
          Gridshoppingcart_productColumn.AddObjectProperty("Enabled", StringUtil.LTrim( StringUtil.NToC( (decimal)(edtQtyProduct_Enabled), 5, 0, ".", "")));
          Gridshoppingcart_productContainer.AddColumnProperties(Gridshoppingcart_productColumn);
          Gridshoppingcart_productColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
-         Gridshoppingcart_productColumn.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( A35TotalProduct, 10, 2, ".", "")));
+         Gridshoppingcart_productColumn.AddObjectProperty("Value", StringUtil.LTrim( StringUtil.NToC( A35TotalProduct, 11, 2, ".", "")));
          Gridshoppingcart_productColumn.AddObjectProperty("Enabled", StringUtil.LTrim( StringUtil.NToC( (decimal)(edtTotalProduct_Enabled), 5, 0, ".", "")));
          Gridshoppingcart_productContainer.AddColumnProperties(Gridshoppingcart_productColumn);
          Gridshoppingcart_productColumn = GXWebColumn.GetNew(isAjaxCallMode( ));
@@ -1276,9 +1276,9 @@ namespace GeneXus.Programs {
             }
             ChangePostValue( edtProductId_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A12ProductId), 4, 0, ",", ""))) ;
             ChangePostValue( edtProductName_Internalname, StringUtil.RTrim( A13ProductName)) ;
-            ChangePostValue( edtProductPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 10, 2, ",", ""))) ;
+            ChangePostValue( edtProductPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 11, 2, ",", ""))) ;
             ChangePostValue( edtQtyProduct_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A36QtyProduct), 4, 0, ",", ""))) ;
-            ChangePostValue( edtTotalProduct_Internalname, StringUtil.LTrim( StringUtil.NToC( A35TotalProduct, 10, 2, ",", ""))) ;
+            ChangePostValue( edtTotalProduct_Internalname, StringUtil.LTrim( StringUtil.NToC( A35TotalProduct, 11, 2, ",", ""))) ;
             ChangePostValue( edtCategoryId_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A6CategoryId), 4, 0, ",", ""))) ;
             ChangePostValue( edtCategoryName_Internalname, StringUtil.RTrim( A7CategoryName)) ;
             ChangePostValue( "ZT_"+"Z12ProductId_"+sGXsfl_88_idx, StringUtil.LTrim( StringUtil.NToC( (decimal)(Z12ProductId), 4, 0, ",", ""))) ;
@@ -2255,9 +2255,9 @@ namespace GeneXus.Programs {
             }
             ChangePostValue( edtProductId_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A12ProductId), 4, 0, ",", ""))) ;
             ChangePostValue( edtProductName_Internalname, StringUtil.RTrim( A13ProductName)) ;
-            ChangePostValue( edtProductPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 10, 2, ",", ""))) ;
+            ChangePostValue( edtProductPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 11, 2, ",", ""))) ;
             ChangePostValue( edtQtyProduct_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A36QtyProduct), 4, 0, ",", ""))) ;
-            ChangePostValue( edtTotalProduct_Internalname, StringUtil.LTrim( StringUtil.NToC( A35TotalProduct, 10, 2, ",", ""))) ;
+            ChangePostValue( edtTotalProduct_Internalname, StringUtil.LTrim( StringUtil.NToC( A35TotalProduct, 11, 2, ",", ""))) ;
             ChangePostValue( edtCategoryId_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A6CategoryId), 4, 0, ",", ""))) ;
             ChangePostValue( edtCategoryName_Internalname, StringUtil.RTrim( A7CategoryName)) ;
             ChangePostValue( "ZT_"+"Z12ProductId_"+sGXsfl_88_idx, StringUtil.LTrim( StringUtil.NToC( (decimal)(Z12ProductId), 4, 0, ",", ""))) ;
@@ -2410,7 +2410,7 @@ namespace GeneXus.Programs {
          /* Before Delete Rules */
          if ( DateTimeUtil.ResetTime ( A33ShoppingCartDate ) == DateTimeUtil.ResetTime ( DateTimeUtil.Today( context) ) )
          {
-            GX_msglist.addItem("Can't delete today's cart", 1, "SHOPPINGCARTDATE");
+            GX_msglist.addItem("Não é possível excluir o carrinho de hoje", 1, "SHOPPINGCARTDATE");
             AnyError = 1;
             GX_FocusControl = edtShoppingCartDate_Internalname;
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
@@ -3183,7 +3183,7 @@ namespace GeneXus.Programs {
          /* Static images/pictures */
          ClassString = "gx-prompt Image";
          StyleString = "";
-         sImgUrl = (string)(context.GetImagePath( "prompt.gif", "", context.GetTheme( )));
+         sImgUrl = (string)(context.GetImagePath( "f5b04895-0024-488b-8e3b-b687ca4598ee", "", context.GetTheme( )));
          Gridshoppingcart_productRow.AddColumnProperties("bitmap", 1, isAjaxCallMode( ), new Object[] {(string)imgprompt_12_Internalname,(string)sImgUrl,(string)imgprompt_12_Link,(string)"",(string)"",context.GetTheme( ),(int)imgprompt_12_Visible,(short)1,(string)"",(string)"",(short)0,(short)0,(short)0,(string)"",(short)0,(string)"",(short)0,(short)0,(short)0,(string)"",(string)"",(string)StyleString,(string)ClassString,(string)"",(string)"",(string)"",(string)"",(string)"",(string)"",(string)"",(short)1,(bool)false,(bool)false,context.GetImageSrcSet( sImgUrl)});
          /* Subfile cell */
          /* Single line edit */
@@ -3192,7 +3192,7 @@ namespace GeneXus.Programs {
          /* Subfile cell */
          /* Single line edit */
          ROClassString = "Attribute";
-         Gridshoppingcart_productRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtProductPrice_Internalname,StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 10, 2, ",", "")),StringUtil.LTrim( ((edtProductPrice_Enabled!=0) ? context.localUtil.Format( A27ProductPrice, "$ ZZZZ9.99") : context.localUtil.Format( A27ProductPrice, "$ ZZZZ9.99"))),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtProductPrice_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"",(string)"",(short)-1,(int)edtProductPrice_Enabled,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)10,(short)0,(short)0,(short)88,(short)1,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
+         Gridshoppingcart_productRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtProductPrice_Internalname,StringUtil.LTrim( StringUtil.NToC( A27ProductPrice, 11, 2, ",", "")),StringUtil.LTrim( ((edtProductPrice_Enabled!=0) ? context.localUtil.Format( A27ProductPrice, "R$ ZZZZ9.99") : context.localUtil.Format( A27ProductPrice, "R$ ZZZZ9.99"))),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtProductPrice_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"",(string)"",(short)-1,(int)edtProductPrice_Enabled,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)11,(short)0,(short)0,(short)88,(short)1,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
          /* Subfile cell */
          /* Single line edit */
          TempTags = " data-gxoch1=\"gx.fn.setControlValue('nIsMod_10_" + sGXsfl_88_idx + "',1);\"  onfocus=\"gx.evt.onfocus(this, 92,'',false,'" + sGXsfl_88_idx + "',88)\"";
@@ -3201,7 +3201,7 @@ namespace GeneXus.Programs {
          /* Subfile cell */
          /* Single line edit */
          ROClassString = "Attribute";
-         Gridshoppingcart_productRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtTotalProduct_Internalname,StringUtil.LTrim( StringUtil.NToC( A35TotalProduct, 10, 2, ",", "")),StringUtil.LTrim( ((edtTotalProduct_Enabled!=0) ? context.localUtil.Format( A35TotalProduct, "$ ZZZZ9.99") : context.localUtil.Format( A35TotalProduct, "$ ZZZZ9.99"))),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtTotalProduct_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"",(string)"",(short)-1,(int)edtTotalProduct_Enabled,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)10,(short)0,(short)0,(short)88,(short)1,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
+         Gridshoppingcart_productRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtTotalProduct_Internalname,StringUtil.LTrim( StringUtil.NToC( A35TotalProduct, 11, 2, ",", "")),StringUtil.LTrim( ((edtTotalProduct_Enabled!=0) ? context.localUtil.Format( A35TotalProduct, "R$ ZZZZ9.99") : context.localUtil.Format( A35TotalProduct, "R$ ZZZZ9.99"))),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtTotalProduct_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"",(string)"",(short)-1,(int)edtTotalProduct_Enabled,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)11,(short)0,(short)0,(short)88,(short)1,(short)-1,(short)0,(bool)true,(string)"",(string)"right",(bool)false,(string)""});
          /* Subfile cell */
          /* Single line edit */
          ROClassString = "Attribute";
@@ -3361,7 +3361,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202351822454414", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352114525347", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -3507,7 +3507,7 @@ namespace GeneXus.Programs {
 
       public override string GetPgmdesc( )
       {
-         return "Shopping Cart" ;
+         return "Carrinho de Compras" ;
       }
 
       protected void InitializeNonKey069( )
@@ -3585,7 +3585,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202351822454435", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352114525362", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -3601,7 +3601,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("shoppingcart.js", "?202351822454435", false, true);
+         context.AddJavascriptSource("shoppingcart.js", "?202352114525364", false, true);
          /* End function include_jscripts */
       }
 
@@ -3663,7 +3663,7 @@ namespace GeneXus.Programs {
          Form.Background = "";
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
-         Form.Caption = "Shopping Cart";
+         Form.Caption = "Carrinho de Compras";
          edtCategoryName_Jsonclick = "";
          edtCategoryId_Jsonclick = "";
          edtTotalProduct_Jsonclick = "";
@@ -3881,12 +3881,12 @@ namespace GeneXus.Programs {
          setEventMetadata("VALID_SHOPPINGCARTID",",oparms:[{av:'A34ShoppingCartFinalPrice',fld:'SHOPPINGCARTFINALPRICE',pic:'$ ZZZZZZ9.99'}]}");
          setEventMetadata("VALID_SHOPPINGCARTDATE","{handler:'Valid_Shoppingcartdate',iparms:[]");
          setEventMetadata("VALID_SHOPPINGCARTDATE",",oparms:[]}");
-         setEventMetadata("VALID_CUSTOMERID","{handler:'Valid_Customerid',iparms:[{av:'A11CustomerId',fld:'CUSTOMERID',pic:'ZZZ9'},{av:'A8CountryId',fld:'COUNTRYID',pic:'ZZZ9'},{av:'A20CustomerName',fld:'CUSTOMERNAME',pic:''},{av:'A21CustomerAddress',fld:'CUSTOMERADDRESS',pic:''},{av:'A23CustomerPhone',fld:'CUSTOMERPHONE',pic:''},{av:'A9CountryName',fld:'COUNTRYNAME',pic:''}]");
-         setEventMetadata("VALID_CUSTOMERID",",oparms:[{av:'A20CustomerName',fld:'CUSTOMERNAME',pic:''},{av:'A21CustomerAddress',fld:'CUSTOMERADDRESS',pic:''},{av:'A23CustomerPhone',fld:'CUSTOMERPHONE',pic:''},{av:'A8CountryId',fld:'COUNTRYID',pic:'ZZZ9'},{av:'A9CountryName',fld:'COUNTRYNAME',pic:''}]}");
+         setEventMetadata("VALID_CUSTOMERID","{handler:'Valid_Customerid',iparms:[{av:'A11CustomerId',fld:'CUSTOMERID',pic:'ZZZ9'},{av:'A8CountryId',fld:'COUNTRYID',pic:'ZZZ9'},{av:'A20CustomerName',fld:'CUSTOMERNAME',pic:''},{av:'A21CustomerAddress',fld:'CUSTOMERADDRESS',pic:''},{av:'A23CustomerPhone',fld:'CUSTOMERPHONE',pic:'(99) 9999-9999'},{av:'A9CountryName',fld:'COUNTRYNAME',pic:''}]");
+         setEventMetadata("VALID_CUSTOMERID",",oparms:[{av:'A20CustomerName',fld:'CUSTOMERNAME',pic:''},{av:'A21CustomerAddress',fld:'CUSTOMERADDRESS',pic:''},{av:'A23CustomerPhone',fld:'CUSTOMERPHONE',pic:'(99) 9999-9999'},{av:'A8CountryId',fld:'COUNTRYID',pic:'ZZZ9'},{av:'A9CountryName',fld:'COUNTRYNAME',pic:''}]}");
          setEventMetadata("VALID_COUNTRYID","{handler:'Valid_Countryid',iparms:[]");
          setEventMetadata("VALID_COUNTRYID",",oparms:[]}");
-         setEventMetadata("VALID_PRODUCTID","{handler:'Valid_Productid',iparms:[{av:'A12ProductId',fld:'PRODUCTID',pic:'ZZZ9'},{av:'A6CategoryId',fld:'CATEGORYID',pic:'ZZZ9'},{av:'A13ProductName',fld:'PRODUCTNAME',pic:''},{av:'A27ProductPrice',fld:'PRODUCTPRICE',pic:'$ ZZZZ9.99'},{av:'A7CategoryName',fld:'CATEGORYNAME',pic:''}]");
-         setEventMetadata("VALID_PRODUCTID",",oparms:[{av:'A13ProductName',fld:'PRODUCTNAME',pic:''},{av:'A27ProductPrice',fld:'PRODUCTPRICE',pic:'$ ZZZZ9.99'},{av:'A6CategoryId',fld:'CATEGORYID',pic:'ZZZ9'},{av:'A7CategoryName',fld:'CATEGORYNAME',pic:''}]}");
+         setEventMetadata("VALID_PRODUCTID","{handler:'Valid_Productid',iparms:[{av:'A12ProductId',fld:'PRODUCTID',pic:'ZZZ9'},{av:'A6CategoryId',fld:'CATEGORYID',pic:'ZZZ9'},{av:'A13ProductName',fld:'PRODUCTNAME',pic:''},{av:'A27ProductPrice',fld:'PRODUCTPRICE',pic:'R$ ZZZZ9.99'},{av:'A7CategoryName',fld:'CATEGORYNAME',pic:''}]");
+         setEventMetadata("VALID_PRODUCTID",",oparms:[{av:'A13ProductName',fld:'PRODUCTNAME',pic:''},{av:'A27ProductPrice',fld:'PRODUCTPRICE',pic:'R$ ZZZZ9.99'},{av:'A6CategoryId',fld:'CATEGORYID',pic:'ZZZ9'},{av:'A7CategoryName',fld:'CATEGORYNAME',pic:''}]}");
          setEventMetadata("VALID_PRODUCTPRICE","{handler:'Valid_Productprice',iparms:[]");
          setEventMetadata("VALID_PRODUCTPRICE",",oparms:[]}");
          setEventMetadata("VALID_QTYPRODUCT","{handler:'Valid_Qtyproduct',iparms:[]");

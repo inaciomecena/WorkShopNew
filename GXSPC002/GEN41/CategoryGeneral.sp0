@@ -137,8 +137,8 @@ v_i(t,o,3,7).
  
  
  
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Category Name','',0 ]).
-attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',13 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',11 ]).
@@ -484,7 +484,7 @@ html_comp_i(23,'Eventgx','',d,[ str ]).
 html_comp_i(23,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(23,'Captionstyle','',v,[ str ]).
 html_comp_i(23,'Captionposition','Left',v,[ str ]).
-html_comp_i(23,'Captionvalue','Name',d,[ str ]).
+html_comp_i(23,'Captionvalue','da Categoria',d,[ str ]).
 html_comp_i(23,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(23,'Controltype',2,d,[ num ]).
 html_comp_i(23,'Inputtype',0,d,[ num ]).

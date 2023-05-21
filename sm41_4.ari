@@ -1,0 +1,11 @@
+domain_i(86,'gxdomainpage.cs').
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,2,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,3,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,5,0 ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,6,[ 12,16 ] ]).
+ext_sdt_map_i(41,'GeneXus.dll',[ 0,6,0 ]).
+sdt_map_i(41,'Category',[ 0,2,0 ]).
+sdt_map_i(41,'Country',[ 0,3,0 ]).
+sdt_map_i(41,'Product',[ 0,5,0 ]).
+sdt_map_i(41,'ShoppingCart',[ 0,6,0 ]).
+sdt_map_i(41,'ShoppingCart.Product',[ 0,6,[ 12,16 ] ]).

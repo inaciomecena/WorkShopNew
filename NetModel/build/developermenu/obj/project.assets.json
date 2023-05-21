@@ -3005,6 +3005,31 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "paginaprincipal/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "GeneXus.Programs.Common": "1.0.0",
+          "Microsoft.Data.SqlClient": "1.0.19269.1",
+          "Microsoft.Extensions.DependencyModel": "3.0.0",
+          "NetTopologySuite": "2.0.0",
+          "NetTopologySuite.Core": "1.15.3",
+          "Novell.Directory.Ldap.NETStandard": "3.3.1",
+          "Sandwych.GeographicLib": "1.49.3",
+          "System.Configuration.ConfigurationManager": "4.5.0",
+          "System.DirectoryServices": "4.7.0",
+          "iTextSharp-LGPL": "4.1.6"
+        },
+        "compile": {
+          "bin/placeholder/paginaprincipal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/paginaprincipal.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "product/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3505,31 +3530,6 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "startup/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "GeneXus.Programs.Common": "1.0.0",
-          "Microsoft.Data.SqlClient": "1.0.19269.1",
-          "Microsoft.Extensions.DependencyModel": "3.0.0",
-          "NetTopologySuite": "2.0.0",
-          "NetTopologySuite.Core": "1.15.3",
-          "Novell.Directory.Ldap.NETStandard": "3.3.1",
-          "Sandwych.GeographicLib": "1.49.3",
-          "System.Configuration.ConfigurationManager": "4.5.0",
-          "System.DirectoryServices": "4.7.0",
-          "iTextSharp-LGPL": "4.1.6"
-        },
-        "compile": {
-          "bin/placeholder/startup.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/startup.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "tabbedview/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3750,6 +3750,56 @@
         },
         "runtime": {
           "bin/placeholder/viewshoppingcart.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "wp_principal/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "GeneXus.Programs.Common": "1.0.0",
+          "Microsoft.Data.SqlClient": "1.0.19269.1",
+          "Microsoft.Extensions.DependencyModel": "3.0.0",
+          "NetTopologySuite": "2.0.0",
+          "NetTopologySuite.Core": "1.15.3",
+          "Novell.Directory.Ldap.NETStandard": "3.3.1",
+          "Sandwych.GeographicLib": "1.49.3",
+          "System.Configuration.ConfigurationManager": "4.5.0",
+          "System.DirectoryServices": "4.7.0",
+          "iTextSharp-LGPL": "4.1.6"
+        },
+        "compile": {
+          "bin/placeholder/wp_principal.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/wp_principal.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "wp_relatorios/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "GeneXus.Programs.Common": "1.0.0",
+          "Microsoft.Data.SqlClient": "1.0.19269.1",
+          "Microsoft.Extensions.DependencyModel": "3.0.0",
+          "NetTopologySuite": "2.0.0",
+          "NetTopologySuite.Core": "1.15.3",
+          "Novell.Directory.Ldap.NETStandard": "3.3.1",
+          "Sandwych.GeographicLib": "1.49.3",
+          "System.Configuration.ConfigurationManager": "4.5.0",
+          "System.DirectoryServices": "4.7.0",
+          "iTextSharp-LGPL": "4.1.6"
+        },
+        "compile": {
+          "bin/placeholder/wp_relatorios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/wp_relatorios.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -8977,6 +9027,11 @@
       "path": "../notauthorized/notauthorized.csproj",
       "msbuildProject": "../notauthorized/notauthorized.csproj"
     },
+    "paginaprincipal/1.0.0": {
+      "type": "project",
+      "path": "../paginaprincipal/paginaprincipal.csproj",
+      "msbuildProject": "../paginaprincipal/paginaprincipal.csproj"
+    },
     "product/1.0.0": {
       "type": "project",
       "path": "../product/product.csproj",
@@ -9077,11 +9132,6 @@
       "path": "../shoppingcartproductwc/shoppingcartproductwc.csproj",
       "msbuildProject": "../shoppingcartproductwc/shoppingcartproductwc.csproj"
     },
-    "startup/1.0.0": {
-      "type": "project",
-      "path": "../startup/startup.csproj",
-      "msbuildProject": "../startup/startup.csproj"
-    },
     "tabbedview/1.0.0": {
       "type": "project",
       "path": "../tabbedview/tabbedview.csproj",
@@ -9126,6 +9176,16 @@
       "type": "project",
       "path": "../viewshoppingcart/viewshoppingcart.csproj",
       "msbuildProject": "../viewshoppingcart/viewshoppingcart.csproj"
+    },
+    "wp_principal/1.0.0": {
+      "type": "project",
+      "path": "../wp_principal/wp_principal.csproj",
+      "msbuildProject": "../wp_principal/wp_principal.csproj"
+    },
+    "wp_relatorios/1.0.0": {
+      "type": "project",
+      "path": "../wp_relatorios/wp_relatorios.csproj",
+      "msbuildProject": "../wp_relatorios/wp_relatorios.csproj"
     },
     "wwcategory/1.0.0": {
       "type": "project",
@@ -9215,6 +9275,7 @@
       "menu >= 1.0.0",
       "menugeneral >= 1.0.0",
       "notauthorized >= 1.0.0",
+      "paginaprincipal >= 1.0.0",
       "product >= 1.0.0",
       "productgeneral >= 1.0.0",
       "productproduct1wc >= 1.0.0",
@@ -9235,7 +9296,6 @@
       "shoppingcart >= 1.0.0",
       "shoppingcartgeneral >= 1.0.0",
       "shoppingcartproductwc >= 1.0.0",
-      "startup >= 1.0.0",
       "tabbedview >= 1.0.0",
       "viewcategory >= 1.0.0",
       "viewcountry >= 1.0.0",
@@ -9245,6 +9305,8 @@
       "viewpromotion >= 1.0.0",
       "viewseller >= 1.0.0",
       "viewshoppingcart >= 1.0.0",
+      "wp_principal >= 1.0.0",
+      "wp_relatorios >= 1.0.0",
       "wwcategory >= 1.0.0",
       "wwcountry >= 1.0.0",
       "wwcustomer >= 1.0.0",
@@ -9390,6 +9452,9 @@
             "C:\\Models\\WorkShopNew\\NetModel\\build\\notauthorized\\notauthorized.csproj": {
               "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\notauthorized\\notauthorized.csproj"
             },
+            "C:\\Models\\WorkShopNew\\NetModel\\build\\paginaprincipal\\paginaprincipal.csproj": {
+              "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\paginaprincipal\\paginaprincipal.csproj"
+            },
             "C:\\Models\\WorkShopNew\\NetModel\\build\\productgeneral\\productgeneral.csproj": {
               "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\productgeneral\\productgeneral.csproj"
             },
@@ -9450,9 +9515,6 @@
             "C:\\Models\\WorkShopNew\\NetModel\\build\\shoppingcart\\shoppingcart.csproj": {
               "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\shoppingcart\\shoppingcart.csproj"
             },
-            "C:\\Models\\WorkShopNew\\NetModel\\build\\startup\\startup.csproj": {
-              "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\startup\\startup.csproj"
-            },
             "C:\\Models\\WorkShopNew\\NetModel\\build\\tabbedview\\tabbedview.csproj": {
               "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\tabbedview\\tabbedview.csproj"
             },
@@ -9479,6 +9541,12 @@
             },
             "C:\\Models\\WorkShopNew\\NetModel\\build\\viewshoppingcart\\viewshoppingcart.csproj": {
               "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\viewshoppingcart\\viewshoppingcart.csproj"
+            },
+            "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_principal\\wp_principal.csproj": {
+              "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_principal\\wp_principal.csproj"
+            },
+            "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_relatorios\\wp_relatorios.csproj": {
+              "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\wp_relatorios\\wp_relatorios.csproj"
             },
             "C:\\Models\\WorkShopNew\\NetModel\\build\\wwcategory\\wwcategory.csproj": {
               "projectPath": "C:\\Models\\WorkShopNew\\NetModel\\build\\wwcategory\\wwcategory.csproj"

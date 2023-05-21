@@ -1,0 +1,10 @@
+C:\Models\WorkShopNew\CloudNET004\web\bin\promotion.dll
+C:\Models\WorkShopNew\CloudNET004\web\bin\promotion.pdb
+C:\Models\WorkShopNew\CloudNET004\build\promotion\obj\Release\net6.0\promotion.csproj.AssemblyReference.cache
+C:\Models\WorkShopNew\CloudNET004\build\promotion\obj\Release\net6.0\promotion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Models\WorkShopNew\CloudNET004\build\promotion\obj\Release\net6.0\promotion.csproj.CoreCompileInputs.cache
+C:\Models\WorkShopNew\CloudNET004\build\promotion\obj\Release\net6.0\promotion.csproj.CopyComplete
+C:\Models\WorkShopNew\CloudNET004\build\promotion\obj\Release\net6.0\promotion.dll
+C:\Models\WorkShopNew\CloudNET004\build\promotion\obj\Release\net6.0\refint\promotion.dll
+C:\Models\WorkShopNew\CloudNET004\build\promotion\obj\Release\net6.0\promotion.pdb
+C:\Models\WorkShopNew\CloudNET004\build\promotion\obj\Release\net6.0\ref\promotion.dll

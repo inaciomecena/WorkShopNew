@@ -18,7 +18,7 @@ las_i(2,[ [ 'List',7,6 ] ]).
 lac_i(2,[ [ 'List' ] ]).
  
  
-lits_i('Categories And Products',5,10).
+lits_i('Categorias e Produtos',5,10).
  
 cls_i([ 2,0 ],[ 5,45 ]).
  
@@ -119,7 +119,7 @@ rule_i(0,prop('Folder',o(120,'Root Module'))).
 rule_i(0,prop('ObjDesc','Categories And Products')).
 rule_i(0,prop('ObjName','CategoriesAndProducts')).
 rule_i(0,maingen(41)).
-rule_i(0,rule([ a(22,[ '''Catalogue''','''Catalogue''','' ]) ],[],[],[])).
+rule_i(0,rule([ a(22,[ '''Catalago''','''Catalago''','' ]) ],[],[],[])).
  
 a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
 a_i(2,2,t,2,[],[ [],'ICATEGORY',[] ]).
@@ -138,8 +138,8 @@ v_i(f,o,3,[ t('&List',23),t('Enabled',3) ]).
  
  
  
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Category Name','',0 ]).
-attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Category Id','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',7 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',6 ]).
 attri_i('List',[ 'List',char,20,0,'',0,'List','',5 ]).
@@ -180,18 +180,18 @@ break_i(2,nvg,1,[],[ [ 6,7 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
 b_group_i(2,2,lit,0,2,8).
-b_group_i(2,3,lit,0,9,18).
-b_group_i(2,4,lit,0,19,0).
+b_group_i(2,3,lit,0,9,15).
+b_group_i(2,4,lit,0,16,0).
  
 b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('Start',3,1,7) ]).
-b_line_i(3,2,2,cmd,1,[ t('',107,3,0),t('List',23,1,0),t(=,10,1,0),t('"List"',3,1,0) ]).
+b_line_i(3,2,2,cmd,1,[ t('',107,3,0),t('List',23,1,0),t(=,10,1,0),t('"Exibir Relatório!"',3,1,0) ]).
 b_line_i(5,2,2,cmd,1,[ t('',147,5,0) ]).
 b_line_i(8,2,2,cmd,1,[ t('',146,8,0),t([ t('List',23,8,7),t('Click',3,8,13) ],29,8,13) ]).
 b_line_i(10,2,3,cmd,1,[ t('',188,10,0),t(o(1,'CategoriesAndProductsProc'),28,1,2),t(6,2,1,35),t(',',7,1,0),t(7,2,1,46) ]).
 b_line_i(12,2,3,cmd,1,[ t('',147,12,0) ]).
-b_line_i(18,2,3,cmd,1,[ t('',146,18,0),t('''Catalogue''',3,18,7) ]).
-b_line_i(19,2,4,cmd,1,[ t('',188,19,0),t(o(1,'ProductsPerCategory'),28,1,2) ]).
-b_line_i(20,2,4,cmd,1,[ t('',147,20,0) ]).
+b_line_i(15,2,3,cmd,1,[ t('',146,15,0),t('''Catalago''',3,15,7) ]).
+b_line_i(16,2,4,cmd,1,[ t('',188,16,0),t(o(1,'ProductsPerCategory'),28,1,2) ]).
+b_line_i(17,2,4,cmd,1,[ t('',147,17,0) ]).
 b_line_i(1000,2,4,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
 b_line_i(1001,2,4,cmd,0,[ t('',155,0,0) ]).
 b_line_i(1002,2,4,cmd,0,[ t('',147,0,0) ]).
@@ -215,13 +215,13 @@ html_i(2,div(2)).
 html_sub_i(2,3,html_i(0,div(3))).
 html_sub_i(3,4,html_i(0,div(4))).
 html_sub_i(4,5,html_i(0,div(5))).
-html_sub_i(5,6,html_i(0,t('Categories And Products',3))).
+html_sub_i(5,6,html_i(0,t('Categorias e Produtos',3))).
 html_sub_i(3,7,html_i(1,div(7))).
 html_sub_i(7,8,html_i(0,div(8))).
 html_sub_i(8,9,html_i(0,s(9))).
 html_sub_i(3,13,html_i(2,div(13))).
 html_sub_i(13,14,html_i(0,div(14))).
-html_sub_i(14,15,html_i(0,button('''Catalogue'''))).
+html_sub_i(14,15,html_i(0,button('''Catalago'''))).
  
 html_tags_i(1,'Class','form-horizontal Form').
 html_tags_i(2,'data-gx-base-lib',bootstrapv3).
@@ -262,7 +262,7 @@ html_comp_i(5,'Semanticcontent',div,d,[ str ]).
 html_comp_i(5,'Align',left,d,[ str ]).
 html_comp_i(5,'Valign',top,d,[ str ]).
 html_comp_i(6,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(6,'Caption','Categories And Products',d,[ str ]).
+html_comp_i(6,'Caption','Categorias e Produtos',d,[ str ]).
 html_comp_i(6,'Id','Categoriesandproductstitle',v,[ str ]).
 html_comp_i(6,'Class','TextBlock',v,[ str ]).
 html_comp_i(6,'Event','',d,[ str ]).
@@ -339,7 +339,7 @@ html_comp_i(10,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(10,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(10,'Collinesfont',font('Courier New',9,[]),d,[ font ]).
 html_comp_i(10,'Collinescolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(10,'Coltitle','Category Id',d,[ str ]).
+html_comp_i(10,'Coltitle','Categoria Id',d,[ str ]).
 html_comp_i(10,'Coltitlefont',font('Microsoft Sans Serif',8,[ bold ]),d,[ font ]).
 html_comp_i(10,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(10,'Horizontalalignment',right,d,[ str ]).
@@ -370,7 +370,7 @@ html_comp_i(11,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(11,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(11,'Collinesfont',font('Courier New',9,[]),d,[ font ]).
 html_comp_i(11,'Collinescolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(11,'Coltitle','Category Name',d,[ str ]).
+html_comp_i(11,'Coltitle','Noma da Categoria',d,[ str ]).
 html_comp_i(11,'Coltitlefont',font('Microsoft Sans Serif',8,[ bold ]),d,[ font ]).
 html_comp_i(11,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(11,'Horizontalalignment',left,d,[ str ]).
@@ -426,11 +426,11 @@ html_comp_i(14,'Semanticcontent',div,d,[ str ]).
 html_comp_i(14,'Align',left,d,[ str ]).
 html_comp_i(14,'Valign',top,d,[ str ]).
 html_comp_i(15,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(15,'Controlname','Catalogue',v,[ str ]).
+html_comp_i(15,'Controlname','Catalago',v,[ str ]).
 html_comp_i(15,'Class','',v,[ str ]).
-html_comp_i(15,'Event','''Catalogue''',v,[ str ]).
-html_comp_i(15,'Caption','Catalogue',d,[ str ]).
-html_comp_i(15,'Title','Catalogue',d,[ str ]).
+html_comp_i(15,'Event','''Catalago''',v,[ str ]).
+html_comp_i(15,'Caption','Catalago',d,[ str ]).
+html_comp_i(15,'Title','Catalago',d,[ str ]).
 html_comp_i(15,'Font',font('Microsoft Sans Serif',10,[]),d,[ font ]).
 html_comp_i(15,'Forecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(15,'Backcolor',rgb(240,240,240),d,[ color ]).
@@ -446,7 +446,7 @@ html_comp_i(15,'Buttonborderstyle',standard,d,[ str ]).
  
  
  
-lit_i(6,1,t('Categories And Products',3),[ ctlname('Categoriesandproductstitle') ]).
+lit_i(6,1,t('Categorias e Produtos',3),[ ctlname('Categoriesandproductstitle') ]).
 lit_i(5,1,div(5),[ ctlname('') ]).
 lit_i(4,1,div(4),[ ctlname('') ]).
 lit_i(10,1,s(t(6,2),9),[ ctlname(6),ctrltype(edit,10),pos(10),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
@@ -455,7 +455,7 @@ lit_i(12,1,s(t('List',23),9),[ ctlname('&List'),ctrltype(edit,12),pos(12),readon
 lit_i(9,1,s(9),[ ctlname('Grid1'),el([ t(6,2),t(7,2),t('List',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
-lit_i(15,1,button('''Catalogue'''),[ ctlname('Catalogue'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(15,1,button('''Catalago'''),[ ctlname('Catalago'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(14,1,div(14),[ ctlname('') ]).
 lit_i(13,1,div(13),[ ctlname('') ]).
 lit_i(3,1,div(3),[ ctlname('Maintable') ]).
@@ -514,7 +514,7 @@ tbl_att_prop_i(2,2,7,'AllowNulls',n).
  
 sub_info_i(146,'Start',1,5,[ [],[ 'List' ] ]).
 sub_info_i(146,[ t('List',23,8,7),t('Click',3,8,13) ],8,12,[ [ 6,7 ],[ 7,6 ] ]).
-sub_info_i(146,'''Catalogue''',18,20,[ [],[] ]).
+sub_info_i(146,'''Catalago''',15,17,[ [],[] ]).
  
 pgm_parm_i(proc,17,'PRODUCTSPERCATEGORY',[],[]).
 pgm_parm_i(proc,16,'CATEGORIESANDPRODUCTSPROC',[ [ int,4,0,0 ],[ char,20,0,0 ] ],[ [ 'CategoryId',inout,[] ],[ 'CategoryName',inout,[] ] ]).

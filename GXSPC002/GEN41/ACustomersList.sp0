@@ -118,7 +118,7 @@ rule_i(0,prop('ObjDesc','Customers List')).
 rule_i(0,prop('ObjName','CustomersList')).
 rule_i(0,maingen(41)).
 rule_i(0,prop('PGMTYPE',main)).
-rule_i(0,output_file(t('CustomersList',3),t(pdf,3))).
+rule_i(0,output_file(t('ListaDeClientes',3),t(pdf,3))).
 rule_i(0,parm([ 'Fromdate','Todate' ],[])).
 rule_i(0,parmio([ [ 'Fromdate',inout ],[ 'Todate',inout ] ])).
 rule_i(0,output('FIL')).
@@ -151,11 +151,11 @@ attri_i(16,[ 'ShoppingCartId',int,4,0,'ZZZ9',0,'Shopping Cart Id','',0 ]).
 attri_i(33,[ 'ShoppingCartDate',date,8,0,'99/99/99',0,'Shopping Cart Date','',0 ]).
 attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',14 ]).
 attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',13 ]).
-attri_i(23,[ 'CustomerPhone',char,20,0,'',0,'Customer Phone','',0 ]).
-attri_i(22,[ 'CustomerEmail',svchar,100,0,'',0,'Customer Email','',0 ]).
-attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Customer Address','',0 ]).
-attri_i(20,[ 'CustomerName',char,20,0,'',0,'Customer Name','',0 ]).
-attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Customer Id','',0 ]).
+attri_i(23,[ 'CustomerPhone',char,20,0,'(99) 9999-9999',0,'Telefone','',0 ]).
+attri_i(22,[ 'CustomerEmail',svchar,100,0,'',0,'E-mail','',0 ]).
+attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Endereço','',0 ]).
+attri_i(20,[ 'CustomerName',char,20,0,'',0,'Nome','',0 ]).
+attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Cliente Id','',0 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',11 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',10 ]).
 attri_i('Fromdate',[ 'FromDate',date,8,0,'99/99/99',0,'From Date','',9 ]).

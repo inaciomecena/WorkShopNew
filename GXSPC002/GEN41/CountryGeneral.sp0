@@ -141,9 +141,9 @@ v_i(t,o,3,9).
  
  
 attri_i(40000,[ 'CountryFlag_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i(17,[ 'CountryFlag',bits,4,0,'',0,'Country Flag','',0 ]).
-attri_i(9,[ 'CountryName',char,20,0,'',0,'Country Name','',0 ]).
-attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'Country Id','',0 ]).
+attri_i(17,[ 'CountryFlag',bits,4,0,'',0,'Bandeira','',0 ]).
+attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
+attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',13 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',11 ]).
@@ -497,7 +497,7 @@ html_comp_i(23,'Eventgx','',d,[ str ]).
 html_comp_i(23,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(23,'Captionstyle','',v,[ str ]).
 html_comp_i(23,'Captionposition','Left',v,[ str ]).
-html_comp_i(23,'Captionvalue','Name',d,[ str ]).
+html_comp_i(23,'Captionvalue','País',d,[ str ]).
 html_comp_i(23,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(23,'Controltype',2,d,[ num ]).
 html_comp_i(23,'Inputtype',0,d,[ num ]).
@@ -572,7 +572,7 @@ html_comp_i(29,'Eventgx','',d,[ str ]).
 html_comp_i(29,'Captionclass','col-sm-3 ReadonlyAttributeLabel ReadonlyResponsiveImageAttributeLabel',v,[ str ]).
 html_comp_i(29,'Captionstyle','',v,[ str ]).
 html_comp_i(29,'Captionposition','None',v,[ str ]).
-html_comp_i(29,'Captionvalue','Flag',d,[ str ]).
+html_comp_i(29,'Captionvalue','Bandeira',d,[ str ]).
 html_comp_i(29,'Layoutclass','',v,[ str ]).
 html_comp_i(29,'Controltype',2,d,[ num ]).
 html_comp_i(29,'Inputtype',0,d,[ num ]).
