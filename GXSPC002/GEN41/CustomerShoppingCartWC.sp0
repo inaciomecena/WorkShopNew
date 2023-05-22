@@ -20,14 +20,14 @@ lac_i(2,[ [ 'Update','Delete' ] ]).
  
  
  
-cls_i([ 0,0 ],[ 2,76 ]).
+cls_i([ 0,0 ],[ 2,77 ]).
  
 pos_i(16,[ 1,2,0 ]).
 pos_i(33,[ 1,2,5 ]).
 pos_i(38,[ 1,2,14 ]).
 pos_i(34,[ 1,2,23 ]).
-pos_i('Update',[ 1,2,36 ]).
-pos_i('Delete',[ 1,2,57 ]).
+pos_i('Update',[ 1,2,37 ]).
+pos_i('Delete',[ 1,2,58 ]).
 pos_i(11,[ 0,0,0 ]).
  
 repeat_i(2,[ 1,2,[ 16,33,38,34,'Update','Delete' ],[ 'Update','Delete' ] ]).
@@ -163,7 +163,7 @@ attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
 attri_i(36,[ 'QtyProduct',int,4,0,'ZZZ9',0,'Qty Product','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i(11,[ 'CustomerId',int,4,0,'ZZZ9',0,'Cliente Id','',0 ]).
-attri_i(34,[ 'ShoppingCartFinalPrice',int,10,2,'$ ZZZZZZ9.99',0,'Shopping Cart Final Price','',0 ]).
+attri_i(34,[ 'ShoppingCartFinalPrice',int,10,2,'R$ ZZZZZZ9.99',0,'Shopping Cart Final Price','',0 ]).
 attri_i(38,[ 'ShoppingCartDateDelivery',date,8,0,'99/99/99',0,'Shopping Cart Date Delivery','',0 ]).
 attri_i(33,[ 'ShoppingCartDate',date,8,0,'99/99/99',0,'Shopping Cart Date','',0 ]).
 attri_i(16,[ 'ShoppingCartId',int,4,0,'ZZZ9',0,'Shopping Cart Id','',0 ]).
@@ -587,7 +587,7 @@ html_comp_i(23,'Title','',d,[ str ]).
 html_comp_i(23,'Use_datepicker',-1,d,[ bool ]).
 html_comp_i(23,'Flat_datepicker',0,d,[ bool ]).
 html_comp_i(24,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(24,'Colcount',12,d,[ num ]).
+html_comp_i(24,'Colcount',13,d,[ num ]).
 html_comp_i(24,'Colattid',34,v,[ num ]).
 html_comp_i(24,'Controlname','Shoppingcartfinalprice',d,[ str ]).
 html_comp_i(24,'Class','Attribute',v,[ str ]).

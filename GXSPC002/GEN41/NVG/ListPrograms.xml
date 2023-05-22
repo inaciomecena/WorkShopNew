@@ -9,7 +9,7 @@
 <ObjDesc>List Programs</ObjDesc>
 <ObjPgmName>ListPrograms</ObjPgmName>
 <ObjClsName>Procedure</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <OutputDevices>

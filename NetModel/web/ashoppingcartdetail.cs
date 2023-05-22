@@ -184,7 +184,7 @@ namespace GeneXus.Programs {
                getPrinter().GxAttris("Microsoft Sans Serif", 12, true, false, false, false, 0, 0, 0, 0, 0, 255, 255, 255) ;
                getPrinter().GxDrawText("Total:", 525, Gx_line+150, 573, Gx_line+171, 0+256, 0, 0, 0) ;
                getPrinter().GxAttris("Microsoft Sans Serif", 12, false, false, false, false, 0, 0, 0, 0, 0, 255, 255, 255) ;
-               getPrinter().GxDrawText(StringUtil.LTrim( context.localUtil.Format( A34ShoppingCartFinalPrice, "$ ZZZZZZ9.99")), 617, Gx_line+160, 731, Gx_line+182, 2+256, 0, 0, 0) ;
+               getPrinter().GxDrawText(StringUtil.LTrim( context.localUtil.Format( A34ShoppingCartFinalPrice, "R$ ZZZZZZ9.99")), 617, Gx_line+160, 740, Gx_line+182, 2+256, 0, 0, 0) ;
                getPrinter().GxDrawLine(2, Gx_line+184, 819, Gx_line+184, 2, 0, 0, 0, 0) ;
                Gx_OldLine = Gx_line;
                Gx_line = (int)(Gx_line+199);

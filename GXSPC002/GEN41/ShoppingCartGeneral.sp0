@@ -166,7 +166,7 @@ attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
 attri_i(36,[ 'QtyProduct',int,4,0,'ZZZ9',0,'Qty Product','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i(23,[ 'CustomerPhone',char,20,0,'(99) 9999-9999',0,'Telefone','',0 ]).
-attri_i(34,[ 'ShoppingCartFinalPrice',int,10,2,'$ ZZZZZZ9.99',0,'Shopping Cart Final Price','',0 ]).
+attri_i(34,[ 'ShoppingCartFinalPrice',int,10,2,'R$ ZZZZZZ9.99',0,'Shopping Cart Final Price','',0 ]).
 attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
 attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
 attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Endereço','',0 ]).
@@ -1022,7 +1022,7 @@ html_comp_i(55,'Semanticcontent',div,d,[ str ]).
 html_comp_i(55,'Align',left,d,[ str ]).
 html_comp_i(55,'Valign',top,d,[ str ]).
 html_comp_i(56,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(56,'Colcount',12,d,[ num ]).
+html_comp_i(56,'Colcount',13,d,[ num ]).
 html_comp_i(56,'Attid',34,v,[ num ]).
 html_comp_i(56,'Class','ReadonlyAttribute',v,[ str ]).
 html_comp_i(56,'Controlname','Shoppingcartfinalprice',d,[ str ]).
@@ -1041,7 +1041,7 @@ html_comp_i(56,'Readonly',-1,v,[ bool ]).
 html_comp_i(56,'Autocomplete',-1,d,[ bool ]).
 html_comp_i(56,'Ispassword',0,d,[ bool ]).
 html_comp_i(56,'Autoresize',-1,d,[ bool ]).
-html_comp_i(56,'Gxwidth',measure(12,chr),d,[ measure ]).
+html_comp_i(56,'Gxwidth',measure(13,chr),d,[ measure ]).
 html_comp_i(56,'Gxheight',measure(1,row),d,[ measure ]).
 html_comp_i(56,'Ismultiline',0,d,[ bool ]).
 html_comp_i(56,'Maxtextnumberlines',0,d,[ num ]).

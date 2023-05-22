@@ -122,7 +122,7 @@ struct_dt_elem_i([ 0,6,0 ],10,length,10).
 struct_dt_elem_i([ 0,6,0 ],10,decimals,2).
 struct_dt_elem_i([ 0,6,0 ],10,sign,0).
 struct_dt_elem_i([ 0,6,0 ],10,type,[ 4,10,2 ]).
-struct_dt_elem_i([ 0,6,0 ],10,pic,'$ ZZZZZZ9.99').
+struct_dt_elem_i([ 0,6,0 ],10,pic,'R$ ZZZZZZ9.99').
 struct_dt_elem_i([ 0,6,0 ],10,collection,'False').
 struct_dt_elem_i([ 0,6,0 ],10,attributeid,'34').
 struct_dt_elem_i([ 0,6,0 ],10,'ExternalName','ShoppingCartFinalPrice').

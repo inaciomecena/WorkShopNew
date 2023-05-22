@@ -21,9 +21,6 @@ namespace GeneXus.Programs {
          GxSilentTrnSdt obj;
          IGxSilentTrn trn;
          bool result;
-         obj = new SdtShoppingCart(context);
-         trn = obj.getTransaction();
-         result = trn.Reindex();
          obj = new SdtCategory(context);
          trn = obj.getTransaction();
          result = trn.Reindex();
@@ -31,6 +28,9 @@ namespace GeneXus.Programs {
          trn = obj.getTransaction();
          result = trn.Reindex();
          obj = new SdtProduct(context);
+         trn = obj.getTransaction();
+         result = trn.Reindex();
+         obj = new SdtShoppingCart(context);
          trn = obj.getTransaction();
          result = trn.Reindex();
          return 1 ;

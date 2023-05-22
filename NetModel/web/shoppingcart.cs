@@ -580,7 +580,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
-         GxWebStd.gx_single_line_edit( context, edtShoppingCartFinalPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A34ShoppingCartFinalPrice, 12, 2, ",", "")), StringUtil.LTrim( ((edtShoppingCartFinalPrice_Enabled!=0) ? context.localUtil.Format( A34ShoppingCartFinalPrice, "$ ZZZZZZ9.99") : context.localUtil.Format( A34ShoppingCartFinalPrice, "$ ZZZZZZ9.99"))), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtShoppingCartFinalPrice_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtShoppingCartFinalPrice_Enabled, 0, "text", "", 12, "chr", 1, "row", 12, 0, 0, 0, 1, -1, 0, true, "", "right", false, "", "HLP_ShoppingCart.htm");
+         GxWebStd.gx_single_line_edit( context, edtShoppingCartFinalPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A34ShoppingCartFinalPrice, 13, 2, ",", "")), StringUtil.LTrim( ((edtShoppingCartFinalPrice_Enabled!=0) ? context.localUtil.Format( A34ShoppingCartFinalPrice, "R$ ZZZZZZ9.99") : context.localUtil.Format( A34ShoppingCartFinalPrice, "R$ ZZZZZZ9.99"))), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtShoppingCartFinalPrice_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtShoppingCartFinalPrice_Enabled, 0, "text", "", 13, "chr", 1, "row", 13, 0, 0, 0, 1, -1, 0, true, "", "right", false, "", "HLP_ShoppingCart.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -3361,7 +3361,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202352114525347", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352119123387", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -3585,7 +3585,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352114525362", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352119123418", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -3601,7 +3601,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("shoppingcart.js", "?202352114525364", false, true);
+         context.AddJavascriptSource("shoppingcart.js", "?202352119123419", false, true);
          /* End function include_jscripts */
       }
 
@@ -3877,8 +3877,8 @@ namespace GeneXus.Programs {
          setEventMetadata("REFRESH",",oparms:[]}");
          setEventMetadata("AFTER TRN","{handler:'E12062',iparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'},{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV10TrnContext',fld:'vTRNCONTEXT',pic:'',hsh:true}]");
          setEventMetadata("AFTER TRN",",oparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'}]}");
-         setEventMetadata("VALID_SHOPPINGCARTID","{handler:'Valid_Shoppingcartid',iparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'},{av:'A34ShoppingCartFinalPrice',fld:'SHOPPINGCARTFINALPRICE',pic:'$ ZZZZZZ9.99'}]");
-         setEventMetadata("VALID_SHOPPINGCARTID",",oparms:[{av:'A34ShoppingCartFinalPrice',fld:'SHOPPINGCARTFINALPRICE',pic:'$ ZZZZZZ9.99'}]}");
+         setEventMetadata("VALID_SHOPPINGCARTID","{handler:'Valid_Shoppingcartid',iparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'},{av:'A34ShoppingCartFinalPrice',fld:'SHOPPINGCARTFINALPRICE',pic:'R$ ZZZZZZ9.99'}]");
+         setEventMetadata("VALID_SHOPPINGCARTID",",oparms:[{av:'A34ShoppingCartFinalPrice',fld:'SHOPPINGCARTFINALPRICE',pic:'R$ ZZZZZZ9.99'}]}");
          setEventMetadata("VALID_SHOPPINGCARTDATE","{handler:'Valid_Shoppingcartdate',iparms:[]");
          setEventMetadata("VALID_SHOPPINGCARTDATE",",oparms:[]}");
          setEventMetadata("VALID_CUSTOMERID","{handler:'Valid_Customerid',iparms:[{av:'A11CustomerId',fld:'CUSTOMERID',pic:'ZZZ9'},{av:'A8CountryId',fld:'COUNTRYID',pic:'ZZZ9'},{av:'A20CustomerName',fld:'CUSTOMERNAME',pic:''},{av:'A21CustomerAddress',fld:'CUSTOMERADDRESS',pic:''},{av:'A23CustomerPhone',fld:'CUSTOMERPHONE',pic:'(99) 9999-9999'},{av:'A9CountryName',fld:'COUNTRYNAME',pic:''}]");

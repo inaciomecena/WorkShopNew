@@ -24,15 +24,15 @@
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include = "$(WebDirectory)\GxWebServicesConfig.cs" />
-		<Compile Include = "$(WebDirectory)\gxdomainpage.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtShoppingCart_Product.cs" />
-		<Compile Include = "$(WebDirectory)\type_SdtShoppingCart.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtCategory.cs" />
 		<Compile Include = "$(WebDirectory)\SoapParm.cs" />
 		<Compile Include = "$(WebDirectory)\GxWebStd.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtProduct.cs" />
 		<Compile Include = "$(WebDirectory)\type_SdtCountry.cs" />
 		<Compile Include = "$(WebDirectory)\GxFullTextSearchReindexer.cs" />
-		<Compile Include = "$(WebDirectory)\type_SdtCategory.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainpage.cs" />
+		<Compile Include = "$(WebDirectory)\type_SdtShoppingCart.cs" />
 		<Compile Include = "$(WebDirectory)\GxModelInfoProvider.cs" />
 
 	</ItemGroup>

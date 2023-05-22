@@ -9,7 +9,7 @@
 <ObjDesc>Shopping Cart General</ObjDesc>
 <ObjPgmName>ShoppingCartGeneral</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

@@ -186,7 +186,7 @@ attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
 attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',7 ]).
 attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',6 ]).
-attri_i(34,[ 'ShoppingCartFinalPrice',int,10,2,'$ ZZZZZZ9.99',0,'Shopping Cart Final Price','',0 ]).
+attri_i(34,[ 'ShoppingCartFinalPrice',int,10,2,'R$ ZZZZZZ9.99',0,'Shopping Cart Final Price','',0 ]).
 attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
 attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Endereço','',0 ]).
 attri_i(20,[ 'CustomerName',char,20,0,'',0,'Nome','',0 ]).
@@ -341,7 +341,7 @@ lit_i(12,3,t(20,2),[ font('Microsoft Sans Serif',12,[]),rect(125,60,272,82),outs
 lit_i(13,3,t(21,2),[ font('Microsoft Sans Serif',12,[]),rect(0,110,617,132),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('21'),ctrltype(edit,13),ispwd(0),gxcolor([]) ]).
 lit_i(14,3,t(9,2),[ font('Microsoft Sans Serif',12,[]),rect(0,150,147,172),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('9'),ctrltype(edit,14),ispwd(0),gxcolor([]) ]).
 lit_i(15,3,t('Total:',3),[ font('Microsoft Sans Serif',12,[ bold ]),rect(525,150,573,171),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel6'),gxcolor([]) ]).
-lit_i(16,3,t(34,2),[ font('Microsoft Sans Serif',12,[]),rect(617,160,731,182),outstyle(none),align(right),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('34'),ctrltype(edit,16),ispwd(0),gxcolor([]) ]).
+lit_i(16,3,t(34,2),[ font('Microsoft Sans Serif',12,[]),rect(617,160,740,182),outstyle(none),align(right),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('34'),ctrltype(edit,16),ispwd(0),gxcolor([]) ]).
 lit_i(21,3,rect(21),[ rect(2,184,819,184),outstyle(none),fill,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(2),ctlname('Gxreportline1'),gxcolor([]),borderstyle(0) ]).
 lit_i(1,3,window,[ title('Text'),rect(0,0,827,199),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Cartdetail'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
 lit_i(17,5,t('Product',3),[ font('Microsoft Sans Serif',12,[ bold ]),rect(60,0,126,21),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel7'),gxcolor([]) ]).

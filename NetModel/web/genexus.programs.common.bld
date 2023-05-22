@@ -5,9 +5,9 @@ SoapParm.cs
 GxFullTextSearchReindexer.cs
 GxModelInfoProvider.cs
 @genexus.programs.sdt.bld
-type_SdtShoppingCart.cs
-type_SdtShoppingCart_Product.cs
 type_SdtCategory.cs
 type_SdtCountry.cs
 type_SdtProduct.cs
+type_SdtShoppingCart.cs
+type_SdtShoppingCart_Product.cs
 gxdomainpage.cs

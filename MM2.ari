@@ -6,9 +6,9 @@ pgm_main_i(mnproc,2,'COUNTRY_DATAPROVIDER',[ 41,'ACOUNTRY_DATAPROVIDER','Country
 pgm_main_i(proc,18,'CUSTOMERSLIST',[ 41,'ACUSTOMERSLIST','Customers List','','','','HTTP' ]).
 pgm_main_i(mnproc,1,'CATEGORY_DATAPROVIDER',[ 41,'ACATEGORY_DATAPROVIDER','Category_Data Provider','','','','INTERNAL' ]).
 pgm_main_i(web,20,'PAGINAPRINCIPAL',[ 41,'PAGINAPRINCIPAL','Pagina Principal','','','','' ]).
-pgm_main_i(proc,15,'SHOPPINGCARTDETAIL',[ 41,'ASHOPPINGCARTDETAIL','Shopping Cart Detail','','','','HTTP' ]).
 pgm_main_i(proc,16,'CATEGORIESANDPRODUCTSPROC',[ 41,'ACATEGORIESANDPRODUCTSPROC','Categories And Products Proc','','','','HTTP' ]).
 pgm_main_i(proc,17,'PRODUCTSPERCATEGORY',[ 41,'APRODUCTSPERCATEGORY','Products Per Category','','','','HTTP' ]).
+pgm_main_i(proc,15,'SHOPPINGCARTDETAIL',[ 41,'ASHOPPINGCARTDETAIL','Shopping Cart Detail','','','','HTTP' ]).
  
 pgm_prop_i(web,10,'TABBEDVIEW','WEB_COMP','Yes').
 pgm_prop_i(web,10,'TABBEDVIEW','URLAccess','No').
@@ -35,15 +35,8 @@ pgm_prop_i(web,59,'PROMOTIONGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,59,'PROMOTIONGENERAL','URLAccess','No').
 pgm_prop_i(mnproc,1,'ACATEGORY_DATAPROVIDER','OutputSDT',o(0,'Category')).
 pgm_prop_i(mnproc,1,'CATEGORY_DATAPROVIDER','OutputSDT',o(0,'Category')).
-pgm_prop_i(web,24,'SHOPPINGCARTGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,24,'SHOPPINGCARTGENERAL','URLAccess','No').
 pgm_prop_i(web,25,'SHOPPINGCARTPRODUCTWC','WEB_COMP','Yes').
 pgm_prop_i(web,25,'SHOPPINGCARTPRODUCTWC','URLAccess','No').
-pgm_prop_i(web,51,'CUSTOMERSHOPPINGCARTWC','WEB_COMP','Yes').
-pgm_prop_i(web,51,'CUSTOMERSHOPPINGCARTWC','URLAccess','No').
-pgm_prop_i(trn,6,'SHOPPINGCART',idISBUSINESSCOMPONENT,'-1').
-pgm_prop_i(proc,15,'ASHOPPINGCARTDETAIL','CALL_PROTOCOL','HTTP').
-pgm_prop_i(proc,15,'SHOPPINGCARTDETAIL','CALL_PROTOCOL','HTTP').
 pgm_prop_i(web,27,'SELLERGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,27,'SELLERGENERAL','URLAccess','No').
 pgm_prop_i(web,55,'PRODUCTPRODUCTWC','WEB_COMP','Yes').
@@ -52,8 +45,6 @@ pgm_prop_i(web,42,'COUNTRYCUSTOMERWC','WEB_COMP','Yes').
 pgm_prop_i(web,42,'COUNTRYCUSTOMERWC','URLAccess','No').
 pgm_prop_i(web,46,'CATEGORYGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,46,'CATEGORYGENERAL','URLAccess','No').
-pgm_prop_i(web,56,'PRODUCTPRODUCT1WC','WEB_COMP','Yes').
-pgm_prop_i(web,56,'PRODUCTPRODUCT1WC','URLAccess','No').
 pgm_prop_i(trn,2,'CATEGORY',idISBUSINESSCOMPONENT,'-1').
 pgm_prop_i(web,40,'COUNTRYGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,40,'COUNTRYGENERAL','URLAccess','No').
@@ -74,6 +65,15 @@ pgm_prop_i(proc,16,'ACATEGORIESANDPRODUCTSPROC','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,16,'CATEGORIESANDPRODUCTSPROC','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,17,'APRODUCTSPERCATEGORY','CALL_PROTOCOL','HTTP').
 pgm_prop_i(proc,17,'PRODUCTSPERCATEGORY','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,15,'ASHOPPINGCARTDETAIL','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,15,'SHOPPINGCARTDETAIL','CALL_PROTOCOL','HTTP').
+pgm_prop_i(trn,6,'SHOPPINGCART',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,56,'PRODUCTPRODUCT1WC','WEB_COMP','Yes').
+pgm_prop_i(web,56,'PRODUCTPRODUCT1WC','URLAccess','No').
+pgm_prop_i(web,51,'CUSTOMERSHOPPINGCARTWC','WEB_COMP','Yes').
+pgm_prop_i(web,51,'CUSTOMERSHOPPINGCARTWC','URLAccess','No').
+pgm_prop_i(web,24,'SHOPPINGCARTGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,24,'SHOPPINGCARTGENERAL','URLAccess','No').
  
 model_wrkinfo_i([ '.NET Environment','NetModel' ]).
  
@@ -146,7 +146,7 @@ lng_prop_i(1,'LangTimeFormat','24',v).
 lng_prop_i(1,'LangDecimalPoint',',',v).
 lng_prop_i(1,'FullyQualifiedName','Portuguese',d).
  
-ver_stamp('20230521.185848').
+ver_stamp('20230521.231122').
  
-ver_stamp(date(2023,5,21),time(15,12,46,49)).
+ver_stamp(date(2023,5,21),time(19,11,51,9)).
  
