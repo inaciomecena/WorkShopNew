@@ -244,7 +244,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20235211512870", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235262225348", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -461,7 +461,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtProductName_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtProductName_Internalname, "do Produto", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            GxWebStd.gx_label_element( context, edtProductName_Internalname, "Nome", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
@@ -477,7 +477,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtProductDescription_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtProductDescription_Internalname, "do Produto", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            GxWebStd.gx_label_element( context, edtProductDescription_Internalname, "Descrição", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
@@ -557,7 +557,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCategoryName_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtCategoryName_Internalname, "Noma da Categoria", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            GxWebStd.gx_label_element( context, edtCategoryName_Internalname, "Categoria", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
@@ -589,7 +589,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtSellerName_Internalname+"\"", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtSellerName_Internalname, "Vendedor Nome", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            GxWebStd.gx_label_element( context, edtSellerName_Internalname, "Vendedor", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
             /* Single line edit */
@@ -1359,7 +1359,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235211513073", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352622253531", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1374,7 +1374,7 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("productgeneral.js", "?20235211513073", false, true);
+         context.AddJavascriptSource("productgeneral.js", "?202352622253531", false, true);
          /* End function include_jscripts */
       }
 

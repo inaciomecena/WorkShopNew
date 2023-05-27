@@ -257,7 +257,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20235211514551", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235262021471", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1167,7 +1167,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235211514619", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235262021538", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1185,7 +1185,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("sellersandproducts.js", "?20235211514620", false, true);
+            context.AddJavascriptSource("sellersandproducts.js", "?20235262021539", false, true);
          }
          /* End function include_jscripts */
       }
@@ -1425,7 +1425,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          Grid2Row.AddColumnProperties("div_start", -1, isAjaxCallMode( ), new Object[] {(string)"",(short)1,(short)0,(string)"px",(short)0,(string)"px",(string)" gx-attribute",(string)"left",(string)"top",(string)"",(string)"",(string)"div"});
          /* Attribute/Variable Label */
-         Grid2Row.AddColumnProperties("html_label", -1, isAjaxCallMode( ), new Object[] {(string)edtSellerName_Internalname,(string)"Vendedor Nome",(string)"col-sm-3 ",(short)0,(bool)true,(string)""});
+         Grid2Row.AddColumnProperties("html_label", -1, isAjaxCallMode( ), new Object[] {(string)edtSellerName_Internalname,(string)"Vendedor",(string)"col-sm-3 ",(short)0,(bool)true,(string)""});
          /* Single line edit */
          ROClassString = "";
          Grid2Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtSellerName_Internalname,StringUtil.RTrim( A18SellerName),(string)"",(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtSellerName_Jsonclick,(short)0,(string)"",(string)"",(string)ROClassString,(string)"",(string)"",(short)1,(short)0,(short)0,(string)"text",(string)"",(short)20,(string)"chr",(short)1,(string)"row",(short)20,(short)0,(short)0,(short)15,(short)0,(short)-1,(short)-1,(bool)true,(string)"Name",(string)"left",(bool)true,(string)""});

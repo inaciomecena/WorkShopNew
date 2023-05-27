@@ -283,7 +283,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202352119123668", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352622354158", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1646,7 +1646,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352119123834", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352622354428", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1663,7 +1663,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("productproduct1wc.js", "?202352119123835", false, true);
+            context.AddJavascriptSource("productproduct1wc.js", "?202352622354429", false, true);
          }
          /* End function include_jscripts */
       }
@@ -2259,8 +2259,8 @@ namespace GeneXus.Programs {
           new ParDef("@AV6ProductId",GXType.Int16,4,0)
           };
           def= new CursorDef[] {
-              new CursorDef("H001K3", "SELECT T1.[ProductId], T3.[CustomerPhone], T3.[CustomerAddress], T4.[CountryName], T3.[CountryId], T3.[CustomerName], T2.[CustomerId], T1.[ShoppingCartId], COALESCE( T5.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice, T2.[ShoppingCartDate] FROM (((([ShoppingCartProduct] T1 INNER JOIN [ShoppingCart] T2 ON T2.[ShoppingCartId] = T1.[ShoppingCartId]) INNER JOIN [Customer] T3 ON T3.[CustomerId] = T2.[CustomerId]) INNER JOIN [Country] T4 ON T4.[CountryId] = T3.[CountryId]) LEFT JOIN (SELECT SUM(CASE  WHEN T8.[CategoryName] = 'Entretenimiento' THEN ( T7.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T6.[QtyProduct] AS decimal( 20, 10)) WHEN T8.[CategoryName] = 'Joyería' THEN ( T7.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T6.[QtyProduct] AS decimal( 20, 10)) ELSE T7.[ProductPrice] * CAST(T6.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T6.[ShoppingCartId] FROM (([ShoppingCartProduct] T6 INNER JOIN [Product] T7 ON T7.[ProductId] = T6.[ProductId]) INNER JOIN [Category] T8 ON T8.[CategoryId] = T7.[CategoryId]) GROUP BY T6.[ShoppingCartId] ) T5 ON T5.[ShoppingCartId] = T1.[ShoppingCartId]) WHERE T1.[ProductId] = @AV6ProductId ORDER BY T1.[ProductId]  OFFSET @GXPagingFrom2 ROWS FETCH NEXT CAST((SELECT CASE WHEN @GXPagingTo2 > 0 THEN @GXPagingTo2 ELSE 1e9 END) AS INTEGER) ROWS ONLY",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001K3,11, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("H001K5", "SELECT COUNT(*) FROM (((([ShoppingCartProduct] T1 INNER JOIN [ShoppingCart] T2 ON T2.[ShoppingCartId] = T1.[ShoppingCartId]) INNER JOIN [Customer] T3 ON T3.[CustomerId] = T2.[CustomerId]) INNER JOIN [Country] T4 ON T4.[CountryId] = T3.[CountryId]) LEFT JOIN (SELECT SUM(CASE  WHEN T8.[CategoryName] = 'Entretenimiento' THEN ( T7.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T6.[QtyProduct] AS decimal( 20, 10)) WHEN T8.[CategoryName] = 'Joyería' THEN ( T7.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T6.[QtyProduct] AS decimal( 20, 10)) ELSE T7.[ProductPrice] * CAST(T6.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T6.[ShoppingCartId] FROM (([ShoppingCartProduct] T6 INNER JOIN [Product] T7 ON T7.[ProductId] = T6.[ProductId]) INNER JOIN [Category] T8 ON T8.[CategoryId] = T7.[CategoryId]) GROUP BY T6.[ShoppingCartId] ) T5 ON T5.[ShoppingCartId] = T1.[ShoppingCartId]) WHERE T1.[ProductId] = @AV6ProductId ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001K5,1, GxCacheFrequency.OFF ,true,false )
+              new CursorDef("H001K3", "SELECT T1.[ProductId], T3.[CustomerPhone], T3.[CustomerAddress], T4.[CountryName], T3.[CountryId], T3.[CustomerName], T2.[CustomerId], T1.[ShoppingCartId], COALESCE( T5.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice, T2.[ShoppingCartDate] FROM (((([ShoppingCartProduct] T1 INNER JOIN [ShoppingCart] T2 ON T2.[ShoppingCartId] = T1.[ShoppingCartId]) INNER JOIN [Customer] T3 ON T3.[CustomerId] = T2.[CustomerId]) INNER JOIN [Country] T4 ON T4.[CountryId] = T3.[CountryId]) LEFT JOIN (SELECT SUM(CASE  WHEN T8.[CategoryName] = 'Entreterimento' THEN ( T7.[ProductPrice] - T7.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T6.[QtyProduct] AS decimal( 18, 10)) WHEN T8.[CategoryName] = 'Joalheria' THEN ( T7.[ProductPrice] + T7.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T6.[QtyProduct] AS decimal( 18, 10)) ELSE T7.[ProductPrice] * CAST(T6.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T6.[ShoppingCartId] FROM (([ShoppingCartProduct] T6 INNER JOIN [Product] T7 ON T7.[ProductId] = T6.[ProductId]) INNER JOIN [Category] T8 ON T8.[CategoryId] = T7.[CategoryId]) GROUP BY T6.[ShoppingCartId] ) T5 ON T5.[ShoppingCartId] = T1.[ShoppingCartId]) WHERE T1.[ProductId] = @AV6ProductId ORDER BY T1.[ProductId]  OFFSET @GXPagingFrom2 ROWS FETCH NEXT CAST((SELECT CASE WHEN @GXPagingTo2 > 0 THEN @GXPagingTo2 ELSE 1e9 END) AS INTEGER) ROWS ONLY",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001K3,11, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("H001K5", "SELECT COUNT(*) FROM (((([ShoppingCartProduct] T1 INNER JOIN [ShoppingCart] T2 ON T2.[ShoppingCartId] = T1.[ShoppingCartId]) INNER JOIN [Customer] T3 ON T3.[CustomerId] = T2.[CustomerId]) INNER JOIN [Country] T4 ON T4.[CountryId] = T3.[CountryId]) LEFT JOIN (SELECT SUM(CASE  WHEN T8.[CategoryName] = 'Entreterimento' THEN ( T7.[ProductPrice] - T7.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T6.[QtyProduct] AS decimal( 18, 10)) WHEN T8.[CategoryName] = 'Joalheria' THEN ( T7.[ProductPrice] + T7.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T6.[QtyProduct] AS decimal( 18, 10)) ELSE T7.[ProductPrice] * CAST(T6.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T6.[ShoppingCartId] FROM (([ShoppingCartProduct] T6 INNER JOIN [Product] T7 ON T7.[ProductId] = T6.[ProductId]) INNER JOIN [Category] T8 ON T8.[CategoryId] = T7.[CategoryId]) GROUP BY T6.[ShoppingCartId] ) T5 ON T5.[ShoppingCartId] = T1.[ShoppingCartId]) WHERE T1.[ProductId] = @AV6ProductId ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001K5,1, GxCacheFrequency.OFF ,true,false )
           };
        }
     }

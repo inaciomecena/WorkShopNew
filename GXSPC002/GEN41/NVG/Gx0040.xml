@@ -9,7 +9,7 @@
 <ObjDesc>Selection List Seller</ObjDesc>
 <ObjPgmName>Gx0040</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -77,7 +77,7 @@
 <Attribute>
 <AttriId>18</AttriId>
 <AttriName>SellerName</AttriName>
-<Description>Vendedor Nome</Description></Attribute>
+<Description>Vendedor</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>

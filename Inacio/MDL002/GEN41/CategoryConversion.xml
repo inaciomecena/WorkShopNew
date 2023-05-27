@@ -34,7 +34,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description>
+<Description>Categoria</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>C</DataType>
@@ -74,7 +74,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></IndexAttris>
+<Description>Categoria</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>No</Clustered></Index></Indices></TableIndices>
 <FKConstraints></FKConstraints>

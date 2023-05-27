@@ -34,7 +34,7 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ProductName</AttriName>
-<Description>Product Name</Description>
+<Description>Nome do Produto</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>C</DataType>
@@ -56,7 +56,7 @@
 <Attribute>
 <AttriId>26</AttriId>
 <AttriName>ProductDescription</AttriName>
-<Description>Product Description</Description>
+<Description>Descrição do Produto</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>C</DataType>
@@ -78,7 +78,7 @@
 <Attribute>
 <AttriId>27</AttriId>
 <AttriName>ProductPrice</AttriName>
-<Description>Product Price</Description>
+<Description>Preço</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>N</DataType>
@@ -97,7 +97,7 @@
 <Attribute>
 <AttriId>28</AttriId>
 <AttriName>ProductPhoto</AttriName>
-<Description>Product Photo</Description>
+<Description>Foto</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>B</DataType>
@@ -135,7 +135,7 @@
 <Attribute>
 <AttriId>14</AttriId>
 <AttriName>ProductCountryID</AttriName>
-<Description>Product Country ID</Description>
+<Description>Pais ID</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>N</DataType>
@@ -154,7 +154,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description>
+<Description>Categoria Id</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>N</DataType>
@@ -173,7 +173,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description>
+<Description>Vendedor Id</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>N</DataType>
@@ -210,7 +210,7 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ProductName</AttriName>
-<Description>Product Name</Description></Attribute></IndexAttris>
+<Description>Nome do Produto</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>No</Clustered></Index>
 <Index>
@@ -220,7 +220,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute></IndexAttris>
+<Description>Vendedor Id</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>No</Clustered></Index>
 <Index>
@@ -230,7 +230,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></IndexAttris>
+<Description>Categoria Id</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>No</Clustered></Index>
 <Index>
@@ -240,7 +240,7 @@
 <Attribute>
 <AttriId>14</AttriId>
 <AttriName>ProductCountryID</AttriName>
-<Description>Product Country ID</Description></Attribute></IndexAttris>
+<Description>Pais ID</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>No</Clustered></Index></Indices></TableIndices>
 <FKConstraints>
@@ -254,7 +254,7 @@
 <Attribute>
 <AttriId>14</AttriId>
 <AttriName>ProductCountryID</AttriName>
-<Description>Product Country ID</Description></Attribute></Attributes></FKConstraint>
+<Description>Pais ID</Description></Attribute></Attributes></FKConstraint>
 <FKConstraint>
 <ChangeType>none</ChangeType>
 <Table>
@@ -265,7 +265,7 @@
 <Attribute>
 <AttriId>10</AttriId>
 <AttriName>SellerId</AttriName>
-<Description>Seller Id</Description></Attribute></Attributes></FKConstraint>
+<Description>Vendedor Id</Description></Attribute></Attributes></FKConstraint>
 <FKConstraint>
 <ChangeType>none</ChangeType>
 <Table>
@@ -276,7 +276,7 @@
 <Attribute>
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
-<Description>Category Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Description>Categoria Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
 <Statements>
 <Statement>CREATE TABLE [Product] ([ProductId] smallint NOT NULL IDENTITY(1,1), [ProductName] nchar(20) NOT NULL , [ProductDescription] nchar(50) NOT NULL , [ProductPrice] smallmoney NOT NULL , [ProductPhoto] VARBINARY(MAX) NOT NULL , [ProductPhoto_GXI] varchar(2048) NOT NULL , [ProductCountryID] smallint NOT NULL , [CategoryId] smallint NOT NULL , [SellerId] smallint NOT NULL , PRIMARY KEY([ProductId])) </Statement>
 <Statement>CREATE UNIQUE NONCLUSTERED INDEX [UPRODUCT] ON [Product] ([ProductName] )</Statement>

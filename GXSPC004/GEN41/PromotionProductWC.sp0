@@ -146,7 +146,7 @@ v_i(r,o,4,13).
  
 attri_i(15,[ 'PromotionId',int,4,0,'ZZZ9',0,'Promotion Id','',0 ]).
 attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
@@ -429,7 +429,7 @@ html_comp_i(14,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(14,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(14,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(14,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(14,'Coltitle','Nome do Produto',d,[ str ]).
+html_comp_i(14,'Coltitle','Nome',d,[ str ]).
 html_comp_i(14,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(14,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(14,'Horizontalalignment',left,d,[ str ]).

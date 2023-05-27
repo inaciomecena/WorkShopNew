@@ -148,7 +148,7 @@ attri_i(40000,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
 attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
 attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
 attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor','',0 ]).
 attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',13 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',12 ]).
@@ -433,7 +433,7 @@ html_comp_i(16,'Eventgx','',d,[ str ]).
 html_comp_i(16,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(16,'Captionstyle','',v,[ str ]).
 html_comp_i(16,'Captionposition','Left',v,[ str ]).
-html_comp_i(16,'Captionvalue','Nome',d,[ str ]).
+html_comp_i(16,'Captionvalue','Vendedor',d,[ str ]).
 html_comp_i(16,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(16,'Controltype',2,d,[ num ]).
 html_comp_i(16,'Inputtype',0,d,[ num ]).

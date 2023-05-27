@@ -9,7 +9,7 @@
 <ObjDesc>Category</ObjDesc>
 <ObjPgmName>Category_BC</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -57,7 +57,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>Categoria</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>2</TableId>
@@ -68,7 +68,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></AttrisToUpdate></TableToUpdate>
+<Description>Categoria</Description></Attribute></AttrisToUpdate></TableToUpdate>
 <TableToUpdate>
 <Table>
 <TableId>2</TableId>

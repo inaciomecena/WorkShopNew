@@ -272,13 +272,13 @@ attri_i(15,[ 'PromotionId',int,4,0,'ZZZ9',0,'Promotion Id','',0 ]).
 attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
 attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
 attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Categoria','',0 ]).
 attri_i(39,[ 'ProductCountryName',char,20,0,'',0,'Pais Nome','',0 ]).
 attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Foto','',0 ]).
 attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
-attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Descrição do Produto','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
+attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Descrição','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome','',0 ]).
 attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
 attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Pais ID','',0 ]).
@@ -917,7 +917,7 @@ html_comp_i(39,'Returnonclick',0,v,[ bool ]).
 html_comp_i(39,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(39,'Captionstyle','',v,[ str ]).
 html_comp_i(39,'Captionposition','Left',v,[ str ]).
-html_comp_i(39,'Captionvalue','do Produto',d,[ str ]).
+html_comp_i(39,'Captionvalue','Nome',d,[ str ]).
 html_comp_i(39,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(39,'Controltype',2,d,[ num ]).
 html_comp_i(39,'Inputtype',0,d,[ num ]).
@@ -983,7 +983,7 @@ html_comp_i(44,'Returnonclick',0,v,[ bool ]).
 html_comp_i(44,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(44,'Captionstyle','',v,[ str ]).
 html_comp_i(44,'Captionposition','Left',v,[ str ]).
-html_comp_i(44,'Captionvalue','do Produto',d,[ str ]).
+html_comp_i(44,'Captionvalue','Descrição',d,[ str ]).
 html_comp_i(44,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(44,'Controltype',2,d,[ num ]).
 html_comp_i(44,'Inputtype',0,d,[ num ]).
@@ -1361,7 +1361,7 @@ html_comp_i(74,'Returnonclick',0,v,[ bool ]).
 html_comp_i(74,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(74,'Captionstyle','',v,[ str ]).
 html_comp_i(74,'Captionposition','Left',v,[ str ]).
-html_comp_i(74,'Captionvalue','Noma da Categoria',d,[ str ]).
+html_comp_i(74,'Captionvalue','Categoria',d,[ str ]).
 html_comp_i(74,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(74,'Controltype',2,d,[ num ]).
 html_comp_i(74,'Inputtype',0,d,[ num ]).
@@ -1490,7 +1490,7 @@ html_comp_i(84,'Returnonclick',0,v,[ bool ]).
 html_comp_i(84,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(84,'Captionstyle','',v,[ str ]).
 html_comp_i(84,'Captionposition','Left',v,[ str ]).
-html_comp_i(84,'Captionvalue','Vendedor Nome',d,[ str ]).
+html_comp_i(84,'Captionvalue','Vendedor',d,[ str ]).
 html_comp_i(84,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(84,'Controltype',2,d,[ num ]).
 html_comp_i(84,'Inputtype',0,d,[ num ]).
@@ -1926,7 +1926,7 @@ att_prop_i(4,12,'AttValidationFailedMsg','',d).
 att_prop_i(4,12,'DownloadOffline','0',d).
 att_prop_i(4,12,'VarServiceExtName','',d).
 att_prop_i(4,12,'FullName','ProductId',v).
-att_prop_i(4,13,'HORIZONTAL_DESCRIPTION','Nome do Produto',d).
+att_prop_i(4,13,'HORIZONTAL_DESCRIPTION','Nome',d).
 att_prop_i(4,13,'ExternalName','ProductName',d).
 att_prop_i(4,13,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(4,13,'EmptyAsNull','Yes',d).
@@ -1938,7 +1938,7 @@ att_prop_i(4,13,'AttValidationFailedMsg','',d).
 att_prop_i(4,13,'DownloadOffline','0',d).
 att_prop_i(4,13,'VarServiceExtName','',d).
 att_prop_i(4,13,'FullName','ProductName',v).
-att_prop_i(4,26,'HORIZONTAL_DESCRIPTION','Descrição do Produto',d).
+att_prop_i(4,26,'HORIZONTAL_DESCRIPTION','Descrição',d).
 att_prop_i(4,26,'ExternalName','ProductDescription',d).
 att_prop_i(4,26,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(4,26,'EmptyAsNull','Yes',d).
@@ -2016,7 +2016,7 @@ att_prop_i(4,6,'AttValidationFailedMsg','',d).
 att_prop_i(4,6,'DownloadOffline','0',d).
 att_prop_i(4,6,'VarServiceExtName','',d).
 att_prop_i(4,6,'FullName','CategoryId',v).
-att_prop_i(4,7,'HORIZONTAL_DESCRIPTION','Noma da Categoria',d).
+att_prop_i(4,7,'HORIZONTAL_DESCRIPTION','Categoria',d).
 att_prop_i(4,7,'ExternalName','CategoryName',d).
 att_prop_i(4,7,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(4,7,'EmptyAsNull','Yes',d).
@@ -2043,7 +2043,7 @@ att_prop_i(4,10,'AttValidationFailedMsg','',d).
 att_prop_i(4,10,'DownloadOffline','0',d).
 att_prop_i(4,10,'VarServiceExtName','',d).
 att_prop_i(4,10,'FullName','SellerId',v).
-att_prop_i(4,18,'HORIZONTAL_DESCRIPTION','Vendedor Nome',d).
+att_prop_i(4,18,'HORIZONTAL_DESCRIPTION','Vendedor',d).
 att_prop_i(4,18,'ExternalName','SellerName',d).
 att_prop_i(4,18,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(4,18,'EmptyAsNull','Yes',d).

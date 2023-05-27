@@ -349,7 +349,7 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtCategoryName_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtCategoryName_Internalname, "da Categoria", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtCategoryName_Internalname, "Categoria", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
@@ -790,7 +790,7 @@ namespace GeneXus.Programs {
          pr_default.execute(3, new Object[] {A7CategoryName, A6CategoryId});
          if ( (pr_default.getStatus(3) != 101) )
          {
-            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Noma da Categoria"}), 1, "CATEGORYNAME");
+            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Categoria"}), 1, "CATEGORYNAME");
             AnyError = 1;
             GX_FocusControl = edtCategoryName_Internalname;
             AssignAttri("", false, "GX_FocusControl", GX_FocusControl);
@@ -1399,7 +1399,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20235211511239", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352622252552", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1568,7 +1568,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235211511253", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352622252564", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1584,7 +1584,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("category.js", "?20235211511253", false, true);
+         context.AddJavascriptSource("category.js", "?202352622252565", false, true);
          /* End function include_jscripts */
       }
 
@@ -1678,7 +1678,7 @@ namespace GeneXus.Programs {
          pr_default.execute(12, new Object[] {A7CategoryName, A6CategoryId});
          if ( (pr_default.getStatus(12) != 101) )
          {
-            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Noma da Categoria"}), 1, "CATEGORYNAME");
+            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Categoria"}), 1, "CATEGORYNAME");
             AnyError = 1;
             GX_FocusControl = edtCategoryName_Internalname;
          }

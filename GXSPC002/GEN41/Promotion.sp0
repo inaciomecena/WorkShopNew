@@ -213,7 +213,7 @@ tbl_to_delete_i(7,[ 8,[ [ 7,15,15 ] ],d,'IPROMOTIONPRODUCT',0,[ 15,12 ],'' ]).
  
  
 attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i(32,[ 'DateFinish',date,8,0,'99/99/99',0,'Date Finish','',0 ]).
 attri_i(31,[ 'DateStart',date,8,0,'99/99/99',0,'Date Start','',0 ]).
@@ -1123,7 +1123,7 @@ html_comp_i(65,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(65,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(65,'Collinesfont',font('Courier New',9,[]),d,[ font ]).
 html_comp_i(65,'Collinescolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(65,'Coltitle','Nome do Produto',d,[ str ]).
+html_comp_i(65,'Coltitle','Nome',d,[ str ]).
 html_comp_i(65,'Coltitlefont',font('Microsoft Sans Serif',8,[ bold ]),d,[ font ]).
 html_comp_i(65,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(65,'Horizontalalignment',left,d,[ str ]).

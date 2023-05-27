@@ -78,7 +78,7 @@
 <Attribute>
 <AttriId>18</AttriId>
 <AttriName>SellerName</AttriName>
-<Description>Vendedor Nome</Description></Attribute>
+<Description>Vendedor</Description></Attribute>
 <Attribute>
 <AttriId>19</AttriId>
 <AttriName>SellerPhoto</AttriName>
@@ -101,7 +101,7 @@
 <Attribute>
 <AttriId>18</AttriId>
 <AttriName>SellerName</AttriName>
-<Description>Vendedor Nome</Description></Attribute>
+<Description>Vendedor</Description></Attribute>
 <Attribute>
 <AttriId>19</AttriId>
 <AttriName>SellerPhoto</AttriName>

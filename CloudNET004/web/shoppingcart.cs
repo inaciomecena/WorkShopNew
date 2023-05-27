@@ -576,11 +576,11 @@ namespace GeneXus.Programs {
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtShoppingCartFinalPrice_Internalname+"\"", "", "div");
          /* Attribute/Variable Label */
-         GxWebStd.gx_label_element( context, edtShoppingCartFinalPrice_Internalname, "Final Price", "col-sm-3 AttributeLabel", 1, true, "");
+         GxWebStd.gx_label_element( context, edtShoppingCartFinalPrice_Internalname, "Final", "col-sm-3 AttributeLabel", 1, true, "");
          /* Div Control */
          GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
          /* Single line edit */
-         GxWebStd.gx_single_line_edit( context, edtShoppingCartFinalPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A34ShoppingCartFinalPrice, 12, 2, ",", "")), StringUtil.LTrim( ((edtShoppingCartFinalPrice_Enabled!=0) ? context.localUtil.Format( A34ShoppingCartFinalPrice, "$ ZZZZZZ9.99") : context.localUtil.Format( A34ShoppingCartFinalPrice, "$ ZZZZZZ9.99"))), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtShoppingCartFinalPrice_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtShoppingCartFinalPrice_Enabled, 0, "text", "", 12, "chr", 1, "row", 12, 0, 0, 0, 1, -1, 0, true, "", "right", false, "", "HLP_ShoppingCart.htm");
+         GxWebStd.gx_single_line_edit( context, edtShoppingCartFinalPrice_Internalname, StringUtil.LTrim( StringUtil.NToC( A34ShoppingCartFinalPrice, 13, 2, ",", "")), StringUtil.LTrim( ((edtShoppingCartFinalPrice_Enabled!=0) ? context.localUtil.Format( A34ShoppingCartFinalPrice, "R$ ZZZZZZ9.99") : context.localUtil.Format( A34ShoppingCartFinalPrice, "R$ ZZZZZZ9.99"))), "", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtShoppingCartFinalPrice_Jsonclick, 0, "Attribute", "", "", "", "", 1, edtShoppingCartFinalPrice_Enabled, 0, "text", "", 13, "chr", 1, "row", 13, 0, 0, 0, 1, -1, 0, true, "", "right", false, "", "HLP_ShoppingCart.htm");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
          GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -2514,15 +2514,15 @@ namespace GeneXus.Programs {
 
       protected void OnLoadActions0610( )
       {
-         if ( StringUtil.StrCmp(A7CategoryName, "Entretenimiento") == 0 )
+         if ( StringUtil.StrCmp(A7CategoryName, "Entreterimento") == 0 )
          {
-            A35TotalProduct = (decimal)((A27ProductPrice*0.9m)*A36QtyProduct);
+            A35TotalProduct = (decimal)((A27ProductPrice-A27ProductPrice*0.10m)*A36QtyProduct);
          }
          else
          {
-            if ( StringUtil.StrCmp(A7CategoryName, "Joyería") == 0 )
+            if ( StringUtil.StrCmp(A7CategoryName, "Joalheria") == 0 )
             {
-               A35TotalProduct = (decimal)((A27ProductPrice*1.05m)*A36QtyProduct);
+               A35TotalProduct = (decimal)((A27ProductPrice+A27ProductPrice*0.05m)*A36QtyProduct);
             }
             else
             {
@@ -2586,17 +2586,17 @@ namespace GeneXus.Programs {
          }
          A7CategoryName = T00065_A7CategoryName[0];
          pr_default.close(3);
-         if ( StringUtil.StrCmp(A7CategoryName, "Entretenimiento") == 0 )
+         if ( StringUtil.StrCmp(A7CategoryName, "Entreterimento") == 0 )
          {
             nIsDirty_10 = 1;
-            A35TotalProduct = (decimal)((A27ProductPrice*0.9m)*A36QtyProduct);
+            A35TotalProduct = (decimal)((A27ProductPrice-A27ProductPrice*0.10m)*A36QtyProduct);
          }
          else
          {
-            if ( StringUtil.StrCmp(A7CategoryName, "Joyería") == 0 )
+            if ( StringUtil.StrCmp(A7CategoryName, "Joalheria") == 0 )
             {
                nIsDirty_10 = 1;
-               A35TotalProduct = (decimal)((A27ProductPrice*1.05m)*A36QtyProduct);
+               A35TotalProduct = (decimal)((A27ProductPrice+A27ProductPrice*0.05m)*A36QtyProduct);
             }
             else
             {
@@ -2946,15 +2946,15 @@ namespace GeneXus.Programs {
             pr_default.execute(31, new Object[] {A6CategoryId});
             A7CategoryName = T000637_A7CategoryName[0];
             pr_default.close(31);
-            if ( StringUtil.StrCmp(A7CategoryName, "Entretenimiento") == 0 )
+            if ( StringUtil.StrCmp(A7CategoryName, "Entreterimento") == 0 )
             {
-               A35TotalProduct = (decimal)((A27ProductPrice*0.9m)*A36QtyProduct);
+               A35TotalProduct = (decimal)((A27ProductPrice-A27ProductPrice*0.10m)*A36QtyProduct);
             }
             else
             {
-               if ( StringUtil.StrCmp(A7CategoryName, "Joyería") == 0 )
+               if ( StringUtil.StrCmp(A7CategoryName, "Joalheria") == 0 )
                {
-                  A35TotalProduct = (decimal)((A27ProductPrice*1.05m)*A36QtyProduct);
+                  A35TotalProduct = (decimal)((A27ProductPrice+A27ProductPrice*0.05m)*A36QtyProduct);
                }
                else
                {
@@ -3361,7 +3361,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20235211515167", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352622262867", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -3585,7 +3585,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2023521151521", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352622262893", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -3601,7 +3601,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("shoppingcart.js", "?2023521151522", false, true);
+         context.AddJavascriptSource("shoppingcart.js", "?202352622262894", false, true);
          /* End function include_jscripts */
       }
 
@@ -3877,8 +3877,8 @@ namespace GeneXus.Programs {
          setEventMetadata("REFRESH",",oparms:[]}");
          setEventMetadata("AFTER TRN","{handler:'E12062',iparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'},{av:'Gx_mode',fld:'vMODE',pic:'@!',hsh:true},{av:'AV10TrnContext',fld:'vTRNCONTEXT',pic:'',hsh:true}]");
          setEventMetadata("AFTER TRN",",oparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'}]}");
-         setEventMetadata("VALID_SHOPPINGCARTID","{handler:'Valid_Shoppingcartid',iparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'},{av:'A34ShoppingCartFinalPrice',fld:'SHOPPINGCARTFINALPRICE',pic:'$ ZZZZZZ9.99'}]");
-         setEventMetadata("VALID_SHOPPINGCARTID",",oparms:[{av:'A34ShoppingCartFinalPrice',fld:'SHOPPINGCARTFINALPRICE',pic:'$ ZZZZZZ9.99'}]}");
+         setEventMetadata("VALID_SHOPPINGCARTID","{handler:'Valid_Shoppingcartid',iparms:[{av:'A16ShoppingCartId',fld:'SHOPPINGCARTID',pic:'ZZZ9'},{av:'A34ShoppingCartFinalPrice',fld:'SHOPPINGCARTFINALPRICE',pic:'R$ ZZZZZZ9.99'}]");
+         setEventMetadata("VALID_SHOPPINGCARTID",",oparms:[{av:'A34ShoppingCartFinalPrice',fld:'SHOPPINGCARTFINALPRICE',pic:'R$ ZZZZZZ9.99'}]}");
          setEventMetadata("VALID_SHOPPINGCARTDATE","{handler:'Valid_Shoppingcartdate',iparms:[]");
          setEventMetadata("VALID_SHOPPINGCARTDATE",",oparms:[]}");
          setEventMetadata("VALID_CUSTOMERID","{handler:'Valid_Customerid',iparms:[{av:'A11CustomerId',fld:'CUSTOMERID',pic:'ZZZ9'},{av:'A8CountryId',fld:'COUNTRYID',pic:'ZZZ9'},{av:'A20CustomerName',fld:'CUSTOMERNAME',pic:''},{av:'A21CustomerAddress',fld:'CUSTOMERADDRESS',pic:''},{av:'A23CustomerPhone',fld:'CUSTOMERPHONE',pic:'(99) 9999-9999'},{av:'A9CountryName',fld:'COUNTRYNAME',pic:''}]");
@@ -4661,9 +4661,9 @@ namespace GeneXus.Programs {
              ,new CursorDef("T00067", "SELECT [ShoppingCartId], [ShoppingCartDate], [CustomerId] FROM [ShoppingCart] WHERE [ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmT00067,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T00068", "SELECT [CustomerName], [CustomerAddress], [CustomerPhone], [CountryId] FROM [Customer] WHERE [CustomerId] = @CustomerId ",true, GxErrorMask.GX_NOMASK, false, this,prmT00068,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T00069", "SELECT [CountryName] FROM [Country] WHERE [CountryId] = @CountryId ",true, GxErrorMask.GX_NOMASK, false, this,prmT00069,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T000611", "SELECT COALESCE( T1.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM (SELECT SUM(CASE  WHEN T4.[CategoryName] = 'Entretenimiento' THEN ( T3.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 20, 10)) WHEN T4.[CategoryName] = 'Joyería' THEN ( T3.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 20, 10)) ELSE T3.[ProductPrice] * CAST(T2.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T2.[ShoppingCartId] FROM (([ShoppingCartProduct] T2 WITH (UPDLOCK) INNER JOIN [Product] T3 ON T3.[ProductId] = T2.[ProductId]) INNER JOIN [Category] T4 ON T4.[CategoryId] = T3.[CategoryId]) GROUP BY T2.[ShoppingCartId] ) T1 WHERE T1.[ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000611,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T000613", "SELECT TM1.[ShoppingCartId], TM1.[ShoppingCartDate], T3.[CustomerName], T4.[CountryName], T3.[CustomerAddress], T3.[CustomerPhone], TM1.[CustomerId], T3.[CountryId], COALESCE( T2.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM ((([ShoppingCart] TM1 LEFT JOIN (SELECT SUM(CASE  WHEN T7.[CategoryName] = 'Entretenimiento' THEN ( T6.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 20, 10)) WHEN T7.[CategoryName] = 'Joyería' THEN ( T6.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 20, 10)) ELSE T6.[ProductPrice] * CAST(T5.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T5.[ShoppingCartId] FROM (([ShoppingCartProduct] T5 INNER JOIN [Product] T6 ON T6.[ProductId] = T5.[ProductId]) INNER JOIN [Category] T7 ON T7.[CategoryId] = T6.[CategoryId]) GROUP BY T5.[ShoppingCartId] ) T2 ON T2.[ShoppingCartId] = TM1.[ShoppingCartId]) INNER JOIN [Customer] T3 ON T3.[CustomerId] = TM1.[CustomerId]) INNER JOIN [Country] T4 ON T4.[CountryId] = T3.[CountryId]) WHERE TM1.[ShoppingCartId] = @ShoppingCartId ORDER BY TM1.[ShoppingCartId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000613,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T000615", "SELECT COALESCE( T1.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM (SELECT SUM(CASE  WHEN T4.[CategoryName] = 'Entretenimiento' THEN ( T3.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 20, 10)) WHEN T4.[CategoryName] = 'Joyería' THEN ( T3.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 20, 10)) ELSE T3.[ProductPrice] * CAST(T2.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T2.[ShoppingCartId] FROM (([ShoppingCartProduct] T2 WITH (UPDLOCK) INNER JOIN [Product] T3 ON T3.[ProductId] = T2.[ProductId]) INNER JOIN [Category] T4 ON T4.[CategoryId] = T3.[CategoryId]) GROUP BY T2.[ShoppingCartId] ) T1 WHERE T1.[ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000615,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T000611", "SELECT COALESCE( T1.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM (SELECT SUM(CASE  WHEN T4.[CategoryName] = 'Entreterimento' THEN ( T3.[ProductPrice] - T3.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 18, 10)) WHEN T4.[CategoryName] = 'Joalheria' THEN ( T3.[ProductPrice] + T3.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 18, 10)) ELSE T3.[ProductPrice] * CAST(T2.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T2.[ShoppingCartId] FROM (([ShoppingCartProduct] T2 WITH (UPDLOCK) INNER JOIN [Product] T3 ON T3.[ProductId] = T2.[ProductId]) INNER JOIN [Category] T4 ON T4.[CategoryId] = T3.[CategoryId]) GROUP BY T2.[ShoppingCartId] ) T1 WHERE T1.[ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000611,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T000613", "SELECT TM1.[ShoppingCartId], TM1.[ShoppingCartDate], T3.[CustomerName], T4.[CountryName], T3.[CustomerAddress], T3.[CustomerPhone], TM1.[CustomerId], T3.[CountryId], COALESCE( T2.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM ((([ShoppingCart] TM1 LEFT JOIN (SELECT SUM(CASE  WHEN T7.[CategoryName] = 'Entreterimento' THEN ( T6.[ProductPrice] - T6.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 18, 10)) WHEN T7.[CategoryName] = 'Joalheria' THEN ( T6.[ProductPrice] + T6.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 18, 10)) ELSE T6.[ProductPrice] * CAST(T5.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T5.[ShoppingCartId] FROM (([ShoppingCartProduct] T5 INNER JOIN [Product] T6 ON T6.[ProductId] = T5.[ProductId]) INNER JOIN [Category] T7 ON T7.[CategoryId] = T6.[CategoryId]) GROUP BY T5.[ShoppingCartId] ) T2 ON T2.[ShoppingCartId] = TM1.[ShoppingCartId]) INNER JOIN [Customer] T3 ON T3.[CustomerId] = TM1.[CustomerId]) INNER JOIN [Country] T4 ON T4.[CountryId] = T3.[CountryId]) WHERE TM1.[ShoppingCartId] = @ShoppingCartId ORDER BY TM1.[ShoppingCartId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000613,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T000615", "SELECT COALESCE( T1.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM (SELECT SUM(CASE  WHEN T4.[CategoryName] = 'Entreterimento' THEN ( T3.[ProductPrice] - T3.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 18, 10)) WHEN T4.[CategoryName] = 'Joalheria' THEN ( T3.[ProductPrice] + T3.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 18, 10)) ELSE T3.[ProductPrice] * CAST(T2.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T2.[ShoppingCartId] FROM (([ShoppingCartProduct] T2 WITH (UPDLOCK) INNER JOIN [Product] T3 ON T3.[ProductId] = T2.[ProductId]) INNER JOIN [Category] T4 ON T4.[CategoryId] = T3.[CategoryId]) GROUP BY T2.[ShoppingCartId] ) T1 WHERE T1.[ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000615,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000616", "SELECT [CustomerName], [CustomerAddress], [CustomerPhone], [CountryId] FROM [Customer] WHERE [CustomerId] = @CustomerId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000616,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000617", "SELECT [CountryName] FROM [Country] WHERE [CountryId] = @CountryId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000617,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000618", "SELECT [ShoppingCartId] FROM [ShoppingCart] WHERE [ShoppingCartId] = @ShoppingCartId  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmT000618,1, GxCacheFrequency.OFF ,true,false )
@@ -4672,7 +4672,7 @@ namespace GeneXus.Programs {
              ,new CursorDef("T000621", "INSERT INTO [ShoppingCart]([ShoppingCartDate], [CustomerId]) VALUES(@ShoppingCartDate, @CustomerId); SELECT SCOPE_IDENTITY()", GxErrorMask.GX_NOMASK,prmT000621)
              ,new CursorDef("T000622", "UPDATE [ShoppingCart] SET [ShoppingCartDate]=@ShoppingCartDate, [CustomerId]=@CustomerId  WHERE [ShoppingCartId] = @ShoppingCartId", GxErrorMask.GX_NOMASK,prmT000622)
              ,new CursorDef("T000623", "DELETE FROM [ShoppingCart]  WHERE [ShoppingCartId] = @ShoppingCartId", GxErrorMask.GX_NOMASK,prmT000623)
-             ,new CursorDef("T000625", "SELECT COALESCE( T1.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM (SELECT SUM(CASE  WHEN T4.[CategoryName] = 'Entretenimiento' THEN ( T3.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 20, 10)) WHEN T4.[CategoryName] = 'Joyería' THEN ( T3.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 20, 10)) ELSE T3.[ProductPrice] * CAST(T2.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T2.[ShoppingCartId] FROM (([ShoppingCartProduct] T2 WITH (UPDLOCK) INNER JOIN [Product] T3 ON T3.[ProductId] = T2.[ProductId]) INNER JOIN [Category] T4 ON T4.[CategoryId] = T3.[CategoryId]) GROUP BY T2.[ShoppingCartId] ) T1 WHERE T1.[ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000625,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("T000625", "SELECT COALESCE( T1.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM (SELECT SUM(CASE  WHEN T4.[CategoryName] = 'Entreterimento' THEN ( T3.[ProductPrice] - T3.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 18, 10)) WHEN T4.[CategoryName] = 'Joalheria' THEN ( T3.[ProductPrice] + T3.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 18, 10)) ELSE T3.[ProductPrice] * CAST(T2.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T2.[ShoppingCartId] FROM (([ShoppingCartProduct] T2 WITH (UPDLOCK) INNER JOIN [Product] T3 ON T3.[ProductId] = T2.[ProductId]) INNER JOIN [Category] T4 ON T4.[CategoryId] = T3.[CategoryId]) GROUP BY T2.[ShoppingCartId] ) T1 WHERE T1.[ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000625,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000626", "SELECT [CustomerName], [CustomerAddress], [CustomerPhone], [CountryId] FROM [Customer] WHERE [CustomerId] = @CustomerId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000626,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000627", "SELECT [CountryName] FROM [Country] WHERE [CountryId] = @CountryId ",true, GxErrorMask.GX_NOMASK, false, this,prmT000627,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000628", "SELECT [ShoppingCartId] FROM [ShoppingCart] ORDER BY [ShoppingCartId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000628,100, GxCacheFrequency.OFF ,true,false )

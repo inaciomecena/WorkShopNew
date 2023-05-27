@@ -34,7 +34,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></DescriptionAttributes>
+<Description>Categoria</Description></Attribute></DescriptionAttributes>
 <Navigation>
 <NavigationTree>
 <Table>
@@ -55,7 +55,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></Into>
+<Description>Categoria</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <NavigationConditions></NavigationConditions>
@@ -64,7 +64,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></Order>
+<Description>Categoria</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>UCATEGORY</IndexName></NavigationOrder></Navigation></DynamicLoad></Action></StandAloneRules>
 <Event>

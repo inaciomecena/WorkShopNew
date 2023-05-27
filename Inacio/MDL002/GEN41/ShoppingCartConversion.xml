@@ -53,7 +53,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description>
+<Description>Cliente Id</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>N</DataType>
@@ -90,7 +90,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute></IndexAttris>
+<Description>Cliente Id</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>No</Clustered></Index></Indices></TableIndices>
 <FKConstraints>
@@ -104,7 +104,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Description>Cliente Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
 <Statements>
 <Statement>CREATE TABLE [ShoppingCart] ([ShoppingCartId] smallint NOT NULL IDENTITY(1,1), [ShoppingCartDate] datetime NOT NULL , [CustomerId] smallint NOT NULL , PRIMARY KEY([ShoppingCartId])) </Statement>
 <Statement>CREATE NONCLUSTERED INDEX [ISHOPPINGCART1] ON [ShoppingCart] ([CustomerId] )</Statement>

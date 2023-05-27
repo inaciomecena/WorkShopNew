@@ -127,7 +127,7 @@ rule_i(0,maingen(41)).
 rule_i(0,parm([ 'Shoppingcartid' ],[])).
 rule_i(0,parmio([ [ 'Shoppingcartid',in ] ])).
  
-a_i(1,2,f,35,[],[ [],[ t('(',0),t(27,2),t(*,6),t('0.9',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Entretenimiento"',3),t(';',18),t('(',0),t(27,2),t(*,6),t('1.05',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Joyería"',3),t(';',18),t(27,2),t(*,6),t(36,2),t('OTHERWISE',19),t(';',18) ] ]).
+a_i(1,2,f,35,[],[ [],[ t('(',0),t(27,2),t(-,5),t(27,2),t(*,6),t('0.10',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Entreterimento"',3),t(';',18),t('(',0),t(27,2),t(+,5),t(27,2),t(*,6),t('0.05',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Joalheria"',3),t(';',18),t(27,2),t(*,6),t(36,2),t('OTHERWISE',19),t(';',18) ] ]).
 a_i(2,1,f,'Pgmname',[],[ [],[ t('"ShoppingCartProductWC"',3) ] ]).
 a_i(3,1,f,'Err',[],[ [],[ t('0',3) ] ]).
 a_i(4,2,t,10,[],[ [ [ [],'Shoppingcartid',16 ] ],'ISHOPPINGCARTPRODUCT',[] ]).
@@ -159,12 +159,12 @@ v_i(r,o,6,7).
  
  
 attri_i(16,[ 'ShoppingCartId',int,4,0,'ZZZ9',0,'Shopping Cart Id','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Categoria','',0 ]).
 attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i(35,[ 'TotalProduct',int,8,2,'R$ ZZZZ9.99',0,'Total Product','',0 ]).
 attri_i(36,[ 'QtyProduct',int,4,0,'ZZZ9',0,'Qty Product','',0 ]).
 attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
@@ -450,7 +450,7 @@ html_comp_i(14,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(14,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(14,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(14,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(14,'Coltitle','Nome do Produto',d,[ str ]).
+html_comp_i(14,'Coltitle','Nome',d,[ str ]).
 html_comp_i(14,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(14,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(14,'Horizontalalignment',left,d,[ str ]).
@@ -593,7 +593,7 @@ html_comp_i(19,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(19,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(19,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(19,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(19,'Coltitle','Noma da Categoria',d,[ str ]).
+html_comp_i(19,'Coltitle','Categoria',d,[ str ]).
 html_comp_i(19,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(19,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(19,'Horizontalalignment',left,d,[ str ]).

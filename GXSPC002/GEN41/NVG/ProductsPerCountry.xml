@@ -93,7 +93,7 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ProductName</AttriName>
-<Description>Nome do Produto</Description></Attribute></Order>
+<Description>Nome</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>UPRODUCT</IndexName>
 <LevelOptions></LevelOptions>

@@ -241,7 +241,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20235211521168", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352622254192", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -433,7 +433,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblLblsellernamefilter_Internalname, "Vendedor Nome", "", "", lblLblsellernamefilter_Jsonclick, "'"+""+"'"+",false,"+"'"+"e120v1_client"+"'", "", "WWAdvancedLabel WWFilterLabel", 7, "", 1, 1, 0, 1, "HLP_Gx0040.htm");
+            GxWebStd.gx_label_ctrl( context, lblLblsellernamefilter_Internalname, "Vendedor", "", "", lblLblsellernamefilter_Jsonclick, "'"+""+"'"+",false,"+"'"+"e120v1_client"+"'", "", "WWAdvancedLabel WWFilterLabel", 7, "", 1, 1, 0, 1, "HLP_Gx0040.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
@@ -443,7 +443,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", " gx-attribute", "left", "top", "", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtavCsellername_Internalname, "Vendedor Nome", "col-sm-3 AttributeLabel", 0, true, "");
+            GxWebStd.gx_label_element( context, edtavCsellername_Internalname, "Vendedor", "col-sm-3 AttributeLabel", 0, true, "");
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 26,'',false,'" + sGXsfl_44_idx + "',0)\"";
             GxWebStd.gx_single_line_edit( context, edtavCsellername_Internalname, StringUtil.RTrim( AV7cSellerName), StringUtil.RTrim( context.localUtil.Format( AV7cSellerName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,26);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCsellername_Jsonclick, 0, "Attribute", "", "", "", "", edtavCsellername_Visible, edtavCsellername_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Gx0040.htm");
@@ -548,7 +548,7 @@ namespace GeneXus.Programs {
                context.SendWebValue( "Id") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"DescriptionAttribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Nome") ;
+               context.SendWebValue( "Vendedor") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+""+"\" "+" nowrap=\"nowrap\" "+" class=\""+"ImageAttribute"+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "Foto") ;
@@ -1358,7 +1358,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235211521284", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352622254327", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1374,7 +1374,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("gx0040.js", "?20235211521285", false, true);
+         context.AddJavascriptSource("gx0040.js", "?202352622254328", false, true);
          /* End function include_jscripts */
       }
 

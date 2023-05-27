@@ -227,7 +227,7 @@ namespace GeneXus.Programs {
          pr_default.execute(7, new Object[] {A13ProductName, A12ProductId});
          if ( (pr_default.getStatus(7) != 101) )
          {
-            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Nome do Produto"}), 1, "");
+            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Nome"}), 1, "");
             AnyError = 1;
          }
          pr_default.close(7);

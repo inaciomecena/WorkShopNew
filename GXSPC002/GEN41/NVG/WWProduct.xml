@@ -9,7 +9,7 @@
 <ObjDesc>Produtoss</ObjDesc>
 <ObjPgmName>WWProduct</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -50,7 +50,7 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ProductName</AttriName>
-<Description>Nome do Produto</Description></Attribute></Order>
+<Description>Nome</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>UPRODUCT</IndexName>
 <LevelOptions></LevelOptions>
@@ -70,7 +70,7 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ProductName</AttriName>
-<Description>Nome do Produto</Description></Attribute>
+<Description>Nome</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>

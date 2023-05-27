@@ -283,7 +283,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202352119122764", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352622351489", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -546,7 +546,7 @@ namespace GeneXus.Programs {
                context.SendWebValue( "Date Delivery") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Final Price") ;
+               context.SendWebValue( "Final") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"TextActionAttribute"+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "") ;
@@ -1587,7 +1587,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352119122899", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352622351834", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1604,7 +1604,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("customershoppingcartwc.js", "?20235211912290", false, true);
+            context.AddJavascriptSource("customershoppingcartwc.js", "?202352622351835", false, true);
          }
          /* End function include_jscripts */
       }
@@ -2079,8 +2079,8 @@ namespace GeneXus.Programs {
           new ParDef("@AV6CustomerId",GXType.Int16,4,0)
           };
           def= new CursorDef[] {
-              new CursorDef("H001F3", "SELECT T1.[CustomerId], T1.[ShoppingCartId], COALESCE( T2.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice, T1.[ShoppingCartDate] FROM ([ShoppingCart] T1 LEFT JOIN (SELECT SUM(CASE  WHEN T5.[CategoryName] = 'Entretenimiento' THEN ( T4.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T3.[QtyProduct] AS decimal( 20, 10)) WHEN T5.[CategoryName] = 'Joyería' THEN ( T4.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T3.[QtyProduct] AS decimal( 20, 10)) ELSE T4.[ProductPrice] * CAST(T3.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T3.[ShoppingCartId] FROM (([ShoppingCartProduct] T3 INNER JOIN [Product] T4 ON T4.[ProductId] = T3.[ProductId]) INNER JOIN [Category] T5 ON T5.[CategoryId] = T4.[CategoryId]) GROUP BY T3.[ShoppingCartId] ) T2 ON T2.[ShoppingCartId] = T1.[ShoppingCartId]) WHERE T1.[CustomerId] = @AV6CustomerId ORDER BY T1.[CustomerId]  OFFSET @GXPagingFrom2 ROWS FETCH NEXT CAST((SELECT CASE WHEN @GXPagingTo2 > 0 THEN @GXPagingTo2 ELSE 1e9 END) AS INTEGER) ROWS ONLY",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001F3,11, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("H001F5", "SELECT COUNT(*) FROM ([ShoppingCart] T1 LEFT JOIN (SELECT SUM(CASE  WHEN T5.[CategoryName] = 'Entretenimiento' THEN ( T4.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T3.[QtyProduct] AS decimal( 20, 10)) WHEN T5.[CategoryName] = 'Joyería' THEN ( T4.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T3.[QtyProduct] AS decimal( 20, 10)) ELSE T4.[ProductPrice] * CAST(T3.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T3.[ShoppingCartId] FROM (([ShoppingCartProduct] T3 INNER JOIN [Product] T4 ON T4.[ProductId] = T3.[ProductId]) INNER JOIN [Category] T5 ON T5.[CategoryId] = T4.[CategoryId]) GROUP BY T3.[ShoppingCartId] ) T2 ON T2.[ShoppingCartId] = T1.[ShoppingCartId]) WHERE T1.[CustomerId] = @AV6CustomerId ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001F5,1, GxCacheFrequency.OFF ,true,false )
+              new CursorDef("H001F3", "SELECT T1.[CustomerId], T1.[ShoppingCartId], COALESCE( T2.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice, T1.[ShoppingCartDate] FROM ([ShoppingCart] T1 LEFT JOIN (SELECT SUM(CASE  WHEN T5.[CategoryName] = 'Entreterimento' THEN ( T4.[ProductPrice] - T4.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T3.[QtyProduct] AS decimal( 18, 10)) WHEN T5.[CategoryName] = 'Joalheria' THEN ( T4.[ProductPrice] + T4.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T3.[QtyProduct] AS decimal( 18, 10)) ELSE T4.[ProductPrice] * CAST(T3.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T3.[ShoppingCartId] FROM (([ShoppingCartProduct] T3 INNER JOIN [Product] T4 ON T4.[ProductId] = T3.[ProductId]) INNER JOIN [Category] T5 ON T5.[CategoryId] = T4.[CategoryId]) GROUP BY T3.[ShoppingCartId] ) T2 ON T2.[ShoppingCartId] = T1.[ShoppingCartId]) WHERE T1.[CustomerId] = @AV6CustomerId ORDER BY T1.[CustomerId]  OFFSET @GXPagingFrom2 ROWS FETCH NEXT CAST((SELECT CASE WHEN @GXPagingTo2 > 0 THEN @GXPagingTo2 ELSE 1e9 END) AS INTEGER) ROWS ONLY",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001F3,11, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("H001F5", "SELECT COUNT(*) FROM ([ShoppingCart] T1 LEFT JOIN (SELECT SUM(CASE  WHEN T5.[CategoryName] = 'Entreterimento' THEN ( T4.[ProductPrice] - T4.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T3.[QtyProduct] AS decimal( 18, 10)) WHEN T5.[CategoryName] = 'Joalheria' THEN ( T4.[ProductPrice] + T4.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T3.[QtyProduct] AS decimal( 18, 10)) ELSE T4.[ProductPrice] * CAST(T3.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T3.[ShoppingCartId] FROM (([ShoppingCartProduct] T3 INNER JOIN [Product] T4 ON T4.[ProductId] = T3.[ProductId]) INNER JOIN [Category] T5 ON T5.[CategoryId] = T4.[CategoryId]) GROUP BY T3.[ShoppingCartId] ) T2 ON T2.[ShoppingCartId] = T1.[ShoppingCartId]) WHERE T1.[CustomerId] = @AV6CustomerId ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001F5,1, GxCacheFrequency.OFF ,true,false )
           };
        }
     }

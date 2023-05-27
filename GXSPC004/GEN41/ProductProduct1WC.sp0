@@ -20,7 +20,7 @@ lac_i(2,[ [ 'Update','Delete' ] ]).
  
  
  
-cls_i([ 0,0 ],[ 2,1174 ]).
+cls_i([ 0,0 ],[ 2,1175 ]).
  
 pos_i(16,[ 1,2,0 ]).
 pos_i(33,[ 1,2,5 ]).
@@ -32,8 +32,8 @@ pos_i(9,[ 1,2,54 ]).
 pos_i(21,[ 1,2,75 ]).
 pos_i(23,[ 1,2,1100 ]).
 pos_i(34,[ 1,2,1121 ]).
-pos_i('Update',[ 1,2,1134 ]).
-pos_i('Delete',[ 1,2,1155 ]).
+pos_i('Update',[ 1,2,1135 ]).
+pos_i('Delete',[ 1,2,1156 ]).
 pos_i(12,[ 0,0,0 ]).
  
 repeat_i(2,[ 1,2,[ 16,33,38,11,20,8,9,21,23,34,'Update','Delete' ],[ 'Update','Delete' ] ]).
@@ -175,12 +175,12 @@ v_i(f,o,10,[ t('&Delete',23),t('Enabled',3) ]).
  
  
  
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Categoria','',0 ]).
 attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
 attri_i(36,[ 'QtyProduct',int,4,0,'ZZZ9',0,'Qty Product','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
-attri_i(34,[ 'ShoppingCartFinalPrice',int,10,2,'$ ZZZZZZ9.99',0,'Shopping Cart Final Price','',0 ]).
+attri_i(34,[ 'ShoppingCartFinalPrice',int,10,2,'R$ ZZZZZZ9.99',0,'Preço Final','',0 ]).
 attri_i(23,[ 'CustomerPhone',char,20,0,'(99) 9999-9999',0,'Telefone','',0 ]).
 attri_i(21,[ 'CustomerAddress',svchar,1024,0,'',0,'Endereço','',0 ]).
 attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
@@ -226,7 +226,7 @@ lv_i(4,2000,10).
  
  
  
-nav_view_i(2000,[ 34 ],[ 16 ],[ 16 ],[ [ 2000,[ [ 10,oe([ t(16,2) ]),16 ] ] ] ],[ [ [ 10,[ 'sum(',se(35,[ [ 6,27 ],[ 10,36 ],[ 2,7 ] ],[ t('(',0),t(27,2),t(*,6),t('0.9',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Entretenimiento"',3),t(';',18),t('(',0),t(27,2),t(*,6),t('1.05',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Joyería"',3),t(';',18),t(27,2),t(*,6),t(36,2),t('OTHERWISE',19) ]) ] ],[ 10,16 ] ],n,[ [ 10,many ],[ 6,one ],[ 2,one ] ],[ [ 6,[ [ 10,12,12 ] ] ],[ 2,[ [ 6,6,6 ] ] ] ],[],[ none ],[],[ 16 ],[] ]).
+nav_view_i(2000,[ 34 ],[ 16 ],[ 16 ],[ [ 2000,[ [ 10,oe([ t(16,2) ]),16 ] ] ] ],[ [ [ 10,[ 'sum(',se(35,[ [ 6,27 ],[ 10,36 ],[ 2,7 ] ],[ t('(',0),t(27,2),t(-,5),t(27,2),t(*,6),t('0.10',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Entreterimento"',3),t(';',18),t('(',0),t(27,2),t(+,5),t(27,2),t(*,6),t('0.05',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Joalheria"',3),t(';',18),t(27,2),t(*,6),t(36,2),t('OTHERWISE',19) ]) ] ],[ 10,16 ] ],n,[ [ 10,many ],[ 6,one ],[ 2,one ] ],[ [ 6,[ [ 10,12,12 ] ] ],[ 2,[ [ 6,6,6 ] ] ] ],[],[ none ],[],[ 16 ],[] ]).
  
  
 agg_def_i(34,[ t('0',3) ]).
@@ -800,7 +800,7 @@ html_comp_i(29,'Colvisible',-1,v,[ bool ]).
 html_comp_i(29,'Title','',d,[ str ]).
 html_comp_i(29,'Invitemsg','',d,[ str ]).
 html_comp_i(30,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(30,'Colcount',12,d,[ num ]).
+html_comp_i(30,'Colcount',13,d,[ num ]).
 html_comp_i(30,'Colattid',34,v,[ num ]).
 html_comp_i(30,'Controlname','Shoppingcartfinalprice',d,[ str ]).
 html_comp_i(30,'Class','Attribute',v,[ str ]).
@@ -1217,7 +1217,7 @@ var_prop_i(4,'Productid',idBasedOn,'',v).
  
  
  
-a_alias_i([ 'sum(',se(35,[ [ 6,27 ],[ 10,36 ],[ 2,7 ] ],[ t('(',0),t(27,2),t(*,6),t('0.9',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Entretenimiento"',3),t(';',18),t('(',0),t(27,2),t(*,6),t('1.05',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Joyería"',3),t(';',18),t(27,2),t(*,6),t(36,2),t('OTHERWISE',19) ]) ],'ShoppingCartFinalPrice').
+a_alias_i([ 'sum(',se(35,[ [ 6,27 ],[ 10,36 ],[ 2,7 ] ],[ t('(',0),t(27,2),t(-,5),t(27,2),t(*,6),t('0.10',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Entreterimento"',3),t(';',18),t('(',0),t(27,2),t(+,5),t(27,2),t(*,6),t('0.05',3),t(')',4),t(*,6),t(36,2),t('IF',17),t(7,2),t(=,10),t('"Joalheria"',3),t(';',18),t(27,2),t(*,6),t(36,2),t('OTHERWISE',19) ]) ],'ShoppingCartFinalPrice').
 a_alias_i(se(34,[ [ 2000,34 ] ],[ t('coalesce(',1),t(34,2),t(',',7),t('0',3),t(')',4) ]),'ShoppingCartFinalPrice').
  
  

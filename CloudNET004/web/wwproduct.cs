@@ -237,7 +237,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20235211524479", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352622255759", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -413,7 +413,7 @@ namespace GeneXus.Programs {
             GxWebStd.gx_label_element( context, edtavProductname_Internalname, "Product Name", "col-sm-3 FilterSearchAttributeLabel", 0, true, "");
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 16,'',false,'" + sGXsfl_25_idx + "',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavProductname_Internalname, StringUtil.RTrim( AV11ProductName), StringUtil.RTrim( context.localUtil.Format( AV11ProductName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,16);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "do Produto", edtavProductname_Jsonclick, 0, "FilterSearchAttribute", "", "", "", "", 1, edtavProductname_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_WWProduct.htm");
+            GxWebStd.gx_single_line_edit( context, edtavProductname_Internalname, StringUtil.RTrim( AV11ProductName), StringUtil.RTrim( context.localUtil.Format( AV11ProductName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,16);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "Nome", edtavProductname_Jsonclick, 0, "FilterSearchAttribute", "", "", "", "", 1, edtavProductname_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_WWProduct.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -480,10 +480,10 @@ namespace GeneXus.Programs {
                context.SendWebValue( "Id") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"DescriptionAttribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "do Produto") ;
+               context.SendWebValue( "Nome") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "do Produto") ;
+               context.SendWebValue( "Descrição") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "Preço") ;
@@ -501,13 +501,13 @@ namespace GeneXus.Programs {
                context.SendWebValue( "Categoria Id") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Noma da Categoria") ;
+               context.SendWebValue( "Categoria") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "Vendedor Id") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Vendedor Nome") ;
+               context.SendWebValue( "Vendedor") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+""+"\" "+" nowrap=\"nowrap\" "+" class=\""+"ImageAttribute"+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "Foto") ;
@@ -1437,7 +1437,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235211524622", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352622255913", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1455,7 +1455,7 @@ namespace GeneXus.Programs {
          if ( nGXWrapped != 1 )
          {
             context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-            context.AddJavascriptSource("wwproduct.js", "?20235211524622", false, true);
+            context.AddJavascriptSource("wwproduct.js", "?202352622255913", false, true);
          }
          /* End function include_jscripts */
       }

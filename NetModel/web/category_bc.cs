@@ -173,7 +173,7 @@ namespace GeneXus.Programs {
          pr_default.execute(3, new Object[] {A7CategoryName, A6CategoryId});
          if ( (pr_default.getStatus(3) != 101) )
          {
-            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Noma da Categoria"}), 1, "");
+            GX_msglist.addItem(context.GetMessage( "GXM_1004", new   object[]  {"Categoria"}), 1, "");
             AnyError = 1;
          }
          pr_default.close(3);

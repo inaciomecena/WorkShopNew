@@ -27,6 +27,8 @@ CREATE UNIQUE NONCLUSTERED INDEX [UCOUNTRY] ON [Country] ([CountryName] )
 CREATE TABLE [Category] ([CategoryId] smallint NOT NULL IDENTITY(1,1), [CategoryName] nchar(20) NOT NULL , PRIMARY KEY([CategoryId]))
 CREATE UNIQUE NONCLUSTERED INDEX [UCATEGORY] ON [Category] ([CategoryName] )
 
+CREATE TABLE [Menu] ([MenuXid] smallint NOT NULL IDENTITY(1,1), [MenuXDesc] nvarchar(40) NULL , [MenuXPosi] smallint NULL , [MenXUrl] nvarchar(1000) NULL , [MenXEst] nchar(1) NULL , PRIMARY KEY([MenuXid]))
+
 ALTER TABLE [Seller] ADD CONSTRAINT [ISELLER1] FOREIGN KEY ([CountryId]) REFERENCES [Country] ([CountryId])
 
 ALTER TABLE [Customer] ADD CONSTRAINT [ICUSTOMER1] FOREIGN KEY ([CountryId]) REFERENCES [Country] ([CountryId])

@@ -61,15 +61,6 @@
 <AttriId>6</AttriId>
 <AttriName>CategoryId</AttriName>
 <Description>Categoria Id</Description></Attribute></KeyAttributes>
-<Into>
-<Attribute>
-<AttriId>7</AttriId>
-<AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute>
-<Attribute>
-<AttriId>6</AttriId>
-<AttriName>CategoryId</AttriName>
-<Description>Categoria Id</Description></Attribute></Into>
 <Tables></Tables></Table></NavigationTree>
 <TablesToUpdate></TablesToUpdate>
 <Formulas>

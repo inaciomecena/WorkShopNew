@@ -132,7 +132,7 @@ v_i(d,o,2,'Categoryid').
  
  
  
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Categoria','',0 ]).
 attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',8 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',7 ]).

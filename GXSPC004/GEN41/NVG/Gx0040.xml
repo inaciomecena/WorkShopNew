@@ -77,7 +77,7 @@
 <Attribute>
 <AttriId>18</AttriId>
 <AttriName>SellerName</AttriName>
-<Description>Vendedor Nome</Description></Attribute>
+<Description>Vendedor</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>

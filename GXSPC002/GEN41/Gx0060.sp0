@@ -26,8 +26,8 @@ lac_i(2,[ [ 'Cproductid','Cproductname','Cproductdescription','Cproductprice','C
  
  
 lits_i('Product Id',5,10).
-lits_i('Nome do Produto',5,10).
-lits_i('Descrição do Produto',5,10).
+lits_i('Nome',5,10).
+lits_i('Descrição',5,10).
 lits_i('Preço',5,10).
 lits_i('Pais ID',5,10).
 lits_i('Categoria Id',5,10).
@@ -179,8 +179,8 @@ attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Pais ID','',0 ]).
 attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Foto','',0 ]).
 attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
-attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Descrição do Produto','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
+attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Descrição','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i('Linkselection_GXI',[ 'Linkselection_GXI',svchar,2048,0,'',0,'',[],17 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',16 ]).
@@ -191,8 +191,8 @@ attri_i('Csellerid',[ cSellerId,int,4,0,'ZZZ9',0,'Vendedor Id','',12 ]).
 attri_i('Ccategoryid',[ cCategoryId,int,4,0,'ZZZ9',0,'Categoria Id','',11 ]).
 attri_i('Cproductcountryid',[ cProductCountryID,int,4,0,'ZZZ9',0,'Pais ID','',10 ]).
 attri_i('Cproductprice',[ cProductPrice,int,8,2,'R$ ZZZZ9.99',0,'Preço','',9 ]).
-attri_i('Cproductdescription',[ cProductDescription,char,50,0,'',0,'Descrição do Produto','',8 ]).
-attri_i('Cproductname',[ cProductName,char,20,0,'',0,'Nome do Produto','',7 ]).
+attri_i('Cproductdescription',[ cProductDescription,char,50,0,'',0,'Descrição','',8 ]).
+attri_i('Cproductname',[ cProductName,char,20,0,'',0,'Nome','',7 ]).
 attri_i('Cproductid',[ cProductId,int,4,0,'ZZZ9',0,'Product Id','',6 ]).
 attri_i('Linkselection',[ 'LinkSelection',bits,1024,0,'',0,'Link Selection','',5 ]).
  
@@ -369,7 +369,7 @@ html_sub_i(17,18,html_i(0,div(18))).
 html_sub_i(18,19,html_i(0,div(19))).
 html_sub_i(19,20,html_i(0,div(20))).
 html_sub_i(20,21,html_i(0,div(21))).
-html_sub_i(21,22,html_i(0,t('Nome do Produto',3))).
+html_sub_i(21,22,html_i(0,t('Nome',3))).
 html_sub_i(19,23,html_i(1,div(23))).
 html_sub_i(23,24,html_i(0,div(24))).
 html_sub_i(24,25,html_i(0,div(25))).
@@ -379,7 +379,7 @@ html_sub_i(27,28,html_i(0,div(28))).
 html_sub_i(28,29,html_i(0,div(29))).
 html_sub_i(29,30,html_i(0,div(30))).
 html_sub_i(30,31,html_i(0,div(31))).
-html_sub_i(31,32,html_i(0,t('Descrição do Produto',3))).
+html_sub_i(31,32,html_i(0,t('Descrição',3))).
 html_sub_i(29,33,html_i(1,div(33))).
 html_sub_i(33,34,html_i(0,div(34))).
 html_sub_i(34,35,html_i(0,div(35))).
@@ -644,7 +644,7 @@ html_comp_i(21,'Semanticcontent',div,d,[ str ]).
 html_comp_i(21,'Align',left,d,[ str ]).
 html_comp_i(21,'Valign',top,d,[ str ]).
 html_comp_i(22,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(22,'Caption','Nome do Produto',d,[ str ]).
+html_comp_i(22,'Caption','Nome',d,[ str ]).
 html_comp_i(22,'Id','Lblproductnamefilter',v,[ str ]).
 html_comp_i(22,'Class','WWAdvancedLabel WWFilterLabel',v,[ str ]).
 html_comp_i(22,'Event','',d,[ str ]).
@@ -688,7 +688,7 @@ html_comp_i(26,'Returnonclick',0,v,[ bool ]).
 html_comp_i(26,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(26,'Captionstyle','',v,[ str ]).
 html_comp_i(26,'Captionposition','None',v,[ str ]).
-html_comp_i(26,'Captionvalue','Nome do Produto',d,[ str ]).
+html_comp_i(26,'Captionvalue','Nome',d,[ str ]).
 html_comp_i(26,'Layoutclass','',v,[ str ]).
 html_comp_i(26,'Controltype',2,d,[ num ]).
 html_comp_i(26,'Inputtype',0,d,[ num ]).
@@ -754,7 +754,7 @@ html_comp_i(31,'Semanticcontent',div,d,[ str ]).
 html_comp_i(31,'Align',left,d,[ str ]).
 html_comp_i(31,'Valign',top,d,[ str ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(32,'Caption','Descrição do Produto',d,[ str ]).
+html_comp_i(32,'Caption','Descrição',d,[ str ]).
 html_comp_i(32,'Id','Lblproductdescriptionfilter',v,[ str ]).
 html_comp_i(32,'Class','WWAdvancedLabel WWFilterLabel',v,[ str ]).
 html_comp_i(32,'Event','',d,[ str ]).
@@ -798,7 +798,7 @@ html_comp_i(36,'Returnonclick',0,v,[ bool ]).
 html_comp_i(36,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(36,'Captionstyle','',v,[ str ]).
 html_comp_i(36,'Captionposition','None',v,[ str ]).
-html_comp_i(36,'Captionvalue','Descrição do Produto',d,[ str ]).
+html_comp_i(36,'Captionvalue','Descrição',d,[ str ]).
 html_comp_i(36,'Layoutclass','',v,[ str ]).
 html_comp_i(36,'Controltype',2,d,[ num ]).
 html_comp_i(36,'Inputtype',0,d,[ num ]).
@@ -1418,7 +1418,7 @@ html_comp_i(87,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(87,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(87,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(87,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(87,'Coltitle','do Produto',d,[ str ]).
+html_comp_i(87,'Coltitle','Nome',d,[ str ]).
 html_comp_i(87,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(87,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(87,'Horizontalalignment',left,d,[ str ]).
@@ -1449,7 +1449,7 @@ html_comp_i(88,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(88,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(88,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(88,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(88,'Coltitle','do Produto',d,[ str ]).
+html_comp_i(88,'Coltitle','Descrição',d,[ str ]).
 html_comp_i(88,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(88,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(88,'Horizontalalignment',left,d,[ str ]).
@@ -1641,7 +1641,7 @@ lit_i(13,1,div(13),[ ctlname('') ]).
 lit_i(9,1,div(9),[ ctlname('Productidfiltercontainer') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
-lit_i(22,1,t('Nome do Produto',3),[ ctlname('Lblproductnamefilter') ]).
+lit_i(22,1,t('Nome',3),[ ctlname('Lblproductnamefilter') ]).
 lit_i(21,1,div(21),[ ctlname('') ]).
 lit_i(20,1,div(20),[ ctlname('') ]).
 lit_i(26,1,t('Cproductname',23),[ ctlname('&Cproductname'),ctrltype(edit,26),pos(26),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
@@ -1651,7 +1651,7 @@ lit_i(23,1,div(23),[ ctlname('') ]).
 lit_i(19,1,div(19),[ ctlname('Productnamefiltercontainer') ]).
 lit_i(18,1,div(18),[ ctlname('') ]).
 lit_i(17,1,div(17),[ ctlname('') ]).
-lit_i(32,1,t('Descrição do Produto',3),[ ctlname('Lblproductdescriptionfilter') ]).
+lit_i(32,1,t('Descrição',3),[ ctlname('Lblproductdescriptionfilter') ]).
 lit_i(31,1,div(31),[ ctlname('') ]).
 lit_i(30,1,div(30),[ ctlname('') ]).
 lit_i(36,1,t('Cproductdescription',23),[ ctlname('&Cproductdescription'),ctrltype(edit,36),pos(36),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).

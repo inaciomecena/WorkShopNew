@@ -138,7 +138,7 @@ v_i(f,o,3,[ t('&List',23),t('Enabled',3) ]).
  
  
  
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Categoria','',0 ]).
 attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',7 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',6 ]).
@@ -370,7 +370,7 @@ html_comp_i(11,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(11,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(11,'Collinesfont',font('Courier New',9,[]),d,[ font ]).
 html_comp_i(11,'Collinescolor',rgb(0,0,0),d,[ color ]).
-html_comp_i(11,'Coltitle','Noma da Categoria',d,[ str ]).
+html_comp_i(11,'Coltitle','Categoria',d,[ str ]).
 html_comp_i(11,'Coltitlefont',font('Microsoft Sans Serif',8,[ bold ]),d,[ font ]).
 html_comp_i(11,'Coltitlecolor',rgb(0,0,0),d,[ color ]).
 html_comp_i(11,'Horizontalalignment',left,d,[ str ]).

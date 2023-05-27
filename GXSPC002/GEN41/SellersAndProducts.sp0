@@ -167,14 +167,14 @@ v_i(f,o,6,[ t('&Qty',23),t('Enabled',3) ]).
  
  
 attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome','',0 ]).
 attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Foto','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Categoria','',0 ]).
 attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
 attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
 attri_i(40003,[ 'ProductPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
 attri_i(40001,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor','',0 ]).
 attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
 attri_i(40000,[ 'GXC1',int,9,0,'',0,'',[],0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
@@ -558,7 +558,7 @@ html_comp_i(26,'Eventgx','',d,[ str ]).
 html_comp_i(26,'Captionclass','col-sm-3 ',v,[ str ]).
 html_comp_i(26,'Captionstyle','',v,[ str ]).
 html_comp_i(26,'Captionposition','None',v,[ str ]).
-html_comp_i(26,'Captionvalue','Vendedor Nome',d,[ str ]).
+html_comp_i(26,'Captionvalue','Vendedor',d,[ str ]).
 html_comp_i(26,'Layoutclass','',v,[ str ]).
 html_comp_i(26,'Controltype',2,d,[ num ]).
 html_comp_i(26,'Inputtype',0,d,[ num ]).

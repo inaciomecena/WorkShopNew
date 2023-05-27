@@ -45,9 +45,115 @@ namespace GeneXus.Programs {
 
       void executePrivate( )
       {
+         SetCreateDataBase( ) ;
+         CreateDataBase( ) ;
          if ( PreviousCheck() )
          {
             ExecuteReorganization( ) ;
+         }
+      }
+
+      private void CreateDataBase( )
+      {
+         DS = (GxDataStore)(context.GetDataStore( "Default"));
+         ErrCode = DS.Connection.FullConnect();
+         DataBaseName = DS.Connection.Database;
+         if ( ErrCode != 0 )
+         {
+            DS.Connection.Database = "";
+            ErrCode = DS.Connection.FullConnect();
+            if ( ErrCode == 0 )
+            {
+               try
+               {
+                  GeneXus.Reorg.GXReorganization.AddMsg( GXResourceManager.GetMessage("GXM_dbcrea")+ " " +DataBaseName , null);
+                  cmdBuffer = "CREATE DATABASE " + "[" + DataBaseName + "]";
+                  RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                  RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+                  RGZ.ExecuteStmt() ;
+                  RGZ.Drop();
+                  Count = 1;
+               }
+               catch ( Exception ex )
+               {
+                  ErrCode = 1;
+                  GeneXus.Reorg.GXReorganization.AddMsg( ex.Message , null);
+                  throw;
+               }
+               ErrCode = DS.Connection.Disconnect();
+               DS.Connection.Database = DataBaseName;
+               ErrCode = DS.Connection.FullConnect();
+               while ( ( ErrCode != 0 ) && ( Count > 0 ) && ( Count < 30 ) )
+               {
+                  Res = GXUtil.Sleep( 1);
+                  ErrCode = DS.Connection.FullConnect();
+                  Count = (short)(Count+1);
+               }
+               setupDB = 1;
+               if ( ( setupDB == 1 ) || GeneXus.Configuration.Preferences.MustSetupDB( ) )
+               {
+                  defaultUsers = GXUtil.DefaultWebUser( context);
+                  short gxidx;
+                  gxidx = 1;
+                  while ( gxidx <= defaultUsers.Count )
+                  {
+                     defaultUser = ((string)defaultUsers.Item(gxidx));
+                     try
+                     {
+                        GeneXus.Reorg.GXReorganization.AddMsg( GXResourceManager.GetMessage("GXM_dbadduser", new   object[]  {defaultUser, DataBaseName}) , null);
+                        cmdBuffer = "CREATE LOGIN " + "[" + defaultUser + "]" + " FROM WINDOWS";
+                        RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                        RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+                        RGZ.ExecuteStmt() ;
+                        RGZ.Drop();
+                     }
+                     catch
+                     {
+                     }
+                     try
+                     {
+                        cmdBuffer = "CREATE USER " + "[" + defaultUser + "]" + " FOR LOGIN " + "[" + defaultUser + "]";
+                        RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                        RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+                        RGZ.ExecuteStmt() ;
+                        RGZ.Drop();
+                     }
+                     catch
+                     {
+                     }
+                     try
+                     {
+                        cmdBuffer = "EXEC sp_addrolemember N'db_datareader', N'" + defaultUser + "'";
+                        RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                        RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+                        RGZ.ExecuteStmt() ;
+                        RGZ.Drop();
+                     }
+                     catch
+                     {
+                     }
+                     try
+                     {
+                        cmdBuffer = "EXEC sp_addrolemember N'db_datawriter', N'" + defaultUser + "'";
+                        RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                        RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+                        RGZ.ExecuteStmt() ;
+                        RGZ.Drop();
+                     }
+                     catch
+                     {
+                     }
+                     gxidx = (short)(gxidx+1);
+                  }
+               }
+            }
+            if ( ErrCode != 0 )
+            {
+               ErrMsg = DS.ErrDescription;
+               GeneXus.Reorg.GXReorganization.AddMsg( ErrMsg , null);
+               ErrCode = 1;
+               throw new Exception( ErrMsg) ;
+            }
          }
       }
 
@@ -887,6 +993,69 @@ namespace GeneXus.Programs {
          }
       }
 
+      public void CreateMenu( )
+      {
+         string cmdBuffer = "";
+         /* Indices for table Menu */
+         try
+         {
+            cmdBuffer=" CREATE TABLE [Menu] ([MenuXid] smallint NOT NULL IDENTITY(1,1), [MenuXDesc] nvarchar(40) NULL , [MenuXPosi] smallint NULL , [MenXUrl] nvarchar(1000) NULL , [MenXEst] nchar(1) NULL , PRIMARY KEY([MenuXid]))  "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+         catch
+         {
+            try
+            {
+               DropTableConstraints( "[Menu]") ;
+               cmdBuffer=" DROP TABLE [Menu] "
+               ;
+               RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+               RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+               RGZ.ExecuteStmt() ;
+               RGZ.Drop();
+            }
+            catch
+            {
+               try
+               {
+                  DropTableConstraints( "[Menu]") ;
+                  cmdBuffer=" DROP VIEW [Menu] "
+                  ;
+                  RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                  RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+                  RGZ.ExecuteStmt() ;
+                  RGZ.Drop();
+               }
+               catch
+               {
+                  try
+                  {
+                     DropTableConstraints( "[Menu]") ;
+                     cmdBuffer=" DROP FUNCTION [Menu] "
+                     ;
+                     RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                     RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
+                     RGZ.ExecuteStmt() ;
+                     RGZ.Drop();
+                  }
+                  catch
+                  {
+                  }
+               }
+            }
+            cmdBuffer=" CREATE TABLE [Menu] ([MenuXid] smallint NOT NULL IDENTITY(1,1), [MenuXDesc] nvarchar(40) NULL , [MenuXPosi] smallint NULL , [MenXUrl] nvarchar(1000) NULL , [MenXEst] nchar(1) NULL , PRIMARY KEY([MenuXid]))  "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+      }
+
       public void RISellerCountry( )
       {
          string cmdBuffer;
@@ -1279,72 +1448,7 @@ namespace GeneXus.Programs {
             }
             pr_default.close(1);
          }
-         if ( tableexist("ShoppingCartProduct",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"ShoppingCartProduct"}) ) ;
-            return false ;
-         }
-         if ( tableexist("ShoppingCart",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"ShoppingCart"}) ) ;
-            return false ;
-         }
-         if ( tableexist("PromotionProduct",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"PromotionProduct"}) ) ;
-            return false ;
-         }
-         if ( tableexist("Promotion",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Promotion"}) ) ;
-            return false ;
-         }
-         if ( tableexist("Product",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Product"}) ) ;
-            return false ;
-         }
-         if ( tableexist("Customer",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Customer"}) ) ;
-            return false ;
-         }
-         if ( tableexist("Seller",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Seller"}) ) ;
-            return false ;
-         }
-         if ( tableexist("Country",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Country"}) ) ;
-            return false ;
-         }
-         if ( tableexist("Category",sSchemaVar) )
-         {
-            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"Category"}) ) ;
-            return false ;
-         }
          return true ;
-      }
-
-      private bool tableexist( string sTableName ,
-                               string sMySchemaName )
-      {
-         bool result;
-         result = false;
-         /* Using cursor P00034 */
-         pr_default.execute(2, new Object[] {sTableName, sMySchemaName});
-         while ( (pr_default.getStatus(2) != 101) )
-         {
-            tablename = P00034_Atablename[0];
-            ntablename = P00034_ntablename[0];
-            schemaname = P00034_Aschemaname[0];
-            nschemaname = P00034_nschemaname[0];
-            result = true;
-            pr_default.readNext(2);
-         }
-         pr_default.close(2);
-         return result ;
       }
 
       private void ExecuteOnlyTablesReorganization( )
@@ -1358,20 +1462,21 @@ namespace GeneXus.Programs {
          ReorgExecute.RegisterBlockForSubmit( 7 ,  "CreateSeller" , new Object[]{ });
          ReorgExecute.RegisterBlockForSubmit( 8 ,  "CreateCountry" , new Object[]{ });
          ReorgExecute.RegisterBlockForSubmit( 9 ,  "CreateCategory" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 10 ,  "CreateMenu" , new Object[]{ });
       }
 
       private void ExecuteOnlyRisReorganization( )
       {
-         ReorgExecute.RegisterBlockForSubmit( 10 ,  "RISellerCountry" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 11 ,  "RICustomerCountry" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 12 ,  "RIProductCategory" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 13 ,  "RIProductSeller" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 14 ,  "RIProductCountry" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 15 ,  "RIPromotionProductPromotion" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 16 ,  "RIPromotionProductProduct" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 17 ,  "RIShoppingCartCustomer" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 18 ,  "RIShoppingCartProductShoppingCart" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 19 ,  "RIShoppingCartProductProduct" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 11 ,  "RISellerCountry" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 12 ,  "RICustomerCountry" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 13 ,  "RIProductCategory" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 14 ,  "RIProductSeller" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 15 ,  "RIProductCountry" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 16 ,  "RIPromotionProductPromotion" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 17 ,  "RIPromotionProductProduct" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 18 ,  "RIShoppingCartCustomer" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 19 ,  "RIShoppingCartProductShoppingCart" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 20 ,  "RIShoppingCartProductProduct" , new Object[]{ });
       }
 
       private void ExecuteTablesReorganization( )
@@ -1408,38 +1513,39 @@ namespace GeneXus.Programs {
          ReorgExecute.RegisterPrecedence( "CreateSeller" ,  "CreateCountry" );
          GXReorganization.SetMsg( 8 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Country", ""}) );
          GXReorganization.SetMsg( 9 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Category", ""}) );
+         GXReorganization.SetMsg( 10 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"Menu", ""}) );
       }
 
       private void SetPrecedenceris( )
       {
-         GXReorganization.SetMsg( 10 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ISELLER1]"}) );
+         GXReorganization.SetMsg( 11 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ISELLER1]"}) );
          ReorgExecute.RegisterPrecedence( "RISellerCountry" ,  "CreateSeller" );
          ReorgExecute.RegisterPrecedence( "RISellerCountry" ,  "CreateCountry" );
-         GXReorganization.SetMsg( 11 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ICUSTOMER1]"}) );
+         GXReorganization.SetMsg( 12 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ICUSTOMER1]"}) );
          ReorgExecute.RegisterPrecedence( "RICustomerCountry" ,  "CreateCustomer" );
          ReorgExecute.RegisterPrecedence( "RICustomerCountry" ,  "CreateCountry" );
-         GXReorganization.SetMsg( 12 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPRODUCT3]"}) );
+         GXReorganization.SetMsg( 13 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPRODUCT3]"}) );
          ReorgExecute.RegisterPrecedence( "RIProductCategory" ,  "CreateProduct" );
          ReorgExecute.RegisterPrecedence( "RIProductCategory" ,  "CreateCategory" );
-         GXReorganization.SetMsg( 13 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPRODUCT2]"}) );
+         GXReorganization.SetMsg( 14 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPRODUCT2]"}) );
          ReorgExecute.RegisterPrecedence( "RIProductSeller" ,  "CreateProduct" );
          ReorgExecute.RegisterPrecedence( "RIProductSeller" ,  "CreateSeller" );
-         GXReorganization.SetMsg( 14 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPRODUCT1]"}) );
+         GXReorganization.SetMsg( 15 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPRODUCT1]"}) );
          ReorgExecute.RegisterPrecedence( "RIProductCountry" ,  "CreateProduct" );
          ReorgExecute.RegisterPrecedence( "RIProductCountry" ,  "CreateCountry" );
-         GXReorganization.SetMsg( 15 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPROMOTIONPRODUCT2]"}) );
+         GXReorganization.SetMsg( 16 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPROMOTIONPRODUCT2]"}) );
          ReorgExecute.RegisterPrecedence( "RIPromotionProductPromotion" ,  "CreatePromotionProduct" );
          ReorgExecute.RegisterPrecedence( "RIPromotionProductPromotion" ,  "CreatePromotion" );
-         GXReorganization.SetMsg( 16 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPROMOTIONPRODUCT1]"}) );
+         GXReorganization.SetMsg( 17 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[IPROMOTIONPRODUCT1]"}) );
          ReorgExecute.RegisterPrecedence( "RIPromotionProductProduct" ,  "CreatePromotionProduct" );
          ReorgExecute.RegisterPrecedence( "RIPromotionProductProduct" ,  "CreateProduct" );
-         GXReorganization.SetMsg( 17 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ISHOPPINGCART1]"}) );
+         GXReorganization.SetMsg( 18 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ISHOPPINGCART1]"}) );
          ReorgExecute.RegisterPrecedence( "RIShoppingCartCustomer" ,  "CreateShoppingCart" );
          ReorgExecute.RegisterPrecedence( "RIShoppingCartCustomer" ,  "CreateCustomer" );
-         GXReorganization.SetMsg( 18 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ISHOPPINGCARTPRODUCT2]"}) );
+         GXReorganization.SetMsg( 19 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ISHOPPINGCARTPRODUCT2]"}) );
          ReorgExecute.RegisterPrecedence( "RIShoppingCartProductShoppingCart" ,  "CreateShoppingCartProduct" );
          ReorgExecute.RegisterPrecedence( "RIShoppingCartProductShoppingCart" ,  "CreateShoppingCart" );
-         GXReorganization.SetMsg( 19 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ISHOPPINGCARTPRODUCT1]"}) );
+         GXReorganization.SetMsg( 20 ,  GXResourceManager.GetMessage("GXM_refintcrea", new   object[]  {"[ISHOPPINGCARTPRODUCT1]"}) );
          ReorgExecute.RegisterPrecedence( "RIShoppingCartProductProduct" ,  "CreateShoppingCartProduct" );
          ReorgExecute.RegisterPrecedence( "RIShoppingCartProductProduct" ,  "CreateProduct" );
       }
@@ -1461,24 +1567,24 @@ namespace GeneXus.Programs {
       public void DropTableConstraints( string sTableName )
       {
          string cmdBuffer;
-         /* Using cursor P00045 */
-         pr_default.execute(3, new Object[] {sTableName});
-         while ( (pr_default.getStatus(3) != 101) )
+         /* Using cursor P00034 */
+         pr_default.execute(2, new Object[] {sTableName});
+         while ( (pr_default.getStatus(2) != 101) )
          {
-            constid = P00045_Aconstid[0];
-            nconstid = P00045_nconstid[0];
-            fkeyid = P00045_Afkeyid[0];
-            nfkeyid = P00045_nfkeyid[0];
-            rkeyid = P00045_Arkeyid[0];
-            nrkeyid = P00045_nrkeyid[0];
+            constid = P00034_Aconstid[0];
+            nconstid = P00034_nconstid[0];
+            fkeyid = P00034_Afkeyid[0];
+            nfkeyid = P00034_nfkeyid[0];
+            rkeyid = P00034_Arkeyid[0];
+            nrkeyid = P00034_nrkeyid[0];
             cmdBuffer = "ALTER TABLE " + "[" + fkeyid + "] DROP CONSTRAINT " + constid;
             RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
             RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
             RGZ.ExecuteStmt() ;
             RGZ.Drop();
-            pr_default.readNext(3);
+            pr_default.readNext(2);
          }
-         pr_default.close(3);
+         pr_default.close(2);
       }
 
       public void UtilsCleanup( )
@@ -1497,6 +1603,11 @@ namespace GeneXus.Programs {
 
       public override void initialize( )
       {
+         DS = new GxDataStore();
+         ErrMsg = "";
+         DataBaseName = "";
+         defaultUsers = new GeneXus.Utils.GxStringCollection();
+         defaultUser = "";
          sSchemaVar = "";
          nsSchemaVar = false;
          scmdbuf = "";
@@ -1505,25 +1616,16 @@ namespace GeneXus.Programs {
          P00023_AsSchemaVar = new string[] {""} ;
          P00023_nsSchemaVar = new bool[] {false} ;
          sTableName = "";
-         sMySchemaName = "";
-         tablename = "";
-         ntablename = false;
-         schemaname = "";
-         nschemaname = false;
-         P00034_Atablename = new string[] {""} ;
-         P00034_ntablename = new bool[] {false} ;
-         P00034_Aschemaname = new string[] {""} ;
-         P00034_nschemaname = new bool[] {false} ;
          constid = "";
          nconstid = false;
          fkeyid = "";
          nfkeyid = false;
-         P00045_Aconstid = new string[] {""} ;
-         P00045_nconstid = new bool[] {false} ;
-         P00045_Afkeyid = new string[] {""} ;
-         P00045_nfkeyid = new bool[] {false} ;
-         P00045_Arkeyid = new int[1] ;
-         P00045_nrkeyid = new bool[] {false} ;
+         P00034_Aconstid = new string[] {""} ;
+         P00034_nconstid = new bool[] {false} ;
+         P00034_Afkeyid = new string[] {""} ;
+         P00034_nfkeyid = new bool[] {false} ;
+         P00034_Arkeyid = new int[1] ;
+         P00034_nrkeyid = new bool[] {false} ;
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.reorg__default(),
             new Object[][] {
                 new Object[] {
@@ -1533,10 +1635,7 @@ namespace GeneXus.Programs {
                P00023_AsSchemaVar
                }
                , new Object[] {
-               P00034_Atablename, P00034_Aschemaname
-               }
-               , new Object[] {
-               P00045_Aconstid, P00045_Afkeyid, P00045_Arkeyid
+               P00034_Aconstid, P00034_Afkeyid, P00034_Arkeyid
                }
             }
          );
@@ -1544,21 +1643,25 @@ namespace GeneXus.Programs {
       }
 
       protected short ErrCode ;
+      protected short Count ;
+      protected short Res ;
+      protected short setupDB ;
       protected int rkeyid ;
+      protected string ErrMsg ;
+      protected string DataBaseName ;
+      protected string cmdBuffer ;
+      protected string defaultUser ;
       protected string sSchemaVar ;
       protected string scmdbuf ;
       protected string sTableName ;
-      protected string sMySchemaName ;
       protected bool nsSchemaVar ;
-      protected bool ntablename ;
-      protected bool nschemaname ;
       protected bool nconstid ;
       protected bool nfkeyid ;
       protected bool nrkeyid ;
-      protected string tablename ;
-      protected string schemaname ;
       protected string constid ;
       protected string fkeyid ;
+      protected GeneXus.Utils.GxStringCollection defaultUsers ;
+      protected GxDataStore DS ;
       protected IGxDataStore dsDefault ;
       protected GxCommand RGZ ;
       protected IDataStoreProvider pr_default ;
@@ -1566,16 +1669,12 @@ namespace GeneXus.Programs {
       protected bool[] P00012_nsSchemaVar ;
       protected string[] P00023_AsSchemaVar ;
       protected bool[] P00023_nsSchemaVar ;
-      protected string[] P00034_Atablename ;
-      protected bool[] P00034_ntablename ;
-      protected string[] P00034_Aschemaname ;
-      protected bool[] P00034_nschemaname ;
-      protected string[] P00045_Aconstid ;
-      protected bool[] P00045_nconstid ;
-      protected string[] P00045_Afkeyid ;
-      protected bool[] P00045_nfkeyid ;
-      protected int[] P00045_Arkeyid ;
-      protected bool[] P00045_nrkeyid ;
+      protected string[] P00034_Aconstid ;
+      protected bool[] P00034_nconstid ;
+      protected string[] P00034_Afkeyid ;
+      protected bool[] P00034_nfkeyid ;
+      protected int[] P00034_Arkeyid ;
+      protected bool[] P00034_nrkeyid ;
    }
 
    public class reorg__default : DataStoreHelperBase, IDataStoreHelper
@@ -1587,7 +1686,6 @@ namespace GeneXus.Programs {
           new ForEachCursor(def[0])
          ,new ForEachCursor(def[1])
          ,new ForEachCursor(def[2])
-         ,new ForEachCursor(def[3])
        };
     }
 
@@ -1604,18 +1702,12 @@ namespace GeneXus.Programs {
           };
           Object[] prmP00034;
           prmP00034 = new Object[] {
-          new ParDef("@sTableName",GXType.Char,255,0) ,
-          new ParDef("@sMySchemaName",GXType.Char,255,0)
-          };
-          Object[] prmP00045;
-          prmP00045 = new Object[] {
           new ParDef("@sTableName",GXType.Char,255,0)
           };
           def= new CursorDef[] {
               new CursorDef("P00012", "SELECT SCHEMA_NAME() ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00012,100, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("P00023", "SELECT USER_NAME() ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00023,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P00034", "SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE (TABLE_NAME = @sTableName) AND (TABLE_SCHEMA = @sMySchemaName) ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00034,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P00045", "SELECT OBJECT_NAME(object_id), OBJECT_NAME(parent_object_id), referenced_object_id FROM sys.foreign_keys WHERE referenced_object_id = OBJECT_ID(RTRIM(LTRIM(@sTableName))) ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00045,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("P00034", "SELECT OBJECT_NAME(object_id), OBJECT_NAME(parent_object_id), referenced_object_id FROM sys.foreign_keys WHERE referenced_object_id = OBJECT_ID(RTRIM(LTRIM(@sTableName))) ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00034,100, GxCacheFrequency.OFF ,true,false )
           };
        }
     }
@@ -1633,10 +1725,6 @@ namespace GeneXus.Programs {
                 ((string[]) buf[0])[0] = rslt.getString(1, 255);
                 return;
              case 2 :
-                ((string[]) buf[0])[0] = rslt.getVarchar(1);
-                ((string[]) buf[1])[0] = rslt.getVarchar(2);
-                return;
-             case 3 :
                 ((string[]) buf[0])[0] = rslt.getVarchar(1);
                 ((string[]) buf[1])[0] = rslt.getVarchar(2);
                 ((int[]) buf[2])[0] = rslt.getInt(3);

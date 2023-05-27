@@ -1,7 +1,11 @@
-dir_superordinates_i(2,9,[ [ 5,[ 11 ] ] ]).
 dir_superordinates_i(2,10,[ [ 6,[ 12 ] ],[ 9,[ 16 ] ] ]).
 dir_superordinates_i(2,6,[ [ 502,[ 14 ] ],[ 4,[ 10 ] ],[ 2,[ 6 ] ] ]).
 dir_superordinates_i(2,2,[]).
+dir_superordinates_i(2,8,[ [ 6,[ 12 ] ],[ 7,[ 15 ] ] ]).
+dir_superordinates_i(2,7,[]).
+dir_superordinates_i(2,502,[]).
 dir_superordinates_i(2,3,[]).
+dir_superordinates_i(2,4,[ [ 3,[ 8 ] ] ]).
 dir_superordinates_i(2,5,[ [ 3,[ 8 ] ] ]).
+dir_superordinates_i(2,9,[ [ 5,[ 11 ] ] ]).
  

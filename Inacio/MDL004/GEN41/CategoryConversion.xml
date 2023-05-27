@@ -6,9 +6,9 @@
 <TableName>Category</TableName>
 <Description>Category</Description></Table>
 <ReorgCls>c</ReorgCls>
-<ReorgCode>new</ReorgCode>
-<ReorgMsg>Category is new (initialize with Category_DataProvider)</ReorgMsg>
-<ReorgAction>*</ReorgAction>
+<ReorgCode>same</ReorgCode>
+<ReorgMsg>Category needs initialization (initialize with Category_DataProvider)</ReorgMsg>
+<ReorgAction>#</ReorgAction>
 <TableAttributes>
 <AttrisInTable>
 <Attribute>
@@ -34,7 +34,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description>
+<Description>Categoria</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>C</DataType>
@@ -74,13 +74,11 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></IndexAttris>
+<Description>Categoria</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>No</Clustered></Index></Indices></TableIndices>
 <FKConstraints></FKConstraints>
-<Statements>
-<Statement>CREATE TABLE [Category] ([CategoryId] smallint NOT NULL IDENTITY(1,1), [CategoryName] nchar(20) NOT NULL , PRIMARY KEY([CategoryId])) </Statement>
-<Statement>CREATE UNIQUE NONCLUSTERED INDEX [UCATEGORY] ON [Category] ([CategoryName] )</Statement></Statements>
+<Statements></Statements>
 <NeedReorganizationProgram>False</NeedReorganizationProgram>
 <Warnings></Warnings>
 <Errors></Errors></ReorgSpec>

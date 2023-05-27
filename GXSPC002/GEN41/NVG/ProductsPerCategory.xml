@@ -18,7 +18,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute>
+<Description>Categoria</Description></Attribute>
 <Token>; poor performance may be noticed</Token>
 <Token> in group starting at line </Token>
 <Token>4</Token>
@@ -49,7 +49,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></Order>
+<Description>Categoria</Description></Attribute></Order>
 <Condition></Condition>
 <LevelOptions></LevelOptions>
 <OptimizedWhere>
@@ -114,7 +114,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></Order>
+<Description>Categoria</Description></Attribute></Order>
 <Condition></Condition>
 <LevelOptions></LevelOptions>
 <OptimizedWhere>
@@ -126,14 +126,14 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute>
+<Description>Categoria</Description></Attribute>
 <Sp></Sp>
 <Token>=</Token>
 <Sp></Sp>
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>@CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
+<Description>Categoria</Description></Attribute></Condition></LoopWhile></OptimizedWhere>
 <NonOptimizedWhere></NonOptimizedWhere>
 <JoinLocation>1</JoinLocation>
 <NavigationTree>

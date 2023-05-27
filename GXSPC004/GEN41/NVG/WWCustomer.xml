@@ -9,7 +9,7 @@
 <ObjDesc>Customers</ObjDesc>
 <ObjPgmName>WWCustomer</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0038</MsgCode>

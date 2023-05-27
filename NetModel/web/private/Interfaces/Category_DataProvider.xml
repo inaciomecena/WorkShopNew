@@ -16,7 +16,7 @@
               </Property>
             </Properties>
           </Field>
-          <Field name="CategoryName" description="Noma da Categoria">
+          <Field name="CategoryName" description="Categoria">
             <Properties>
               <Property>
                 <Name>Type</Name>

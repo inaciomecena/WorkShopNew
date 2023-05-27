@@ -18,7 +18,7 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ProductName</AttriName>
-<Description>Nome do Produto</Description></Attribute>
+<Description>Nome</Description></Attribute>
 <Token>; poor performance may be noticed</Token>
 <Token> in group starting at line </Token>
 <Token>4</Token>
@@ -181,7 +181,7 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ProductName</AttriName>
-<Description>Nome do Produto</Description></Attribute></Order>
+<Description>Nome</Description></Attribute></Order>
 <Condition></Condition>
 <LevelOptions></LevelOptions>
 <OptimizedWhere>

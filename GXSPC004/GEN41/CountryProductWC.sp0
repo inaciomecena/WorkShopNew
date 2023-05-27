@@ -183,14 +183,14 @@ attri_i(14,[ 'ProductCountryID',int,4,0,'ZZZ9',0,'Pais ID','',0 ]).
 attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
 attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
 attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor','',0 ]).
 attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Categoria','',0 ]).
 attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i(28,[ 'ProductPhoto',bits,4,0,'',0,'Foto','',0 ]).
 attri_i(27,[ 'ProductPrice',int,8,2,'R$ ZZZZ9.99',0,'Preço','',0 ]).
-attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Descrição do Produto','',0 ]).
-attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome do Produto','',0 ]).
+attri_i(26,[ 'ProductDescription',char,50,0,'',0,'Descrição','',0 ]).
+attri_i(13,[ 'ProductName',char,20,0,'',0,'Nome','',0 ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',17 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',16 ]).
@@ -573,7 +573,7 @@ html_comp_i(22,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(22,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(22,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(22,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(22,'Coltitle','do Produto',d,[ str ]).
+html_comp_i(22,'Coltitle','Nome',d,[ str ]).
 html_comp_i(22,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(22,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(22,'Horizontalalignment',left,d,[ str ]).
@@ -604,7 +604,7 @@ html_comp_i(23,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(23,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(23,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(23,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(23,'Coltitle','do Produto',d,[ str ]).
+html_comp_i(23,'Coltitle','Descrição',d,[ str ]).
 html_comp_i(23,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(23,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(23,'Horizontalalignment',left,d,[ str ]).
@@ -716,7 +716,7 @@ html_comp_i(27,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(27,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(27,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(27,'Coltitle','Noma da Categoria',d,[ str ]).
+html_comp_i(27,'Coltitle','Categoria',d,[ str ]).
 html_comp_i(27,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(27,'Horizontalalignment',left,d,[ str ]).
@@ -775,7 +775,7 @@ html_comp_i(29,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(29,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(29,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(29,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(29,'Coltitle','Vendedor Nome',d,[ str ]).
+html_comp_i(29,'Coltitle','Vendedor',d,[ str ]).
 html_comp_i(29,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(29,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(29,'Horizontalalignment',left,d,[ str ]).

@@ -21,7 +21,7 @@ lac_i(2,[ [ 'Ccategoryid','Ccategoryname' ] ]).
  
  
 lits_i('Categoria Id',5,10).
-lits_i('Noma da Categoria',5,10).
+lits_i('Categoria',5,10).
  
 cls_i([ 0,0 ],[ 5,1049 ]).
  
@@ -145,14 +145,14 @@ v_i(t,o,2,6).
  
  
  
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Categoria','',0 ]).
 attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i('Linkselection_GXI',[ 'Linkselection_GXI',svchar,2048,0,'',0,'',[],12 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',11 ]).
 attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',10 ]).
 attri_i('Advanced_label_template',[ 'ADVANCED_LABEL_TEMPLATE',char,20,0,'',0,'ADVANCED_LABEL_TEMPLATE','',9 ]).
 attri_i('Pcategoryid',[ pCategoryId,int,4,0,'ZZZ9',0,'Categoria Id','',8 ]).
-attri_i('Ccategoryname',[ cCategoryName,char,20,0,'',0,'Noma da Categoria','',7 ]).
+attri_i('Ccategoryname',[ cCategoryName,char,20,0,'',0,'Categoria','',7 ]).
 attri_i('Ccategoryid',[ cCategoryId,int,4,0,'ZZZ9',0,'Categoria Id','',6 ]).
 attri_i('Linkselection',[ 'LinkSelection',bits,1024,0,'',0,'Link Selection','',5 ]).
  
@@ -276,7 +276,7 @@ html_sub_i(17,18,html_i(0,div(18))).
 html_sub_i(18,19,html_i(0,div(19))).
 html_sub_i(19,20,html_i(0,div(20))).
 html_sub_i(20,21,html_i(0,div(21))).
-html_sub_i(21,22,html_i(0,t('Noma da Categoria',3))).
+html_sub_i(21,22,html_i(0,t('Categoria',3))).
 html_sub_i(19,23,html_i(1,div(23))).
 html_sub_i(23,24,html_i(0,div(24))).
 html_sub_i(24,25,html_i(0,div(25))).
@@ -491,7 +491,7 @@ html_comp_i(21,'Semanticcontent',div,d,[ str ]).
 html_comp_i(21,'Align',left,d,[ str ]).
 html_comp_i(21,'Valign',top,d,[ str ]).
 html_comp_i(22,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(22,'Caption','Noma da Categoria',d,[ str ]).
+html_comp_i(22,'Caption','Categoria',d,[ str ]).
 html_comp_i(22,'Id','Lblcategorynamefilter',v,[ str ]).
 html_comp_i(22,'Class','WWAdvancedLabel WWFilterLabel',v,[ str ]).
 html_comp_i(22,'Event','',d,[ str ]).
@@ -535,7 +535,7 @@ html_comp_i(26,'Returnonclick',0,v,[ bool ]).
 html_comp_i(26,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(26,'Captionstyle','',v,[ str ]).
 html_comp_i(26,'Captionposition','None',v,[ str ]).
-html_comp_i(26,'Captionvalue','Noma da Categoria',d,[ str ]).
+html_comp_i(26,'Captionvalue','Categoria',d,[ str ]).
 html_comp_i(26,'Layoutclass','',v,[ str ]).
 html_comp_i(26,'Controltype',2,d,[ num ]).
 html_comp_i(26,'Inputtype',0,d,[ num ]).
@@ -727,7 +727,7 @@ html_comp_i(37,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(37,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(37,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(37,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(37,'Coltitle','da Categoria',d,[ str ]).
+html_comp_i(37,'Coltitle','Categoria',d,[ str ]).
 html_comp_i(37,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(37,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(37,'Horizontalalignment',left,d,[ str ]).
@@ -782,7 +782,7 @@ lit_i(13,1,div(13),[ ctlname('') ]).
 lit_i(9,1,div(9),[ ctlname('Categoryidfiltercontainer') ]).
 lit_i(8,1,div(8),[ ctlname('') ]).
 lit_i(7,1,div(7),[ ctlname('') ]).
-lit_i(22,1,t('Noma da Categoria',3),[ ctlname('Lblcategorynamefilter') ]).
+lit_i(22,1,t('Categoria',3),[ ctlname('Lblcategorynamefilter') ]).
 lit_i(21,1,div(21),[ ctlname('') ]).
 lit_i(20,1,div(20),[ ctlname('') ]).
 lit_i(26,1,t('Ccategoryname',23),[ ctlname('&Ccategoryname'),ctrltype(edit,26),pos(26),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).

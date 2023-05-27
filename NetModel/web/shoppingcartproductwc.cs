@@ -275,7 +275,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20235211452476", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?20235262034416", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -504,7 +504,7 @@ namespace GeneXus.Programs {
                context.SendWebValue( "Product Id") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Nome do Produto") ;
+               context.SendWebValue( "Nome") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "Preço") ;
@@ -519,7 +519,7 @@ namespace GeneXus.Programs {
                context.SendWebValue( "Categoria Id") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "Noma da Categoria") ;
+               context.SendWebValue( "Categoria") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlTextNl( "</tr>") ;
                GridContainer.AddObjectProperty("GridName", "Grid");
@@ -1053,15 +1053,15 @@ namespace GeneXus.Programs {
                A13ProductName = H000P2_A13ProductName[0];
                A27ProductPrice = H000P2_A27ProductPrice[0];
                A7CategoryName = H000P2_A7CategoryName[0];
-               if ( StringUtil.StrCmp(A7CategoryName, "Entretenimiento") == 0 )
+               if ( StringUtil.StrCmp(A7CategoryName, "Entreterimento") == 0 )
                {
-                  A35TotalProduct = (decimal)((A27ProductPrice*0.9m)*A36QtyProduct);
+                  A35TotalProduct = (decimal)((A27ProductPrice-A27ProductPrice*0.10m)*A36QtyProduct);
                }
                else
                {
-                  if ( StringUtil.StrCmp(A7CategoryName, "Joyería") == 0 )
+                  if ( StringUtil.StrCmp(A7CategoryName, "Joalheria") == 0 )
                   {
-                     A35TotalProduct = (decimal)((A27ProductPrice*1.05m)*A36QtyProduct);
+                     A35TotalProduct = (decimal)((A27ProductPrice+A27ProductPrice*0.05m)*A36QtyProduct);
                   }
                   else
                   {
@@ -1526,7 +1526,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352114524777", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235262034492", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1543,7 +1543,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("shoppingcartproductwc.js", "?202352114524777", false, true);
+            context.AddJavascriptSource("shoppingcartproductwc.js", "?20235262034492", false, true);
          }
          /* End function include_jscripts */
       }

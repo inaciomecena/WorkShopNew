@@ -167,7 +167,7 @@ tbl_to_delete_i(2,[ 6,[ [ 2,6,6 ] ],c,'IPRODUCT3',0,[ 12 ],'' ]).
  
  
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Categoria','',0 ]).
 attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
 attri_i('Websession',[ 'WebSession',o(websession),4,0,'',0,'Web Session','',10 ]).
@@ -276,7 +276,7 @@ att_prop_i(2,6,'AttValidationFailedMsg','',d).
 att_prop_i(2,6,'DownloadOffline','0',d).
 att_prop_i(2,6,'VarServiceExtName','',d).
 att_prop_i(2,6,'FullName','CategoryId',v).
-att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Noma da Categoria',d).
+att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Categoria',d).
 att_prop_i(2,7,'ExternalName','CategoryName',d).
 att_prop_i(2,7,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,7,'EmptyAsNull','Yes',d).

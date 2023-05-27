@@ -198,7 +198,7 @@ tbl_to_delete_i(4,[ 6,[ [ 4,10,10 ] ],c,'IPRODUCT2',0,[ 12 ],'' ]).
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
 attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
 attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor','',0 ]).
 attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
 attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
 attri_i(40000,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
@@ -751,7 +751,7 @@ html_comp_i(39,'Returnonclick',0,v,[ bool ]).
 html_comp_i(39,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(39,'Captionstyle','',v,[ str ]).
 html_comp_i(39,'Captionposition','Left',v,[ str ]).
-html_comp_i(39,'Captionvalue','Nome',d,[ str ]).
+html_comp_i(39,'Captionvalue','Vendedor',d,[ str ]).
 html_comp_i(39,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(39,'Controltype',2,d,[ num ]).
 html_comp_i(39,'Inputtype',0,d,[ num ]).

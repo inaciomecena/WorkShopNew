@@ -9,7 +9,7 @@
 <ObjDesc>View Category</ObjDesc>
 <ObjPgmName>ViewCategory</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>nogenreq</Result>
+<Result>genreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

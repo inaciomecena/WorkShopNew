@@ -50,7 +50,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute></Order>
+<Description>Categoria</Description></Attribute></Order>
 <Condition></Condition>
 <IndexName>UCATEGORY</IndexName>
 <LevelOptions></LevelOptions>
@@ -70,7 +70,7 @@
 <Attribute>
 <AttriId>7</AttriId>
 <AttriName>CategoryName</AttriName>
-<Description>Noma da Categoria</Description></Attribute>
+<Description>Categoria</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>

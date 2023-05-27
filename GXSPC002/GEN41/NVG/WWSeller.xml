@@ -18,7 +18,7 @@
 <Attribute>
 <AttriId>18</AttriId>
 <AttriName>SellerName</AttriName>
-<Description>Vendedor Nome</Description></Attribute>
+<Description>Vendedor</Description></Attribute>
 <Token>; poor performance may be noticed</Token>
 <Token> in grid '</Token>
 <Token>Grid</Token>
@@ -63,7 +63,7 @@
 <Attribute>
 <AttriId>18</AttriId>
 <AttriName>SellerName</AttriName>
-<Description>Vendedor Nome</Description></Attribute></Order>
+<Description>Vendedor</Description></Attribute></Order>
 <Condition></Condition>
 <LevelOptions></LevelOptions>
 <Optimizations>
@@ -82,7 +82,7 @@
 <Attribute>
 <AttriId>18</AttriId>
 <AttriName>SellerName</AttriName>
-<Description>Vendedor Nome</Description></Attribute>
+<Description>Vendedor</Description></Attribute>
 <Sp></Sp>
 <Token>like</Token>
 <Sp></Sp>

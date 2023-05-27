@@ -257,7 +257,6 @@ form_class_i(1,'Graphic').
  
  
  
-calling_main_i(13,8).
  
 att_prop_i(2,6,'ExternalName','CategoryId',d).
 att_prop_i(2,6,'ExternalNamespace','WorkShopNew',d).

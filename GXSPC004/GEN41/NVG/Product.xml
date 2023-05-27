@@ -111,11 +111,11 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ProductName</AttriName>
-<Description>Nome do Produto</Description></Attribute>
+<Description>Nome</Description></Attribute>
 <Attribute>
 <AttriId>26</AttriId>
 <AttriName>ProductDescription</AttriName>
-<Description>Descrição do Produto</Description></Attribute>
+<Description>Descrição</Description></Attribute>
 <Attribute>
 <AttriId>27</AttriId>
 <AttriName>ProductPrice</AttriName>
@@ -150,11 +150,11 @@
 <Attribute>
 <AttriId>13</AttriId>
 <AttriName>ProductName</AttriName>
-<Description>Nome do Produto</Description></Attribute>
+<Description>Nome</Description></Attribute>
 <Attribute>
 <AttriId>26</AttriId>
 <AttriName>ProductDescription</AttriName>
-<Description>Descrição do Produto</Description></Attribute>
+<Description>Descrição</Description></Attribute>
 <Attribute>
 <AttriId>27</AttriId>
 <AttriName>ProductPrice</AttriName>

@@ -184,7 +184,7 @@ namespace GeneXus.Programs {
                getPrinter().GxAttris("Microsoft Sans Serif", 12, true, false, false, false, 0, 0, 0, 0, 0, 255, 255, 255) ;
                getPrinter().GxDrawText("Total:", 525, Gx_line+150, 573, Gx_line+171, 0+256, 0, 0, 0) ;
                getPrinter().GxAttris("Microsoft Sans Serif", 12, false, false, false, false, 0, 0, 0, 0, 0, 255, 255, 255) ;
-               getPrinter().GxDrawText(StringUtil.LTrim( context.localUtil.Format( A34ShoppingCartFinalPrice, "$ ZZZZZZ9.99")), 617, Gx_line+160, 731, Gx_line+182, 2+256, 0, 0, 0) ;
+               getPrinter().GxDrawText(StringUtil.LTrim( context.localUtil.Format( A34ShoppingCartFinalPrice, "R$ ZZZZZZ9.99")), 617, Gx_line+160, 740, Gx_line+182, 2+256, 0, 0, 0) ;
                getPrinter().GxDrawLine(2, Gx_line+184, 819, Gx_line+184, 2, 0, 0, 0, 0) ;
                Gx_OldLine = Gx_line;
                Gx_line = (int)(Gx_line+199);
@@ -206,15 +206,15 @@ namespace GeneXus.Programs {
                   A27ProductPrice = P000F4_A27ProductPrice[0];
                   A28ProductPhoto = P000F4_A28ProductPhoto[0];
                   A7CategoryName = P000F4_A7CategoryName[0];
-                  if ( StringUtil.StrCmp(A7CategoryName, "Entretenimiento") == 0 )
+                  if ( StringUtil.StrCmp(A7CategoryName, "Entreterimento") == 0 )
                   {
-                     A35TotalProduct = (decimal)((A27ProductPrice*0.9m)*A36QtyProduct);
+                     A35TotalProduct = (decimal)((A27ProductPrice-A27ProductPrice*0.10m)*A36QtyProduct);
                   }
                   else
                   {
-                     if ( StringUtil.StrCmp(A7CategoryName, "Joyería") == 0 )
+                     if ( StringUtil.StrCmp(A7CategoryName, "Joalheria") == 0 )
                      {
-                        A35TotalProduct = (decimal)((A27ProductPrice*1.05m)*A36QtyProduct);
+                        A35TotalProduct = (decimal)((A27ProductPrice+A27ProductPrice*0.05m)*A36QtyProduct);
                      }
                      else
                      {
@@ -475,7 +475,7 @@ namespace GeneXus.Programs {
           new ParDef("@ShoppingCartId",GXType.Int16,4,0)
           };
           def= new CursorDef[] {
-              new CursorDef("P000F3", "SELECT T1.[CustomerId], T2.[CountryId], T1.[ShoppingCartId], T3.[CountryName], T2.[CustomerAddress], T2.[CustomerName], COALESCE( T4.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice, T1.[ShoppingCartDate] FROM ((([ShoppingCart] T1 INNER JOIN [Customer] T2 ON T2.[CustomerId] = T1.[CustomerId]) INNER JOIN [Country] T3 ON T3.[CountryId] = T2.[CountryId]) LEFT JOIN (SELECT SUM(CASE  WHEN T7.[CategoryName] = 'Entretenimiento' THEN ( T6.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 20, 10)) WHEN T7.[CategoryName] = 'Joyería' THEN ( T6.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 20, 10)) ELSE T6.[ProductPrice] * CAST(T5.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T5.[ShoppingCartId] FROM (([ShoppingCartProduct] T5 INNER JOIN [Product] T6 ON T6.[ProductId] = T5.[ProductId]) INNER JOIN [Category] T7 ON T7.[CategoryId] = T6.[CategoryId]) GROUP BY T5.[ShoppingCartId] ) T4 ON T4.[ShoppingCartId] = T1.[ShoppingCartId]) WHERE T1.[ShoppingCartId] = @ShoppingCartId ORDER BY T1.[ShoppingCartId] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000F3,1, GxCacheFrequency.OFF ,true,true )
+              new CursorDef("P000F3", "SELECT T1.[CustomerId], T2.[CountryId], T1.[ShoppingCartId], T3.[CountryName], T2.[CustomerAddress], T2.[CustomerName], COALESCE( T4.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice, T1.[ShoppingCartDate] FROM ((([ShoppingCart] T1 INNER JOIN [Customer] T2 ON T2.[CustomerId] = T1.[CustomerId]) INNER JOIN [Country] T3 ON T3.[CountryId] = T2.[CountryId]) LEFT JOIN (SELECT SUM(CASE  WHEN T7.[CategoryName] = 'Entreterimento' THEN ( T6.[ProductPrice] - T6.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 18, 10)) WHEN T7.[CategoryName] = 'Joalheria' THEN ( T6.[ProductPrice] + T6.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 18, 10)) ELSE T6.[ProductPrice] * CAST(T5.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T5.[ShoppingCartId] FROM (([ShoppingCartProduct] T5 INNER JOIN [Product] T6 ON T6.[ProductId] = T5.[ProductId]) INNER JOIN [Category] T7 ON T7.[CategoryId] = T6.[CategoryId]) GROUP BY T5.[ShoppingCartId] ) T4 ON T4.[ShoppingCartId] = T1.[ShoppingCartId]) WHERE T1.[ShoppingCartId] = @ShoppingCartId ORDER BY T1.[ShoppingCartId] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000F3,1, GxCacheFrequency.OFF ,true,true )
              ,new CursorDef("P000F4", "SELECT T1.[ProductId], T2.[CategoryId], T1.[ShoppingCartId], T2.[ProductPhoto_GXI], T2.[ProductName], T3.[CategoryName], T2.[ProductPrice], T1.[QtyProduct], T2.[ProductPhoto] FROM (([ShoppingCartProduct] T1 INNER JOIN [Product] T2 ON T2.[ProductId] = T1.[ProductId]) INNER JOIN [Category] T3 ON T3.[CategoryId] = T2.[CategoryId]) WHERE T1.[ShoppingCartId] = @ShoppingCartId ORDER BY T2.[ProductName] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000F4,100, GxCacheFrequency.OFF ,false,false )
           };
        }

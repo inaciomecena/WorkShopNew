@@ -14,7 +14,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description>
+<Description>Cliente Id</Description>
 <TakesValueFrom></TakesValueFrom>
 <OnPrimaryKey>Yes</OnPrimaryKey>
 <AttriType>
@@ -34,7 +34,7 @@
 <Attribute>
 <AttriId>20</AttriId>
 <AttriName>CustomerName</AttriName>
-<Description>Customer Name</Description>
+<Description>Nome</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>C</DataType>
@@ -56,7 +56,7 @@
 <Attribute>
 <AttriId>21</AttriId>
 <AttriName>CustomerAddress</AttriName>
-<Description>Customer Address</Description>
+<Description>Endereço</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>V</DataType>
@@ -78,7 +78,7 @@
 <Attribute>
 <AttriId>22</AttriId>
 <AttriName>CustomerEmail</AttriName>
-<Description>Customer Email</Description>
+<Description>E-mail</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>V</DataType>
@@ -100,7 +100,7 @@
 <Attribute>
 <AttriId>23</AttriId>
 <AttriName>CustomerPhone</AttriName>
-<Description>Customer Phone</Description>
+<Description>Telefone</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>C</DataType>
@@ -122,7 +122,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description>
+<Description>País Id</Description>
 <TakesValueFrom></TakesValueFrom>
 <AttriType>
 <DataType>N</DataType>
@@ -149,7 +149,7 @@
 <Attribute>
 <AttriId>11</AttriId>
 <AttriName>CustomerId</AttriName>
-<Description>Customer Id</Description></Attribute></IndexAttris>
+<Description>Cliente Id</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>Yes</Clustered></Index>
 <Index>
@@ -159,7 +159,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></IndexAttris>
+<Description>País Id</Description></Attribute></IndexAttris>
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>No</Clustered></Index></Indices></TableIndices>
 <FKConstraints>
@@ -173,7 +173,7 @@
 <Attribute>
 <AttriId>8</AttriId>
 <AttriName>CountryId</AttriName>
-<Description>Country Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
+<Description>País Id</Description></Attribute></Attributes></FKConstraint></FKConstraints>
 <Statements>
 <Statement>CREATE TABLE [Customer] ([CustomerId] smallint NOT NULL IDENTITY(1,1), [CustomerName] nchar(20) NOT NULL , [CustomerAddress] nvarchar(1024) NOT NULL , [CustomerEmail] nvarchar(100) NOT NULL , [CustomerPhone] nchar(20) NOT NULL , [CountryId] smallint NOT NULL , PRIMARY KEY([CustomerId])) </Statement>
 <Statement>CREATE NONCLUSTERED INDEX [ICUSTOMER1] ON [Customer] ([CountryId] )</Statement>

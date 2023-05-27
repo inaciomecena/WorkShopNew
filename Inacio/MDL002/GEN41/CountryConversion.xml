@@ -6,9 +6,9 @@
 <TableName>Country</TableName>
 <Description>Country</Description></Table>
 <ReorgCls>c</ReorgCls>
-<ReorgCode>same</ReorgCode>
-<ReorgMsg>Country needs initialization (initialize with Country_DataProvider)</ReorgMsg>
-<ReorgAction>#</ReorgAction>
+<ReorgCode>new</ReorgCode>
+<ReorgMsg>Country is new (initialize with Country_DataProvider)</ReorgMsg>
+<ReorgAction>*</ReorgAction>
 <TableAttributes>
 <AttrisInTable>
 <Attribute>
@@ -73,7 +73,7 @@
 <Name>AllowNulls</Name>
 <Value>No</Value></Property></Properties></AttriType></Attribute>
 <Attribute>
-<AttriId>40002</AttriId>
+<AttriId>40003</AttriId>
 <AttriName>CountryFlag_GXI</AttriName>
 <Description>CountryFlag_GXI</Description>
 <TakesValueFrom></TakesValueFrom>
@@ -116,7 +116,9 @@
 <IndexExistance>AlreadyExist</IndexExistance>
 <Clustered>No</Clustered></Index></Indices></TableIndices>
 <FKConstraints></FKConstraints>
-<Statements></Statements>
+<Statements>
+<Statement>CREATE TABLE [Country] ([CountryId] smallint NOT NULL IDENTITY(1,1), [CountryName] nchar(20) NOT NULL , [CountryFlag] VARBINARY(MAX) NOT NULL , [CountryFlag_GXI] varchar(2048) NOT NULL , PRIMARY KEY([CountryId])) </Statement>
+<Statement>CREATE UNIQUE NONCLUSTERED INDEX [UCOUNTRY] ON [Country] ([CountryName] )</Statement></Statements>
 <NeedReorganizationProgram>False</NeedReorganizationProgram>
 <Warnings></Warnings>
 <Errors></Errors></ReorgSpec>

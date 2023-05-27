@@ -9,7 +9,7 @@
 <ObjDesc>Category_Data Provider</ObjDesc>
 <ObjPgmName>Category_DataProvider</ObjPgmName>
 <ObjClsName>DataProvider</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <OutputDevices>

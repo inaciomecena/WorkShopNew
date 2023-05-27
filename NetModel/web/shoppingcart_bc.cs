@@ -998,15 +998,15 @@ namespace GeneXus.Programs {
 
       protected void OnLoadActions0610( )
       {
-         if ( StringUtil.StrCmp(A7CategoryName, "Entretenimiento") == 0 )
+         if ( StringUtil.StrCmp(A7CategoryName, "Entreterimento") == 0 )
          {
-            A35TotalProduct = (decimal)((A27ProductPrice*0.9m)*A36QtyProduct);
+            A35TotalProduct = (decimal)((A27ProductPrice-A27ProductPrice*0.10m)*A36QtyProduct);
          }
          else
          {
-            if ( StringUtil.StrCmp(A7CategoryName, "Joyería") == 0 )
+            if ( StringUtil.StrCmp(A7CategoryName, "Joalheria") == 0 )
             {
-               A35TotalProduct = (decimal)((A27ProductPrice*1.05m)*A36QtyProduct);
+               A35TotalProduct = (decimal)((A27ProductPrice+A27ProductPrice*0.05m)*A36QtyProduct);
             }
             else
             {
@@ -1063,17 +1063,17 @@ namespace GeneXus.Programs {
          }
          A7CategoryName = BC00065_A7CategoryName[0];
          pr_default.close(3);
-         if ( StringUtil.StrCmp(A7CategoryName, "Entretenimiento") == 0 )
+         if ( StringUtil.StrCmp(A7CategoryName, "Entreterimento") == 0 )
          {
             nIsDirty_10 = 1;
-            A35TotalProduct = (decimal)((A27ProductPrice*0.9m)*A36QtyProduct);
+            A35TotalProduct = (decimal)((A27ProductPrice-A27ProductPrice*0.10m)*A36QtyProduct);
          }
          else
          {
-            if ( StringUtil.StrCmp(A7CategoryName, "Joyería") == 0 )
+            if ( StringUtil.StrCmp(A7CategoryName, "Joalheria") == 0 )
             {
                nIsDirty_10 = 1;
-               A35TotalProduct = (decimal)((A27ProductPrice*1.05m)*A36QtyProduct);
+               A35TotalProduct = (decimal)((A27ProductPrice+A27ProductPrice*0.05m)*A36QtyProduct);
             }
             else
             {
@@ -1353,15 +1353,15 @@ namespace GeneXus.Programs {
             pr_default.execute(24, new Object[] {A6CategoryId});
             A7CategoryName = BC000630_A7CategoryName[0];
             pr_default.close(24);
-            if ( StringUtil.StrCmp(A7CategoryName, "Entretenimiento") == 0 )
+            if ( StringUtil.StrCmp(A7CategoryName, "Entreterimento") == 0 )
             {
-               A35TotalProduct = (decimal)((A27ProductPrice*0.9m)*A36QtyProduct);
+               A35TotalProduct = (decimal)((A27ProductPrice-A27ProductPrice*0.10m)*A36QtyProduct);
             }
             else
             {
-               if ( StringUtil.StrCmp(A7CategoryName, "Joyería") == 0 )
+               if ( StringUtil.StrCmp(A7CategoryName, "Joalheria") == 0 )
                {
-                  A35TotalProduct = (decimal)((A27ProductPrice*1.05m)*A36QtyProduct);
+                  A35TotalProduct = (decimal)((A27ProductPrice+A27ProductPrice*0.05m)*A36QtyProduct);
                }
                else
                {
@@ -2670,16 +2670,16 @@ namespace GeneXus.Programs {
              ,new CursorDef("BC00067", "SELECT [ShoppingCartId], [ShoppingCartDate], [CustomerId] FROM [ShoppingCart] WHERE [ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmBC00067,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("BC00068", "SELECT [CustomerName], [CustomerAddress], [CustomerPhone], [CountryId] FROM [Customer] WHERE [CustomerId] = @CustomerId ",true, GxErrorMask.GX_NOMASK, false, this,prmBC00068,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("BC00069", "SELECT [CountryName] FROM [Country] WHERE [CountryId] = @CountryId ",true, GxErrorMask.GX_NOMASK, false, this,prmBC00069,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("BC000611", "SELECT COALESCE( T1.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM (SELECT SUM(CASE  WHEN T4.[CategoryName] = 'Entretenimiento' THEN ( T3.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 20, 10)) WHEN T4.[CategoryName] = 'Joyería' THEN ( T3.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 20, 10)) ELSE T3.[ProductPrice] * CAST(T2.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T2.[ShoppingCartId] FROM (([ShoppingCartProduct] T2 WITH (UPDLOCK) INNER JOIN [Product] T3 ON T3.[ProductId] = T2.[ProductId]) INNER JOIN [Category] T4 ON T4.[CategoryId] = T3.[CategoryId]) GROUP BY T2.[ShoppingCartId] ) T1 WHERE T1.[ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmBC000611,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("BC000613", "SELECT TM1.[ShoppingCartId], TM1.[ShoppingCartDate], T3.[CustomerName], T4.[CountryName], T3.[CustomerAddress], T3.[CustomerPhone], TM1.[CustomerId], T3.[CountryId], COALESCE( T2.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM ((([ShoppingCart] TM1 LEFT JOIN (SELECT SUM(CASE  WHEN T7.[CategoryName] = 'Entretenimiento' THEN ( T6.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 20, 10)) WHEN T7.[CategoryName] = 'Joyería' THEN ( T6.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 20, 10)) ELSE T6.[ProductPrice] * CAST(T5.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T5.[ShoppingCartId] FROM (([ShoppingCartProduct] T5 INNER JOIN [Product] T6 ON T6.[ProductId] = T5.[ProductId]) INNER JOIN [Category] T7 ON T7.[CategoryId] = T6.[CategoryId]) GROUP BY T5.[ShoppingCartId] ) T2 ON T2.[ShoppingCartId] = TM1.[ShoppingCartId]) INNER JOIN [Customer] T3 ON T3.[CustomerId] = TM1.[CustomerId]) INNER JOIN [Country] T4 ON T4.[CountryId] = T3.[CountryId]) WHERE TM1.[ShoppingCartId] = @ShoppingCartId ORDER BY TM1.[ShoppingCartId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmBC000613,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("BC000611", "SELECT COALESCE( T1.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM (SELECT SUM(CASE  WHEN T4.[CategoryName] = 'Entreterimento' THEN ( T3.[ProductPrice] - T3.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 18, 10)) WHEN T4.[CategoryName] = 'Joalheria' THEN ( T3.[ProductPrice] + T3.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 18, 10)) ELSE T3.[ProductPrice] * CAST(T2.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T2.[ShoppingCartId] FROM (([ShoppingCartProduct] T2 WITH (UPDLOCK) INNER JOIN [Product] T3 ON T3.[ProductId] = T2.[ProductId]) INNER JOIN [Category] T4 ON T4.[CategoryId] = T3.[CategoryId]) GROUP BY T2.[ShoppingCartId] ) T1 WHERE T1.[ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmBC000611,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("BC000613", "SELECT TM1.[ShoppingCartId], TM1.[ShoppingCartDate], T3.[CustomerName], T4.[CountryName], T3.[CustomerAddress], T3.[CustomerPhone], TM1.[CustomerId], T3.[CountryId], COALESCE( T2.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM ((([ShoppingCart] TM1 LEFT JOIN (SELECT SUM(CASE  WHEN T7.[CategoryName] = 'Entreterimento' THEN ( T6.[ProductPrice] - T6.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 18, 10)) WHEN T7.[CategoryName] = 'Joalheria' THEN ( T6.[ProductPrice] + T6.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 18, 10)) ELSE T6.[ProductPrice] * CAST(T5.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T5.[ShoppingCartId] FROM (([ShoppingCartProduct] T5 INNER JOIN [Product] T6 ON T6.[ProductId] = T5.[ProductId]) INNER JOIN [Category] T7 ON T7.[CategoryId] = T6.[CategoryId]) GROUP BY T5.[ShoppingCartId] ) T2 ON T2.[ShoppingCartId] = TM1.[ShoppingCartId]) INNER JOIN [Customer] T3 ON T3.[CustomerId] = TM1.[CustomerId]) INNER JOIN [Country] T4 ON T4.[CountryId] = T3.[CountryId]) WHERE TM1.[ShoppingCartId] = @ShoppingCartId ORDER BY TM1.[ShoppingCartId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmBC000613,100, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("BC000614", "SELECT [ShoppingCartId] FROM [ShoppingCart] WHERE [ShoppingCartId] = @ShoppingCartId  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmBC000614,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("BC000615", "INSERT INTO [ShoppingCart]([ShoppingCartDate], [CustomerId]) VALUES(@ShoppingCartDate, @CustomerId); SELECT SCOPE_IDENTITY()", GxErrorMask.GX_NOMASK,prmBC000615)
              ,new CursorDef("BC000616", "UPDATE [ShoppingCart] SET [ShoppingCartDate]=@ShoppingCartDate, [CustomerId]=@CustomerId  WHERE [ShoppingCartId] = @ShoppingCartId", GxErrorMask.GX_NOMASK,prmBC000616)
              ,new CursorDef("BC000617", "DELETE FROM [ShoppingCart]  WHERE [ShoppingCartId] = @ShoppingCartId", GxErrorMask.GX_NOMASK,prmBC000617)
-             ,new CursorDef("BC000619", "SELECT COALESCE( T1.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM (SELECT SUM(CASE  WHEN T4.[CategoryName] = 'Entretenimiento' THEN ( T3.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 20, 10)) WHEN T4.[CategoryName] = 'Joyería' THEN ( T3.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 20, 10)) ELSE T3.[ProductPrice] * CAST(T2.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T2.[ShoppingCartId] FROM (([ShoppingCartProduct] T2 WITH (UPDLOCK) INNER JOIN [Product] T3 ON T3.[ProductId] = T2.[ProductId]) INNER JOIN [Category] T4 ON T4.[CategoryId] = T3.[CategoryId]) GROUP BY T2.[ShoppingCartId] ) T1 WHERE T1.[ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmBC000619,1, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("BC000619", "SELECT COALESCE( T1.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM (SELECT SUM(CASE  WHEN T4.[CategoryName] = 'Entreterimento' THEN ( T3.[ProductPrice] - T3.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 18, 10)) WHEN T4.[CategoryName] = 'Joalheria' THEN ( T3.[ProductPrice] + T3.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T2.[QtyProduct] AS decimal( 18, 10)) ELSE T3.[ProductPrice] * CAST(T2.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T2.[ShoppingCartId] FROM (([ShoppingCartProduct] T2 WITH (UPDLOCK) INNER JOIN [Product] T3 ON T3.[ProductId] = T2.[ProductId]) INNER JOIN [Category] T4 ON T4.[CategoryId] = T3.[CategoryId]) GROUP BY T2.[ShoppingCartId] ) T1 WHERE T1.[ShoppingCartId] = @ShoppingCartId ",true, GxErrorMask.GX_NOMASK, false, this,prmBC000619,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("BC000620", "SELECT [CustomerName], [CustomerAddress], [CustomerPhone], [CountryId] FROM [Customer] WHERE [CustomerId] = @CustomerId ",true, GxErrorMask.GX_NOMASK, false, this,prmBC000620,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("BC000621", "SELECT [CountryName] FROM [Country] WHERE [CountryId] = @CountryId ",true, GxErrorMask.GX_NOMASK, false, this,prmBC000621,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("BC000623", "SELECT TM1.[ShoppingCartId], TM1.[ShoppingCartDate], T3.[CustomerName], T4.[CountryName], T3.[CustomerAddress], T3.[CustomerPhone], TM1.[CustomerId], T3.[CountryId], COALESCE( T2.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM ((([ShoppingCart] TM1 LEFT JOIN (SELECT SUM(CASE  WHEN T7.[CategoryName] = 'Entretenimiento' THEN ( T6.[ProductPrice] * CAST(0.9 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 20, 10)) WHEN T7.[CategoryName] = 'Joyería' THEN ( T6.[ProductPrice] * CAST(1.05 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 20, 10)) ELSE T6.[ProductPrice] * CAST(T5.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T5.[ShoppingCartId] FROM (([ShoppingCartProduct] T5 INNER JOIN [Product] T6 ON T6.[ProductId] = T5.[ProductId]) INNER JOIN [Category] T7 ON T7.[CategoryId] = T6.[CategoryId]) GROUP BY T5.[ShoppingCartId] ) T2 ON T2.[ShoppingCartId] = TM1.[ShoppingCartId]) INNER JOIN [Customer] T3 ON T3.[CustomerId] = TM1.[CustomerId]) INNER JOIN [Country] T4 ON T4.[CountryId] = T3.[CountryId]) WHERE TM1.[ShoppingCartId] = @ShoppingCartId ORDER BY TM1.[ShoppingCartId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmBC000623,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("BC000623", "SELECT TM1.[ShoppingCartId], TM1.[ShoppingCartDate], T3.[CustomerName], T4.[CountryName], T3.[CustomerAddress], T3.[CustomerPhone], TM1.[CustomerId], T3.[CountryId], COALESCE( T2.[ShoppingCartFinalPrice], 0) AS ShoppingCartFinalPrice FROM ((([ShoppingCart] TM1 LEFT JOIN (SELECT SUM(CASE  WHEN T7.[CategoryName] = 'Entreterimento' THEN ( T6.[ProductPrice] - T6.[ProductPrice] * CAST(0.10 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 18, 10)) WHEN T7.[CategoryName] = 'Joalheria' THEN ( T6.[ProductPrice] + T6.[ProductPrice] * CAST(0.05 AS decimal( 18, 10))) * CAST(T5.[QtyProduct] AS decimal( 18, 10)) ELSE T6.[ProductPrice] * CAST(T5.[QtyProduct] AS decimal( 18, 10)) END) AS ShoppingCartFinalPrice, T5.[ShoppingCartId] FROM (([ShoppingCartProduct] T5 INNER JOIN [Product] T6 ON T6.[ProductId] = T5.[ProductId]) INNER JOIN [Category] T7 ON T7.[CategoryId] = T6.[CategoryId]) GROUP BY T5.[ShoppingCartId] ) T2 ON T2.[ShoppingCartId] = TM1.[ShoppingCartId]) INNER JOIN [Customer] T3 ON T3.[CustomerId] = TM1.[CustomerId]) INNER JOIN [Country] T4 ON T4.[CountryId] = T3.[CountryId]) WHERE TM1.[ShoppingCartId] = @ShoppingCartId ORDER BY TM1.[ShoppingCartId]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmBC000623,100, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("BC000624", "SELECT T1.[ShoppingCartId], T2.[ProductName], T2.[ProductPrice], T1.[QtyProduct], T3.[CategoryName], T1.[ProductId], T2.[CategoryId] FROM (([ShoppingCartProduct] T1 INNER JOIN [Product] T2 ON T2.[ProductId] = T1.[ProductId]) INNER JOIN [Category] T3 ON T3.[CategoryId] = T2.[CategoryId]) WHERE T1.[ShoppingCartId] = @ShoppingCartId and T1.[ProductId] = @ProductId ORDER BY T1.[ShoppingCartId], T1.[ProductId]  OPTION (FAST 11)",true, GxErrorMask.GX_NOMASK, false, this,prmBC000624,11, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("BC000625", "SELECT [ShoppingCartId], [ProductId] FROM [ShoppingCartProduct] WHERE [ShoppingCartId] = @ShoppingCartId AND [ProductId] = @ProductId  OPTION (FAST 1)",true, GxErrorMask.GX_NOMASK, false, this,prmBC000625,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("BC000626", "INSERT INTO [ShoppingCartProduct]([ShoppingCartId], [QtyProduct], [ProductId]) VALUES(@ShoppingCartId, @QtyProduct, @ProductId)", GxErrorMask.GX_NOMASK,prmBC000626)

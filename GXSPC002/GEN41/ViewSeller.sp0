@@ -152,7 +152,7 @@ v_i(t,o,4,18).
  
  
 attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor','',0 ]).
 attri_i('GXLvl6',[ 'GXLvl6',int,1,0,'',0,'',[],16 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
@@ -476,7 +476,7 @@ html_comp_i(19,'Eventgx','',d,[ str ]).
 html_comp_i(19,'Captionclass','col-sm-3 ReadonlyAttributeLabel',v,[ str ]).
 html_comp_i(19,'Captionstyle','',v,[ str ]).
 html_comp_i(19,'Captionposition','Left',v,[ str ]).
-html_comp_i(19,'Captionvalue','Nome',d,[ str ]).
+html_comp_i(19,'Captionvalue','Vendedor',d,[ str ]).
 html_comp_i(19,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(19,'Controltype',2,d,[ num ]).
 html_comp_i(19,'Inputtype',0,d,[ num ]).

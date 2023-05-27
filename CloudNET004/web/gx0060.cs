@@ -245,7 +245,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 204480), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 204480), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20235211514648", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?202352622261356", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -445,7 +445,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblLblproductnamefilter_Internalname, "Nome do Produto", "", "", lblLblproductnamefilter_Jsonclick, "'"+""+"'"+",false,"+"'"+"e120w1_client"+"'", "", "WWAdvancedLabel WWFilterLabel", 7, "", 1, 1, 0, 1, "HLP_Gx0060.htm");
+            GxWebStd.gx_label_ctrl( context, lblLblproductnamefilter_Internalname, "Nome", "", "", lblLblproductnamefilter_Jsonclick, "'"+""+"'"+",false,"+"'"+"e120w1_client"+"'", "", "WWAdvancedLabel WWFilterLabel", 7, "", 1, 1, 0, 1, "HLP_Gx0060.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
@@ -455,7 +455,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", " gx-attribute", "left", "top", "", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtavCproductname_Internalname, "Nome do Produto", "col-sm-3 AttributeLabel", 0, true, "");
+            GxWebStd.gx_label_element( context, edtavCproductname_Internalname, "Nome", "col-sm-3 AttributeLabel", 0, true, "");
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 26,'',false,'" + sGXsfl_84_idx + "',0)\"";
             GxWebStd.gx_single_line_edit( context, edtavCproductname_Internalname, StringUtil.RTrim( AV7cProductName), StringUtil.RTrim( context.localUtil.Format( AV7cProductName, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,26);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCproductname_Jsonclick, 0, "Attribute", "", "", "", "", edtavCproductname_Visible, edtavCproductname_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Gx0060.htm");
@@ -476,7 +476,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblLblproductdescriptionfilter_Internalname, "Descrição do Produto", "", "", lblLblproductdescriptionfilter_Jsonclick, "'"+""+"'"+",false,"+"'"+"e130w1_client"+"'", "", "WWAdvancedLabel WWFilterLabel", 7, "", 1, 1, 0, 1, "HLP_Gx0060.htm");
+            GxWebStd.gx_label_ctrl( context, lblLblproductdescriptionfilter_Internalname, "Descrição", "", "", lblLblproductdescriptionfilter_Jsonclick, "'"+""+"'"+",false,"+"'"+"e130w1_client"+"'", "", "WWAdvancedLabel WWFilterLabel", 7, "", 1, 1, 0, 1, "HLP_Gx0060.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
@@ -486,7 +486,7 @@ namespace GeneXus.Programs {
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", " gx-attribute", "left", "top", "", "", "div");
             /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtavCproductdescription_Internalname, "Descrição do Produto", "col-sm-3 AttributeLabel", 0, true, "");
+            GxWebStd.gx_label_element( context, edtavCproductdescription_Internalname, "Descrição", "col-sm-3 AttributeLabel", 0, true, "");
             /* Single line edit */
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 36,'',false,'" + sGXsfl_84_idx + "',0)\"";
             GxWebStd.gx_single_line_edit( context, edtavCproductdescription_Internalname, StringUtil.RTrim( AV8cProductDescription), StringUtil.RTrim( context.localUtil.Format( AV8cProductDescription, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,36);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCproductdescription_Jsonclick, 0, "Attribute", "", "", "", "", edtavCproductdescription_Visible, edtavCproductdescription_Enabled, 0, "text", "", 50, "chr", 1, "row", 50, 0, 0, 0, 1, -1, -1, true, "", "left", true, "", "HLP_Gx0060.htm");
@@ -684,10 +684,10 @@ namespace GeneXus.Programs {
                context.SendWebValue( "Id") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"DescriptionAttribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "do Produto") ;
+               context.SendWebValue( "Nome") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"left"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
-               context.SendWebValue( "do Produto") ;
+               context.SendWebValue( "Descrição") ;
                context.WriteHtmlTextNl( "</th>") ;
                context.WriteHtmlText( "<th align=\""+"right"+"\" "+" nowrap=\"nowrap\" "+" class=\""+"Attribute"+"\" "+" style=\""+""+""+"\" "+">") ;
                context.SendWebValue( "Preço") ;
@@ -1628,7 +1628,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?20235211514914", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202352622261682", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1644,7 +1644,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.por.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("gx0060.js", "?20235211514915", false, true);
+         context.AddJavascriptSource("gx0060.js", "?202352622261682", false, true);
          /* End function include_jscripts */
       }
 

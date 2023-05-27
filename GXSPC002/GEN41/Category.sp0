@@ -184,7 +184,7 @@ tbl_to_delete_i(2,[ 6,[ [ 2,6,6 ] ],c,'IPRODUCT3',0,[ 12 ],'' ]).
  
  
 attri_i(12,[ 'ProductId',int,4,0,'ZZZ9',0,'Product Id','',0 ]).
-attri_i(7,[ 'CategoryName',char,20,0,'',0,'Noma da Categoria','',0 ]).
+attri_i(7,[ 'CategoryName',char,20,0,'',0,'Categoria','',0 ]).
 attri_i(6,[ 'CategoryId',int,4,0,'ZZZ9',0,'Categoria Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',11 ]).
 attri_i('Gxremove',[ 'GxRemove',int,1,0,'9',0,'Gx Remove','',5 ]).
@@ -692,7 +692,7 @@ html_comp_i(39,'Returnonclick',0,v,[ bool ]).
 html_comp_i(39,'Captionclass','col-sm-3 AttributeLabel',v,[ str ]).
 html_comp_i(39,'Captionstyle','',v,[ str ]).
 html_comp_i(39,'Captionposition','Left',v,[ str ]).
-html_comp_i(39,'Captionvalue','da Categoria',d,[ str ]).
+html_comp_i(39,'Captionvalue','Categoria',d,[ str ]).
 html_comp_i(39,'Layoutclass','col-sm-9',v,[ str ]).
 html_comp_i(39,'Controltype',2,d,[ num ]).
 html_comp_i(39,'Inputtype',0,d,[ num ]).
@@ -882,7 +882,7 @@ att_prop_i(2,6,'AttValidationFailedMsg','',d).
 att_prop_i(2,6,'DownloadOffline','0',d).
 att_prop_i(2,6,'VarServiceExtName','',d).
 att_prop_i(2,6,'FullName','CategoryId',v).
-att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Noma da Categoria',d).
+att_prop_i(2,7,'HORIZONTAL_DESCRIPTION','Categoria',d).
 att_prop_i(2,7,'ExternalName','CategoryName',d).
 att_prop_i(2,7,'ExternalNamespace','WorkShopNew',d).
 att_prop_i(2,7,'EmptyAsNull','Yes',d).

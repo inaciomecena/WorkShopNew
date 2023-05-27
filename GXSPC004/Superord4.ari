@@ -4,9 +4,8 @@ dir_superordinates_i(4,10,[ [ 6,[ 12 ] ],[ 9,[ 16 ] ] ]).
 dir_superordinates_i(4,8,[ [ 6,[ 12 ] ],[ 7,[ 15 ] ] ]).
 dir_superordinates_i(4,6,[ [ 502,[ 14 ] ],[ 4,[ 10 ] ],[ 2,[ 6 ] ] ]).
 dir_superordinates_i(4,2,[]).
-dir_superordinates_i(4,9,[ [ 5,[ 11 ] ] ]).
 dir_superordinates_i(4,5,[ [ 3,[ 8 ] ] ]).
-dir_superordinates_i(4,1,[]).
 dir_superordinates_i(4,502,[]).
+dir_superordinates_i(4,9,[ [ 5,[ 11 ] ] ]).
 dir_superordinates_i(4,7,[]).
  

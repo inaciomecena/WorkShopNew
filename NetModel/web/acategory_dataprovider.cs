@@ -80,16 +80,16 @@ namespace GeneXus.Programs {
          /* Output device settings */
          Gxm1category = new SdtCategory(context);
          Gxm2rootcol.Add(Gxm1category, 0);
-         Gxm1category.gxTpr_Categoryname = "Roupas e Acessórios";
+         Gxm1category.gxTpr_Categoryname = "Vestuário";
          Gxm1category = new SdtCategory(context);
          Gxm2rootcol.Add(Gxm1category, 0);
-         Gxm1category.gxTpr_Categoryname = "Joias";
+         Gxm1category.gxTpr_Categoryname = "Joalheria";
          Gxm1category = new SdtCategory(context);
          Gxm2rootcol.Add(Gxm1category, 0);
          Gxm1category.gxTpr_Categoryname = "Entreterimento";
          Gxm1category = new SdtCategory(context);
          Gxm2rootcol.Add(Gxm1category, 0);
-         Gxm1category.gxTpr_Categoryname = "Beleza";
+         Gxm1category.gxTpr_Categoryname = "Casa";
          Gxm1category = new SdtCategory(context);
          Gxm2rootcol.Add(Gxm1category, 0);
          Gxm1category.gxTpr_Categoryname = "Saúde";

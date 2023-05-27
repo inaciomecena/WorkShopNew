@@ -223,7 +223,6 @@ form_class_i(1,'Graphic').
  
  
  
-calling_main_i(13,8).
  
 att_prop_i(2,16,'ExternalName','ShoppingCartId',d).
 att_prop_i(2,16,'ExternalNamespace','WorkShopNew',d).

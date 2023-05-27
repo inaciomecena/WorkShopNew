@@ -153,7 +153,7 @@ attri_i(40000,[ 'SellerPhoto_GXI',svchar,2048,0,'',0,'',[],0 ]).
 attri_i(9,[ 'CountryName',char,20,0,'',0,'País','',0 ]).
 attri_i(8,[ 'CountryId',int,4,0,'ZZZ9',0,'País Id','',0 ]).
 attri_i(19,[ 'SellerPhoto',bits,4,0,'',0,'Foto','',0 ]).
-attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor Nome','',0 ]).
+attri_i(18,[ 'SellerName',char,20,0,'',0,'Vendedor','',0 ]).
 attri_i(10,[ 'SellerId',int,4,0,'ZZZ9',0,'Vendedor Id','',0 ]).
 attri_i('Pgmname',[ 'Pgmname',char,129,0,'',1,'Program name','',15 ]).
 attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',14 ]).
@@ -450,7 +450,7 @@ html_comp_i(16,'Font',font('Arial',10,[]),d,[ font ]).
 html_comp_i(16,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(16,'Gxformat',0,d,[ num ]).
 html_comp_i(16,'Title','',d,[ str ]).
-html_comp_i(16,'Invitemsg','Nome',v,[ str ]).
+html_comp_i(16,'Invitemsg','Vendedor',v,[ str ]).
 html_comp_i(17,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(17,'Class',row,v,[ str ]).
 html_comp_i(17,'Id','',d,[ str ]).
@@ -596,7 +596,7 @@ html_comp_i(27,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(27,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(27,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(27,'Coltitle','Nome',d,[ str ]).
+html_comp_i(27,'Coltitle','Vendedor',d,[ str ]).
 html_comp_i(27,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(27,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(27,'Horizontalalignment',left,d,[ str ]).
