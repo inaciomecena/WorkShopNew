@@ -8,4 +8,5 @@ dir_subordinates_i(4,5,[ [ 9,[ 11 ] ] ]).
 dir_subordinates_i(4,9,[ [ 10,[ 16 ] ] ]).
 dir_subordinates_i(4,502,[ [ 4,[ 8 ] ],[ 5,[ 8 ] ],[ 6,[ 14 ] ] ]).
 dir_subordinates_i(4,7,[ [ 8,[ 15 ] ] ]).
+dir_subordinates_i(4,1,[]).
  

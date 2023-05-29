@@ -46,11 +46,8 @@ pgm_prop_i(web,46,'CATEGORYGENERAL','URLAccess','No').
 pgm_prop_i(web,40,'COUNTRYGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,40,'COUNTRYGENERAL','URLAccess','No').
 pgm_prop_i(trn,3,'COUNTRY',idISBUSINESSCOMPONENT,'-1').
-pgm_prop_i(web,54,'PRODUCTGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,54,'PRODUCTGENERAL','URLAccess','No').
 pgm_prop_i(web,28,'SELLERPRODUCTWC','WEB_COMP','Yes').
 pgm_prop_i(web,28,'SELLERPRODUCTWC','URLAccess','No').
-pgm_prop_i(trn,5,'PRODUCT',idISBUSINESSCOMPONENT,'-1').
 pgm_prop_i(web,43,'COUNTRYPRODUCTWC','WEB_COMP','Yes').
 pgm_prop_i(web,43,'COUNTRYPRODUCTWC','URLAccess','No').
 pgm_prop_i(web,47,'CATEGORYPRODUCTWC','WEB_COMP','Yes').
@@ -59,21 +56,24 @@ pgm_prop_i(web,41,'COUNTRYSELLERWC','WEB_COMP','Yes').
 pgm_prop_i(web,41,'COUNTRYSELLERWC','URLAccess','No').
 pgm_prop_i(web,42,'COUNTRYCUSTOMERWC','WEB_COMP','Yes').
 pgm_prop_i(web,42,'COUNTRYCUSTOMERWC','URLAccess','No').
-pgm_prop_i(web,50,'CUSTOMERGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,50,'CUSTOMERGENERAL','URLAccess','No').
 pgm_prop_i(web,59,'PROMOTIONGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,59,'PROMOTIONGENERAL','URLAccess','No').
-pgm_prop_i(web,55,'PRODUCTPRODUCTWC','WEB_COMP','Yes').
-pgm_prop_i(web,55,'PRODUCTPRODUCTWC','URLAccess','No').
 pgm_prop_i(web,24,'SHOPPINGCARTGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,24,'SHOPPINGCARTGENERAL','URLAccess','No').
 pgm_prop_i(trn,6,'SHOPPINGCART',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(proc,15,'ASHOPPINGCARTDETAIL','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,15,'SHOPPINGCARTDETAIL','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,55,'PRODUCTPRODUCTWC','WEB_COMP','Yes').
+pgm_prop_i(web,55,'PRODUCTPRODUCTWC','URLAccess','No').
+pgm_prop_i(trn,5,'PRODUCT',idISBUSINESSCOMPONENT,'-1').
+pgm_prop_i(web,54,'PRODUCTGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,54,'PRODUCTGENERAL','URLAccess','No').
+pgm_prop_i(web,50,'CUSTOMERGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,50,'CUSTOMERGENERAL','URLAccess','No').
 pgm_prop_i(web,51,'CUSTOMERSHOPPINGCARTWC','WEB_COMP','Yes').
 pgm_prop_i(web,51,'CUSTOMERSHOPPINGCARTWC','URLAccess','No').
 pgm_prop_i(web,56,'PRODUCTPRODUCT1WC','WEB_COMP','Yes').
 pgm_prop_i(web,56,'PRODUCTPRODUCT1WC','URLAccess','No').
-pgm_prop_i(proc,15,'ASHOPPINGCARTDETAIL','CALL_PROTOCOL','HTTP').
-pgm_prop_i(proc,15,'SHOPPINGCARTDETAIL','CALL_PROTOCOL','HTTP').
  
 model_wrkinfo_i([ 'CloudNET','CloudNET004' ]).
  
